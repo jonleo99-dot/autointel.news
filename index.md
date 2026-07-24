@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 <head>
 <meta charset='utf-8'>
@@ -11,7 +12,6 @@ body{
   font-family:Arial,sans-serif;
   font-size:16px;
   line-height:1.6
-  width:"auto" 
 }
 header{
   padding:40px;
