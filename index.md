@@ -60,4 +60,4 @@ footer{text-align:center;padding:30px;color:#999}
 <section class="break"><h2>Industry Insight</h2></section>
 <footer>The Daily Traction</footer>
 </div>
-</body></html>
+</body></html>      
