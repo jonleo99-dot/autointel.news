@@ -332,7 +332,7 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
 <div class='grid'>
   <a href="https://www.autonews.com/data-center/sales-data/an-estimated-europe-registrations-country-june-2026/" target="_blank">
     <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&amp;amp;auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&amp;amp;width=3648&amp;amp;height=2052" alt="Estimated Europe registrations by country, June &amp; YTD 2026">
+      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&amp;amp;auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&width=3648&height=2052" alt="Estimated Europe registrations by country, June &amp; YTD 2026">
       <div class='card-content'>
         <span class='badge'>AUTONEWS</span>
         <h3>Estimated Europe registrations by country, June &amp; YTD 2026</h3>
