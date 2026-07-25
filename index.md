@@ -33,6 +33,9 @@ header h1{
   font-family:'Noticia Text',serif;
   font-style:normal
 }
+header h1 .car-symbol{
+  font-style:italic
+}
 header h3{
   margin:5px 0 15px 0;
   font-size:16px;
@@ -47,6 +50,21 @@ header p{
   margin-left:auto;
   margin-right:auto;
   line-height:1.6
+}
+.stats-bar{
+  text-align:center;
+  padding:20px;
+  margin:30px 0 40px 0;
+  border-top:1px solid #2a2a2a;
+  border-bottom:1px solid #2a2a2a;
+  background:#0f0f10
+}
+.stat{
+  display:inline-block;
+  margin:0 20px;
+  font-weight:bold;
+  color:#f60;
+  font-size:14px
 }
 .wrap{
   max-width:1400px;
@@ -200,11 +218,8 @@ footer{
   font-size:13px;
   margin-top:60px
 }
-.stat{
-  display:inline-block;
-  margin:0 20px;
-  font-weight:bold;
-  color:#f60
+footer p{
+  margin:10px 0
 }
 @media(max-width:768px){
   header{padding:20px}
@@ -212,15 +227,15 @@ footer{
   .hero img{height:280px}
   .hero-content{padding:20px}
   .grid{grid-template-columns:1fr}
+  .stat{display:block;margin:10px 0}
 }
 </style>
-  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFL6J09QZV"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-GFL6J09QZV');
 </script>
 </head>
@@ -228,10 +243,16 @@ footer{
 
 <header>
   <div class='date-field' id='publishDate'></div>
-  <h1>AutoIntel.News <span style="color:#f60;font-family:Times,'Times New Roman',serif">ō͡≡o˞̶</span></h1>
+  <h1>AutoIntel.News <span class='car-symbol' style="color:#f60;font-family:Times,'Times New Roman',serif">ō͡≡o˞̶</span></h1>
   <h3>Automotive Intelligence. Curated Daily.</h3>
-  <p><b>Today's Drive:</b> Manufacturers announce ambitious plans while market data reveals a different story: EVs stall in new sales, hybrids dominate buyer preference, affordability crises deepen, yet performance culture thrives. The real story lies in the contradictions.</p>
+  <p><b>Today's Drive:</b> Manufacturers announce ambitious plans while market data reveals different story: EVs stall in new sales, hybrids dominate buyer preference, affordability crisis deepens, yet performance culture thrives. The real story lies in the contradictions.</p>
 </header>
+
+<div class='stats-bar'>
+  <span class='stat'>65 Stories</span>
+  <span class='stat'>11 Publishers</span>
+  <span class='stat'>~48 min read</span>
+</div>
 
 <script>
 document.getElementById('publishDate').textContent = new Date().toLocaleDateString('en-US', {weekday:'long',year:'numeric',month:'long',day:'numeric'}).toUpperCase();
@@ -339,9 +360,21 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
 </div>
 
 <div class='grid'>
-   <a href="https://www.autonews.com/data-center/sales-data/an-estimated-europe-registrations-make-june-2026/" target="_blank">
+  <a href="https://www.autonews.com/data-center/sales-data/an-estimated-europe-registrations-country-june-2026/" target="_blank">
     <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&width=3648&height=2052" alt="Estimated Europe registrations by make, June &amp; YTD 2026">
+      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&amp;auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&amp;width=3648&amp;height=2052" alt="Estimated Europe registrations by country, June &amp; YTD 2026">
+      <div class='card-content'>
+        <span class='badge'>AUTONEWS</span>
+        <h3>Estimated Europe registrations by country, June &amp; YTD 2026</h3>
+        <p>Unit registrations of passenger vehicles listed alphabetically by country for the current and previous year periods</p>
+        <div class='card-tension'><b>Tension:</b> Market data reveals structural shifts: what OEMs announce rarely aligns with what buyers actually purchase.</div>
+        <small>Read on autonews.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.autonews.com/data-center/sales-data/an-estimated-europe-registrations-make-june-2026/" target="_blank">
+    <div class='card'>
+      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&amp;auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&amp;width=3648&amp;height=2052" alt="Estimated Europe registrations by make, June &amp; YTD 2026">
       <div class='card-content'>
         <span class='badge'>AUTONEWS</span>
         <h3>Estimated Europe registrations by make, June &amp; YTD 2026</h3>
@@ -434,7 +467,7 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
   </a>
   <a href="https://www.thedrive.com/news/ban-on-chinese-tech-threatens-to-push-new-car-prices-even-higher" target="_blank">
     <div class='card'>
-      <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GettyImages-2255530896.jpg?quality=85&amp;amp;w=2048" alt="New Cars Would Get Even Pricier With Ban on Chinese Tech">
+      <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GettyImages-2255530896.jpg?quality=85&amp;w=2048" alt="New Cars Would Get Even Pricier With Ban on Chinese Tech">
       <div class='card-content'>
         <span class='badge'>THEDRIVE</span>
         <h3>New Cars Would Get Even Pricier With Ban on Chinese Tech</h3>
@@ -512,7 +545,7 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
   </a>
   <a href="https://www.thedrive.com/news/bad-door-handles-are-trapping-people-in-cars-the-feds-are-finally-stepping-in" target="_blank">
     <div class='card'>
-      <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GettyImages-2189374777.jpg?quality=85&amp;amp;w=2048" alt="Bad Door Handles Are Trapping People in Cars. The Feds Are Finally Stepping in">
+      <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GettyImages-2189374777.jpg?quality=85&amp;w=2048" alt="Bad Door Handles Are Trapping People in Cars. The Feds Are Finally Stepping in">
       <div class='card-content'>
         <span class='badge'>THEDRIVE</span>
         <h3>Bad Door Handles Are Trapping People in Cars. The Feds Are Finally Stepping in</h3>
@@ -524,7 +557,7 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
   </a>
   <a href="https://www.thedrive.com/news/ford-recalls-over-half-a-million-broncos-for-engine-fire-risk-tds" target="_blank">
     <div class='card'>
-      <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GettyImages-1233462832.jpg?quality=85&amp;amp;w=2048" alt="Ford Recalls Over Half a Million Broncos for Engine Fire Risk: TDS">
+      <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GettyImages-1233462832.jpg?quality=85&amp;w=2048" alt="Ford Recalls Over Half a Million Broncos for Engine Fire Risk: TDS">
       <div class='card-content'>
         <span class='badge'>THEDRIVE</span>
         <h3>Ford Recalls Over Half a Million Broncos for Engine Fire Risk: TDS</h3>
@@ -557,7 +590,7 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
 <div class='grid'>
   <a href="https://www.autonews.com/data-center/manufacturing-data/production-downtime/an-north-america-assembly-plant-downtime-072726/" target="_blank">
     <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&width=3648&height=2052" alt="North America production downtime – 07/27/26">
+      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&amp;auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&amp;width=3648&amp;height=2052" alt="North America production downtime – 07/27/26">
       <div class='card-content'>
         <span class='badge'>AUTONEWS</span>
         <h3>North America production downtime – 07/27/26</h3>
@@ -684,12 +717,6 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
 </div>
 
 <footer>
-  <p>
-    <span class='stat'>65 Stories</span>
-    <span class='stat'>11 Publishers</span>
-    <span class='stat'>~48 min read</span>
-  </p>
-  <p>Issue #002 | July 25, 2026</p>
   <p style="color:#555;margin-top:20px">AutoIntel.News reveals market contradictions behind automotive headlines. We highlight tensions between announcements and reality, strategy and execution, OEM plans and buyer behavior. All links open in new tabs.</p>
 </footer>
 
