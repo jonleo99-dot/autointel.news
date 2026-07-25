@@ -214,6 +214,15 @@ footer{
   .grid{grid-template-columns:1fr}
 }
 </style>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFL6J09QZV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GFL6J09QZV');
+</script>
 </head>
 <body>
 
