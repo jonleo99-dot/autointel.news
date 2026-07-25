@@ -332,7 +332,7 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
 <div class='grid'>
   <a href="https://www.autonews.com/data-center/sales-data/an-estimated-europe-registrations-country-june-2026/" target="_blank">
     <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&amp;amp;auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&width=3648&height=2052" alt="Estimated Europe registrations by country, June &amp; YTD 2026">
+      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&width=3648&height=2052" alt="Estimated Europe registrations by country, June &amp; YTD 2026">
       <div class='card-content'>
         <span class='badge'>AUTONEWS</span>
         <h3>Estimated Europe registrations by country, June &amp; YTD 2026</h3>
@@ -344,7 +344,7 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
   </a>
   <a href="https://www.autonews.com/data-center/sales-data/an-estimated-europe-registrations-make-june-2026/" target="_blank">
     <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&amp;amp;auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&amp;amp;width=3648&amp;amp;height=2052" alt="Estimated Europe registrations by make, June &amp; YTD 2026">
+      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&width=3648&height=2052" alt="Estimated Europe registrations by make, June &amp; YTD 2026">
       <div class='card-content'>
         <span class='badge'>AUTONEWS</span>
         <h3>Estimated Europe registrations by make, June &amp; YTD 2026</h3>
@@ -560,7 +560,7 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
 <div class='grid'>
   <a href="https://www.autonews.com/data-center/manufacturing-data/production-downtime/an-north-america-assembly-plant-downtime-072726/" target="_blank">
     <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&amp;amp;auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&amp;amp;width=3648&amp;amp;height=2052" alt="North America production downtime – 07/27/26">
+      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&width=3648&height=2052" alt="North America production downtime – 07/27/26">
       <div class='card-content'>
         <span class='badge'>AUTONEWS</span>
         <h3>North America production downtime – 07/27/26</h3>
