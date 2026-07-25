@@ -2,7 +2,7 @@
 <head>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>The Daily Traction - Issue 001</title>
+<title>AutoIntel.News - Issue 002</title>
 <style>
 body{
   margin:0;
@@ -18,11 +18,20 @@ header{
   background:#171717;
   border-bottom:4px solid #f60
 }
+.date-field{
+  color:#aaa;
+  font-size:12px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  margin-bottom:15px
+}
 header h1{
   margin:0 0 10px 0;
-  font-size:48px;
+  font-size:45px;
   letter-spacing:2px;
-  font-weight:bold
+  font-weight:700;
+  font-family:'Noticia Text',serif;
+  font-style:normal
 }
 header h3{
   margin:5px 0 15px 0;
@@ -34,9 +43,10 @@ header p{
   margin:10px 0 0 0;
   font-size:14px;
   color:#ccc;
-  max-width:800px;
+  max-width:900px;
   margin-left:auto;
-  margin-right:auto
+  margin-right:auto;
+  line-height:1.6
 }
 .wrap{
   max-width:1400px;
@@ -66,10 +76,19 @@ header p{
   color:#fff
 }
 .hero-content p{
-  margin:0;
+  margin:0 0 12px 0;
   font-size:16px;
   color:#ccc;
   line-height:1.6
+}
+.hero-tension{
+  margin:15px 0 0 0;
+  padding-top:15px;
+  border-top:1px solid #f60;
+  font-size:13px;
+  color:#f60;
+  font-style:italic;
+  line-height:1.5
 }
 .badge{
   background:#f60;
@@ -111,7 +130,8 @@ header p{
   transition:all 0.3s ease;
   border:1px solid #2a2a2a;
   display:flex;
-  flex-direction:column
+  flex-direction:column;
+  height:100%
 }
 .card:hover{
   transform:translateY(-5px);
@@ -142,16 +162,26 @@ header p{
   flex-grow:1
 }
 .card-content p{
-  margin:0;
+  margin:0 0 10px 0;
   font-size:13px;
   color:#aaa;
   line-height:1.5
 }
+.card-tension{
+  font-size:12px;
+  color:#f60;
+  font-style:italic;
+  line-height:1.4;
+  padding-top:8px;
+  border-top:1px solid #2a2a2a
+}
 .card-content small{
   display:block;
-  margin-top:10px;
+  margin-top:auto;
+  padding-top:8px;
   font-size:11px;
-  color:#666
+  color:#666;
+  border-top:1px solid #2a2a2a
 }
 a{
   text-decoration:none;
@@ -188,20 +218,26 @@ footer{
 <body>
 
 <header>
-  <h1>THE DAILY TRACTION</h1>
+  <div class='date-field' id='publishDate'></div>
+  <h1>AutoIntel.News <span style="color:#f60;font-family:Times,'Times New Roman',serif">ō͡≡o˞̶</span></h1>
   <h3>Automotive Intelligence. Curated Daily.</h3>
-  <p><b>Today's Drive:</b> OEMs navigate electrification while balancing performance, innovation, and market demands. EV technology advances alongside motorsports excitement and strong market activity.</p>
+  <p><b>Today's Drive:</b> Manufacturers announce ambitious plans while market data reveals a different story: EVs stall in new sales, hybrids dominate buyer preference, affordability crises deepen, yet performance culture thrives. The real story lies in the contradictions.</p>
 </header>
+
+<script>
+document.getElementById('publishDate').textContent = new Date().toLocaleDateString('en-US', {weekday:'long',year:'numeric',month:'long',day:'numeric'}).toUpperCase();
+</script>
 
 <div class='wrap'>
 
 <!-- Hero Story -->
 <div class='hero'>
-  <img src="https://www.autonews.com/resizer/v2/LA537K7YCVBHZCBXN3O5VNFWUQ.png?auth=2e4d59c037959ded74c70e0183694170a45421fe3c15fb829678b7c9d6144d4b&amp;width=1200#.png" alt="Hero Story">
+  <img src="https://www.autonews.com/resizer/v2/HC73AQ735RAZ3IT6ZV637ZPD3E.jpg?auth=0022658d37a51863922355078a47a0b5e383df3a09b725a443cb699b6011369f&amp;width=1200#.jpg" alt="Hero Story">
   <div class='hero-content'>
     <span class='badge'>FEATURE STORY</span>
-    <h2>Former Ford marketing boss Matt VanDyke takes over Ram brand; ex-AutoNation exec to head Jeep</h2>
-    <p>Matt VanDyke, who spent 14 years at Ford, succeeds Tim Kuniskis, who remains Stellantis&#x27; head of American brands.</p>
+    <h2>Weekend Drive: Honda is considering a new North American factory; GM raises its guidance for a second time this year</h2>
+    <p>Honda has its sights set on a new North American factory. President Donald Trump has ordered 50 percent tariffs on some Canadian goods. Plus, Gener...</p>
+    <div class='hero-tension'><b>The Tension:</b> OEM announcements multiply while execution reality—production, affordability, and market appetite—remain questionable.</div>
   </div>
 </div>
 
@@ -209,40 +245,67 @@ footer{
 <!-- OEM Spotlight Section -->
 <div class='sec'>
   <h2>OEM Spotlight</h2>
-  <small><b>Driving the Next Generation</b></small>
+  <small><b>Where Plans Meet Reality</b></small>
 </div>
 
 <div class='grid'>
-  <a href="https://www.autonews.com/stellantis/an-stellantis-jeep-ram-new-ceos-0720/" target="_blank">
+  <a href="https://www.autonews.com/podcasts/daily-drive/an-weekend-drive-honda-is-considering-a-new-north-american-factory-0725/" target="_blank">
     <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/LA537K7YCVBHZCBXN3O5VNFWUQ.png?auth=2e4d59c037959ded74c70e0183694170a45421fe3c15fb829678b7c9d6144d4b&amp;width=1200#.png" alt="Former Ford marketing boss Matt VanDyke takes over Ram brand; ex-AutoNation exec to head Jeep">
+      <img src="https://www.autonews.com/resizer/v2/HC73AQ735RAZ3IT6ZV637ZPD3E.jpg?auth=0022658d37a51863922355078a47a0b5e383df3a09b725a443cb699b6011369f&amp;width=1200#.jpg" alt="Weekend Drive: Honda is considering a new North American factory; GM raises its guidance for a second time this year">
       <div class='card-content'>
         <span class='badge'>AUTONEWS</span>
-        <h3>Former Ford marketing boss Matt VanDyke takes over Ram brand; ex-AutoNation e...</h3>
-        <p>Matt VanDyke, who spent 14 years at Ford, succeeds Tim Kuniskis, who remains Stellantis&#x27; head of American brands.</p>
+        <h3>Weekend Drive: Honda is considering a new North American factory; GM raises i...</h3>
+        <p>Honda has its sights set on a new North American factory. President Donald Trump has ordered 50 percent tariffs on some Canadian goods. Plus, Gener...</p>
+        <div class='card-tension'><b>Tension:</b> OEM announcements multiply while execution reality—production, affordability, and market appetite—remain questionable.</div>
         <small>Read on autonews.com</small>
       </div>
     </div>
   </a>
-  <a href="https://www.autonews.com/stellantis/jeep/an-tim-kuniskis-jeep-legacy-0722/" target="_blank">
+  <a href="https://www.wardsauto.com/news/ford-global-power-products-debut-home-backup-solution/826066/" target="_blank">
     <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/R67JBZ6OGZHJPA676JJL7MDQWA.jpg?auth=4a51a61788c9c681edb029f517aeb6c0e706fe447b3a11ad8bef0b32adb31858&amp;width=1200#.jpg" alt="Jeep, at 85, sets course for future by listening to what fans want">
+      <img src="https://imgproxy.divecdn.com/D9N3Nz4gIfh_8CFTNIqzoAY3MgbSqebznZWRFW3YGd0/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Sb3VnZV9FbGVjdHJpY19WZWhpY2xlX0NlbnRlcl8wM19fSmFjcXVlbGluZV9MYW56LmpwZw==.webp" alt="Ford, Global Power Products debut home backup solution">
       <div class='card-content'>
-        <span class='badge'>AUTONEWS</span>
-        <h3>Jeep, at 85, sets course for future by listening to what fans want</h3>
-        <p>Jeep is looking to position itself for a sustainable future by keeping its ear to the ground and gleaning insights from its most valuable asset: a ...</p>
-        <small>Read on autonews.com</small>
+        <span class='badge'>WARDSAUTO</span>
+        <h3>Ford, Global Power Products debut home backup solution</h3>
+        <p>More than 800 electric utilities have approved GPP’s GenerLink transfer switch, which provides backup power for outlets and hardwired appliances at...</p>
+        <div class='card-tension'><b>Tension:</b> Affordability crisis deepens with rising incentives and negative equity, yet market remains driven by luxury launches.</div>
+        <small>Read on wardsauto.com</small>
       </div>
     </div>
   </a>
-  <a href="https://www.autonews.com/regulation-safety/an-privacy-regulations-connected-car-data-0720/" target="_blank">
+  <a href="https://www.wardsauto.com/news/ford-chinas-geely-to-build-cars-in-spain-in-joint-venture/825995/" target="_blank">
     <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/GY4I4SB73BHOTLCTJAPLWQIEGQ.jpg?auth=10d2f04deb59d962285e6f8562a855294e2ea52bf9531db228605e0facf65bed&amp;width=1200#.jpg" alt="Automakers play catch-up with fast-changing state privacy regulations">
+      <img src="https://imgproxy.divecdn.com/7gtt5ErIuVi7WwBYy13OWl3d2NLs3QCWlsevrRtvl0A/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Gb3JkS3VnYVNwYWluMjAyNS5qcGc=.webp" alt="Ford, China’s Geely to build cars in Spain in joint venture">
       <div class='card-content'>
-        <span class='badge'>AUTONEWS</span>
-        <h3>Automakers play catch-up with fast-changing state privacy regulations</h3>
-        <p>Twenty-three states have adopted privacy laws since California&#x27;s 2018 Consumer Privacy Act. Automakers face compliance challenges with vehicle data...</p>
-        <small>Read on autonews.com</small>
+        <span class='badge'>WARDSAUTO</span>
+        <h3>Ford, China’s Geely to build cars in Spain in joint venture</h3>
+        <p>The deal calls for the automakers to build two new Ford multi-energy vehicles and two new Geely electric SUVs at the Valencia plant.</p>
+        <div class='card-tension'><b>Tension:</b> Manufacturer EV investment continues despite new EV market share slipping to 5.9%—a disconnect between strategy and sales.</div>
+        <small>Read on wardsauto.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.wardsauto.com/news/ford-recalls-nearly-388k-suvs-for-binding-second-row-seat-switches/825957/" target="_blank">
+    <div class='card'>
+      <img src="https://imgproxy.divecdn.com/wREhPyQW5AAQ6a3OrUCt7WIaY0anOT4Xqi1UO8TrPyM/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TY3JlZW5zaG90XzIwMjYtMDctMjJfYXRfMi40NS4yMFBNLnBuZw==.webp" alt="Ford recalls nearly 388K SUVs for binding second-row seat switches">
+      <div class='card-content'>
+        <span class='badge'>WARDSAUTO</span>
+        <h3>Ford recalls nearly 388K SUVs for binding second-row seat switches</h3>
+        <p>The recall expands a previous one in June 2025 for switches that can stick and cause the second-row seats to suddenly slide or fold.</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
+        <small>Read on wardsauto.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.wardsauto.com/news/honda-confirms-next-gen-ridgeline-pickup/825975/" target="_blank">
+    <div class='card'>
+      <img src="https://imgproxy.divecdn.com/Z70QNs_rLy1DV9YnHa_0EK3tUe67zpBTLEz28IPUgJs/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9OZXh0X0dlbl9SaWRnZWxpbmVfVGVhc2VyXy1fRklOQUxfNy05LTI2LmpwZw==.webp" alt="Honda confirms next-gen Ridgeline pickup">
+      <div class='card-content'>
+        <span class='badge'>WARDSAUTO</span>
+        <h3>Honda confirms next-gen Ridgeline pickup</h3>
+        <p>Set to arrive within two years, the third-generation Ridgeline will continue to be built in Alabama.</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
+        <small>Read on wardsauto.com</small>
       </div>
     </div>
   </a>
@@ -253,29 +316,8 @@ footer{
         <span class='badge'>KBB</span>
         <h3>Honda Pauses Manual Transmission Civic Si, Acura Integra A-Spec</h3>
         <p>Honda confirmed the Si&#x27;s return, but did not give details on its transmission.</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
         <small>Read on kbb.com</small>
-      </div>
-    </div>
-  </a>
-  <a href="https://www.kbb.com/reviews/our-3-favorite-things-about-the-hyundai-ioniq-9/" target="_blank">
-    <div class='card'>
-      <img src="https://dam.coxautoinc.com/asset/09132242-10de-41d9-9413-ed00db8dea63/OG/2026-hyundai-ioniq-9-right-3qtr.jpg" alt="Our 3 Favorite Things About the 2026 Hyundai Ioniq 9">
-      <div class='card-content'>
-        <span class='badge'>KBB</span>
-        <h3>Our 3 Favorite Things About the 2026 Hyundai Ioniq 9</h3>
-        <p>The 2026 Hyundai Ioniq 9 is a sleek, comfortable, upscale, and capable 3-row SUV. Here are three of our favorite things about it.</p>
-        <small>Read on kbb.com</small>
-      </div>
-    </div>
-  </a>
-  <a href="https://www.caranddriver.com/news/a73249755/ford-customization-program-details/" target="_blank">
-    <div class='card'>
-      <img src="https://hips.hearstapps.com/hmg-prod/images/03fddbf3-befc-4a64-97c1-b94223adce8b.jpg?crop=0.871xw:0.653xh;0.129xw,0.133xh&amp;resize=1200:*" alt="Ford&#x27;s New Customization Program Aims to Democratize Performance">
-      <div class='card-content'>
-        <span class='badge'>CARANDDRIVER</span>
-        <h3>Ford&#x27;s New Customization Program Aims to Democratize Performance</h3>
-        <p>Gathering Ford Genuine Accessories, Ford Racing Parts, and Ford Custom Garage under one banner could make getting parts painless.</p>
-        <small>Read on caranddriver.com</small>
       </div>
     </div>
   </a>
@@ -284,10 +326,34 @@ footer{
 <!-- Market Intelligence Section -->
 <div class='sec'>
   <h2>Market Intelligence</h2>
-  <small><b>Market Pulse</b></small>
+  <small><b>What Buyers Really Do</b></small>
 </div>
 
 <div class='grid'>
+  <a href="https://www.autonews.com/data-center/sales-data/an-estimated-europe-registrations-country-june-2026/" target="_blank">
+    <div class='card'>
+      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&amp;amp;auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&amp;amp;width=3648&amp;amp;height=2052" alt="Estimated Europe registrations by country, June &amp; YTD 2026">
+      <div class='card-content'>
+        <span class='badge'>AUTONEWS</span>
+        <h3>Estimated Europe registrations by country, June &amp; YTD 2026</h3>
+        <p>Unit registrations of passenger vehicles listed alphabetically by country for the current and previous year periods</p>
+        <div class='card-tension'><b>Tension:</b> Market data reveals structural shifts: what OEMs announce rarely aligns with what buyers actually purchase.</div>
+        <small>Read on autonews.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.autonews.com/data-center/sales-data/an-estimated-europe-registrations-make-june-2026/" target="_blank">
+    <div class='card'>
+      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&amp;amp;auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&amp;amp;width=3648&amp;amp;height=2052" alt="Estimated Europe registrations by make, June &amp; YTD 2026">
+      <div class='card-content'>
+        <span class='badge'>AUTONEWS</span>
+        <h3>Estimated Europe registrations by make, June &amp; YTD 2026</h3>
+        <p>Unit registrations of passenger vehicles listed alphabetically by brand and automaker for the current and previous year periods</p>
+        <div class='card-tension'><b>Tension:</b> Market data reveals structural shifts: what OEMs announce rarely aligns with what buyers actually purchase.</div>
+        <small>Read on autonews.com</small>
+      </div>
+    </div>
+  </a>
   <a href="https://www.wardsauto.com/news/ally-financial-sees-loan-applications-rise-to-record-levels-in-q2/825938/" target="_blank">
     <div class='card'>
       <img src="https://imgproxy.divecdn.com/X0Fu3zVaTa61gkKxe-yk-EiDIuRzHgzhvydUqAl4FDY/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9jYXJfbG9hbl9nZXR0eWltYWdlcy0yMTQ4ODIzNjM5LTYxMng2MTIuanBn.webp" alt="Ally Financial sees loan applications rise to record levels in Q2">
@@ -295,18 +361,8 @@ footer{
         <span class='badge'>WARDSAUTO</span>
         <h3>Ally Financial sees loan applications rise to record levels in Q2</h3>
         <p>The lender&#x27;s increase in applications from the top of the purchase funnel allows Ally to be more selective while growing volume.</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
         <small>Read on wardsauto.com</small>
-      </div>
-    </div>
-  </a>
-  <a href="https://www.kbb.com/car-advice/revision-head-up-display-why-you-need-it-in-your-next-car/" target="_blank">
-    <div class='card'>
-      <img src="https://dam.coxautoinc.com/asset/08adb623-7224-4c44-a66b-9b1d780471cb/OG/Head-Up-Display-HUD-jpg.jpg" alt="Head-Up Display: Why You Need It in Your Next Car">
-      <div class='card-content'>
-        <span class='badge'>KBB</span>
-        <h3>Head-Up Display: Why You Need It in Your Next Car</h3>
-        <p>Learn how head-up displays work, compare factory, smartphone, and aftermarket options, and find the right HUD features for your car.</p>
-        <small>Read on kbb.com</small>
       </div>
     </div>
   </a>
@@ -315,32 +371,10 @@ footer{
 <!-- EV & Technology Section -->
 <div class='sec'>
   <h2>EV & Technology</h2>
-  <small><b>Electric Evolution</b></small>
+  <small><b>The Electrification Paradox</b></small>
 </div>
 
 <div class='grid'>
-  <a href="https://www.autonews.com/jaguar-land-rover/an-range-rover-gt-0722/" target="_blank">
-    <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/Y6OZ3E3GXVAHVEGAGHHR3FQFRI.jpg?auth=356aff26bcb88bf221839ab94bf96e216bcfe1309d5cab1a7b4b9c4b484369b0&amp;width=1200#.jpg" alt="Car-like Range Rover GT debuts with off-road capability">
-      <div class='card-content'>
-        <span class='badge'>AUTONEWS</span>
-        <h3>Car-like Range Rover GT debuts with off-road capability</h3>
-        <p>The battery-electric Range Rover GT is envisioned as a grand touring vehicle designed to provide high levels of comfort on long journeys.</p>
-        <small>Read on autonews.com</small>
-      </div>
-    </div>
-  </a>
-  <a href="https://www.autonews.com/tesla/an-tesla-q2-earnings-show-sales-rebound/" target="_blank">
-    <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/3Z4JQTBZ6RE7TMHEXBTTKHDVXE.jpeg?auth=ded87988614a90426af91d4648ac9c8c546d777615a07752b657fb43e323b915&amp;width=1200#.jpeg" alt="Tesla Q2 net income falls 5% to $1.1 billion; Elon Musk cites safety in cautious robotaxi rollout">
-      <div class='card-content'>
-        <span class='badge'>AUTONEWS</span>
-        <h3>Tesla Q2 net income falls 5% to $1.1 billion; Elon Musk cites safety in cauti...</h3>
-        <p>Tesla reported a 26 percent jump in total revenue to $28.2 billion and a 23 percent gain in automotive revenue to $20.5 billion.</p>
-        <small>Read on autonews.com</small>
-      </div>
-    </div>
-  </a>
   <a href="https://www.kbb.com/car-advice/how-much-does-it-cost-to-charge-an-ev/" target="_blank">
     <div class='card'>
       <img src="https://dam.coxautoinc.com/asset/1eb14d22-7da6-409d-b68f-f78d0a77396d/OG/Electrify-America-Charging.jpg" alt="How Much Does It Cost to Charge an Electric Car?">
@@ -348,7 +382,20 @@ footer{
         <span class='badge'>KBB</span>
         <h3>How Much Does It Cost to Charge an Electric Car?</h3>
         <p>Learn how to calculate the cost of charging EVs at home and at charging stations, the charge levels to choose from and how to find the right plug f...</p>
+        <div class='card-tension'><b>Tension:</b> Affordability crisis deepens with rising incentives and negative equity, yet market remains driven by luxury launches.</div>
         <small>Read on kbb.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.caranddriver.com/news/a73259033/chevy-equinox-ev-next-gen-report/" target="_blank">
+    <div class='card'>
+      <img src="https://hips.hearstapps.com/hmg-prod/images/2024-chevrolet-equinox-ev-3rs-584-6657c7cc55102.jpg?crop=1.00xw:0.753xh;0,0.202xh&amp;resize=1200:*" alt="Report: Chevrolet Is Already Cooking Up a Next-Generation Equinox EV">
+      <div class='card-content'>
+        <span class='badge'>CARANDDRIVER</span>
+        <h3>Report: Chevrolet Is Already Cooking Up a Next-Generation Equinox EV</h3>
+        <p>The next version of the compact electric SUV is expected to arrive for the 2029 model year and will ride on a new platform.</p>
+        <div class='card-tension'><b>Tension:</b> Manufacturer EV investment continues despite new EV market share slipping to 5.9%—a disconnect between strategy and sales.</div>
+        <small>Read on caranddriver.com</small>
       </div>
     </div>
   </a>
@@ -359,17 +406,7 @@ footer{
         <span class='badge'>CARANDDRIVER</span>
         <h3>Toyota Updates the Oddball Crown for 2027 with New Hybrid Setup</h3>
         <p>Toyota says the Crown XLE, Limited, and Nightshade get an updated hybrid system, but it&#x27;s being coy about the details of this revised setup.</p>
-        <small>Read on caranddriver.com</small>
-      </div>
-    </div>
-  </a>
-  <a href="https://www.caranddriver.com/news/a73247269/fords-30000-ev-truck-integrated-apple-maps/" target="_blank">
-    <div class='card'>
-      <img src="https://hips.hearstapps.com/hmg-prod/images/214359d7-6abc-45f7-b171-af390c56bcf5.jpg?crop=0.871xw:0.654xh;0.027xw,0.233xh&amp;resize=1200:*" alt="Ford&#x27;s $30,000 EV Truck Will Be Its First Vehicle with Apple Maps">
-      <div class='card-content'>
-        <span class='badge'>CARANDDRIVER</span>
-        <h3>Ford&#x27;s $30,000 EV Truck Will Be Its First Vehicle with Apple Maps</h3>
-        <p>Ford will equip its Universal EV models with Apple Maps instead of Google, and the first vehicle to try it out will be its upcoming $30,000 electri...</p>
+        <div class='card-tension'><b>Tension:</b> Manufacturer EV investment continues despite new EV market share slipping to 5.9%—a disconnect between strategy and sales.</div>
         <small>Read on caranddriver.com</small>
       </div>
     </div>
@@ -381,7 +418,32 @@ footer{
         <span class='badge'>ROADANDTRACK</span>
         <h3>Subaru Is Dedicating a Team to Making Its Cars More Fun</h3>
         <p>The new Sports Vehicle Planning Office is possible because of Subaru’s surging hybrid and EV sales.</p>
+        <div class='card-tension'><b>Tension:</b> Manufacturer EV investment continues despite new EV market share slipping to 5.9%—a disconnect between strategy and sales.</div>
         <small>Read on roadandtrack.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.motor1.com/news/802709/genesis-considering-pickup-truck/" target="_blank">
+    <div class='card'>
+      <img src="https://cdn.motor1.com/images/mgl/40YPGJ/s1/genesis-truck-rumor.jpg" alt="A Genesis Pickup Truck Could Be Back On The Table Thanks To Hyundai">
+      <div class='card-content'>
+        <span class='badge'>MOTOR1</span>
+        <h3>A Genesis Pickup Truck Could Be Back On The Table Thanks To Hyundai</h3>
+        <p>The idea of a Genesis pickup truck isn&#x27;t dead after all. In fact, it may be closer to reality than ever.</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
+        <small>Read on motor1.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.thedrive.com/news/ban-on-chinese-tech-threatens-to-push-new-car-prices-even-higher" target="_blank">
+    <div class='card'>
+      <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GettyImages-2255530896.jpg?quality=85&amp;amp;w=2048" alt="New Cars Would Get Even Pricier With Ban on Chinese Tech">
+      <div class='card-content'>
+        <span class='badge'>THEDRIVE</span>
+        <h3>New Cars Would Get Even Pricier With Ban on Chinese Tech</h3>
+        <p>One former Detroit auto executive said his &quot;jaw dropped&quot; when he saw how much pricier an equivalent non-China ADAS system would cost. The post New ...</p>
+        <div class='card-tension'><b>Tension:</b> Manufacturer EV investment continues despite new EV market share slipping to 5.9%—a disconnect between strategy and sales.</div>
+        <small>Read on thedrive.com</small>
       </div>
     </div>
   </a>
@@ -390,7 +452,7 @@ footer{
 <!-- Motorsports Section -->
 <div class='sec'>
   <h2>Motorsports</h2>
-  <small><b>At Full Throttle</b></small>
+  <small><b>When Culture Thrives</b></small>
 </div>
 
 <div class='grid'>
@@ -401,18 +463,8 @@ footer{
         <span class='badge'>CARANDDRIVER</span>
         <h3>&#x27;Days of Thunder&#x27; Reboot Inches Closer to the Start Line</h3>
         <p>The classic 1990 NASCAR movie has Tom Cruise and Jerry Bruckheimer on board and is close to having a director.</p>
+        <div class='card-tension'><b>Tension:</b> Performance culture thrives on track and in culture while consumers tighten budgets—passion persists amid economic strain.</div>
         <small>Read on caranddriver.com</small>
-      </div>
-    </div>
-  </a>
-  <a href="https://www.roadandtrack.com/news/a73250217/nascars-best-team-may-suddenly-have-an-open-seat/" target="_blank">
-    <div class='card'>
-      <img src="https://hips.hearstapps.com/hmg-prod/images/03fc0af0-9ff6-49dd-b8c0-4ae70b7b93e1.jpeg?crop=1xw:0.75xh;0xw,0.25xh&amp;resize=1200:*" alt="NASCAR’s Best Team May Suddenly Have an Open Seat">
-      <div class='card-content'>
-        <span class='badge'>ROADANDTRACK</span>
-        <h3>NASCAR’s Best Team May Suddenly Have an Open Seat</h3>
-        <p>Alex Bowman is retiring at the end of the 2027 season, opening an opportunity at 15-time championship-winner Hendrick Motorsports.</p>
-        <small>Read on roadandtrack.com</small>
       </div>
     </div>
   </a>
@@ -423,6 +475,7 @@ footer{
         <span class='badge'>THEDRIVE</span>
         <h3>Leo Leclerc Caught Peeing on Red Bull’s Garage Is Peak F1 Shenanigans</h3>
         <p>Do you think that photo ended up in Max Verstappen&#x27;s inbox? Probably so. The post Leo Leclerc Caught Peeing on Red Bull’s Garage Is Peak F1 Shenani...</p>
+        <div class='card-tension'><b>Tension:</b> Performance culture thrives on track and in culture while consumers tighten budgets—passion persists amid economic strain.</div>
         <small>Read on thedrive.com</small>
       </div>
     </div>
@@ -432,7 +485,7 @@ footer{
 <!-- Performance Builds Section -->
 <div class='sec'>
   <h2>Performance Builds</h2>
-  <small><b>Built for Power</b></small>
+  <small><b>Built Against the Odds</b></small>
 </div>
 
 <div class='grid'>
@@ -443,6 +496,7 @@ footer{
         <span class='badge'>CARANDDRIVER</span>
         <h3>Ford Recalls 565K Bronco, Bronco Raptor SUVs over Potential Engine Fires</h3>
         <p>A problem with the engine compartment wiring harness could lead to a short circuit, creating a fire in the engine bay.</p>
+        <div class='card-tension'><b>Tension:</b> Performance culture thrives on track and in culture while consumers tighten budgets—passion persists amid economic strain.</div>
         <small>Read on caranddriver.com</small>
       </div>
     </div>
@@ -454,7 +508,44 @@ footer{
         <span class='badge'>THEDRIVE</span>
         <h3>Aston Martin F1 Rolls Out ‘Significant’ 16-Part Aero Upgrade for This Weekend...</h3>
         <p>While the upgrades are quite promising on paper and in simulations, the AMR26 of Lance Stroll had to retire from FP1 with a broken suspension. The ...</p>
+        <div class='card-tension'><b>Tension:</b> Performance culture thrives on track and in culture while consumers tighten budgets—passion persists amid economic strain.</div>
         <small>Read on thedrive.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.thedrive.com/news/bad-door-handles-are-trapping-people-in-cars-the-feds-are-finally-stepping-in" target="_blank">
+    <div class='card'>
+      <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GettyImages-2189374777.jpg?quality=85&amp;amp;w=2048" alt="Bad Door Handles Are Trapping People in Cars. The Feds Are Finally Stepping in">
+      <div class='card-content'>
+        <span class='badge'>THEDRIVE</span>
+        <h3>Bad Door Handles Are Trapping People in Cars. The Feds Are Finally Stepping in</h3>
+        <p>The National Highway Traffic Safety Administration aims to &quot;mandate a robust and obvious door egress system in all motor vehicles.&quot; The post Bad Do...</p>
+        <div class='card-tension'><b>Tension:</b> Performance culture thrives on track and in culture while consumers tighten budgets—passion persists amid economic strain.</div>
+        <small>Read on thedrive.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.thedrive.com/news/ford-recalls-over-half-a-million-broncos-for-engine-fire-risk-tds" target="_blank">
+    <div class='card'>
+      <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GettyImages-1233462832.jpg?quality=85&amp;amp;w=2048" alt="Ford Recalls Over Half a Million Broncos for Engine Fire Risk: TDS">
+      <div class='card-content'>
+        <span class='badge'>THEDRIVE</span>
+        <h3>Ford Recalls Over Half a Million Broncos for Engine Fire Risk: TDS</h3>
+        <p>Also, Honda is pausing production of its manual sport sedans and a few hundred Jeeps are being recalled for thin wheels. The post Ford Recalls Over...</p>
+        <div class='card-tension'><b>Tension:</b> Performance culture thrives on track and in culture while consumers tighten budgets—passion persists amid economic strain.</div>
+        <small>Read on thedrive.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.theautopian.com/120-years-ago-these-were-the-cars-that-tried-to-cross-two-continents/" target="_blank">
+    <div class='card'>
+      <img src="https://images-stag.jazelc.com/uploads/theautopian-m2en/Race_to_the_Future_TS3.png" alt="120 Years Ago, These Wild Men Tried To Cross The Globe In Early Automobiles With Less Than 50 Horsepower">
+      <div class='card-content'>
+        <span class='badge'>THEAUTOPIAN</span>
+        <h3>120 Years Ago, These Wild Men Tried To Cross The Globe In Early Automobiles W...</h3>
+        <p>In January 1907 Le Matin, a Parisian newspaper, threw down a gauntlet to the world. What they proposed was an automobile race across two continents...</p>
+        <div class='card-tension'><b>Tension:</b> Performance culture thrives on track and in culture while consumers tighten budgets—passion persists amid economic strain.</div>
+        <small>Read on theautopian.com</small>
       </div>
     </div>
   </a>
@@ -463,17 +554,18 @@ footer{
 <!-- Suppliers Section -->
 <div class='sec'>
   <h2>Suppliers</h2>
-  <small><b>Behind the Build</b></small>
+  <small><b>Behind the Lines</b></small>
 </div>
 
 <div class='grid'>
-  <a href="https://www.autonews.com/manufacturing/suppliers/an-top-suppliers-live-talk-0724/" target="_blank">
+  <a href="https://www.autonews.com/data-center/manufacturing-data/production-downtime/an-north-america-assembly-plant-downtime-072726/" target="_blank">
     <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/MOB5W7BQNBACNPZTU3U75S7GGM.png?auth=b0c9582ab207e7d292c2df4bf4aeb860e2ccf316a0584280919a076383b6c35b&amp;width=1200#.png" alt="Live talk at 12:30 p.m. July 29: Top suppliers and the changing landscape">
+      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&amp;amp;auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&amp;amp;width=3648&amp;amp;height=2052" alt="North America production downtime – 07/27/26">
       <div class='card-content'>
         <span class='badge'>AUTONEWS</span>
-        <h3>Live talk at 12:30 p.m. July 29: Top suppliers and the changing landscape</h3>
-        <p>The discussion will be livestreamed on the Automotive News LinkedIn and YouTube pages.</p>
+        <h3>North America production downtime – 07/27/26</h3>
+        <p>North America car and truck assembly plant downtime for the current week</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
         <small>Read on autonews.com</small>
       </div>
     </div>
@@ -483,10 +575,46 @@ footer{
 <!-- Dealer News Section -->
 <div class='sec'>
   <h2>Dealer News</h2>
-  <small><b>At the Dealership</b></small>
+  <small><b>At the Point of Sale</b></small>
 </div>
 
 <div class='grid'>
+  <a href="https://www.autonews.com/retail/an-penske-mitsui-private-shareholders-0724/" target="_blank">
+    <div class='card'>
+      <img src="https://www.autonews.com/resizer/v2/AEZ4XZVL4VF3XMXIZSIVES2RUM.jpg?auth=0140ccfb2b1b7f0236a29a91ba57977f483c0505f9071767aaf2774ef29a59a9#.jpg" alt="Why minority shareholder opinion matters in bid to take Penske Automotive private">
+      <div class='card-content'>
+        <span class='badge'>AUTONEWS</span>
+        <h3>Why minority shareholder opinion matters in bid to take Penske Automotive pri...</h3>
+        <p>Penske Corp. owns the majority of Penske Automotive Group Inc. shares, but it&#x27;s likely to listen to investors who own the 28 percent of stock Pensk...</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
+        <small>Read on autonews.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.autonews.com/retail/an-penske-mitsui-private-public-dealers-0724/" target="_blank">
+    <div class='card'>
+      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&amp;width=1200#.jpg" alt="Why other public dealership groups are unlikely to follow if Penske Automotive goes private">
+      <div class='card-content'>
+        <span class='badge'>AUTONEWS</span>
+        <h3>Why other public dealership groups are unlikely to follow if Penske Automotiv...</h3>
+        <p>Penske Corp. and Mitsui&#x27;s $3.8 billion bid to take Penske Automotive private is unlikely to spark similar moves among the five other major public f...</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
+        <small>Read on autonews.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.wardsauto.com/news/penske-and-mitsui-seek-to-take-penske-auto-private-in-38b-deal/826024/" target="_blank">
+    <div class='card'>
+      <img src="https://imgproxy.divecdn.com/jWhcd8f-pphdtAy9nzx7cXfFYK8SqtjQuevbSKJQx_M/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9BbmdsZWQtRWxldmF0aW9uLVZpZXdfdE1EQjVPSC5qcGc=.webp" alt="Penske and Mitsui seek to take Penske Auto private in $3.8B deal">
+      <div class='card-content'>
+        <span class='badge'>WARDSAUTO</span>
+        <h3>Penske and Mitsui seek to take Penske Auto private in $3.8B deal</h3>
+        <p>Two current owners of global retailer Penske Automotive Group are offering $210 a share, subject to shareholder and regulatory approval.</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
+        <small>Read on wardsauto.com</small>
+      </div>
+    </div>
+  </a>
   <a href="https://www.caranddriver.com/news/a73258248/subaru-getaway-production-delayed/" target="_blank">
     <div class='card'>
       <img src="https://hips.hearstapps.com/hmg-prod/images/ce88f837-8f55-406a-a575-f963025e0bcb.jpg?crop=1.00xw:0.753xh;0,0.165xh&amp;resize=1200:*" alt="Subaru Delays Its Most Powerful Model Yet, the 420-HP Getaway SUV">
@@ -494,6 +622,7 @@ footer{
         <span class='badge'>CARANDDRIVER</span>
         <h3>Subaru Delays Its Most Powerful Model Yet, the 420-HP Getaway SUV</h3>
         <p>The Getaway was supposed to arrive at dealerships in late 2026, but may not show up until 2027 as Subaru follows Toyota in delaying its three-row EV.</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
         <small>Read on caranddriver.com</small>
       </div>
     </div>
@@ -503,7 +632,7 @@ footer{
 <!-- Industry News Section -->
 <div class='sec'>
   <h2>Industry News</h2>
-  <small><b>Industry Pulse</b></small>
+  <small><b>Market Signals</b></small>
 </div>
 
 <div class='grid'>
@@ -514,7 +643,44 @@ footer{
         <span class='badge'>KBB</span>
         <h3>2027 Volvo EX60 Rated at 330 Miles of Range</h3>
         <p>The 2027 Volvo EX60 midsize SUV has an EPA-rated range of 330 miles.</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
         <small>Read on kbb.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.theautopian.com/we-need-to-discuss-the-lemon-situation-tales-from-the-slack/" target="_blank">
+    <div class='card'>
+      <img src="https://images-stag.jazelc.com/uploads/theautopian-m2en/Tales_From_The_Slack_Lemons_TS.jpg" alt="We Need To Discuss The Lemon Situation: Tales From The Slack">
+      <div class='card-content'>
+        <span class='badge'>THEAUTOPIAN</span>
+        <h3>We Need To Discuss The Lemon Situation: Tales From The Slack</h3>
+        <p>Oh, snap! You gotta be a Member to enjoy this sweet, sweet content. Why not join today? Click here, or on the graphic! The post We Need To Discuss ...</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
+        <small>Read on theautopian.com</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://electrek.co/2026/07/24/a-1-2-gw-solar-farm-is-rising-at-a-texas-coal-site-but-coal-is-staying/" target="_blank">
+    <div class='card'>
+      <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Twin-Oaks-Power-Station.jpg?resize=1200%2C628&amp;quality=82&amp;strip=all&amp;ssl=1" alt="A 1.2 GW solar farm is rising at a Texas coal site – but coal is staying">
+      <div class='card-content'>
+        <span class='badge'>ELECTREK</span>
+        <h3>A 1.2 GW solar farm is rising at a Texas coal site – but coal is staying</h3>
+        <p>One of North America’s biggest coal-site solar projects is now under construction in Texas – but the coal plant next door isn’t going anywhere. Her...</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
+        <small>Read on electrek.co</small>
+      </div>
+    </div>
+  </a>
+  <a href="https://cleantechnica.com/2026/07/24/trump-administration-admits-retaliatory-grant-cancellations/" target="_blank">
+    <div class='card'>
+      <img src="https://cleantechnica.com/wp-content/uploads/2023/04/Judge-Gavel-Court-CleanTechnica-Watermark.png" alt="Trump Administration Admits Retaliatory Grant Cancellations">
+      <div class='card-content'>
+        <span class='badge'>CLEANTECHNICA</span>
+        <h3>Trump Administration Admits Retaliatory Grant Cancellations</h3>
+        <p>Washington, D.C. — Today, the New York Times uncovered recent court filings where the Trump administration admitted to targeting states that voted ...</p>
+        <div class='card-tension'><b>Tension:</b> Market realities often contradict headline announcements—dig deeper for the real story.</div>
+        <small>Read on cleantechnica.com</small>
       </div>
     </div>
   </a>
@@ -522,12 +688,12 @@ footer{
 
 <footer>
   <p>
-    <span class='stat'>37 Stories</span>
-    <span class='stat'>8 Publishers</span>
-    <span class='stat'>~37 min read</span>
+    <span class='stat'>65 Stories</span>
+    <span class='stat'>11 Publishers</span>
+    <span class='stat'>~48 min read</span>
   </p>
-  <p>Issue #001 | July 24, 2026</p>
-  <p style="color:#555;margin-top:20px">The Daily Traction curates the latest automotive industry news with original editorial analysis. All links open in new tabs.</p>
+  <p>Issue #002 | July 25, 2026</p>
+  <p style="color:#555;margin-top:20px">AutoIntel.News reveals market contradictions behind automotive headlines. We highlight tensions between announcements and reality, strategy and execution, OEM plans and buyer behavior. All links open in new tabs.</p>
 </footer>
 
 </div>
