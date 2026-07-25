@@ -330,19 +330,7 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
 </div>
 
 <div class='grid'>
-  <a href="https://www.autonews.com/data-center/sales-data/an-estimated-europe-registrations-country-june-2026/" target="_blank">
-    <div class='card'>
-      <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&width=3648&height=2052" alt="Estimated Europe registrations by country, June &amp; YTD 2026">
-      <div class='card-content'>
-        <span class='badge'>AUTONEWS</span>
-        <h3>Estimated Europe registrations by country, June &amp; YTD 2026</h3>
-        <p>Unit registrations of passenger vehicles listed alphabetically by country for the current and previous year periods</p>
-        <div class='card-tension'><b>Tension:</b> Market data reveals structural shifts: what OEMs announce rarely aligns with what buyers actually purchase.</div>
-        <small>Read on autonews.com</small>
-      </div>
-    </div>
-  </a>
-  <a href="https://www.autonews.com/data-center/sales-data/an-estimated-europe-registrations-make-june-2026/" target="_blank">
+   <a href="https://www.autonews.com/data-center/sales-data/an-estimated-europe-registrations-make-june-2026/" target="_blank">
     <div class='card'>
       <img src="https://www.autonews.com/resizer/v2/TR2DA323XVAMFMMPAVKPO2ULS4.jpg?focal=2593%2C960&auth=10ebe786ad39816053b023bbae7807c94f0375a19b99bfde436449d27be01820&width=3648&height=2052" alt="Estimated Europe registrations by make, June &amp; YTD 2026">
       <div class='card-content'>
