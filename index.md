@@ -230,6 +230,7 @@ footer p{
   .stat{display:block;margin:10px 0}
 }
 </style>
+<meta name="description" content="AutoIntel.News delivers the latest automotive industry news, EV news, AI in automotive, autonomous vehicle updates, connected car technology, OEM and supplier insights, electric vehicle trends, mobility innovation, automotive business intelligence, car manufacturing news, transportation technology, and daily breaking automotive headlines for industry professionals and enthusiasts.">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFL6J09QZV"></script>
 <script>
