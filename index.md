@@ -277,7 +277,8 @@ footer p{
   </div>
 </div>
 
-<!-- Sections will be populated here -->
+<!-- Sections will be populated here. Each <div class="sec"> must include an id="{slug}" -->
+<!-- matching the href="#{slug}" used in <a href="#oem-spotlight">OEM Spotlight</a> &nbsp;|&nbsp; <a href="#ev-technology">EV & Technology</a> &nbsp;|&nbsp; <a href="#market-intelligence">Market Intelligence</a> &nbsp;|&nbsp; <a href="#safety-dealer-news">Safety & Dealer News</a> &nbsp;|&nbsp; <a href="#motorsports-car-culture">Motorsports & Car Culture</a> &nbsp;|&nbsp; <a href="#aftermarket-restoration">Aftermarket & Restoration</a> above (e.g. id="oem-spotlight"). -->
 <div class="sec" id="oem-spotlight"><h2>OEM Spotlight</h2><small>6 stories</small></div>
 
 <div class="grid">
@@ -536,18 +537,18 @@ footer p{
 <small>Kelley Blue Book &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.caranddriver.com/news/a73274431/ford-bronco-desert-rising-details/" target="_blank" rel="noopener">
-<img src="https://hips.hearstapps.com/hmg-prod/images/235b86a1-b527-450b-93fc-3b5db3ccfa52.jpg?crop=0.912xw:0.683xh;0.0529xw,0.204xh&resize=1200:*" alt="This Pink Ford Bronco Is a Bold Tribute to Utah's Great Salt Lake" loading="lazy">
+<div class="card"><a href="https://www.kbb.com/car-advice/top-10-car-care-tips/" target="_blank" rel="noopener">
+<img src="https://www.kbb.com/asset/677fc664-d9e3-4d43-aee0-3c4c6bf44997/OG/DIY-Car-Care.jpg" alt="Top 10 Car Care Tips" loading="lazy">
 <div class="card-content">
-<span class="badge">CAR AND DRIVER</span>
-<h3>This Pink Ford Bronco Is a Bold Tribute to Utah's Great Salt Lake</h3>
-<p>Ford's Custom Garage program has added a Desert Rising trim package for the Bronco, finished in magenta-and-black two-tone details with white wheels and optional pink sand dune graphics. Available on Outer Banks models in four base colors, the package adds $13,695 to the Bronco's price. It's the first in what Ford says will be a longer series of themed customization drops, a strategy aimed at generating social media attention and repeat interest from buyers who already own a Bronco but want a reason to trade up or add on.</p>
-<div class="card-tension"><b>The Tension:</b> A five-figure cosmetic package aimed squarely at repeat buyers shows how much margin automakers now expect to extract after the base sale, not from it.</div>
-<small>Car and Driver &middot; Jul 27, 2026</small>
+<span class="badge">KELLEY BLUE BOOK</span>
+<h3>Top 10 Car Care Tips</h3>
+<p>Kelley Blue Book lays out ten routine maintenance habits, from oil changes to tire pressure checks, that owners can do themselves or should stay on top of with a mechanic to avoid costly repairs down the line. The piece splits tasks into DIY-friendly jobs requiring little more than basic tools and a tire gauge, versus work that needs a shop's attention. For dealers and service departments, content like this functions as a quiet pipeline into the service bay: owners who follow the DIY guidance are also the ones most likely to notice a problem early and book it before it becomes a bigger, pricier repair.</p>
+<div class="card-tension"><b>The Tension:</b> The tips positioned as saving owners money by doing it themselves are also what funnels them into the service bay the moment something's beyond a screwdriver and a tire gauge.</div>
+<small>Kelley Blue Book &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.hagerty.com/media/hagerty-drivers-club/original-owner-71-malibu-family-car-to-12-second-hot-rod/" target="_blank" rel="noopener">
-<img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/1971-chevrolet-malibu-family-hot-rod.jpg" alt="Original Owner: '71 Malibu Went From Family Car to 12-Second Hot Rod in 40 Years" loading="lazy">
+<div class="card"><a href="https://www.hagerty.com/media/car-profiles/original-owner-71-malibu-went-from-family-car-to-12-second-hotrod-in-40-years/" target="_blank" rel="noopener">
+<img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/Original-Owner-Hawkins-Chevelle-on-drag-strip-lede.jpg" alt="Original Owner: '71 Malibu Went From Family Car to 12-Second Hot Rod in 40 Years" loading="lazy">
 <div class="card-content">
 <span class="badge">HAGERTY</span>
 <h3>Original Owner: '71 Malibu Went From Family Car to 12-Second Hot Rod in 40 Years</h3>
