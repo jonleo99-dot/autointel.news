@@ -260,6 +260,8 @@ footer p{
   <span class='stat'>~12 min read</span>
 </div>
 
+<div class='stats-bar' style='border-bottom:none;padding-top:0;font-size:13px'><span style='color:#888'>Jump to: </span><a href="#oem-spotlight">OEM Spotlight</a> &nbsp;|&nbsp; <a href="#ev-technology">EV & Technology</a> &nbsp;|&nbsp; <a href="#market-intelligence">Market Intelligence</a> &nbsp;|&nbsp; <a href="#safety-dealer-news">Safety & Dealer News</a> &nbsp;|&nbsp; <a href="#motorsports-car-culture">Motorsports & Car Culture</a> &nbsp;|&nbsp; <a href="#aftermarket-restoration">Aftermarket & Restoration</a></div>
+
 <div class='wrap'>
 
 <p><b>Today's Drive:</b> VW Group's plan to standardize parts across its brands runs headfirst into an EV market that's simultaneously consolidating on value (BYD's 1,000km flagship) and fragmenting on differentiation (BMW's electric convertible bet). Layer in two major engine-fire recalls, a federal push to regulate door handles, and fresh data showing premium brands losing ground to tech-forward challengers, and today's throughline is clear: efficiency and differentiation are pulling in opposite directions across the industry, and OEMs are being forced to pick a side.</p>
@@ -276,7 +278,7 @@ footer p{
 </div>
 
 <!-- Sections will be populated here -->
-<div class="sec"><h2>OEM Spotlight</h2><small>6 stories</small></div>
+<div class="sec" id="oem-spotlight"><h2>OEM Spotlight</h2><small>6 stories</small></div>
 
 <div class="grid">
 <div class="card"><a href="https://electrek.co/2026/07/27/bmw-i4-electric-convertible-2028/" target="_blank" rel="noopener">
@@ -341,7 +343,7 @@ footer p{
 </a></div>
 </div>
 
-<div class="sec"><h2>EV & Technology</h2><small>4 stories</small></div>
+<div class="sec" id="ev-technology"><h2>EV & Technology</h2><small>4 stories</small></div>
 
 <div class="grid">
 <div class="card"><a href="https://electrek.co/2026/07/27/byd-reveals-new-flagship-ev-range-1008-km-video/" target="_blank" rel="noopener">
@@ -386,7 +388,7 @@ footer p{
 </a></div>
 </div>
 
-<div class="sec"><h2>Market Intelligence</h2><small>3 stories</small></div>
+<div class="sec" id="market-intelligence"><h2>Market Intelligence</h2><small>3 stories</small></div>
 
 <div class="grid">
 <div class="card"><a href="https://www.wardsauto.com/news/amid-an-affordability-pinch-premium-brands-risk-losing-luster-to-tech/826204/" target="_blank" rel="noopener">
@@ -421,7 +423,7 @@ footer p{
 </a></div>
 </div>
 
-<div class="sec"><h2>Safety & Dealer News</h2><small>3 stories</small></div>
+<div class="sec" id="safety-dealer-news"><h2>Safety & Dealer News</h2><small>3 stories</small></div>
 
 <div class="grid">
 <div class="card"><a href="https://www.kbb.com/car-news/bmw-expands-engine-fire-recall-to-over-318000-vehicles/" target="_blank" rel="noopener">
@@ -456,7 +458,7 @@ footer p{
 </a></div>
 </div>
 
-<div class="sec"><h2>Motorsports & Car Culture</h2><small>6 stories</small></div>
+<div class="sec" id="motorsports-car-culture"><h2>Motorsports & Car Culture</h2><small>6 stories</small></div>
 
 <div class="grid">
 <div class="card"><a href="https://www.motor1.com/news/802901/ferrari-f80-aperta-spy-photos/" target="_blank" rel="noopener">
@@ -521,7 +523,7 @@ footer p{
 </a></div>
 </div>
 
-<div class="sec"><h2>Aftermarket & Restoration</h2><small>4 stories</small></div>
+<div class="sec" id="aftermarket-restoration"><h2>Aftermarket & Restoration</h2><small>4 stories</small></div>
 
 <div class="grid">
 <div class="card"><a href="https://www.kbb.com/car-news/ford-custom-garage-wants-to-recreate-nike-shoe-drop-hype/" target="_blank" rel="noopener">
