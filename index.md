@@ -1,3 +1,7 @@
+You ran out of storage 7 hours ago … Not enough storage. You can't save to Drive, back up to Photos, and use Gmail. Share 100 GB of storage with your family members for $0.49 for 3 months $1.99.
+1
+100%
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset='utf-8'>
@@ -208,6 +212,65 @@ header p{
   color:#666;
   border-top:1px solid #2a2a2a
 }
+.toc-filter-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:12px 20px;
+  padding:14px 20px;
+  border-bottom:1px solid #2a2a2a;
+  background:#0f0f10;
+  font-size:13px
+}
+.toc-links{
+  color:#ccc;
+  line-height:1.8
+}
+.toc-links a{
+  margin:0 2px
+}
+.filter-bar{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px
+}
+.filter-label{
+  color:#888;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  margin-right:10px
+}
+.filter-select{
+  background:#1b1b1b;
+  border:1px solid #2a2a2a;
+  color:#eee;
+  padding:8px 32px 8px 14px;
+  border-radius:8px;
+  font-size:13px;
+  font-family:Arial,sans-serif;
+  cursor:pointer;
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M0 0l5 6 5-6z' fill='%23f60'/></svg>");
+  background-repeat:no-repeat;
+  background-position:right 12px center
+}
+.filter-select:hover{
+  border-color:#f60
+}
+.filter-select:focus{
+  outline:none;
+  border-color:#f60
+}
+.sec-group.is-hidden,
+.hero.is-hidden,
+.card.is-hidden{
+  display:none
+}
 a{
   text-decoration:none;
   color:inherit
@@ -235,6 +298,7 @@ footer p{
   .hero-content{padding:20px}
   .grid{grid-template-columns:1fr}
   .stat{display:block;margin:10px 0}
+  .toc-filter-row{flex-direction:column;align-items:flex-start}
 }
 </style>
 <!-- Google tag (gtag.js) -->
@@ -260,14 +324,41 @@ footer p{
   <span class='stat'>~12 min read</span>
 </div>
 
-<div class='stats-bar' style='border-bottom:none;padding-top:0;font-size:13px'><span style='color:#888'>Jump to: </span><a href="#oem-spotlight">OEM Spotlight</a> &nbsp;|&nbsp; <a href="#ev-technology">EV & Technology</a> &nbsp;|&nbsp; <a href="#market-intelligence">Market Intelligence</a> &nbsp;|&nbsp; <a href="#safety-dealer-news">Safety & Dealer News</a> &nbsp;|&nbsp; <a href="#motorsports-car-culture">Motorsports & Car Culture</a> &nbsp;|&nbsp; <a href="#aftermarket-restoration">Aftermarket & Restoration</a></div>
+<div class="toc-filter-row" id="tocFilterRow">
+  <div class="toc-links"><span style='color:#888'>Jump to: </span><a href="#oem-spotlight">OEM Spotlight</a> &nbsp;|&nbsp; <a href="#ev-technology">EV & Technology</a> &nbsp;|&nbsp; <a href="#market-intelligence">Market Intelligence</a> &nbsp;|&nbsp; <a href="#safety-dealer-news">Safety & Dealer News</a> &nbsp;|&nbsp; <a href="#motorsports-car-culture">Motorsports & Car Culture</a> &nbsp;|&nbsp; <a href="#aftermarket-restoration">Aftermarket & Restoration</a></div>
+  <div class="filter-bar" id="mfrFilterBar">
+    <label class="filter-label" for="mfrFilterSelect">Filter by manufacturer:</label>
+    <select class="filter-select" id="mfrFilterSelect">
+      <option value="__all__">All Manufacturers</option>
+      <option value="Audi">Audi</option>
+    <option value="BMW">BMW</option>
+    <option value="BYD">BYD</option>
+    <option value="Chevrolet">Chevrolet</option>
+    <option value="Ferrari">Ferrari</option>
+    <option value="Ford">Ford</option>
+    <option value="Honda">Honda</option>
+    <option value="International Harvester">International Harvester</option>
+    <option value="Lamborghini">Lamborghini</option>
+    <option value="Land Rover">Land Rover</option>
+    <option value="Lucid">Lucid</option>
+    <option value="McLaren">McLaren</option>
+    <option value="Nissan">Nissan</option>
+    <option value="Porsche">Porsche</option>
+    <option value="Rivian">Rivian</option>
+    <option value="Skoda">Skoda</option>
+    <option value="Tesla">Tesla</option>
+    <option value="Toyota">Toyota</option>
+    <option value="Volkswagen">Volkswagen</option>
+    </select>
+  </div>
+</div>
 
 <div class='wrap'>
 
 <p><b>Today's Drive:</b> VW Group's plan to standardize parts across its brands runs headfirst into an EV market that's simultaneously consolidating on value (BYD's 1,000km flagship) and fragmenting on differentiation (BMW's electric convertible bet). Layer in two major engine-fire recalls, a federal push to regulate door handles, and fresh data showing premium brands losing ground to tech-forward challengers, and today's throughline is clear: efficiency and differentiation are pulling in opposite directions across the industry, and OEMs are being forced to pick a side.</p>
 
 <!-- Hero Story -->
-<div class='hero'>
+<div class='hero' data-mfr='Volkswagen|Audi|Porsche|Skoda'>
   <img src='https://cdn.motor1.com/images/mgl/7ZE06q/s1/2026-vw-id.-polo.jpg' alt="Hero Story">
   <div class='hero-content'>
     <span class='badge'>FEATURE STORY</span>
@@ -277,12 +368,16 @@ footer p{
   </div>
 </div>
 
-<!-- Sections will be populated here. Each <div class="sec"> must include an id="{slug}" -->
-<!-- matching the href="#{slug}" used in <a href="#oem-spotlight">OEM Spotlight</a> &nbsp;|&nbsp; <a href="#ev-technology">EV & Technology</a> &nbsp;|&nbsp; <a href="#market-intelligence">Market Intelligence</a> &nbsp;|&nbsp; <a href="#safety-dealer-news">Safety & Dealer News</a> &nbsp;|&nbsp; <a href="#motorsports-car-culture">Motorsports & Car Culture</a> &nbsp;|&nbsp; <a href="#aftermarket-restoration">Aftermarket & Restoration</a> above (e.g. id="oem-spotlight"). -->
-<div class="sec" id="oem-spotlight"><h2>OEM Spotlight</h2><small>6 stories</small></div>
+<!-- Sections will be populated here. Each section's header+grid must be wrapped in a -->
+<!-- <div class="sec-group" id="{slug}"> matching the TOC anchor. Each <div class="card"> -->
+<!-- must carry data-mfr="Manufacturer1|Manufacturer2" (pipe-separated, empty string if none) -->
+<!-- so the manufacturer filter script below can show/hide it. -->
+<div class="sec-group" id="oem-spotlight">
+
+<div class="sec"><h2>OEM Spotlight</h2><small>6 stories</small></div>
 
 <div class="grid">
-<div class="card"><a href="https://electrek.co/2026/07/27/bmw-i4-electric-convertible-2028/" target="_blank" rel="noopener">
+<div class="card" data-mfr="BMW"><a href="https://electrek.co/2026/07/27/bmw-i4-electric-convertible-2028/" target="_blank" rel="noopener">
 <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/BMW-i4-convertible-concept.png?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="BMW Is Finally Making the Electric Convertible We've Been Waiting For" loading="lazy">
 <div class="card-content">
 <span class="badge">ELECTREK</span>
@@ -292,7 +387,7 @@ footer p{
 <small>Electrek &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.caranddriver.com/news/a73276744/land-rover-discovery-sport-discontinued/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Land Rover"><a href="https://www.caranddriver.com/news/a73276744/land-rover-discovery-sport-discontinued/" target="_blank" rel="noopener">
 <img src="https://hips.hearstapps.com/hmg-prod/images/2020-land-rover-discovery-sport-106-1558473867.jpg?crop=0.796xw:0.596xh;0.204xw,0.329xh&resize=1200:*" alt="Land Rover Discontinues the Discovery Sport After 11 Years" loading="lazy">
 <div class="card-content">
 <span class="badge">CAR AND DRIVER</span>
@@ -302,7 +397,7 @@ footer p{
 <small>Car and Driver &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.hagerty.com/media/news/toyota-adds-trailhunter-packages-to-2027-tundra-and-sequoia/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Toyota"><a href="https://www.hagerty.com/media/news/toyota-adds-trailhunter-packages-to-2027-tundra-and-sequoia/" target="_blank" rel="noopener">
 <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/2027_Toyota_Trailhunter_Family_-1.jpg" alt="Toyota Adds Trailhunter Packages to 2027 Tundra and Sequoia" loading="lazy">
 <div class="card-content">
 <span class="badge">HAGERTY</span>
@@ -312,7 +407,7 @@ footer p{
 <small>Hagerty &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.kbb.com/car-news/2027-nissan-z-design-updates-manual-transmission-nismo/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Nissan"><a href="https://www.kbb.com/car-news/2027-nissan-z-design-updates-manual-transmission-nismo/" target="_blank" rel="noopener">
 <img src="https://dam.coxautoinc.com/asset/0fa3082e-35c6-4931-b982-3f5173daceb6/OG/2027-nissan-z-performance-front-quarter-angle.jpg" alt="2027 Nissan Z Gets Design Updates and a New Manual NISMO" loading="lazy">
 <div class="card-content">
 <span class="badge">KELLEY BLUE BOOK</span>
@@ -322,7 +417,7 @@ footer p{
 <small>Kelley Blue Book &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.motor1.com/news/802861/honda-accord-suv-lifted-hybrid-hatchback-2029/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Honda"><a href="https://www.motor1.com/news/802861/honda-accord-suv-lifted-hybrid-hatchback-2029/" target="_blank" rel="noopener">
 <img src="https://cdn.motor1.com/images/mgl/ojJNPl/s1/honda-hybrid-sedan-prototype.jpg" alt="Honda Could Resurrect the High-Riding Accord Crosstour" loading="lazy">
 <div class="card-content">
 <span class="badge">MOTOR1</span>
@@ -332,7 +427,7 @@ footer p{
 <small>Motor1 &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.caranddriver.com/news/a73275280/lamborghini-urus-se-master-chief-117-halo/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Lamborghini"><a href="https://www.caranddriver.com/news/a73275280/lamborghini-urus-se-master-chief-117-halo/" target="_blank" rel="noopener">
 <img src="https://hips.hearstapps.com/hmg-prod/images/3e5814c4-963b-4be0-b6eb-c2948ff0f3a0.jpg?crop=1.00xw:0.775xh;0,0.104xh&resize=1200:*" alt="This Special Lamborghini Urus SE Celebrates the Newest Halo Game" loading="lazy">
 <div class="card-content">
 <span class="badge">CAR AND DRIVER</span>
@@ -344,10 +439,14 @@ footer p{
 </a></div>
 </div>
 
-<div class="sec" id="ev-technology"><h2>EV & Technology</h2><small>4 stories</small></div>
+</div>
+
+<div class="sec-group" id="ev-technology">
+
+<div class="sec"><h2>EV & Technology</h2><small>4 stories</small></div>
 
 <div class="grid">
-<div class="card"><a href="https://electrek.co/2026/07/27/byd-reveals-new-flagship-ev-range-1008-km-video/" target="_blank" rel="noopener">
+<div class="card" data-mfr="BYD"><a href="https://electrek.co/2026/07/27/byd-reveals-new-flagship-ev-range-1008-km-video/" target="_blank" rel="noopener">
 <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/BYD-Great-Han-flagship-EV-images.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="BYD's New Flagship EV Breaks Cover With Over 1,000 KM of Range" loading="lazy">
 <div class="card-content">
 <span class="badge">ELECTREK</span>
@@ -357,7 +456,7 @@ footer p{
 <small>Electrek &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://electrek.co/2026/07/27/forget-what-you-read-on-facebook-94-of-ev-drivers-wont-go-back-to-gas/" target="_blank" rel="noopener">
+<div class="card" data-mfr=""><a href="https://electrek.co/2026/07/27/forget-what-you-read-on-facebook-94-of-ev-drivers-wont-go-back-to-gas/" target="_blank" rel="noopener">
 <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/image.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Forget Facebook: 94% of EV Drivers Won't Go Back to Gas, Study Finds" loading="lazy">
 <div class="card-content">
 <span class="badge">ELECTREK</span>
@@ -367,7 +466,7 @@ footer p{
 <small>Electrek &middot; Jul 28, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://electrek.co/2026/07/27/now-bojangles-wants-ev-drivers-to-fast-charge-while-they-eat/" target="_blank" rel="noopener">
+<div class="card" data-mfr=""><a href="https://electrek.co/2026/07/27/now-bojangles-wants-ev-drivers-to-fast-charge-while-they-eat/" target="_blank" rel="noopener">
 <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/05/BOJ_EV_Select-3.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Now Bojangles Wants EV Drivers to Fast Charge While They Eat" loading="lazy">
 <div class="card-content">
 <span class="badge">ELECTREK</span>
@@ -377,7 +476,7 @@ footer p{
 <small>Electrek &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://electrek.co/2026/07/27/meta-is-backing-10-gas-plants-and-just-quit-a-global-renewables-pledge/" target="_blank" rel="noopener">
+<div class="card" data-mfr=""><a href="https://electrek.co/2026/07/27/meta-is-backing-10-gas-plants-and-just-quit-a-global-renewables-pledge/" target="_blank" rel="noopener">
 <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/MetaSite-1030x599-1.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Meta Backs 10 Gas Plants for Data Centers, Quits Renewables Pledge" loading="lazy">
 <div class="card-content">
 <span class="badge">ELECTREK</span>
@@ -389,10 +488,14 @@ footer p{
 </a></div>
 </div>
 
-<div class="sec" id="market-intelligence"><h2>Market Intelligence</h2><small>3 stories</small></div>
+</div>
+
+<div class="sec-group" id="market-intelligence">
+
+<div class="sec"><h2>Market Intelligence</h2><small>3 stories</small></div>
 
 <div class="grid">
-<div class="card"><a href="https://www.wardsauto.com/news/amid-an-affordability-pinch-premium-brands-risk-losing-luster-to-tech/826204/" target="_blank" rel="noopener">
+<div class="card" data-mfr=""><a href="https://www.wardsauto.com/news/amid-an-affordability-pinch-premium-brands-risk-losing-luster-to-tech/826204/" target="_blank" rel="noopener">
 <img src="https://imgproxy.divecdn.com/U1peBWX496jwsKnl3Ws8b3BlKoarpFxkC0tiOciI2U8/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TY3JlZW5zaG90XzIwMjYtMDEtMjlfYXRfOC41My4zNEFNLnBuZw==.webp" alt="Amid an Affordability Pinch, Premium Brands Risk Losing Luster to Tech" loading="lazy">
 <div class="card-content">
 <span class="badge">WARDSAUTO</span>
@@ -402,7 +505,7 @@ footer p{
 <small>WardsAuto &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.roadandtrack.com/news/a73273726/study-used-992-gen-porsche-911-price-drop-2025-vs-2026/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Porsche"><a href="https://www.roadandtrack.com/news/a73273726/study-used-992-gen-porsche-911-price-drop-2025-vs-2026/" target="_blank" rel="noopener">
 <img src="https://hips.hearstapps.com/hmg-prod/images/2025-porsche-911-t-5-673bbe57c4c64.jpg?crop=0.889xw:0.667xh;0xw,0.178xh&resize=1200:*" alt="Used 992-Gen Porsche 911s Dropped in Price This Year, Study Suggests" loading="lazy">
 <div class="card-content">
 <span class="badge">ROAD & TRACK</span>
@@ -412,7 +515,7 @@ footer p{
 <small>Road & Track &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.thedrive.com/news/20-of-your-uber-fare-actually-goes-to-insurance-alone-study" target="_blank" rel="noopener">
+<div class="card" data-mfr=""><a href="https://www.thedrive.com/news/20-of-your-uber-fare-actually-goes-to-insurance-alone-study" target="_blank" rel="noopener">
 <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GettyImages-1298831978.jpg?quality=85&w=2048" alt="20% of Your Uber Fare Actually Goes to Insurance Alone, Study Finds" loading="lazy">
 <div class="card-content">
 <span class="badge">THE DRIVE</span>
@@ -424,10 +527,14 @@ footer p{
 </a></div>
 </div>
 
-<div class="sec" id="safety-dealer-news"><h2>Safety & Dealer News</h2><small>3 stories</small></div>
+</div>
+
+<div class="sec-group" id="safety-dealer-news">
+
+<div class="sec"><h2>Safety & Dealer News</h2><small>3 stories</small></div>
 
 <div class="grid">
-<div class="card"><a href="https://www.kbb.com/car-news/bmw-expands-engine-fire-recall-to-over-318000-vehicles/" target="_blank" rel="noopener">
+<div class="card" data-mfr="BMW|Toyota"><a href="https://www.kbb.com/car-news/bmw-expands-engine-fire-recall-to-over-318000-vehicles/" target="_blank" rel="noopener">
 <img src="https://dam.coxautoinc.com/asset/f1ea28fe-03fa-406c-a44a-bc9dcba34e42/2024-bmw-2-series-left-3qtr-jpg.jpg" alt="BMW Expands Engine Fire Recall to Over 318,000 Vehicles" loading="lazy">
 <div class="card-content">
 <span class="badge">KELLEY BLUE BOOK</span>
@@ -437,7 +544,7 @@ footer p{
 <small>Kelley Blue Book &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.kbb.com/car-news/ford-recalls-more-than-half-a-million-broncos-over-potential-engine-fire/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Ford"><a href="https://www.kbb.com/car-news/ford-recalls-more-than-half-a-million-broncos-over-potential-engine-fire/" target="_blank" rel="noopener">
 <img src="https://dam.coxautoinc.com/asset/7ef52efa-6b62-41c1-939f-6977154fc774/2021-ford-bronco-2d-outer-banks-black-front-3qtr-jpg.jpg" alt="Ford Recalls More Than Half a Million Broncos Over Potential Engine Fire" loading="lazy">
 <div class="card-content">
 <span class="badge">KELLEY BLUE BOOK</span>
@@ -447,7 +554,7 @@ footer p{
 <small>Kelley Blue Book &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.motor1.com/news/802857/nhtsa-banning-bad-door-handles/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Tesla|Rivian"><a href="https://www.motor1.com/news/802857/nhtsa-banning-bad-door-handles/" target="_blank" rel="noopener">
 <img src="https://cdn.motor1.com/images/mgl/lEqBAM/s1/2026-nissan-leaf-this-is-it.jpg" alt="NHTSA May Mandate New Rules for Door Handle Safety" loading="lazy">
 <div class="card-content">
 <span class="badge">MOTOR1</span>
@@ -459,10 +566,14 @@ footer p{
 </a></div>
 </div>
 
-<div class="sec" id="motorsports-car-culture"><h2>Motorsports & Car Culture</h2><small>6 stories</small></div>
+</div>
+
+<div class="sec-group" id="motorsports-car-culture">
+
+<div class="sec"><h2>Motorsports & Car Culture</h2><small>6 stories</small></div>
 
 <div class="grid">
-<div class="card"><a href="https://www.motor1.com/news/802901/ferrari-f80-aperta-spy-photos/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Ferrari"><a href="https://www.motor1.com/news/802901/ferrari-f80-aperta-spy-photos/" target="_blank" rel="noopener">
 <img src="https://cdn.motor1.com/images/mgl/YAzyW0/s1/ferrari-f80-aperta-spy-photo.jpg" alt="Ferrari F80 Aperta Spied for the First Time" loading="lazy">
 <div class="card-content">
 <span class="badge">MOTOR1</span>
@@ -472,7 +583,7 @@ footer p{
 <small>Motor1 &middot; Jul 28, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.roadandtrack.com/news/a73274928/ferrari-shot-at-winning-hungary-grand-prix-slipped-away/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Ferrari"><a href="https://www.roadandtrack.com/news/a73274928/ferrari-shot-at-winning-hungary-grand-prix-slipped-away/" target="_blank" rel="noopener">
 <img src="https://hips.hearstapps.com/hmg-prod/images/c6fa7a1b-4f60-4240-a979-fdced5d5c24a.jpeg?crop=1xw:0.75xh;center,top&resize=1200:*" alt="Ferrari's Shot at Winning in Hungary Slipped Away on Race Day" loading="lazy">
 <div class="card-content">
 <span class="badge">ROAD & TRACK</span>
@@ -482,7 +593,7 @@ footer p{
 <small>Road & Track &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.thedrive.com/news/absolute-peak-mclaren-f1-gtr-expected-to-sell-for-at-least-35-million" target="_blank" rel="noopener">
+<div class="card" data-mfr="McLaren"><a href="https://www.thedrive.com/news/absolute-peak-mclaren-f1-gtr-expected-to-sell-for-at-least-35-million" target="_blank" rel="noopener">
 <img src="https://www.thedrive.com/wp-content/uploads/2026/07/Screenshot-2026-07-23-at-1.44.11-PM.jpeg?quality=85" alt="McLaren F1 GTR Expected to Sell for at Least $35 Million" loading="lazy">
 <div class="card-content">
 <span class="badge">THE DRIVE</span>
@@ -492,7 +603,7 @@ footer p{
 <small>The Drive &middot; Jul 26, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.hagerty.com/media/market-trends/hagerty-insider/10-oddball-cars-at-the-2026-monterey-auctions/" target="_blank" rel="noopener">
+<div class="card" data-mfr=""><a href="https://www.hagerty.com/media/market-trends/hagerty-insider/10-oddball-cars-at-the-2026-monterey-auctions/" target="_blank" rel="noopener">
 <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/MecumScimitar.png" alt="10 Oddball Cars at the 2026 Monterey Auctions" loading="lazy">
 <div class="card-content">
 <span class="badge">HAGERTY</span>
@@ -502,7 +613,7 @@ footer p{
 <small>Hagerty &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.hagerty.com/media/automotive-history/the-mk2-gti-proved-immortality-isnt-just-for-the-beetle/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Volkswagen"><a href="https://www.hagerty.com/media/automotive-history/the-mk2-gti-proved-immortality-isnt-just-for-the-beetle/" target="_blank" rel="noopener">
 <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/1985-vw-mk2-golf-gti.jpg" alt="The Mk2 GTI Proved Immortality Isn't Just for the Beetle" loading="lazy">
 <div class="card-content">
 <span class="badge">HAGERTY</span>
@@ -512,7 +623,7 @@ footer p{
 <small>Hagerty &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.roadandtrack.com/news/a73276968/shaq-lucid-air-coupe-copart-auction/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Lucid"><a href="https://www.roadandtrack.com/news/a73276968/shaq-lucid-air-coupe-copart-auction/" target="_blank" rel="noopener">
 <img src="https://hips.hearstapps.com/hmg-prod/images/546200c2-d727-4231-9a28-8806c805bff3.jpg?crop=1xw:0.667xh;0xw,0.081xh&resize=1200:*" alt="Shaq's Unique Lucid Air Coupe Is Up for Auction Right Now" loading="lazy">
 <div class="card-content">
 <span class="badge">ROAD & TRACK</span>
@@ -524,10 +635,14 @@ footer p{
 </a></div>
 </div>
 
-<div class="sec" id="aftermarket-restoration"><h2>Aftermarket & Restoration</h2><small>4 stories</small></div>
+</div>
+
+<div class="sec-group" id="aftermarket-restoration">
+
+<div class="sec"><h2>Aftermarket & Restoration</h2><small>4 stories</small></div>
 
 <div class="grid">
-<div class="card"><a href="https://www.kbb.com/car-news/ford-custom-garage-wants-to-recreate-nike-shoe-drop-hype/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Ford"><a href="https://www.kbb.com/car-news/ford-custom-garage-wants-to-recreate-nike-shoe-drop-hype/" target="_blank" rel="noopener">
 <img src="https://dam.coxautoinc.com/asset/0181653b-240f-4902-95df-62f695d172e3/OG/Ford-Custom-Garage-Bronco.jpg" alt="Ford Custom Garage Wants to Recreate 'Nike Shoe Drop' Hype" loading="lazy">
 <div class="card-content">
 <span class="badge">KELLEY BLUE BOOK</span>
@@ -537,7 +652,7 @@ footer p{
 <small>Kelley Blue Book &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.kbb.com/car-advice/top-10-car-care-tips/" target="_blank" rel="noopener">
+<div class="card" data-mfr=""><a href="https://www.kbb.com/car-advice/top-10-car-care-tips/" target="_blank" rel="noopener">
 <img src="https://www.kbb.com/asset/677fc664-d9e3-4d43-aee0-3c4c6bf44997/OG/DIY-Car-Care.jpg" alt="Top 10 Car Care Tips" loading="lazy">
 <div class="card-content">
 <span class="badge">KELLEY BLUE BOOK</span>
@@ -547,7 +662,7 @@ footer p{
 <small>Kelley Blue Book &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.hagerty.com/media/car-profiles/original-owner-71-malibu-went-from-family-car-to-12-second-hotrod-in-40-years/" target="_blank" rel="noopener">
+<div class="card" data-mfr="Chevrolet"><a href="https://www.hagerty.com/media/car-profiles/original-owner-71-malibu-went-from-family-car-to-12-second-hotrod-in-40-years/" target="_blank" rel="noopener">
 <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/Original-Owner-Hawkins-Chevelle-on-drag-strip-lede.jpg" alt="Original Owner: '71 Malibu Went From Family Car to 12-Second Hot Rod in 40 Years" loading="lazy">
 <div class="card-content">
 <span class="badge">HAGERTY</span>
@@ -557,7 +672,7 @@ footer p{
 <small>Hagerty &middot; Jul 27, 2026</small>
 </div>
 </a></div>
-<div class="card"><a href="https://www.thedrive.com/news/just-three-of-these-international-harvester-hit-and-miss-engines-exist-today" target="_blank" rel="noopener">
+<div class="card" data-mfr="International Harvester"><a href="https://www.thedrive.com/news/just-three-of-these-international-harvester-hit-and-miss-engines-exist-today" target="_blank" rel="noopener">
 <img src="https://www.thedrive.com/wp-content/uploads/2026/07/Screenshot-2026-07-24-at-1.43.27-PM.jpeg?quality=85" alt="Just Three of These International Harvester Hit-and-Miss Engines Exist Today" loading="lazy">
 <div class="card-content">
 <span class="badge">THE DRIVE</span>
@@ -569,6 +684,8 @@ footer p{
 </a></div>
 </div>
 
+</div>
+
 <footer>
   <p style="color:#555;margin-top:20px">AutoIntel.News reveals market contradictions behind automotive headlines. We highlight tensions between announcements and reality, strategy and execution, OEM plans and buyer behavior. All links open in new tabs.</p>
 </footer>
@@ -577,6 +694,29 @@ footer p{
 
 <script>
 document.getElementById('publishDate').textContent = new Date().toLocaleDateString('en-US', {weekday:'long',year:'numeric',month:'long',day:'numeric'}).toUpperCase();
+
+(function(){
+  var select = document.getElementById('mfrFilterSelect');
+  if (!select) return;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card, .hero'));
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.sec-group'));
+
+  function applyFilter(selected) {
+    cards.forEach(function(card){
+      var mfrs = (card.getAttribute('data-mfr') || '').split('|').filter(Boolean);
+      var match = selected === '__all__' || mfrs.indexOf(selected) !== -1;
+      card.classList.toggle('is-hidden', !match);
+    });
+    groups.forEach(function(group){
+      var visible = group.querySelectorAll('.card:not(.is-hidden)').length > 0;
+      group.classList.toggle('is-hidden', !visible);
+    });
+  }
+
+  select.addEventListener('change', function(){
+    applyFilter(select.value);
+  });
+})();
 </script>
 
 </body>
