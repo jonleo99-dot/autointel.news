@@ -183,8 +183,7 @@ header p{
   margin:0 0 10px 0;
   font-size:15px;
   line-height:1.4;
-  color:#fff;
-  flex-grow:1
+  color:#fff
 }
 .card-content p{
   margin:0 0 10px 0;
