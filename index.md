@@ -100,6 +100,9 @@ header p{
   line-height:1.3;
   color:#fff
 }
+.hero-content h2 a:hover{
+  text-decoration:underline
+}
 .hero-content p{
   margin:0 0 12px 0;
   font-size:16px;
@@ -353,7 +356,7 @@ footer p{
   <img src='https://www.autonews.com/resizer/v2/UUEQO6IGEZBPTISBJ6HZTEOIPU.jpg?auth=d9662f050add5cfe1e25ad3b06bac0015efd8ac420b2dd0c0ed6589c3afaaddd&width=1200#.jpg' alt="Hero Story">
   <div class='hero-content'>
     <span class='badge'>FEATURE STORY</span>
-    <h2>Japan's Earthquake Halts Five Automakers at Once, Exposing How Little Slack Is Left in the Supply Chain</h2>
+    <h2><a href='https://www.autonews.com/toyota/an-japan-earthquake-toyota-lexus-aisin-renesas-nissan-mitsubishi-honda-astemo-0731/' target='_blank' rel='noopener'>Japan's Earthquake Halts Five Automakers at Once, Exposing How Little Slack Is Left in the Supply Chain</a></h2>
     <p>A deadly earthquake in Japan has forced Toyota, Lexus, Mitsubishi, Nissan and Honda to suspend production simultaneously, as key suppliers Aisin and Renesas race to bring plants back online. Early estimates put the lost output above 10,000 vehicles, including U.S.-bound Toyota 4Runners, Nissan Rogues and Lexus models. The scale of the shutdown — five OEMs and two critical Tier 1 suppliers hit at once — shows how concentrated Japan's parts base still is a decade after "resilient supply chain" became an industry buzzphrase.</p>
     <div class='hero-tension'><b>The Tension:</b> Automakers spent years promising diversified, earthquake-proofed sourcing after 2011 and 2016. One event still took out five brands' output overnight — the redundancy was marketing, not inventory.</div>
   </div>
