@@ -8,8 +8,8 @@
 <meta property='og:description' content='Cutting the workforce that plans, engineers, and markets vehicles while accelerating the pace of new launches is a bet that leaner teams can still execute a bigger product cadence. For dealers, it raises a real question: will factory support, marketing spend, and engineering follow-through keep pace with the showroom traffic BMW is promising, or will franchise owners be left managing launch chaos with a thinner corporate bench behind them?'>
 <meta property='og:type' content='website'>
 <meta property='og:url' content='https://autointel.news'>
-<meta property='og:image' content='https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb'>
-<meta name='twitter:image' content='https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb'>
+<meta property='og:image' content='https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb.jpg?crop=0.685xw:0.514xh;0.315xw,0.197xh&resize=1200:*'>
+<meta name='twitter:image' content='https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb.jpg?crop=0.685xw:0.514xh;0.315xw,0.197xh&resize=1200:*'>
 <meta name='twitter:card' content='summary_large_image'>
 <meta name='twitter:title' content='AutoIntel.News — BMW Slashes 8,000 Jobs as Profits Fall 35% — Then Promises to Flood Showrooms With New Cars'>
 <meta name='twitter:description' content='Cutting the workforce that plans, engineers, and markets vehicles while accelerating the pace of new launches is a bet that leaner teams can still execute a bigger product cadence. For dealers, it rai'>
@@ -314,7 +314,7 @@ footer p{
   "@context": "https://schema.org",
   "@type": "NewsArticle",
   "headline": 'BMW Slashes 8,000 Jobs as Profits Fall 35% — Then Promises to Flood Showrooms With New Cars',
-  "image": ['https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb'],
+  "image": ['https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb.jpg?crop=0.685xw:0.514xh;0.315xw,0.197xh&resize=1200:*'],
   "datePublished": "2026-08-01",
   "publisher": {
     "@type": "Organization",
@@ -378,7 +378,7 @@ footer p{
 
 <!-- Hero Story -->
 <div class='hero' data-mfr='BMW'>
-  <img src='https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb' alt="Hero Story">
+  <img src='https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb.jpg?crop=0.685xw:0.514xh;0.315xw,0.197xh&resize=1200:*' alt="Hero Story">
   <div class='hero-content'>
     <span class='badge'>FEATURE STORY</span>
     <h2><a href='https://www.roadandtrack.com/news/a73307948/bmw-job-cuts-following-profit-drop-reevaluate-future-car-plans/' target='_blank' rel='noopener'>BMW Slashes 8,000 Jobs as Profits Fall 35% — Then Promises to Flood Showrooms With New Cars</a></h2>
@@ -399,7 +399,7 @@ footer p{
   <div class="grid">
     <div class="card" data-mfr="Audi">
       <a href="https://www.wardsauto.com/news/2027-audi-q9-and-sq9-unveiled-as-brands-biggest-suvs/826533/" target="_blank" rel="noopener">
-        <img src="https://imgproxy.divecdn.com/-bKGNvjjOwufpjdSbN--WWjD6pxHCAQEvOJoYKKLkKc/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9PcmlnaW5hbC0xNzIxNS1hMjYzODg2LWxhcmdlLmpwZw==.webp" alt="2027 Audi Q9 and SQ9 Unveiled as Brand's Biggest SUVs Yet">
+        <img src="https://imgproxy.divecdn.com/32jRO_EG5s-AnRLuz8QzabOqL3sdtrJ_AwXx_g-8HqE/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9PcmlnaW5hbC0xNzIxNS1hMjYzODg2LWxhcmdlLmpwZw==.webp" alt="2027 Audi Q9 and SQ9 Unveiled as Brand's Biggest SUVs Yet">
         <div class="card-content">
           <h3>2027 Audi Q9 and SQ9 Unveiled as Brand's Biggest SUVs Yet</h3>
           <p>Audi's new three-row flagship arrives later this year sized to go straight after the BMW X7, Cadillac Escalade, and Mercedes-Benz GLS, the segment where luxury brands make their fattest per-unit margins.</p>
@@ -410,7 +410,7 @@ footer p{
     </div>
     <div class="card" data-mfr="GM">
       <a href="https://www.wardsauto.com/news/gm-confirms-157m-investment-in-wentzville-assembly-plant/826402/" target="_blank" rel="noopener">
-        <img src="https://imgproxy.divecdn.com/rUSKwHDorsXzyYawL63nPUaG_aiUxPJIo7NF4Q-UnY4/g:ce/rs" alt="GM Confirms $157M Investment in Wentzville Assembly Plant">
+        <img src="https://imgproxy.divecdn.com/rUSKwHDorsXzyYawL63nPUaG_aiUxPJIo7NF4Q-UnY4/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HTVdlbnR6dmlsbGUwMV8yLmpwZw==.webp" alt="GM Confirms $157M Investment in Wentzville Assembly Plant">
         <div class="card-content">
           <h3>GM Confirms $157M Investment in Wentzville Assembly Plant</h3>
           <p>The investment funds paint-shop modernization and an estimated 28,000-square-foot expansion at the Missouri plant, signaling GM sees continued life in the vehicles built there rather than a shift to a newer site.</p>
@@ -443,7 +443,7 @@ footer p{
     </div>
     <div class="card" data-mfr="BMW">
       <a href="https://www.caranddriver.com/news/a73307305/bmw-x5-based-off-roader-canceled/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/2025-bmw-x5-xdrive40i-103-6824bd4510" alt="BMW's X5-Based G-Wagen Competitor Has Reportedly Been Scrapped">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/2025-bmw-x5-xdrive40i-103-6824bd4510093.jpg?crop=0.806xw:0.605xh;0.104xw,0.273xh&resize=1200:*" alt="BMW's X5-Based G-Wagen Competitor Has Reportedly Been Scrapped">
         <div class="card-content">
           <h3>BMW's X5-Based G-Wagen Competitor Has Reportedly Been Scrapped</h3>
           <p>The off-road-focused model, built on the same platform as the new X5 and aimed at the Mercedes G-Class, has reportedly been cut before reaching production.</p>
@@ -454,7 +454,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Mazda">
       <a href="https://www.roadandtrack.com/news/a73306836/mazda-mx-5-miata-electric-future/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/b8a1667-677c04735aa54.jpg" alt="Mazda Considering Electric MX-5 Miata, CEO Says, But Weight Remains an Issue">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/b8a1667-677c04735aa54.jpg?crop=0.48xw:0.438xh;0.091xw,0.352xh&resize=1200:*" alt="Mazda Considering Electric MX-5 Miata, CEO Says, But Weight Remains an Issue">
         <div class="card-content">
           <h3>Mazda Considering Electric MX-5 Miata, CEO Says, But Weight Remains an Issue</h3>
           <p>CEO Masahiro Moro said the Miata must eventually prepare for a battery-powered future, while acknowledging that battery weight cuts directly against the nameplate's defining lightweight character.</p>
@@ -474,7 +474,7 @@ footer p{
   <div class="grid">
     <div class="card" data-mfr="Stellantis">
       <a href="https://www.wardsauto.com/news/stellantis-q2-adjusted-operating-income-triples-yoy/826548/" target="_blank" rel="noopener">
-        <img src="https://imgproxy.divecdn.com/HstBftr6MRpQscTlq-TXiGcfjPArBL226hViBFqUGLA/g:ce/rs" alt="Stellantis' Q2 Adjusted Operating Income Triples Year-Over-Year">
+        <img src="https://imgproxy.divecdn.com/txKVQHfrg0dwJVEn8ee52ltr8hXMjikS1R50fMrVJQI/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9KZWVwR3JhbmRXYWdvbmVlckNvbmNlcHQuanBn.webp" alt="Stellantis' Q2 Adjusted Operating Income Triples Year-Over-Year">
         <div class="card-content">
           <h3>Stellantis' Q2 Adjusted Operating Income Triples Year-Over-Year</h3>
           <p>North American net revenues rose 32 percent and vehicle sales stayed brisk, evidence that the automaker's turnaround strategy of the past year is translating into real earnings.</p>
@@ -485,7 +485,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Ford">
       <a href="https://www.wardsauto.com/news/ford-raises-guidance-for-2026-as-f-series-production-recovers/826432/" target="_blank" rel="noopener">
-        <img src="https://imgproxy.divecdn.com/ndthLtNQLDbi4zfr1gqF8kv2TERn1mQMo2zrXd6bb4I/g:ce/rs" alt="Ford Raises Guidance for 2026 as F-Series Production Recovers">
+        <img src="https://imgproxy.divecdn.com/ndthLtNQLDbi4zfr1gqF8kv2TERn1mQMo2zrXd6bb4I/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9jcTVkYW1fQnBtU1ZIcS53ZWIuMTI4MC4xMjgwLmpwZWc=.webp" alt="Ford Raises Guidance for 2026 as F-Series Production Recovers">
         <div class="card-content">
           <h3>Ford Raises Guidance for 2026 as F-Series Production Recovers</h3>
           <p>High-margin off-road trims of trucks and SUVs drove a strong quarter even as Ford continued to absorb supplier disruptions and EV-related losses elsewhere in the business.</p>
@@ -496,7 +496,7 @@ footer p{
     </div>
     <div class="card" data-mfr="">
       <a href="https://www.kbb.com/car-news/study-small-cars-top-deadliest-car-list-suvs-least-deadly/" target="_blank" rel="noopener">
-        <img src="https://dam.coxautoinc.com/asset/936132f6-ddb8-4b38-a64a-5cea318d0554/OG/severe-" alt="Study: Small Cars Top Deadliest Car List; SUVs Least Deadly">
+        <img src="https://dam.coxautoinc.com/asset/936132f6-ddb8-4b38-a64a-5cea318d0554/OG/severe-accident-jpg.jpg" alt="Study: Small Cars Top Deadliest Car List; SUVs Least Deadly">
         <div class="card-content">
           <h3>Study: Small Cars Top Deadliest Car List; SUVs Least Deadly</h3>
           <p>A new IIHS study found small cars carry the highest driver death rate even as large vehicles cause the most fatalities overall, complicating the simple narrative that bigger always means safer.</p>
@@ -507,7 +507,7 @@ footer p{
     </div>
     <div class="card" data-mfr="">
       <a href="https://www.kbb.com/car-news/what-the-feds-latest-rate-decision-means-for-car-shoppers/" target="_blank" rel="noopener">
-        <img src="https://dam.coxautoinc.com/asset/e0b1eb0b-63ad-4ff0-8450-0e778fd11355/OG/car-loa" alt="What the Fed's Latest Rate Decision Means for Car Shoppers">
+        <img src="https://dam.coxautoinc.com/asset/e0b1eb0b-63ad-4ff0-8450-0e778fd11355/OG/car-loan-interest-rate-jpg.jpg" alt="What the Fed's Latest Rate Decision Means for Car Shoppers">
         <div class="card-content">
           <h3>What the Fed's Latest Rate Decision Means for Car Shoppers</h3>
           <p>The Federal Reserve held its benchmark rate steady despite uncertainty tied to the Iran war and continued inflationary pressure, leaving auto loan rates largely unchanged for now.</p>
@@ -518,7 +518,7 @@ footer p{
     </div>
     <div class="card" data-mfr="">
       <a href="https://www.thedrive.com/news/heavy-duty-pickups-lead-list-of-americas-most-deadly-vehicles" target="_blank" rel="noopener">
-        <img src="https://www.thedrive.com/wp-content/uploads/2026/06/RM025_003TF-e1785428744596.j" alt="Heavy-Duty Pickups Lead List of America's Deadliest Vehicles to Other Drivers">
+        <img src="https://www.thedrive.com/wp-content/uploads/2026/06/RM025_003TF-e1785428744596.jpg?quality=85&amp;w=2048" alt="Heavy-Duty Pickups Lead List of America's Deadliest Vehicles to Other Drivers">
         <div class="card-content">
           <h3>Heavy-Duty Pickups Lead List of America's Deadliest Vehicles to Other Drivers</h3>
           <p>IIHS data on which vehicles are likeliest to kill the other driver in a crash puts heavy-duty pickups at the top of the list, with most of the top 10 sharing size and mass in common.</p>
@@ -529,7 +529,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Tesla">
       <a href="https://electrek.co/2026/07/30/tesla-weighs-selling-china-business-spacex-merger/" target="_blank" rel="noopener">
-        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/03/Tesla-SpaceX-te" alt="Tesla Weighs Selling China Business to Clear Path for SpaceX Merger">
+        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/03/Tesla-SpaceX-terafab-e1774190764202.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Tesla Weighs Selling China Business to Clear Path for SpaceX Merger">
         <div class="card-content">
           <h3>Tesla Weighs Selling China Business to Clear Path for SpaceX Merger</h3>
           <p>A Wall Street Journal report says Tesla is exploring a sale of its China operations, including the Shanghai factory that builds more than half of all Tesla vehicles, to pave the way for a potential merger with SpaceX.</p>
@@ -549,7 +549,7 @@ footer p{
   <div class="grid">
     <div class="card" data-mfr="Rivian">
       <a href="https://www.motor1.com/news/803336/uber-rivian-r2-deal-could/" target="_blank" rel="noopener">
-        <img src="https://cdn.motor1.com/images/mgl/L3yzZl/s1/2027-rivian-r2-first-drive-review.jp" alt="Uber, Rivian, and the $1.25 Billion Robotaxi Deal">
+        <img src="https://cdn.motor1.com/images/mgl/L3yzZl/s1/2027-rivian-r2-first-drive-review.jpg" alt="Uber, Rivian, and the $1.25 Billion Robotaxi Deal">
         <div class="card-content">
           <h3>Uber, Rivian, and the $1.25 Billion Robotaxi Deal</h3>
           <p>Rivian's R2 is targeting Level 4 autonomy by 2028 as Uber eyes deploying as many as 50,000 robotaxis, effectively asking one retail SUV platform to double as a high-mileage ride-hailing workhorse.</p>
@@ -560,7 +560,7 @@ footer p{
     </div>
     <div class="card" data-mfr="GM">
       <a href="https://www.thedrive.com/news/gms-gimmicky-midgate-is-actually-one-of-the-best-reasons-to-buy-an-ev-truck" target="_blank" rel="noopener">
-        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GMC-Sierra-EV-MidGate-Pro-IM" alt="GM's Gimmicky Midgate Is Actually One of the Best Reasons to Buy an EV Truck">
+        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GMC-Sierra-EV-MidGate-Pro-IMG_1259.jpg?quality=85" alt="GM's Gimmicky Midgate Is Actually One of the Best Reasons to Buy an EV Truck">
         <div class="card-content">
           <h3>GM's Gimmicky Midgate Is Actually One of the Best Reasons to Buy an EV Truck</h3>
           <p>The bed-to-cab pass-through on the Sierra and Silverado EVs, often dismissed as a novelty, is proving to be genuinely useful cargo flexibility that differentiates GM's electric trucks at the point of sale.</p>
@@ -571,7 +571,7 @@ footer p{
     </div>
     <div class="card" data-mfr="">
       <a href="https://electrek.co/2026/07/30/pjm-grid-largest-battery-is-now-under-construction-in-ohio/" target="_blank" rel="noopener">
-        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Flint-Battery-s" alt="The PJM Grid's Largest Battery Is Now Under Construction in Ohio">
+        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Flint-Battery-storage-screenshot.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="The PJM Grid's Largest Battery Is Now Under Construction in Ohio">
         <div class="card-content">
           <h3>The PJM Grid's Largest Battery Is Now Under Construction in Ohio</h3>
           <p>A 1 GWh battery is being built outside Columbus as data-center and industrial demand rapidly push up electricity use on the PJM grid, the same grid many automakers' EV charging networks depend on.</p>
@@ -593,7 +593,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Kia">
       <a href="https://electrek.co/2026/07/30/kia-ev3-production-mexico-us/" target="_blank" rel="noopener">
-        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Kia-EV3-Mexico-" alt="Kia EV3 Goes on Sale Soon, With Production Starting in Mexico">
+        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Kia-EV3-Mexico-US-1.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Kia EV3 Goes on Sale Soon, With Production Starting in Mexico">
         <div class="card-content">
           <h3>Kia EV3 Goes on Sale Soon, With Production Starting in Mexico</h3>
           <p>Kia has opened pre-orders for the EV3 in Mexico, where the compact electric SUV will be built before shipping north to US dealers later this year.</p>
@@ -604,7 +604,7 @@ footer p{
     </div>
     <div class="card" data-mfr="">
       <a href="https://www.caranddriver.com/news/g29994375/future-electric-cars-trucks/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/3ebf6962-a995-4fe5-b0b9-39862a456e19" alt="Future Electric Vehicles: The EVs You'll Soon Be Able to Buy">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/3ebf6962-a995-4fe5-b0b9-39862a456e19.jpeg?crop=1.00xw:0.897xh;0,0.0455xh&resize=1200:*" alt="Future Electric Vehicles: The EVs You'll Soon Be Able to Buy">
         <div class="card-content">
           <h3>Future Electric Vehicles: The EVs You'll Soon Be Able to Buy</h3>
           <p>A running roundup of upcoming EVs across the industry, ranging from vehicles already confirmed for production to concepts that may never reach a dealer lot.</p>
@@ -624,7 +624,7 @@ footer p{
   <div class="grid">
     <div class="card" data-mfr="">
       <a href="https://www.roadandtrack.com/news/a73309340/f1-ceo-domenicali-says-george-lucas-told-him-most-new-fans-just-want-to-see-action/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/90ff93a9-3602-4f41-a6e7-9ad32aacfd16" alt="F1 CEO Domenicali Says George Lucas Told Him Most New Fans Just Want to See Action">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/90ff93a9-3602-4f41-a6e7-9ad32aacfd16.jpeg?crop=1xw:0.5xh;0xw,0.079xh&resize=1200:*" alt="F1 CEO Domenicali Says George Lucas Told Him Most New Fans Just Want to See Action">
         <div class="card-content">
           <h3>F1 CEO Domenicali Says George Lucas Told Him Most New Fans Just Want to See Action</h3>
           <p>F1's CEO says newer viewers care less about granular battery-management and strategy data on screen and more about straightforward on-track action, reshaping how the series packages its broadcasts.</p>
@@ -644,7 +644,7 @@ footer p{
   <div class="grid">
     <div class="card" data-mfr="Ram">
       <a href="https://www.hagerty.com/media/news/2027-ram-1500-rumble-bee-pricing-specs-pictures/" target="_blank" rel="noopener">
-        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/05/2027-Ram-1500-Rumble-" alt="2027 Ram 1500 Rumble Bee Priced in Muscle Car Territory">
+        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/05/2027-Ram-1500-Rumble-Bee-SRT-RM027_076FN-scaled.jpg" alt="2027 Ram 1500 Rumble Bee Priced in Muscle Car Territory">
         <div class="card-content">
           <h3>2027 Ram 1500 Rumble Bee Priced in Muscle Car Territory</h3>
           <p>Ram's revived street-oriented sport truck, offered across four V-8 variants built for on-road performance rather than off-road capability, is priced closer to a muscle car than a work truck.</p>
@@ -655,7 +655,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Ford">
       <a href="https://www.caranddriver.com/news/a73309686/2026-shelby-f-150-super-snake-sport-details/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/67277d9c-606c-46e1-afe7-a8d8f944919a" alt="Shelby's F-150 Super Snake Sport Packs 810 HP With a Two-Door Cab">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/67277d9c-606c-46e1-afe7-a8d8f944919a.png?crop=1.00xw:0.837xh;0,0.0508xh&resize=1200:*" alt="Shelby's F-150 Super Snake Sport Packs 810 HP With a Two-Door Cab">
         <div class="card-content">
           <h3>Shelby's F-150 Super Snake Sport Packs 810 HP With a Two-Door Cab</h3>
           <p>Shelby American is reviving the two-door Super Snake Sport on the F-150 platform, a lowered street truck built for a level of power well beyond what the factory truck offers.</p>
@@ -666,7 +666,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Toyota">
       <a href="https://www.caranddriver.com/news/a73297543/toyota-grmn-corolla-pricing/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/bed2aa1c-5511-432b-9387-14aadd56444a" alt="Toyota's Limited-Run GRMN Corolla Costs Nearly as Much as a BMW M2">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/bed2aa1c-5511-432b-9387-14aadd56444a.jpg?crop=1.00xw:0.751xh;0,0.140xh&resize=1200:*" alt="Toyota's Limited-Run GRMN Corolla Costs Nearly as Much as a BMW M2">
         <div class="card-content">
           <h3>Toyota's Limited-Run GRMN Corolla Costs Nearly as Much as a BMW M2</h3>
           <p>The most extreme, racing-derived version yet of the GR Corolla brings track-focused capability, but at a price that puts it in direct range of a premium German sport coupe.</p>
@@ -677,7 +677,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Genesis">
       <a href="https://www.roadandtrack.com/news/a73307800/2027-genesis-gv60-magma-price/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/6964e941-0693-461a-b5bd-80d195eee47c" alt="2027 Genesis GV60 Magma Launches New Performance Sub-Brand at $71,495">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/6964e941-0693-461a-b5bd-80d195eee47c.jpg?crop=0.677xw:0.507xh;0.178xw,0.331xh&resize=1200:*" alt="2027 Genesis GV60 Magma Launches New Performance Sub-Brand at $71,495">
         <div class="card-content">
           <h3>2027 Genesis GV60 Magma Launches New Performance Sub-Brand at $71,495</h3>
           <p>Genesis's new Magma performance sub-brand debuts on the GV60 at roughly $10,000 more than the related Hyundai Ioniq 5 N, staking out clear separation between the two Hyundai Motor Group brands.</p>
@@ -697,7 +697,7 @@ footer p{
   <div class="grid">
     <div class="card" data-mfr="Ford|GM">
       <a href="https://www.wardsauto.com/news/us-army-awards-prototype-contracts-to-ford-gm-bc-customs/826541/" target="_blank" rel="noopener">
-        <img src="https://imgproxy.divecdn.com/BUGkvOblfYtKkTH9mCAwl8Uk1coISt-fsCDUUi21ulA/g:nowe:" alt="US Army Awards Prototype Contracts to Ford, GM, and BC Customs">
+        <img src="https://imgproxy.divecdn.com/BUGkvOblfYtKkTH9mCAwl8Uk1coISt-fsCDUUi21ulA/g:nowe:0:184/c:1989:1123/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS85NTAxNDkwLWR2aWRzLUluZmFudHJ5X1NxdWFkX1ZlaGljbGVIZWF2eS1JU1YtSC5qcGc=.webp" alt="US Army Awards Prototype Contracts to Ford, GM, and BC Customs">
         <div class="card-content">
           <h3>US Army Awards Prototype Contracts to Ford, GM, and BC Customs</h3>
           <p>The automakers are competing to produce over 600 Heavy Infantry Squad Vehicles for the Army, a contract that aligns with both Ford's and GM's stated ambitions to grow their defense-sector businesses.</p>
@@ -708,7 +708,7 @@ footer p{
     </div>
     <div class="card" data-mfr="">
       <a href="https://cleantechnica.com/2026/07/31/germany-hydrogen-gas-system-rescue/" target="_blank" rel="noopener">
-        <img src="https://cleantechnica.com/wp-content/uploads/2026/07/a1754b0e-999e-4797-8a01-f0c" alt="Germany Is Rebuilding Its Failed Russian Gas Strategy With Hydrogen">
+        <img src="https://cleantechnica.com/wp-content/uploads/2026/07/a1754b0e-999e-4797-8a01-f0c7ab22f66f_1600x840.webp" alt="Germany Is Rebuilding Its Failed Russian Gas Strategy With Hydrogen">
         <div class="card-content">
           <h3>Germany Is Rebuilding Its Failed Russian Gas Strategy With Hydrogen</h3>
           <p>Germany's hydrogen freight subsidy program drew 526 applications seeking far more funding than the program's pool actually holds, numbers that look like strong demand until the underlying subsidy math is examined closely.</p>
@@ -719,7 +719,7 @@ footer p{
     </div>
     <div class="card" data-mfr="">
       <a href="https://cleantechnica.com/2026/07/30/energy-storage-factory-made-carbon-blocks-us-startup-antora/" target="_blank" rel="noopener">
-        <img src="https://cleantechnica.com/wp-content/uploads/2026/07/thermal-energy-storage-anto" alt="“Hot Blocks” Thermal Storage Startup Nails Down $550 Million More">
+        <img src="https://cleantechnica.com/wp-content/uploads/2026/07/thermal-energy-storage-antora.png" alt="“Hot Blocks” Thermal Storage Startup Nails Down $550 Million More">
         <div class="card-content">
           <h3>“Hot Blocks” Thermal Storage Startup Nails Down $550 Million More</h3>
           <p>Energy storage startup Antora Energy raised another $550 million to scale up factory-made carbon thermal-storage blocks, part of the industrial supply chain that increasingly overlaps with automotive manufacturing's own energy demands.</p>
@@ -750,7 +750,7 @@ footer p{
   <div class="grid">
     <div class="card" data-mfr="Jeep">
       <a href="https://www.kbb.com/reviews/our-3-favorite-things-about-the-2026-jeep-wrangler/" target="_blank" rel="noopener">
-        <img src="https://dam.coxautoinc.com/asset/9ae87ece-6a80-49e7-8562-69d63ff767c2/OG/2026_Je" alt="Our 3 Favorite Things About the 2026 Jeep Wrangler">
+        <img src="https://dam.coxautoinc.com/asset/9ae87ece-6a80-49e7-8562-69d63ff767c2/OG/2026_Jeep_Wrangler_willys_profile_driver_side.jpg" alt="Our 3 Favorite Things About the 2026 Jeep Wrangler">
         <div class="card-content">
           <h3>Our 3 Favorite Things About the 2026 Jeep Wrangler</h3>
           <p>KBB's editors break down what continues to make the Wrangler a perennial favorite, the kind of consumer-facing framing dealers can lean on directly in showroom conversations.</p>
@@ -761,7 +761,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Mazda">
       <a href="https://www.kbb.com/reviews/is-the-mazda-cx-30-a-good-value/" target="_blank" rel="noopener">
-        <img src="https://dam.coxautoinc.com/asset/e1d30a8e-84f1-418a-b2d8-7fbf012c1b34/OG/2026-Ma" alt="Is the 2026 Mazda CX-30 a Good Value?">
+        <img src="https://dam.coxautoinc.com/asset/e1d30a8e-84f1-418a-b2d8-7fbf012c1b34/OG/2026-Mazda-CX-30-exterior-front-3-qtr-passenger.jpg" alt="Is the 2026 Mazda CX-30 a Good Value?">
         <div class="card-content">
           <h3>Is the 2026 Mazda CX-30 a Good Value?</h3>
           <p>The sporty, stylish CX-30 is affordable on paper, but KBB's review digs into whether that low sticker price actually holds up as good value against subcompact SUV rivals.</p>
@@ -772,7 +772,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Nissan">
       <a href="https://www.kbb.com/reviews/our-3-favorite-things-about-the-nissan-altima/" target="_blank" rel="noopener">
-        <img src="https://dam.coxautoinc.com/asset/d2a7744b-7ac2-4954-8a96-39ca28d00c43/OG/2025-ni" alt="Our 3 Favorite Things About the 2026 Nissan Altima">
+        <img src="https://dam.coxautoinc.com/asset/d2a7744b-7ac2-4954-8a96-39ca28d00c43/OG/2025-nissan-altima-sr-front-left-3qtr-jpg.jpg" alt="Our 3 Favorite Things About the 2026 Nissan Altima">
         <div class="card-content">
           <h3>Our 3 Favorite Things About the 2026 Nissan Altima</h3>
           <p>A midsize-sedan favorites rundown arrives at the same time Nissan's own leadership is warning it must move faster on new product just to survive (see OEM Spotlight above).</p>
@@ -794,7 +794,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Mercedes-Benz">
       <a href="https://www.caranddriver.com/news/a73309968/mercedes-benz-310k-vehicle-rollaway-risk-recall/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/2024-mercedes-benz-glb-103-64130fe3c" alt="Mercedes-Benz Recalls 310K Cars That Could Potentially Roll Away">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/2024-mercedes-benz-glb-103-64130fe3c2d7b.jpg?crop=1.00xw:0.752xh;0,0.0913xh&resize=1200:*" alt="Mercedes-Benz Recalls 310K Cars That Could Potentially Roll Away">
         <div class="card-content">
           <h3>Mercedes-Benz Recalls 310K Cars That Could Potentially Roll Away</h3>
           <p>The recall spans seven models and covers vehicles from the 2020 through 2026 model years, a wide net that will put meaningful volume through dealer service departments.</p>
@@ -814,7 +814,7 @@ footer p{
   <div class="grid">
     <div class="card" data-mfr="Dodge">
       <a href="https://www.thedrive.com/news/the-new-dodge-charger-is-youtubes-favorite-car-to-build-or-destroy-right-now" target="_blank" rel="noopener">
-        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/Charger-YouTube-Hero-1.jpg" alt="The New Dodge Charger Is YouTube's Favorite Car to Build (or Destroy) Right Now">
+        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/Charger-YouTube-Hero-1.jpg?quality=85" alt="The New Dodge Charger Is YouTube's Favorite Car to Build (or Destroy) Right Now">
         <div class="card-content">
           <h3>The New Dodge Charger Is YouTube's Favorite Car to Build (or Destroy) Right Now</h3>
           <p>A cluster of YouTubers are simultaneously building and abusing new Dodge Chargers on camera right now, a pattern the story argues is no coincidence.</p>
@@ -825,7 +825,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Ferrari">
       <a href="https://www.thedrive.com/news/the-ferrari-luce-has-done-its-job" target="_blank" rel="noopener">
-        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/ferrari-luce-jerry-perez-1.j" alt="The Ferrari Luce Has Done Its Job">
+        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/ferrari-luce-jerry-perez-1.jpeg?quality=85" alt="The Ferrari Luce Has Done Its Job">
         <div class="card-content">
           <h3>The Ferrari Luce Has Done Its Job</h3>
           <p>Ferrari's Luce EV hit its full 2026 sales target in just two months, and the company raised its full-year revenue estimate on the strength of that demand.</p>
@@ -836,7 +836,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Tesla">
       <a href="https://www.roadandtrack.com/news/a73307100/youtube-whistlindiesel-tesla-cybertruck-111-mph-crash-ford-f-150/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/10a79dde-c9af-42e9-ab65-d6434af9fbb6" alt="Watch YouTuber WhistlinDiesel Finish Off His Cybertruck With a 111-MPH Crash Into an F-150">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/10a79dde-c9af-42e9-ab65-d6434af9fbb6.png?crop=0.512xw:0.917xh;0.235xw,0xh&resize=1200:*" alt="Watch YouTuber WhistlinDiesel Finish Off His Cybertruck With a 111-MPH Crash Into an F-150">
         <div class="card-content">
           <h3>Watch YouTuber WhistlinDiesel Finish Off His Cybertruck With a 111-MPH Crash Into an F-150</h3>
           <p>Months of off-roading, abuse, and repeated dealership visits during a long-term durability trial ended with a high-speed collision between a Cybertruck and an F-150.</p>
@@ -856,7 +856,7 @@ footer p{
   <div class="grid">
     <div class="card" data-mfr="">
       <a href="https://www.hagerty.com/media/hagerty-community/7-vehicles-wed-love-to-drag-out-of-the-woods-and-restore/" target="_blank" rel="noopener">
-        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/Woods-classic-car-aba" alt="7 Vehicles We'd Love to Drag Out of the Woods and Restore">
+        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/Woods-classic-car-abandoned-chad-nathan-IPrewM0P7_A-unsplash-e1785435592649.jpg" alt="7 Vehicles We'd Love to Drag Out of the Woods and Restore">
         <div class="card-content">
           <h3>7 Vehicles We'd Love to Drag Out of the Woods and Restore</h3>
           <p>Hagerty rounds up abandoned classics sitting at the edge of being lost for good, cars and trucks with just enough life left in them to be worth the restoration effort.</p>
@@ -867,7 +867,7 @@ footer p{
     </div>
     <div class="card" data-mfr="">
       <a href="https://www.hagerty.com/media/market-trends/hagerty-insider/hagerty-market-rating/monthly-market-report-june-2026/" target="_blank" rel="noopener">
-        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/VEAuction-16May-39.we" alt="Monthly Hagerty Market Report: June 2026">
+        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/VEAuction-16May-39.webp" alt="Monthly Hagerty Market Report: June 2026">
         <div class="card-content">
           <h3>Monthly Hagerty Market Report: June 2026</h3>
           <p>Hagerty's monthly roundup of collector-car auction activity, top sales, and market-rating trends gives dealers and collectors a data-backed read on where classic-car values are heading.</p>
@@ -909,7 +909,7 @@ footer p{
     </div>
     <div class="card" data-mfr="">
       <a href="https://electrek.co/2026/07/30/juiced-scrambler-testing-the-best-bang-for-your-buck-moto-style-e-bike/" target="_blank" rel="noopener">
-        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/juiced-scramble" alt="Juiced Scrambler: Testing the Best Bang-for-Your-Buck Moto-Style E-Bike">
+        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/juiced-scrambler-ebikes-header-bike-rack-1.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Juiced Scrambler: Testing the Best Bang-for-Your-Buck Moto-Style E-Bike">
         <div class="card-content">
           <h3>Juiced Scrambler: Testing the Best Bang-for-Your-Buck Moto-Style E-Bike</h3>
           <p>After collapsing in 2024, Juiced Bikes is back under new ownership, and its Scrambler moto-style e-bike is being tested as an aggressively priced entry in the legal, street-ready e-bike category.</p>
@@ -929,7 +929,7 @@ footer p{
   <div class="grid">
     <div class="card" data-mfr="">
       <a href="https://www.thedrive.com/news/flocks-ceo-admits-police-abuse-is-a-problem-then-defends-his-company" target="_blank" rel="noopener">
-        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/RTCC-copy.jpg" alt="Flock's CEO Admits Police Abuse 'Is a Problem.' Then Defends His Company">
+        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/RTCC-copy.jpg?quality=85" alt="Flock's CEO Admits Police Abuse 'Is a Problem.' Then Defends His Company">
         <div class="card-content">
           <h3>Flock's CEO Admits Police Abuse 'Is a Problem.' Then Defends His Company</h3>
           <p>Flock CEO Garrett Langley told The Drive that "any level of abuse is unacceptable" regarding how law enforcement uses the company's automated license-plate-reading network, but stopped short of outlining next steps.</p>
@@ -940,7 +940,7 @@ footer p{
     </div>
     <div class="card" data-mfr="">
       <a href="https://electrek.co/2026/07/30/a-new-zipcar-pilot-pairs-shared-evs-with-off-grid-solar-charging/" target="_blank" rel="noopener">
-        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Beam-Zipcar-Bos" alt="A New Zipcar Pilot Pairs Shared EVs With Off-Grid Solar Charging">
+        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Beam-Zipcar-Boston.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="A New Zipcar Pilot Pairs Shared EVs With Off-Grid Solar Charging">
         <div class="card-content">
           <h3>A New Zipcar Pilot Pairs Shared EVs With Off-Grid Solar Charging</h3>
           <p>Four Greater Boston communities now have off-grid solar EV chargers powering a Zipcar carsharing pilot aimed at bringing affordable shared mobility to areas that have historically lacked it.</p>
@@ -951,7 +951,7 @@ footer p{
     </div>
     <div class="card" data-mfr="Tesla">
       <a href="https://cleantechnica.com/2026/07/30/people-want-us-to-not-cover-elon-musks-politics-but-hes-using-his-wealth-power-from-tesla-to-influence-elections/" target="_blank" rel="noopener">
-        <img src="https://cleantechnica.com/wp-content/uploads/2025/12/Tesla-Cybertruck-unveiling-" alt="Tesla's Elon Musk Problem: When a CEO's Politics Become a Brand and Investor Risk">
+        <img src="https://cleantechnica.com/wp-content/uploads/2025/12/Tesla-Cybertruck-unveiling-event-truck-KYLE-Elon-Musk-CleanTechnica.jpg" alt="Tesla's Elon Musk Problem: When a CEO's Politics Become a Brand and Investor Risk">
         <div class="card-content">
           <h3>Tesla's Elon Musk Problem: When a CEO's Politics Become a Brand and Investor Risk</h3>
           <p>A CleanTechnica piece argues that Elon Musk's personal political spending, funded substantially by his Tesla-linked wealth, has become inseparable from coverage of the company itself and its investors' interests.</p>
