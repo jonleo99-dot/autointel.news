@@ -307,6 +307,22 @@ footer p{
   .stat{display:block;margin:10px 0}
   .toc-filter-row{flex-direction:column;align-items:flex-start}
 }
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity 0.6s ease, transform 0.6s ease
+}
+.reveal.is-visible{
+  opacity:1;
+  transform:translateY(0)
+}
+@media(prefers-reduced-motion:reduce){
+  .reveal{
+    opacity:1;
+    transform:none;
+    transition:none
+  }
+}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFL6J09QZV"></script>
@@ -344,9 +360,9 @@ footer p{
 </header>
 
 <div class='stats-bar'>
-  <span class='stat'>44 Stories</span>
-  <span class='stat'>9 Publishers</span>
-  <span class='stat'>~15 min read</span>
+  <span class='stat'><span class="stat-num" data-target="44">0</span> Stories</span>
+  <span class='stat'><span class="stat-num" data-target="9">0</span> Publishers</span>
+  <span class='stat'>~<span class="stat-num" data-target="15">0</span> min read</span>
 </div>
 
 <div class="toc-filter-row" id="tocFilterRow">
@@ -384,7 +400,7 @@ footer p{
 <p><b>Today's Drive:</b> BMW is the story tying today's issue together: 8,000 job cuts and a 35 percent profit drop on one hand, an aggressive new-model flood through 2027 on the other. Elsewhere, Stellantis and Ford both post strong Q2 numbers, Nissan warns its own survival depends on faster product cycles, and the robotaxi race keeps accelerating with Zoox's no-human-controls approval and Uber's $1.25 billion Rivian bet.</p>
 
 <!-- Hero Story -->
-<div class='hero' data-mfr='BMW'>
+<div class='hero reveal' data-mfr='BMW'>
   <img src='https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb.jpg?crop=0.685xw:0.514xh;0.315xw,0.197xh&resize=1200:*' alt="Hero Story">
   <div class='hero-content'>
     <span class='badge'>FEATURE STORY</span>
@@ -404,7 +420,7 @@ footer p{
     <small>6 stories</small>
   </div>
   <div class="grid">
-    <div class="card" data-mfr="Audi">
+    <div class="card reveal" data-mfr="Audi">
       <a href="https://www.wardsauto.com/news/2027-audi-q9-and-sq9-unveiled-as-brands-biggest-suvs/826533/" target="_blank" rel="noopener">
         <img src="https://imgproxy.divecdn.com/32jRO_EG5s-AnRLuz8QzabOqL3sdtrJ_AwXx_g-8HqE/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9PcmlnaW5hbC0xNzIxNS1hMjYzODg2LWxhcmdlLmpwZw==.webp" alt="2027 Audi Q9 and SQ9 Unveiled as Brand's Biggest SUVs Yet">
         <div class="card-content">
@@ -416,7 +432,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="GM">
+    <div class="card reveal" data-mfr="GM">
       <a href="https://www.wardsauto.com/news/gm-confirms-157m-investment-in-wentzville-assembly-plant/826402/" target="_blank" rel="noopener">
         <img src="https://imgproxy.divecdn.com/rUSKwHDorsXzyYawL63nPUaG_aiUxPJIo7NF4Q-UnY4/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HTVdlbnR6dmlsbGUwMV8yLmpwZw==.webp" alt="GM Confirms $157M Investment in Wentzville Assembly Plant">
         <div class="card-content">
@@ -428,7 +444,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Nissan">
+    <div class="card reveal" data-mfr="Nissan">
       <a href="https://www.motor1.com/news/803342/nissan-warns-not-survive-unless-faster-car-launches/" target="_blank" rel="noopener">
         <img src="https://cdn.motor1.com/images/mgl/KbgoPq/s1/2026-nissan-terrano-phev-concept.jpg" alt="Nissan Warns It Must Launch New Cars Faster Or 'We Won't Survive'">
         <div class="card-content">
@@ -440,7 +456,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="BMW">
+    <div class="card reveal" data-mfr="BMW">
       <a href="https://www.motor1.com/news/803329/bmw-product-roadmap-2027/" target="_blank" rel="noopener">
         <img src="https://cdn.motor1.com/images/mgl/eo7veE/s1/2027-bmw-x5-40.jpg" alt="BMW Will Flood the Market With New Cars Through 2027">
         <div class="card-content">
@@ -452,7 +468,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="BMW">
+    <div class="card reveal" data-mfr="BMW">
       <a href="https://www.caranddriver.com/news/a73307305/bmw-x5-based-off-roader-canceled/" target="_blank" rel="noopener">
         <img src="https://hips.hearstapps.com/hmg-prod/images/2025-bmw-x5-xdrive40i-103-6824bd4510093.jpg?crop=0.806xw:0.605xh;0.104xw,0.273xh&resize=1200:*" alt="BMW's X5-Based G-Wagen Competitor Has Reportedly Been Scrapped">
         <div class="card-content">
@@ -464,7 +480,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Mazda">
+    <div class="card reveal" data-mfr="Mazda">
       <a href="https://www.roadandtrack.com/news/a73306836/mazda-mx-5-miata-electric-future/" target="_blank" rel="noopener">
         <img src="https://hips.hearstapps.com/hmg-prod/images/b8a1667-677c04735aa54.jpg?crop=0.48xw:0.438xh;0.091xw,0.352xh&resize=1200:*" alt="Mazda Considering Electric MX-5 Miata, CEO Says, But Weight Remains an Issue">
         <div class="card-content">
@@ -485,7 +501,7 @@ footer p{
     <small>6 stories</small>
   </div>
   <div class="grid">
-    <div class="card" data-mfr="Stellantis">
+    <div class="card reveal" data-mfr="Stellantis">
       <a href="https://www.wardsauto.com/news/stellantis-q2-adjusted-operating-income-triples-yoy/826548/" target="_blank" rel="noopener">
         <img src="https://imgproxy.divecdn.com/txKVQHfrg0dwJVEn8ee52ltr8hXMjikS1R50fMrVJQI/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9KZWVwR3JhbmRXYWdvbmVlckNvbmNlcHQuanBn.webp" alt="Stellantis' Q2 Adjusted Operating Income Triples Year-Over-Year">
         <div class="card-content">
@@ -497,7 +513,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Ford">
+    <div class="card reveal" data-mfr="Ford">
       <a href="https://www.wardsauto.com/news/ford-raises-guidance-for-2026-as-f-series-production-recovers/826432/" target="_blank" rel="noopener">
         <img src="https://imgproxy.divecdn.com/ndthLtNQLDbi4zfr1gqF8kv2TERn1mQMo2zrXd6bb4I/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9jcTVkYW1fQnBtU1ZIcS53ZWIuMTI4MC4xMjgwLmpwZWc=.webp" alt="Ford Raises Guidance for 2026 as F-Series Production Recovers">
         <div class="card-content">
@@ -509,7 +525,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://www.kbb.com/car-news/study-small-cars-top-deadliest-car-list-suvs-least-deadly/" target="_blank" rel="noopener">
         <img src="https://dam.coxautoinc.com/asset/936132f6-ddb8-4b38-a64a-5cea318d0554/OG/severe-accident-jpg.jpg" alt="Study: Small Cars Top Deadliest Car List; SUVs Least Deadly">
         <div class="card-content">
@@ -521,7 +537,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://www.kbb.com/car-news/what-the-feds-latest-rate-decision-means-for-car-shoppers/" target="_blank" rel="noopener">
         <img src="https://dam.coxautoinc.com/asset/e0b1eb0b-63ad-4ff0-8450-0e778fd11355/OG/car-loan-interest-rate-jpg.jpg" alt="What the Fed's Latest Rate Decision Means for Car Shoppers">
         <div class="card-content">
@@ -533,7 +549,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://www.thedrive.com/news/heavy-duty-pickups-lead-list-of-americas-most-deadly-vehicles" target="_blank" rel="noopener">
         <img src="https://www.thedrive.com/wp-content/uploads/2026/06/RM025_003TF-e1785428744596.jpg?quality=85&amp;w=2048" alt="Heavy-Duty Pickups Lead List of America's Deadliest Vehicles to Other Drivers">
         <div class="card-content">
@@ -545,7 +561,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Tesla">
+    <div class="card reveal" data-mfr="Tesla">
       <a href="https://electrek.co/2026/07/30/tesla-weighs-selling-china-business-spacex-merger/" target="_blank" rel="noopener">
         <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/03/Tesla-SpaceX-terafab-e1774190764202.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Tesla Weighs Selling China Business to Clear Path for SpaceX Merger">
         <div class="card-content">
@@ -566,7 +582,7 @@ footer p{
     <small>6 stories</small>
   </div>
   <div class="grid">
-    <div class="card" data-mfr="Rivian">
+    <div class="card reveal" data-mfr="Rivian">
       <a href="https://www.motor1.com/news/803336/uber-rivian-r2-deal-could/" target="_blank" rel="noopener">
         <img src="https://cdn.motor1.com/images/mgl/L3yzZl/s1/2027-rivian-r2-first-drive-review.jpg" alt="Uber, Rivian, and the $1.25 Billion Robotaxi Deal">
         <div class="card-content">
@@ -578,7 +594,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="GM">
+    <div class="card reveal" data-mfr="GM">
       <a href="https://www.thedrive.com/news/gms-gimmicky-midgate-is-actually-one-of-the-best-reasons-to-buy-an-ev-truck" target="_blank" rel="noopener">
         <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GMC-Sierra-EV-MidGate-Pro-IMG_1259.jpg?quality=85" alt="GM's Gimmicky Midgate Is Actually One of the Best Reasons to Buy an EV Truck">
         <div class="card-content">
@@ -590,7 +606,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://electrek.co/2026/07/30/pjm-grid-largest-battery-is-now-under-construction-in-ohio/" target="_blank" rel="noopener">
         <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Flint-Battery-storage-screenshot.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="The PJM Grid's Largest Battery Is Now Under Construction in Ohio">
         <div class="card-content">
@@ -602,7 +618,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Zoox">
+    <div class="card reveal" data-mfr="Zoox">
       <a href="https://cleantechnica.com/2026/07/30/zoox-gets-first-us-paid-robotaxi-with-no-human-controls-approval/" target="_blank" rel="noopener">
         <img src="https://cleantechnica.com/wp-content/uploads/2026/06/New-Zoox-Robotaxi-0.jpeg" alt="Zoox Gets First US Approval for Paid Robotaxis With No Human Controls">
         <div class="card-content">
@@ -614,7 +630,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Kia">
+    <div class="card reveal" data-mfr="Kia">
       <a href="https://electrek.co/2026/07/30/kia-ev3-production-mexico-us/" target="_blank" rel="noopener">
         <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Kia-EV3-Mexico-US-1.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Kia EV3 Goes on Sale Soon, With Production Starting in Mexico">
         <div class="card-content">
@@ -626,7 +642,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://www.caranddriver.com/news/g29994375/future-electric-cars-trucks/" target="_blank" rel="noopener">
         <img src="https://hips.hearstapps.com/hmg-prod/images/3ebf6962-a995-4fe5-b0b9-39862a456e19.jpeg?crop=1.00xw:0.897xh;0,0.0455xh&resize=1200:*" alt="Future Electric Vehicles: The EVs You'll Soon Be Able to Buy">
         <div class="card-content">
@@ -647,7 +663,7 @@ footer p{
     <small>1 story</small>
   </div>
   <div class="grid">
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://www.roadandtrack.com/news/a73309340/f1-ceo-domenicali-says-george-lucas-told-him-most-new-fans-just-want-to-see-action/" target="_blank" rel="noopener">
         <img src="https://hips.hearstapps.com/hmg-prod/images/90ff93a9-3602-4f41-a6e7-9ad32aacfd16.jpeg?crop=1xw:0.5xh;0xw,0.079xh&resize=1200:*" alt="F1 CEO Domenicali Says George Lucas Told Him Most New Fans Just Want to See Action">
         <div class="card-content">
@@ -668,7 +684,7 @@ footer p{
     <small>4 stories</small>
   </div>
   <div class="grid">
-    <div class="card" data-mfr="Ram">
+    <div class="card reveal" data-mfr="Ram">
       <a href="https://www.hagerty.com/media/news/2027-ram-1500-rumble-bee-pricing-specs-pictures/" target="_blank" rel="noopener">
         <img src="https://media.hagerty.com/media/wp-content/uploads/2026/05/2027-Ram-1500-Rumble-Bee-SRT-RM027_076FN-scaled.jpg" alt="2027 Ram 1500 Rumble Bee Priced in Muscle Car Territory">
         <div class="card-content">
@@ -680,7 +696,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Ford">
+    <div class="card reveal" data-mfr="Ford">
       <a href="https://www.caranddriver.com/news/a73309686/2026-shelby-f-150-super-snake-sport-details/" target="_blank" rel="noopener">
         <img src="https://hips.hearstapps.com/hmg-prod/images/67277d9c-606c-46e1-afe7-a8d8f944919a.png?crop=1.00xw:0.837xh;0,0.0508xh&resize=1200:*" alt="Shelby's F-150 Super Snake Sport Packs 810 HP With a Two-Door Cab">
         <div class="card-content">
@@ -692,7 +708,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Toyota">
+    <div class="card reveal" data-mfr="Toyota">
       <a href="https://www.caranddriver.com/news/a73297543/toyota-grmn-corolla-pricing/" target="_blank" rel="noopener">
         <img src="https://hips.hearstapps.com/hmg-prod/images/bed2aa1c-5511-432b-9387-14aadd56444a.jpg?crop=1.00xw:0.751xh;0,0.140xh&resize=1200:*" alt="Toyota's Limited-Run GRMN Corolla Costs Nearly as Much as a BMW M2">
         <div class="card-content">
@@ -704,7 +720,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Genesis">
+    <div class="card reveal" data-mfr="Genesis">
       <a href="https://www.roadandtrack.com/news/a73307800/2027-genesis-gv60-magma-price/" target="_blank" rel="noopener">
         <img src="https://hips.hearstapps.com/hmg-prod/images/6964e941-0693-461a-b5bd-80d195eee47c.jpg?crop=0.677xw:0.507xh;0.178xw,0.331xh&resize=1200:*" alt="2027 Genesis GV60 Magma Launches New Performance Sub-Brand at $71,495">
         <div class="card-content">
@@ -725,7 +741,7 @@ footer p{
     <small>4 stories</small>
   </div>
   <div class="grid">
-    <div class="card" data-mfr="Ford|GM">
+    <div class="card reveal" data-mfr="Ford|GM">
       <a href="https://www.wardsauto.com/news/us-army-awards-prototype-contracts-to-ford-gm-bc-customs/826541/" target="_blank" rel="noopener">
         <img src="https://imgproxy.divecdn.com/BUGkvOblfYtKkTH9mCAwl8Uk1coISt-fsCDUUi21ulA/g:nowe:0:184/c:1989:1123/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS85NTAxNDkwLWR2aWRzLUluZmFudHJ5X1NxdWFkX1ZlaGljbGVIZWF2eS1JU1YtSC5qcGc=.webp" alt="US Army Awards Prototype Contracts to Ford, GM, and BC Customs">
         <div class="card-content">
@@ -737,7 +753,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://cleantechnica.com/2026/07/31/germany-hydrogen-gas-system-rescue/" target="_blank" rel="noopener">
         <img src="https://cleantechnica.com/wp-content/uploads/2026/07/a1754b0e-999e-4797-8a01-f0c7ab22f66f_1600x840.webp" alt="Germany Is Rebuilding Its Failed Russian Gas Strategy With Hydrogen">
         <div class="card-content">
@@ -749,7 +765,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://cleantechnica.com/2026/07/30/energy-storage-factory-made-carbon-blocks-us-startup-antora/" target="_blank" rel="noopener">
         <img src="https://cleantechnica.com/wp-content/uploads/2026/07/thermal-energy-storage-antora.png" alt="“Hot Blocks” Thermal Storage Startup Nails Down $550 Million More">
         <div class="card-content">
@@ -761,7 +777,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://cleantechnica.com/2026/07/30/europes-waste-creates-value-elsewhere/" target="_blank" rel="noopener">
         <img src="https://cleantechnica.com/wp-content/uploads/2026/07/EU-waste-creates-value.png" alt="Europe's Waste Creates Value Elsewhere">
         <div class="card-content">
@@ -782,7 +798,7 @@ footer p{
     <small>5 stories</small>
   </div>
   <div class="grid">
-    <div class="card" data-mfr="Jeep">
+    <div class="card reveal" data-mfr="Jeep">
       <a href="https://www.kbb.com/reviews/our-3-favorite-things-about-the-2026-jeep-wrangler/" target="_blank" rel="noopener">
         <img src="https://dam.coxautoinc.com/asset/9ae87ece-6a80-49e7-8562-69d63ff767c2/OG/2026_Jeep_Wrangler_willys_profile_driver_side.jpg" alt="Our 3 Favorite Things About the 2026 Jeep Wrangler">
         <div class="card-content">
@@ -794,7 +810,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Mazda">
+    <div class="card reveal" data-mfr="Mazda">
       <a href="https://www.kbb.com/reviews/is-the-mazda-cx-30-a-good-value/" target="_blank" rel="noopener">
         <img src="https://dam.coxautoinc.com/asset/e1d30a8e-84f1-418a-b2d8-7fbf012c1b34/OG/2026-Mazda-CX-30-exterior-front-3-qtr-passenger.jpg" alt="Is the 2026 Mazda CX-30 a Good Value?">
         <div class="card-content">
@@ -806,7 +822,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Nissan">
+    <div class="card reveal" data-mfr="Nissan">
       <a href="https://www.kbb.com/reviews/our-3-favorite-things-about-the-nissan-altima/" target="_blank" rel="noopener">
         <img src="https://dam.coxautoinc.com/asset/d2a7744b-7ac2-4954-8a96-39ca28d00c43/OG/2025-nissan-altima-sr-front-left-3qtr-jpg.jpg" alt="Our 3 Favorite Things About the 2026 Nissan Altima">
         <div class="card-content">
@@ -818,7 +834,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Volkswagen">
+    <div class="card reveal" data-mfr="Volkswagen">
       <a href="https://www.motor1.com/news/803327/volkswagen-atlas-recall-backup-camera/" target="_blank" rel="noopener">
         <img src="https://cdn.motor1.com/images/mgl/7ZPR1o/s1/2024-volkswagen-atlas.jpg" alt="Volkswagen Recalls 57K Atlas SUVs After Backup Camera Fails">
         <div class="card-content">
@@ -830,7 +846,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Mercedes-Benz">
+    <div class="card reveal" data-mfr="Mercedes-Benz">
       <a href="https://www.caranddriver.com/news/a73309968/mercedes-benz-310k-vehicle-rollaway-risk-recall/" target="_blank" rel="noopener">
         <img src="https://hips.hearstapps.com/hmg-prod/images/2024-mercedes-benz-glb-103-64130fe3c2d7b.jpg?crop=1.00xw:0.752xh;0,0.0913xh&resize=1200:*" alt="Mercedes-Benz Recalls 310K Cars That Could Potentially Roll Away">
         <div class="card-content">
@@ -851,7 +867,7 @@ footer p{
     <small>3 stories</small>
   </div>
   <div class="grid">
-    <div class="card" data-mfr="Dodge">
+    <div class="card reveal" data-mfr="Dodge">
       <a href="https://www.thedrive.com/news/the-new-dodge-charger-is-youtubes-favorite-car-to-build-or-destroy-right-now" target="_blank" rel="noopener">
         <img src="https://www.thedrive.com/wp-content/uploads/2026/07/Charger-YouTube-Hero-1.jpg?quality=85" alt="The New Dodge Charger Is YouTube's Favorite Car to Build (or Destroy) Right Now">
         <div class="card-content">
@@ -863,7 +879,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Ferrari">
+    <div class="card reveal" data-mfr="Ferrari">
       <a href="https://www.thedrive.com/news/the-ferrari-luce-has-done-its-job" target="_blank" rel="noopener">
         <img src="https://www.thedrive.com/wp-content/uploads/2026/07/ferrari-luce-jerry-perez-1.jpeg?quality=85" alt="The Ferrari Luce Has Done Its Job">
         <div class="card-content">
@@ -875,7 +891,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Tesla">
+    <div class="card reveal" data-mfr="Tesla">
       <a href="https://www.roadandtrack.com/news/a73307100/youtube-whistlindiesel-tesla-cybertruck-111-mph-crash-ford-f-150/" target="_blank" rel="noopener">
         <img src="https://hips.hearstapps.com/hmg-prod/images/10a79dde-c9af-42e9-ab65-d6434af9fbb6.png?crop=0.512xw:0.917xh;0.235xw,0xh&resize=1200:*" alt="Watch YouTuber WhistlinDiesel Finish Off His Cybertruck With a 111-MPH Crash Into an F-150">
         <div class="card-content">
@@ -896,7 +912,7 @@ footer p{
     <small>3 stories</small>
   </div>
   <div class="grid">
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://www.hagerty.com/media/hagerty-community/7-vehicles-wed-love-to-drag-out-of-the-woods-and-restore/" target="_blank" rel="noopener">
         <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/Woods-classic-car-abandoned-chad-nathan-IPrewM0P7_A-unsplash-e1785435592649.jpg" alt="7 Vehicles We'd Love to Drag Out of the Woods and Restore">
         <div class="card-content">
@@ -908,7 +924,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://www.hagerty.com/media/market-trends/hagerty-insider/hagerty-market-rating/monthly-market-report-june-2026/" target="_blank" rel="noopener">
         <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/VEAuction-16May-39.webp" alt="Monthly Hagerty Market Report: June 2026">
         <div class="card-content">
@@ -920,7 +936,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Volvo">
+    <div class="card reveal" data-mfr="Volvo">
       <a href="https://www.hagerty.com/media/car-profiles/celebrating-the-unexceptional-with-a-volvo-144e/" target="_blank" rel="noopener">
         <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/IMG_1464-scaled.jpg" alt="Celebrating the Unexceptional With a Volvo 144E">
         <div class="card-content">
@@ -941,7 +957,7 @@ footer p{
     <small>2 stories</small>
   </div>
   <div class="grid">
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://www.hagerty.com/media/maintenance-and-tech/4-levels-of-diy-maintenance-preparation/" target="_blank" rel="noopener">
         <img src="https://media.hagerty.com/media/wp-content/uploads/2025/09/IMG_3418-1-scaled.jpg" alt="4 Levels of DIY Maintenance Preparation">
         <div class="card-content">
@@ -953,7 +969,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://electrek.co/2026/07/30/juiced-scrambler-testing-the-best-bang-for-your-buck-moto-style-e-bike/" target="_blank" rel="noopener">
         <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/juiced-scrambler-ebikes-header-bike-rack-1.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Juiced Scrambler: Testing the Best Bang-for-Your-Buck Moto-Style E-Bike">
         <div class="card-content">
@@ -974,7 +990,7 @@ footer p{
     <small>3 stories</small>
   </div>
   <div class="grid">
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://www.thedrive.com/news/flocks-ceo-admits-police-abuse-is-a-problem-then-defends-his-company" target="_blank" rel="noopener">
         <img src="https://www.thedrive.com/wp-content/uploads/2026/07/RTCC-copy.jpg?quality=85" alt="Flock's CEO Admits Police Abuse 'Is a Problem.' Then Defends His Company">
         <div class="card-content">
@@ -986,7 +1002,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="">
+    <div class="card reveal" data-mfr="">
       <a href="https://electrek.co/2026/07/30/a-new-zipcar-pilot-pairs-shared-evs-with-off-grid-solar-charging/" target="_blank" rel="noopener">
         <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Beam-Zipcar-Boston.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="A New Zipcar Pilot Pairs Shared EVs With Off-Grid Solar Charging">
         <div class="card-content">
@@ -998,7 +1014,7 @@ footer p{
         </div>
       </a>
     </div>
-    <div class="card" data-mfr="Tesla">
+    <div class="card reveal" data-mfr="Tesla">
       <a href="https://cleantechnica.com/2026/07/30/people-want-us-to-not-cover-elon-musks-politics-but-hes-using-his-wealth-power-from-tesla-to-influence-elections/" target="_blank" rel="noopener">
         <img src="https://cleantechnica.com/wp-content/uploads/2025/12/Tesla-Cybertruck-unveiling-event-truck-KYLE-Elon-Musk-CleanTechnica.jpg" alt="Tesla's Elon Musk Problem: When a CEO's Politics Become a Brand and Investor Risk">
         <div class="card-content">
@@ -1043,6 +1059,54 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
   select.addEventListener('change', function(){
     applyFilter(select.value);
   });
+})();
+
+(function(){
+  var counters = Array.prototype.slice.call(document.querySelectorAll('.stat-num'));
+  if (!counters.length) return;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  counters.forEach(function(el){
+    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    if (reduceMotion) { el.textContent = target; return; }
+    var duration = 900;
+    var start = null;
+    function step(ts){
+      if (start === null) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target);
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = target;
+      }
+    }
+    requestAnimationFrame(step);
+  });
+})();
+
+(function(){
+  var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  if (!reveals.length) return;
+  if (!('IntersectionObserver' in window)) {
+    reveals.forEach(function(el){ el.classList.add('is-visible'); });
+    return;
+  }
+  document.querySelectorAll('.grid').forEach(function(grid){
+    var items = grid.querySelectorAll('.reveal');
+    items.forEach(function(el, i){
+      el.style.transitionDelay = (Math.min(i, 5) * 80) + 'ms';
+    });
+  });
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(function(el){ observer.observe(el); });
 })();
 </script>
 
