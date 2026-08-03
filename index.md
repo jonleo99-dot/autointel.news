@@ -5,7 +5,7 @@
 <meta name='description' content='U.S. Automakers Are Building 1.8 Million Units of New Capacity Into a Market Already Running 30% Empty. Plus 44 more stories across OEM strategy, EV tech, dealer news, and the aftermarket — curated daily for automotive industry decision-makers.'>
 <meta name='keywords' content='automotive news, EV market, car industry, dealership intelligence, OEM strategy, market analysis'>
 <meta property='og:title' content='AutoIntel.News — U.S. Automakers Are Building 1.8 Million Units of New Capacity Into a Market Already Running 30% Empty'>
-<meta property='og:description' content='Adding 1.8 million units of new capacity to a market where nearly 4 million units already sit idle is a bet that near-term product cycles matter more than the long-run threat shared autonomous fleets pose to car ownership itself — and every dealer relying on these plants' output for allocation is exposed to whichever bet turns out to be wrong.'>
+<meta property='og:description' content='Adding 1.8 million units of new capacity to a market where nearly 4 million units already sit idle is a bet that near-term product cycles matter more than the long-run threat shared autonomous fleets pose to car ownership itself — and every dealer relying on these plants&#39; output for allocation is exposed to whichever bet turns out to be wrong.'>
 <meta property='og:type' content='website'>
 <meta property='og:url' content='https://autointel.news'>
 <meta property='og:image' content='https://imgproxy.divecdn.com/EYYWc7OWeIqe5IyoEhUTVzHVLfNWbkvMXgAYvTnaNaM/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Zb3VuZ19jYXJfYnV5ZXJzX0dldHR5SW1hZ2VzLTE0NzAwMzU2NTFfMS5qcGc=.webp'>
@@ -373,8 +373,8 @@ footer p{
 {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
-  "headline": 'U.S. Automakers Are Building 1.8 Million Units of New Capacity Into a Market Already Running 30% Empty',
-  "image": ['https://imgproxy.divecdn.com/EYYWc7OWeIqe5IyoEhUTVzHVLfNWbkvMXgAYvTnaNaM/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Zb3VuZ19jYXJfYnV5ZXJzX0dldHR5SW1hZ2VzLTE0NzAwMzU2NTFfMS5qcGc=.webp'],
+  "headline": "U.S. Automakers Are Building 1.8 Million Units of New Capacity Into a Market Already Running 30% Empty",
+  "image": ["https://imgproxy.divecdn.com/EYYWc7OWeIqe5IyoEhUTVzHVLfNWbkvMXgAYvTnaNaM/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Zb3VuZ19jYXJfYnV5ZXJzX0dldHR5SW1hZ2VzLTE0NzAwMzU2NTFfMS5qcGc=.webp"],
   "datePublished": "2026-08-03",
   "publisher": {
     "@type": "Organization",
@@ -487,7 +487,7 @@ footer p{
     </div>
     <div class="card reveal" data-mfr="Audi">
       <a href="https://www.motor1.com/news/803511/2027-audi-s6-spied-no-camo/" target="_blank" rel="noopener">
-        <img src="https://cdn.motor1.com/images/mgl/7ZEkQp/s1/2027-audi-s6-screenshot-from-spy-video.jpg" alt="Audi Isn't Even Bothering to Camouflage the New S6 Anymore">
+        <img src="https://cdn.motor1.com/images/mgl/7ZEkQp/s1/2027-audi-s6-screenshot-from-spy-video.jpg" alt="Audi Isn&#39;t Even Bothering to Camouflage the New S6 Anymore">
         <div class="card-content">
           <span class="badge">Motor1</span>
           <h3>Audi Isn't Even Bothering to Camouflage the New S6 Anymore</h3>
@@ -499,7 +499,7 @@ footer p{
     </div>
     <div class="card reveal" data-mfr="BMW">
       <a href="https://www.motor1.com/news/803496/bmw-m3-touring-g88-us-possible/" target="_blank" rel="noopener">
-        <img src="https://cdn.motor1.com/images/mgl/qkqX9v/s1/2025-bmw-m3-touring-review.jpg" alt="BMW's Next M3 Touring Gets a Codename and a Possible US Passport">
+        <img src="https://cdn.motor1.com/images/mgl/qkqX9v/s1/2025-bmw-m3-touring-review.jpg" alt="BMW&#39;s Next M3 Touring Gets a Codename and a Possible US Passport">
         <div class="card-content">
           <span class="badge">Motor1</span>
           <h3>BMW's Next M3 Touring Gets a Codename and a Possible US Passport</h3>
@@ -556,7 +556,7 @@ footer p{
     </div>
     <div class="card reveal" data-mfr="Lotus">
       <a href="https://www.motor1.com/news/803425/lotus-electric-suv-not-sold-in-american/" target="_blank" rel="noopener">
-        <img src="https://cdn.motor1.com/images/mgl/vxKqwq/s1/lotus-eletre-s-kaimu-grey-dynamic.jpg" alt="Lotus Explains Why It Didn't Bring Its Electric SUV to America">
+        <img src="https://cdn.motor1.com/images/mgl/vxKqwq/s1/lotus-eletre-s-kaimu-grey-dynamic.jpg" alt="Lotus Explains Why It Didn&#39;t Bring Its Electric SUV to America">
         <div class="card-content">
           <span class="badge">Motor1</span>
           <h3>Lotus Explains Why It Didn't Bring Its Electric SUV to America</h3>
@@ -580,7 +580,7 @@ footer p{
     </div>
     <div class="card reveal" data-mfr="">
       <a href="https://cleantechnica.com/2026/08/02/europe-ev-sales-report-bevs-jump-50-reach-26-market-share/" target="_blank" rel="noopener">
-        <img src="https://cleantechnica.com/wp-content/uploads/2026/08/Europe-EV-Sales-Report-June.png" alt="Europe EV Sales Report: BEVs Jump 50% & Reach 26% Market Share">
+        <img src="https://cleantechnica.com/wp-content/uploads/2026/08/Europe-EV-Sales-Report-June.png" alt="Europe EV Sales Report: BEVs Jump 50% &amp; Reach 26% Market Share">
         <div class="card-content">
           <span class="badge">CleanTechnica</span>
           <h3>Europe EV Sales Report: BEVs Jump 50% & Reach 26% Market Share</h3>
@@ -613,7 +613,7 @@ footer p{
   <div class="grid">
     <div class="card reveal" data-mfr="Cadillac">
       <a href="https://www.motor1.com/news/803510/gm-cadillac-infotainment-updates/" target="_blank" rel="noopener">
-        <img src="https://cdn.motor1.com/images/mgl/W8Yg3q/s1/2026-cadillac-vistiq.jpg" alt="Cadillac's Big Infotainment Fix Is Rolling Out Now">
+        <img src="https://cdn.motor1.com/images/mgl/W8Yg3q/s1/2026-cadillac-vistiq.jpg" alt="Cadillac&#39;s Big Infotainment Fix Is Rolling Out Now">
         <div class="card-content">
           <span class="badge">Motor1</span>
           <h3>Cadillac's Big Infotainment Fix Is Rolling Out Now</h3>
@@ -625,7 +625,7 @@ footer p{
     </div>
     <div class="card reveal" data-mfr="">
       <a href="https://www.thedrive.com/news/battery-powered-semi-truck-backpack-converts-diesel-big-rigs-to-hybrids-but-why" target="_blank" rel="noopener">
-        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/Revoy-Hero-2.jpg?quality=85" alt="Battery-Powered Semi Truck 'Backpack' Converts Diesel Big Rigs to Hybrids. But Why?">
+        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/Revoy-Hero-2.jpg?quality=85" alt="Battery-Powered Semi Truck &#39;Backpack&#39; Converts Diesel Big Rigs to Hybrids. But Why?">
         <div class="card-content">
           <span class="badge">The Drive</span>
           <h3>Battery-Powered Semi Truck 'Backpack' Converts Diesel Big Rigs to Hybrids. But Why?</h3>
@@ -694,7 +694,7 @@ footer p{
   <div class="grid">
     <div class="card reveal" data-mfr="">
       <a href="https://www.roadandtrack.com/news/a73324582/wtr-cadillacs-breakthrough-win-in-road-americas-return-to-endurance-racing/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/e46726c8-9f47-461c-9c34-f20bba70b6e3.jpeg?crop=0.888888888889xw:1xh;center,top&resize=1200:*" alt="WTR Cadillac's Breakthrough Win in Road America's Return to Endurance Racing">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/e46726c8-9f47-461c-9c34-f20bba70b6e3.jpeg?crop=0.888888888889xw:1xh;center,top&resize=1200:*" alt="WTR Cadillac&#39;s Breakthrough Win in Road America&#39;s Return to Endurance Racing">
         <div class="card-content">
           <span class="badge">Road & Track</span>
           <h3>WTR Cadillac's Breakthrough Win in Road America's Return to Endurance Racing</h3>
@@ -760,7 +760,7 @@ footer p{
     </div>
     <div class="card reveal" data-mfr="">
       <a href="https://cleantechnica.com/2026/08/03/europe-paying-twice-700-bar-hydrogen-refuelling/" target="_blank" rel="noopener">
-        <img src="https://cleantechnica.com/wp-content/uploads/2026/08/ChatGPT-Image-Aug-2-2026-10_26_03-AM-800x420.png" alt="Europe's 700-Bar Hydrogen Network Is Closing and Reappearing">
+        <img src="https://cleantechnica.com/wp-content/uploads/2026/08/ChatGPT-Image-Aug-2-2026-10_26_03-AM-800x420.png" alt="Europe&#39;s 700-Bar Hydrogen Network Is Closing and Reappearing">
         <div class="card-content">
           <span class="badge">CleanTechnica</span>
           <h3>Europe's 700-Bar Hydrogen Network Is Closing and Reappearing</h3>
@@ -793,7 +793,7 @@ footer p{
   <div class="grid">
     <div class="card reveal" data-mfr="">
       <a href="https://www.wardsauto.com/news/asbury-automotives-big-dms-switch-hits-the-home-stretch/826664/" target="_blank" rel="noopener">
-        <img src="https://imgproxy.divecdn.com/h3CZGTE50LciumhUELKLfCgn6h-hpeUtC3rDTen6gO0/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Bc2J1cnlfVGVraW9uLnBuZw==.webp" alt="Asbury Automotive's Big DMS Switch Hits the Home Stretch">
+        <img src="https://imgproxy.divecdn.com/h3CZGTE50LciumhUELKLfCgn6h-hpeUtC3rDTen6gO0/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Bc2J1cnlfVGVraW9uLnBuZw==.webp" alt="Asbury Automotive&#39;s Big DMS Switch Hits the Home Stretch">
         <div class="card-content">
           <span class="badge">WardsAuto</span>
           <h3>Asbury Automotive's Big DMS Switch Hits the Home Stretch</h3>
@@ -1000,7 +1000,7 @@ footer p{
   <div class="grid">
     <div class="card reveal" data-mfr="Chevrolet">
       <a href="https://www.hagerty.com/media/advice/piston-slap/piston-slap-justy-fied-service-for-the-sparks-cvt/" target="_blank" rel="noopener">
-        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/2021-chevrolet-spark.jpg" alt="Piston Slap: Justy-fied Service for the Spark's CVT?">
+        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/2021-chevrolet-spark.jpg" alt="Piston Slap: Justy-fied Service for the Spark&#39;s CVT?">
         <div class="card-content">
           <span class="badge">Hagerty</span>
           <h3>Piston Slap: Justy-fied Service for the Spark's CVT?</h3>
