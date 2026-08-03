@@ -2,18 +2,18 @@
 <head>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width,initial-scale=1'>
-<meta name='description' content='BMW Slashes 8,000 Jobs as Profits Fall 35% — Then Promises to Flood Showrooms With New Cars. Plus 43 more stories across OEM strategy, EV tech, dealer news, and the aftermarket — curated daily for automotive industry decision-makers.'>
+<meta name='description' content='U.S. Automakers Are Building 1.8 Million Units of New Capacity Into a Market Already Running 30% Empty. Plus 44 more stories across OEM strategy, EV tech, dealer news, and the aftermarket — curated daily for automotive industry decision-makers.'>
 <meta name='keywords' content='automotive news, EV market, car industry, dealership intelligence, OEM strategy, market analysis'>
-<meta property='og:title' content='AutoIntel.News — BMW Slashes 8,000 Jobs as Profits Fall 35% — Then Promises to Flood Showrooms With New Cars'>
-<meta property='og:description' content='Cutting the workforce that plans, engineers, and markets vehicles while accelerating the pace of new launches is a bet that leaner teams can still execute a bigger product cadence. For dealers, it raises a real question: will factory support, marketing spend, and engineering follow-through keep pace with the showroom traffic BMW is promising, or will franchise owners be left managing launch chaos with a thinner corporate bench behind them?'>
+<meta property='og:title' content='AutoIntel.News — U.S. Automakers Are Building 1.8 Million Units of New Capacity Into a Market Already Running 30% Empty'>
+<meta property='og:description' content='Adding 1.8 million units of new capacity to a market where nearly 4 million units already sit idle is a bet that near-term product cycles matter more than the long-run threat shared autonomous fleets pose to car ownership itself — and every dealer relying on these plants' output for allocation is exposed to whichever bet turns out to be wrong.'>
 <meta property='og:type' content='website'>
 <meta property='og:url' content='https://autointel.news'>
-<meta property='og:image' content='https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb.jpg?crop=0.685xw:0.514xh;0.315xw,0.197xh&resize=1200:*'>
-<meta name='twitter:image' content='https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb.jpg?crop=0.685xw:0.514xh;0.315xw,0.197xh&resize=1200:*'>
+<meta property='og:image' content='https://imgproxy.divecdn.com/EYYWc7OWeIqe5IyoEhUTVzHVLfNWbkvMXgAYvTnaNaM/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Zb3VuZ19jYXJfYnV5ZXJzX0dldHR5SW1hZ2VzLTE0NzAwMzU2NTFfMS5qcGc=.webp'>
+<meta name='twitter:image' content='https://imgproxy.divecdn.com/EYYWc7OWeIqe5IyoEhUTVzHVLfNWbkvMXgAYvTnaNaM/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Zb3VuZ19jYXJfYnV5ZXJzX0dldHR5SW1hZ2VzLTE0NzAwMzU2NTFfMS5qcGc=.webp'>
 <meta name='twitter:card' content='summary_large_image'>
-<meta name='twitter:title' content='AutoIntel.News — BMW Slashes 8,000 Jobs as Profits Fall 35% — Then Promises to Flood Showrooms With New Cars'>
-<meta name='twitter:description' content='Cutting the workforce that plans, engineers, and markets vehicles while accelerating the pace of new launches is a bet that leaner teams can still execute a bigger product cadence. For dealers, it rai'>
-<title>AutoIntel.News — BMW Slashes 8,000 Jobs as Profits Fall 35% — Then Promises to Flood Showrooms With New Cars</title>
+<meta name='twitter:title' content='AutoIntel.News — U.S. Automakers Are Building 1.8 Million Units of New Capacity Into a Market Already Running 30% Empty'>
+<meta name='twitter:description' content='Adding 1.8 million units of new capacity to a market where nearly 4 million units already sit idle is a bet that near-term product cycles matter more than the long-run threat shared autonomous fleets '>
+<title>AutoIntel.News — U.S. Automakers Are Building 1.8 Million Units of New Capacity Into a Market Already Running 30% Empty</title>
 <style>
 body{
   margin:0;
@@ -28,6 +28,43 @@ header{
   text-align:center;
   background:#171717;
   border-bottom:4px solid #f60
+}
+.scroll-top-bar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+  background:#171717;
+  border-bottom:2px solid #f60;
+  padding:10px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  cursor:pointer;
+  transform:translateY(-100%);
+  transition:transform 0.25s ease;
+  font-size:13px;
+  letter-spacing:1px;
+  color:#eee
+}
+.scroll-top-bar.is-visible{
+  transform:translateY(0)
+}
+.scroll-top-bar .car-symbol{
+  font-family:Times,'Times New Roman',serif;
+  color:#f60;
+  font-style:italic;
+  font-size:15px
+}
+.scroll-top-bar span:last-child{
+  font-weight:bold
+}
+@media(prefers-reduced-motion:reduce){
+  .scroll-top-bar{
+    transition:none
+  }
 }
 .date-field{
   color:#aaa;
@@ -336,9 +373,9 @@ footer p{
 {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
-  "headline": 'BMW Slashes 8,000 Jobs as Profits Fall 35% — Then Promises to Flood Showrooms With New Cars',
-  "image": ['https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb.jpg?crop=0.685xw:0.514xh;0.315xw,0.197xh&resize=1200:*'],
-  "datePublished": "2026-08-01",
+  "headline": 'U.S. Automakers Are Building 1.8 Million Units of New Capacity Into a Market Already Running 30% Empty',
+  "image": ['https://imgproxy.divecdn.com/EYYWc7OWeIqe5IyoEhUTVzHVLfNWbkvMXgAYvTnaNaM/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Zb3VuZ19jYXJfYnV5ZXJzX0dldHR5SW1hZ2VzLTE0NzAwMzU2NTFfMS5qcGc=.webp'],
+  "datePublished": "2026-08-03",
   "publisher": {
     "@type": "Organization",
     "name": "AutoIntel.News",
@@ -352,6 +389,10 @@ footer p{
 </script>
 </head>
 <body>
+<div class="scroll-top-bar" id="scrollTopBar" role="button" tabindex="0" aria-label="Scroll back to top">
+  <span>AutoIntel.News</span>
+  <span class="car-symbol">ō͡≡o˞̶</span>
+</div>
 
 <header>
   <div class='date-field' id='publishDate'></div>
@@ -360,9 +401,9 @@ footer p{
 </header>
 
 <div class='stats-bar'>
-  <span class='stat'><span class="stat-num" data-target="44">0</span> Stories</span>
+  <span class='stat'><span class="stat-num" data-target="45">0</span> Stories</span>
   <span class='stat'><span class="stat-num" data-target="9">0</span> Publishers</span>
-  <span class='stat'>~<span class="stat-num" data-target="15">0</span> min read</span>
+  <span class='stat'>~<span class="stat-num" data-target="16">0</span> min read</span>
 </div>
 
 <div class="toc-filter-row" id="tocFilterRow">
@@ -371,42 +412,42 @@ footer p{
     <label class="filter-label" for="mfrFilterSelect">Filter by manufacturer:</label>
     <select class="filter-select" id="mfrFilterSelect">
       <option value="__all__">All Manufacturers</option>
+      <option value="Alfa Romeo">Alfa Romeo</option>
       <option value="Audi">Audi</option>
       <option value="BMW">BMW</option>
-      <option value="Dodge">Dodge</option>
-      <option value="Ferrari">Ferrari</option>
+      <option value="BYD">BYD</option>
+      <option value="Cadillac">Cadillac</option>
+      <option value="Chevrolet">Chevrolet</option>
       <option value="Ford">Ford</option>
       <option value="GM">GM</option>
       <option value="Genesis">Genesis</option>
+      <option value="Hyundai">Hyundai</option>
       <option value="Jeep">Jeep</option>
-      <option value="Kia">Kia</option>
-      <option value="Mazda">Mazda</option>
+      <option value="Land Rover">Land Rover</option>
+      <option value="Lexus">Lexus</option>
+      <option value="Lotus">Lotus</option>
       <option value="Mercedes-Benz">Mercedes-Benz</option>
-      <option value="Nissan">Nissan</option>
-      <option value="Ram">Ram</option>
+      <option value="Pontiac">Pontiac</option>
       <option value="Rivian">Rivian</option>
-      <option value="Stellantis">Stellantis</option>
       <option value="Tesla">Tesla</option>
       <option value="Toyota">Toyota</option>
-      <option value="Volkswagen">Volkswagen</option>
-      <option value="Volvo">Volvo</option>
-      <option value="Zoox">Zoox</option>
+      <option value="VinFast">VinFast</option>
     </select>
   </div>
 </div>
 
 <div class='wrap'>
 
-<p><b>Today's Drive:</b> BMW is the story tying today's issue together: 8,000 job cuts and a 35 percent profit drop on one hand, an aggressive new-model flood through 2027 on the other. Elsewhere, Stellantis and Ford both post strong Q2 numbers, Nissan warns its own survival depends on faster product cycles, and the robotaxi race keeps accelerating with Zoox's no-human-controls approval and Uber's $1.25 billion Rivian bet.</p>
+<p><b>Today's Drive:</b> The industry is adding roughly 1.8 million units of new US assembly capacity into a market already running below 70 percent utilization — that contradiction is today's lead. Elsewhere, Rivian narrows its losses on a tariff-refund assist, GM commits another $1.5 billion to onshoring supply chains, Ford recalls 566,000 Broncos for a fire risk, and Lotus confirms tariffs alone kept its Eletre SUV out of American showrooms.</p>
 
 <!-- Hero Story -->
-<div class='hero reveal' data-mfr='BMW'>
-  <img src='https://hips.hearstapps.com/hmg-prod/images/2ee6a91a-88d2-4af5-b6fb-7b919f3399fb.jpg?crop=0.685xw:0.514xh;0.315xw,0.197xh&resize=1200:*' alt="Hero Story">
+<div class='hero reveal' data-mfr='Toyota|Ford|Hyundai|Rivian|VinFast'>
+  <img src='https://imgproxy.divecdn.com/EYYWc7OWeIqe5IyoEhUTVzHVLfNWbkvMXgAYvTnaNaM/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Zb3VuZ19jYXJfYnV5ZXJzX0dldHR5SW1hZ2VzLTE0NzAwMzU2NTFfMS5qcGc=.webp' alt="Hero Story">
   <div class='hero-content'>
     <span class='badge'>FEATURE STORY</span>
-    <h2><a href='https://www.roadandtrack.com/news/a73307948/bmw-job-cuts-following-profit-drop-reevaluate-future-car-plans/' target='_blank' rel='noopener'>BMW Slashes 8,000 Jobs as Profits Fall 35% — Then Promises to Flood Showrooms With New Cars</a></h2>
-    <p>BMW's Q2 operating profit fell 35 percent as Chinese EV rivals and soft China demand squeeze its margins, and the automaker now plans to cut up to 8,000 jobs, primarily German white-collar and office roles, while protecting assembly-line headcount. Days later, BMW confirmed an aggressive product roadmap that will “flood” showrooms with new and updated models through 2027, including a refreshed X5 and continued Neue Klasse rollout. The company is simultaneously telling investors it is shrinking to survive and telling dealers to prepare for the busiest launch calendar in years.</p>
-    <div class='hero-tension'><b>The Tension:</b> Cutting the workforce that plans, engineers, and markets vehicles while accelerating the pace of new launches is a bet that leaner teams can still execute a bigger product cadence. For dealers, it raises a real question: will factory support, marketing spend, and engineering follow-through keep pace with the showroom traffic BMW is promising, or will franchise owners be left managing launch chaos with a thinner corporate bench behind them?</div>
+    <h2><a href='https://www.wardsauto.com/news/the-auto-industry-is-building-for-a-past-thats-never-coming-back/825594/' target='_blank' rel='noopener'>U.S. Automakers Are Building 1.8 Million Units of New Capacity Into a Market Already Running 30% Empty</a></h2>
+    <p>A WardsAuto opinion column argues the U.S. auto industry is acting as though new-car demand will grow indefinitely: seven new assembly plants are scheduled to come online domestically before the decade is out, and the collective bets from Toyota, Ford, Hyundai, Scout, Slate, VinFast, Lucid, and Rivian could add roughly 1.8 million units of capacity. Yet Federal Reserve data shows existing U.S. plants already running below 70 percent utilization — nearly 4 million units of capacity sitting idle right now. The buildout is being driven by ten-year product cycles and five-year corporate strategies that, the column argues, aren't accounting for a 20-year horizon in which robotaxi fleets, VTOL air taxis, and micromobility steadily shrink the pool of people who need to own a car at all.</p>
+    <div class='hero-tension'><b>The Tension:</b> Adding 1.8 million units of new capacity to a market where nearly 4 million units already sit idle is a bet that near-term product cycles matter more than the long-run threat shared autonomous fleets pose to car ownership itself — and every dealer relying on these plants' output for allocation is exposed to whichever bet turns out to be wrong.</div>
   </div>
 </div>
 
@@ -420,74 +461,74 @@ footer p{
     <small>6 stories</small>
   </div>
   <div class="grid">
+    <div class="card reveal" data-mfr="Land Rover">
+      <a href="https://www.kbb.com/car-news/land-rover-to-discontinue-discovery-sport-suv/" target="_blank" rel="noopener">
+        <img src="https://dam.coxautoinc.com/asset/9fa7c4c8-51e3-4a5b-8254-76fcf6875b3a/OG/2026-land-rover-discovery-sport-3qtr.jpg" alt="Land Rover to Discontinue Discovery Sport SUV">
+        <div class="card-content">
+          <span class="badge">Kelley Blue Book</span>
+          <h3>Land Rover to Discontinue Discovery Sport SUV</h3>
+          <p>Jaguar Land Rover is winding down its lowest-selling Discovery model to concentrate resources on pricier, higher-margin SUVs in the lineup.</p>
+          <div class="card-tension"><b>The Tension:</b> Culling the entry point to a brand's SUV range is a clean way to boost average transaction price, but it also narrows the on-ramp for buyers who might otherwise trade up within the family later.</div>
+          <small>OEM Spotlight</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="Alfa Romeo">
+      <a href="https://www.motor1.com/news/803516/alfa-romeo-stelvio-delay-means/" target="_blank" rel="noopener">
+        <img src="https://cdn.motor1.com/images/mgl/zxJ8WW/s1/alfa-romeo-suv-compatto-2027-il-render-di-motor1.com.jpg" alt="Alfa Romeo Stelvio Pushed Back to 2028 — Should You Wait?">
+        <div class="card-content">
+          <span class="badge">Motor1</span>
+          <h3>Alfa Romeo Stelvio Pushed Back to 2028 — Should You Wait?</h3>
+          <p>Alfa Romeo is stretching the current Stelvio's lifecycle while the next-generation SUV switches to STLA Large architecture with hybrid and electric powertrain options, pushing the redesign to 2028.</p>
+          <div class="card-tension"><b>The Tension:</b> Riding out an aging model for two extra years to get the platform switch right is a real bet that current Stelvio buyers won't simply defect to a fresher rival in the meantime.</div>
+          <small>OEM Spotlight</small>
+        </div>
+      </a>
+    </div>
     <div class="card reveal" data-mfr="Audi">
-      <a href="https://www.wardsauto.com/news/2027-audi-q9-and-sq9-unveiled-as-brands-biggest-suvs/826533/" target="_blank" rel="noopener">
-        <img src="https://imgproxy.divecdn.com/32jRO_EG5s-AnRLuz8QzabOqL3sdtrJ_AwXx_g-8HqE/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9PcmlnaW5hbC0xNzIxNS1hMjYzODg2LWxhcmdlLmpwZw==.webp" alt="2027 Audi Q9 and SQ9 Unveiled as Brand's Biggest SUVs Yet">
-        <div class="card-content">
-          <span class="badge">WardsAuto</span>
-          <h3>2027 Audi Q9 and SQ9 Unveiled as Brand's Biggest SUVs Yet</h3>
-          <p>Audi's new three-row flagship arrives later this year sized to go straight after the BMW X7, Cadillac Escalade, and Mercedes-Benz GLS, the segment where luxury brands make their fattest per-unit margins.</p>
-          <div class="card-tension"><b>The Tension:</b> Audi is chasing the full-size luxury SUV boom years after rivals staked their claim — a margin-rich segment, but a late entry against entrenched buyer loyalty.</div>
-          <small>OEM Spotlight</small>
-        </div>
-      </a>
-    </div>
-    <div class="card reveal" data-mfr="GM">
-      <a href="https://www.wardsauto.com/news/gm-confirms-157m-investment-in-wentzville-assembly-plant/826402/" target="_blank" rel="noopener">
-        <img src="https://imgproxy.divecdn.com/rUSKwHDorsXzyYawL63nPUaG_aiUxPJIo7NF4Q-UnY4/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HTVdlbnR6dmlsbGUwMV8yLmpwZw==.webp" alt="GM Confirms $157M Investment in Wentzville Assembly Plant">
-        <div class="card-content">
-          <span class="badge">WardsAuto</span>
-          <h3>GM Confirms $157M Investment in Wentzville Assembly Plant</h3>
-          <p>The investment funds paint-shop modernization and an estimated 28,000-square-foot expansion at the Missouri plant, signaling GM sees continued life in the vehicles built there rather than a shift to a newer site.</p>
-          <div class="card-tension"><b>The Tension:</b> Capital spending on an established plant is a vote of confidence in current-generation trucks and vans, even as GM pours far larger sums into EV capacity elsewhere.</div>
-          <small>OEM Spotlight</small>
-        </div>
-      </a>
-    </div>
-    <div class="card reveal" data-mfr="Nissan">
-      <a href="https://www.motor1.com/news/803342/nissan-warns-not-survive-unless-faster-car-launches/" target="_blank" rel="noopener">
-        <img src="https://cdn.motor1.com/images/mgl/KbgoPq/s1/2026-nissan-terrano-phev-concept.jpg" alt="Nissan Warns It Must Launch New Cars Faster Or 'We Won't Survive'">
+      <a href="https://www.motor1.com/news/803511/2027-audi-s6-spied-no-camo/" target="_blank" rel="noopener">
+        <img src="https://cdn.motor1.com/images/mgl/7ZEkQp/s1/2027-audi-s6-screenshot-from-spy-video.jpg" alt="Audi Isn't Even Bothering to Camouflage the New S6 Anymore">
         <div class="card-content">
           <span class="badge">Motor1</span>
-          <h3>Nissan Warns It Must Launch New Cars Faster Or 'We Won't Survive'</h3>
-          <p>Nissan executives are framing faster product development as an existential requirement, not a competitive nicety, as the automaker works to cut the time it takes to bring new models from concept to showroom.</p>
-          <div class="card-tension"><b>The Tension:</b> A company using survival language about its own product pipeline is signaling to dealers and suppliers that the current lineup's aging shelf life is a genuine financial risk, not just messaging.</div>
+          <h3>Audi Isn't Even Bothering to Camouflage the New S6 Anymore</h3>
+          <p>Spy shots show the redesigned S6 sedan and wagon testing with a plug-in hybrid setup and no disguise, suggesting Audi is comfortable with how close production reveal is.</p>
+          <div class="card-tension"><b>The Tension:</b> Skipping camouflage this late in development is itself a marketing signal — automakers only stop hiding a car once leaks have become cheaper than concealment.</div>
           <small>OEM Spotlight</small>
         </div>
       </a>
     </div>
     <div class="card reveal" data-mfr="BMW">
-      <a href="https://www.motor1.com/news/803329/bmw-product-roadmap-2027/" target="_blank" rel="noopener">
-        <img src="https://cdn.motor1.com/images/mgl/eo7veE/s1/2027-bmw-x5-40.jpg" alt="BMW Will Flood the Market With New Cars Through 2027">
+      <a href="https://www.motor1.com/news/803496/bmw-m3-touring-g88-us-possible/" target="_blank" rel="noopener">
+        <img src="https://cdn.motor1.com/images/mgl/qkqX9v/s1/2025-bmw-m3-touring-review.jpg" alt="BMW's Next M3 Touring Gets a Codename and a Possible US Passport">
         <div class="card-content">
           <span class="badge">Motor1</span>
-          <h3>BMW Will Flood the Market With New Cars Through 2027</h3>
-          <p>Munich's roadmap for the next 18 months includes an unusually dense wave of new and refreshed models, arriving at the same time the automaker is cutting thousands of office jobs (see the Hero story above).</p>
-          <div class="card-tension"><b>The Tension:</b> See the Hero story: an aggressive launch calendar paired with a shrinking corporate workforce is the defining contradiction of BMW's next two years.</div>
+          <h3>BMW's Next M3 Touring Gets a Codename and a Possible US Passport</h3>
+          <p>The G88-codenamed next M3 Touring is taking shape, and for the first time BMW is signaling the wagon variant could actually reach US shores rather than staying Europe-only.</p>
+          <div class="card-tension"><b>The Tension:</b> BMW has burned enthusiast goodwill for years by keeping wagon variants out of the US; actually delivering one this time would be a real test of whether that demand is more than internet nostalgia.</div>
           <small>OEM Spotlight</small>
         </div>
       </a>
     </div>
-    <div class="card reveal" data-mfr="BMW">
-      <a href="https://www.caranddriver.com/news/a73307305/bmw-x5-based-off-roader-canceled/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/2025-bmw-x5-xdrive40i-103-6824bd4510093.jpg?crop=0.806xw:0.605xh;0.104xw,0.273xh&resize=1200:*" alt="BMW's X5-Based G-Wagen Competitor Has Reportedly Been Scrapped">
+    <div class="card reveal" data-mfr="Genesis">
+      <a href="https://www.caranddriver.com/news/a73320718/genesis-gv90-coach-doors-confirmed/" target="_blank" rel="noopener">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/51f6ba26-e18d-4c06-90a2-60937a1c5261.jpeg?crop=1.00xw:0.752xh;0,0.0865xh&resize=1200:*" alt="Genesis Confirms That the Upcoming GV90 Will Have Coach Doors">
         <div class="card-content">
           <span class="badge">Car and Driver</span>
-          <h3>BMW's X5-Based G-Wagen Competitor Has Reportedly Been Scrapped</h3>
-          <p>The off-road-focused model, built on the same platform as the new X5 and aimed at the Mercedes G-Class, has reportedly been cut before reaching production.</p>
-          <div class="card-tension"><b>The Tension:</b> Killing a halo off-roader while simultaneously promising to flood showrooms with new cars suggests BMW's product review process is getting more selective even as its output volume grows.</div>
+          <h3>Genesis Confirms That the Upcoming GV90 Will Have Coach Doors</h3>
+          <p>Inspired by the 2024 Neolun concept, Genesis's flagship electric SUV will carry over rear-hinged coach doors into production when it's revealed next month.</p>
+          <div class="card-tension"><b>The Tension:</b> Committing a flagship SUV to a low-volume design flourish like coach doors is a statement of brand confidence — and a bet that Genesis buyers want theater as much as capability.</div>
           <small>OEM Spotlight</small>
         </div>
       </a>
     </div>
-    <div class="card reveal" data-mfr="Mazda">
-      <a href="https://www.roadandtrack.com/news/a73306836/mazda-mx-5-miata-electric-future/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/b8a1667-677c04735aa54.jpg?crop=0.48xw:0.438xh;0.091xw,0.352xh&resize=1200:*" alt="Mazda Considering Electric MX-5 Miata, CEO Says, But Weight Remains an Issue">
+    <div class="card reveal" data-mfr="Audi">
+      <a href="https://www.roadandtrack.com/news/a73317856/audi-more-station-wagons-u-s-market/" target="_blank" rel="noopener">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/67b9a0ca-fd40-4c7c-aadd-667859f5ed1b.jpg?crop=0.559xw:0.391xh;0.315xw,0.367xh&resize=1200:*" alt="Audi Is Looking for Opportunities to Bring More Station Wagons to the U.S.">
         <div class="card-content">
           <span class="badge">Road & Track</span>
-          <h3>Mazda Considering Electric MX-5 Miata, CEO Says, But Weight Remains an Issue</h3>
-          <p>CEO Masahiro Moro said the Miata must eventually prepare for a battery-powered future, while acknowledging that battery weight cuts directly against the nameplate's defining lightweight character.</p>
-          <div class="card-tension"><b>The Tension:</b> Mazda is publicly weighing electrification of the one car whose entire identity is built on being light — a harder engineering and brand problem than electrifying almost anything else in its lineup.</div>
+          <h3>Audi Is Looking for Opportunities to Bring More Station Wagons to the U.S.</h3>
+          <p>Audi executives are reconsidering the US wagon market, pointing to unexpectedly strong wagon popularity in cities like New York as a reason to reconsider what's historically been a low-volume body style stateside.</p>
+          <div class="card-tension"><b>The Tension:</b> Wagons have flopped commercially in the US for decades outside a narrow enthusiast base; reading city-specific demand as a broader signal risks repeating a bet automakers have lost before.</div>
           <small>OEM Spotlight</small>
         </div>
       </a>
@@ -498,77 +539,65 @@ footer p{
 <div class="sec-group" id="market-intelligence">
   <div class="sec">
     <h2>Market Intelligence</h2>
-    <small>6 stories</small>
+    <small>5 stories</small>
   </div>
   <div class="grid">
-    <div class="card reveal" data-mfr="Stellantis">
-      <a href="https://www.wardsauto.com/news/stellantis-q2-adjusted-operating-income-triples-yoy/826548/" target="_blank" rel="noopener">
-        <img src="https://imgproxy.divecdn.com/txKVQHfrg0dwJVEn8ee52ltr8hXMjikS1R50fMrVJQI/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9KZWVwR3JhbmRXYWdvbmVlckNvbmNlcHQuanBn.webp" alt="Stellantis' Q2 Adjusted Operating Income Triples Year-Over-Year">
+    <div class="card reveal" data-mfr="Rivian">
+      <a href="https://www.wardsauto.com/news/rivian-narrows-its-losses-in-q2-as-consolidated-revenue-jumps-27-yoy/826769/" target="_blank" rel="noopener">
+        <img src="https://imgproxy.divecdn.com/WJFqLn5_U6CkDqq4cnCO1UPHuxrxxcZntT2lNTBDD9w/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TY3JlZW5zaG90XzIwMjYtMDctMzFfYXRfMi4xNC40MVBNLnBuZw==.webp" alt="Rivian Narrows Its Losses in Q2 as Consolidated Revenue Jumps 27% YoY">
         <div class="card-content">
           <span class="badge">WardsAuto</span>
-          <h3>Stellantis' Q2 Adjusted Operating Income Triples Year-Over-Year</h3>
-          <p>North American net revenues rose 32 percent and vehicle sales stayed brisk, evidence that the automaker's turnaround strategy of the past year is translating into real earnings.</p>
-          <div class="card-tension"><b>The Tension:</b> A tripling of operating income is a strong signal to dealers that the worst of Stellantis' recent inventory and pricing turbulence may be behind it, not ahead.</div>
+          <h3>Rivian Narrows Its Losses in Q2 as Consolidated Revenue Jumps 27% YoY</h3>
+          <p>Rivian posted $1.6 billion in consolidated Q2 revenue, up 27 percent year over year, and narrowed its quarterly loss to $36 million from $335 million a year earlier, helped by higher delivery volumes and a tariff refund.</p>
+          <div class="card-tension"><b>The Tension:</b> A dramatically smaller loss looks like real progress, but a chunk of it came from a one-time tariff refund and regulatory credits rather than the underlying automotive business turning structurally profitable.</div>
           <small>Market Intelligence</small>
         </div>
       </a>
     </div>
-    <div class="card reveal" data-mfr="Ford">
-      <a href="https://www.wardsauto.com/news/ford-raises-guidance-for-2026-as-f-series-production-recovers/826432/" target="_blank" rel="noopener">
-        <img src="https://imgproxy.divecdn.com/ndthLtNQLDbi4zfr1gqF8kv2TERn1mQMo2zrXd6bb4I/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9jcTVkYW1fQnBtU1ZIcS53ZWIuMTI4MC4xMjgwLmpwZWc=.webp" alt="Ford Raises Guidance for 2026 as F-Series Production Recovers">
+    <div class="card reveal" data-mfr="Lotus">
+      <a href="https://www.motor1.com/news/803425/lotus-electric-suv-not-sold-in-american/" target="_blank" rel="noopener">
+        <img src="https://cdn.motor1.com/images/mgl/vxKqwq/s1/lotus-eletre-s-kaimu-grey-dynamic.jpg" alt="Lotus Explains Why It Didn't Bring Its Electric SUV to America">
         <div class="card-content">
-          <span class="badge">WardsAuto</span>
-          <h3>Ford Raises Guidance for 2026 as F-Series Production Recovers</h3>
-          <p>High-margin off-road trims of trucks and SUVs drove a strong quarter even as Ford continued to absorb supplier disruptions and EV-related losses elsewhere in the business.</p>
-          <div class="card-tension"><b>The Tension:</b> Ford's raised guidance rests almost entirely on gas truck profitability propping up ongoing EV losses — a hedge that works until truck demand itself softens.</div>
-          <small>Market Intelligence</small>
-        </div>
-      </a>
-    </div>
-    <div class="card reveal" data-mfr="">
-      <a href="https://www.kbb.com/car-news/study-small-cars-top-deadliest-car-list-suvs-least-deadly/" target="_blank" rel="noopener">
-        <img src="https://dam.coxautoinc.com/asset/936132f6-ddb8-4b38-a64a-5cea318d0554/OG/severe-accident-jpg.jpg" alt="Study: Small Cars Top Deadliest Car List; SUVs Least Deadly">
-        <div class="card-content">
-          <span class="badge">Kelley Blue Book</span>
-          <h3>Study: Small Cars Top Deadliest Car List; SUVs Least Deadly</h3>
-          <p>A new IIHS study found small cars carry the highest driver death rate even as large vehicles cause the most fatalities overall, complicating the simple narrative that bigger always means safer.</p>
-          <div class="card-tension"><b>The Tension:</b> The data cuts against the industry's own sales pitch: automakers market size as safety to sell SUVs, while the same size advantage worsens outcomes for everyone else on the road.</div>
+          <span class="badge">Motor1</span>
+          <h3>Lotus Explains Why It Didn't Bring Its Electric SUV to America</h3>
+          <p>Lotus Americas' CEO says the China-built Eletre completed US homologation, but 100 percent tariffs on the vehicle forced the brand to abandon plans to sell it here, leaving the Emira as its only US offering.</p>
+          <div class="card-tension"><b>The Tension:</b> A fully homologated, ready-to-sell SUV getting shelved purely over tariff math is a concrete illustration of how trade policy, not product readiness, is now deciding which cars actually reach US dealer lots.</div>
           <small>Market Intelligence</small>
         </div>
       </a>
     </div>
     <div class="card reveal" data-mfr="">
-      <a href="https://www.kbb.com/car-news/what-the-feds-latest-rate-decision-means-for-car-shoppers/" target="_blank" rel="noopener">
-        <img src="https://dam.coxautoinc.com/asset/e0b1eb0b-63ad-4ff0-8450-0e778fd11355/OG/car-loan-interest-rate-jpg.jpg" alt="What the Fed's Latest Rate Decision Means for Car Shoppers">
+      <a href="https://cleantechnica.com/2026/08/02/top-selling-electric-vehicles-in-the-world-june-2026/" target="_blank" rel="noopener">
+        <img src="https://cleantechnica.com/wp-content/uploads/2026/08/World-EV-Sales-Report-June-2026.png" alt="Top Selling Electric Vehicles in the World — June 2026">
         <div class="card-content">
-          <span class="badge">Kelley Blue Book</span>
-          <h3>What the Fed's Latest Rate Decision Means for Car Shoppers</h3>
-          <p>The Federal Reserve held its benchmark rate steady despite uncertainty tied to the Iran war and continued inflationary pressure, leaving auto loan rates largely unchanged for now.</p>
-          <div class="card-tension"><b>The Tension:</b> A hold isn't neutral for dealers — it locks in today's elevated financing costs for another cycle, keeping affordability the binding constraint on showroom traffic rather than supply.</div>
+          <span class="badge">CleanTechnica</span>
+          <h3>Top Selling Electric Vehicles in the World — June 2026</h3>
+          <p>Global plugin vehicle registrations rose 8 percent year over year in June to about 2 million units, with BEVs up 21 percent even as PHEV registrations fell 14 percent, pushing pure-electric share of plugin sales to 72 percent for the month.</p>
+          <div class="card-tension"><b>The Tension:</b> Plugin hybrids sliding while pure EVs accelerate suggests the transitional PHEV category many automakers leaned on as a hedge is losing relevance faster than their product roadmaps currently assume.</div>
           <small>Market Intelligence</small>
         </div>
       </a>
     </div>
     <div class="card reveal" data-mfr="">
-      <a href="https://www.thedrive.com/news/heavy-duty-pickups-lead-list-of-americas-most-deadly-vehicles" target="_blank" rel="noopener">
-        <img src="https://www.thedrive.com/wp-content/uploads/2026/06/RM025_003TF-e1785428744596.jpg?quality=85&amp;w=2048" alt="Heavy-Duty Pickups Lead List of America's Deadliest Vehicles to Other Drivers">
+      <a href="https://cleantechnica.com/2026/08/02/europe-ev-sales-report-bevs-jump-50-reach-26-market-share/" target="_blank" rel="noopener">
+        <img src="https://cleantechnica.com/wp-content/uploads/2026/08/Europe-EV-Sales-Report-June.png" alt="Europe EV Sales Report: BEVs Jump 50% & Reach 26% Market Share">
         <div class="card-content">
-          <span class="badge">The Drive</span>
-          <h3>Heavy-Duty Pickups Lead List of America's Deadliest Vehicles to Other Drivers</h3>
-          <p>IIHS data on which vehicles are likeliest to kill the other driver in a crash puts heavy-duty pickups at the top of the list, with most of the top 10 sharing size and mass in common.</p>
-          <div class="card-tension"><b>The Tension:</b> Heavy-duty trucks are among the highest-margin vehicles automakers sell and, per this data, among the most dangerous to everyone else on the road — a business-versus-safety tradeoff the industry rarely discusses openly.</div>
+          <span class="badge">CleanTechnica</span>
+          <h3>Europe EV Sales Report: BEVs Jump 50% & Reach 26% Market Share</h3>
+          <p>Roughly 366,000 fully electric vehicles were registered in the report period, with Tesla and Chinese entrants driving overall EV share in Europe up to 37 percent of the plugin market amid cheaper new models and high gas prices.</p>
+          <div class="card-tension"><b>The Tension:</b> European legacy automakers are watching Tesla and Chinese brands capture the fastest-growing slice of their home market at the exact moment those incumbents are still working out their own EV cost structures.</div>
           <small>Market Intelligence</small>
         </div>
       </a>
     </div>
     <div class="card reveal" data-mfr="Tesla">
-      <a href="https://electrek.co/2026/07/30/tesla-weighs-selling-china-business-spacex-merger/" target="_blank" rel="noopener">
-        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/03/Tesla-SpaceX-terafab-e1774190764202.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Tesla Weighs Selling China Business to Clear Path for SpaceX Merger">
+      <a href="https://www.roadandtrack.com/news/a73318559/tesla-lawsuit-test-drive/" target="_blank" rel="noopener">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/model-y-performance-hero-carousel-slide-2-desktop-rhd-68b1c2a7bdae6.jpeg?crop=0.491xw:0.753xh;0.256xw,0.163xh&resize=1200:*" alt="Tesla Sued for $10 Million Over Alleged Test Drive Gone Wrong">
         <div class="card-content">
-          <span class="badge">Electrek</span>
-          <h3>Tesla Weighs Selling China Business to Clear Path for SpaceX Merger</h3>
-          <p>A Wall Street Journal report says Tesla is exploring a sale of its China operations, including the Shanghai factory that builds more than half of all Tesla vehicles, to pave the way for a potential merger with SpaceX.</p>
-          <div class="card-tension"><b>The Tension:</b> Divesting the single largest piece of Tesla's car-making capacity to enable a corporate restructuring would be a remarkable admission that Musk's other ventures now outrank the automaking business itself.</div>
+          <span class="badge">Road & Track</span>
+          <h3>Tesla Sued for $10 Million Over Alleged Test Drive Gone Wrong</h3>
+          <p>A plaintiff alleges Tesla staff placed a Model Y into its quickest-accelerating mode without disclosure during a dealer test drive, then failed to explain regenerative braking, contributing to a crash she says caused her injuries.</p>
+          <div class="card-tension"><b>The Tension:</b> Handing a first-time EV driver a car in its most aggressive performance mode without clear disclosure is a sales-floor practice risk every EV-curious dealership should be reviewing, not just Tesla's own stores.</div>
           <small>Market Intelligence</small>
         </div>
       </a>
@@ -582,74 +611,74 @@ footer p{
     <small>6 stories</small>
   </div>
   <div class="grid">
-    <div class="card reveal" data-mfr="Rivian">
-      <a href="https://www.motor1.com/news/803336/uber-rivian-r2-deal-could/" target="_blank" rel="noopener">
-        <img src="https://cdn.motor1.com/images/mgl/L3yzZl/s1/2027-rivian-r2-first-drive-review.jpg" alt="Uber, Rivian, and the $1.25 Billion Robotaxi Deal">
+    <div class="card reveal" data-mfr="Cadillac">
+      <a href="https://www.motor1.com/news/803510/gm-cadillac-infotainment-updates/" target="_blank" rel="noopener">
+        <img src="https://cdn.motor1.com/images/mgl/W8Yg3q/s1/2026-cadillac-vistiq.jpg" alt="Cadillac's Big Infotainment Fix Is Rolling Out Now">
         <div class="card-content">
           <span class="badge">Motor1</span>
-          <h3>Uber, Rivian, and the $1.25 Billion Robotaxi Deal</h3>
-          <p>Rivian's R2 is targeting Level 4 autonomy by 2028 as Uber eyes deploying as many as 50,000 robotaxis, effectively asking one retail SUV platform to double as a high-mileage ride-hailing workhorse.</p>
-          <div class="card-tension"><b>The Tension:</b> Building a consumer SUV and a fleet robotaxi on the same platform means Rivian's warranty, durability, and residual-value assumptions now have to satisfy two very different duty cycles at once.</div>
+          <h3>Cadillac's Big Infotainment Fix Is Rolling Out Now</h3>
+          <p>LYRIQ, OPTIQ, VISTIQ, and CT5 owners are getting a smarter media queue, profile-linked seat settings, sharper HUD graphics, and a redesigned home screen in an over-the-air update.</p>
+          <div class="card-tension"><b>The Tension:</b> Fixing infotainment complaints after the fact via OTA update is now standard practice across the industry — a tacit admission that software quality bars have slipped below where hardware quality bars have always stood.</div>
           <small>EV & Technology</small>
         </div>
       </a>
     </div>
-    <div class="card reveal" data-mfr="GM">
-      <a href="https://www.thedrive.com/news/gms-gimmicky-midgate-is-actually-one-of-the-best-reasons-to-buy-an-ev-truck" target="_blank" rel="noopener">
-        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/GMC-Sierra-EV-MidGate-Pro-IMG_1259.jpg?quality=85" alt="GM's Gimmicky Midgate Is Actually One of the Best Reasons to Buy an EV Truck">
+    <div class="card reveal" data-mfr="">
+      <a href="https://www.thedrive.com/news/battery-powered-semi-truck-backpack-converts-diesel-big-rigs-to-hybrids-but-why" target="_blank" rel="noopener">
+        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/Revoy-Hero-2.jpg?quality=85" alt="Battery-Powered Semi Truck 'Backpack' Converts Diesel Big Rigs to Hybrids. But Why?">
         <div class="card-content">
           <span class="badge">The Drive</span>
-          <h3>GM's Gimmicky Midgate Is Actually One of the Best Reasons to Buy an EV Truck</h3>
-          <p>The bed-to-cab pass-through on the Sierra and Silverado EVs, often dismissed as a novelty, is proving to be genuinely useful cargo flexibility that differentiates GM's electric trucks at the point of sale.</p>
-          <div class="card-tension"><b>The Tension:</b> A feature initially written off as a gimmick is turning into a real sales argument — a reminder that on the showroom floor, practical daily usability often beats spec-sheet bragging rights.</div>
+          <h3>Battery-Powered Semi Truck 'Backpack' Converts Diesel Big Rigs to Hybrids. But Why?</h3>
+          <p>Startup Revoy just closed a $27 million funding round for a module that sits between tractor and trailer, adding a battery pack and electric motor to turn any existing diesel semi into a temporary hybrid.</p>
+          <div class="card-tension"><b>The Tension:</b> A bolt-on retrofit sidesteps the brutal range-versus-payload math that's stalled ground-up electric semis, but it's also a tacit bet that fleets would rather rent electrification than buy a purpose-built EV truck.</div>
+          <small>EV & Technology</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="VinFast">
+      <a href="https://electrek.co/2026/07/31/this-all-electric-vinfast-taxi-service-just-debuted-in-europe/" target="_blank" rel="noopener">
+        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Green-SM-Copenhagen.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="This All-Electric VinFast Taxi Service Just Debuted in Europe">
+        <div class="card-content">
+          <span class="badge">Electrek</span>
+          <h3>This All-Electric VinFast Taxi Service Just Debuted in Europe</h3>
+          <p>Vietnamese EV taxi operator Green SM has launched a company-owned VinFast fleet in Copenhagen, marking the brand's first European taxi debut.</p>
+          <div class="card-tension"><b>The Tension:</b> Entering Europe through a company-owned taxi fleet rather than retail sales lets VinFast build brand visibility and duty-cycle data without yet convincing individual European buyers to purchase one.</div>
+          <small>EV & Technology</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="Tesla|Rivian|Mercedes-Benz">
+      <a href="https://electrek.co/2026/07/31/podcast-tesla-spacex-merger-rivian-r2-progress-new-mercedes-gla-and-more/" target="_blank" rel="noopener">
+        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2017/12/business_card-1.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Podcast: Tesla/SpaceX Merger Rumors, Rivian R2 Progress, and New Mercedes GLA">
+        <div class="card-content">
+          <span class="badge">Electrek</span>
+          <h3>Podcast: Tesla/SpaceX Merger Rumors, Rivian R2 Progress, and New Mercedes GLA</h3>
+          <p>This week's Electrek Podcast rounds up the swirling rumors of a Tesla/SpaceX merger alongside Rivian's earnings and R2 progress and the new Mercedes GLA.</p>
+          <div class="card-tension"><b>The Tension:</b> That a possible Tesla/SpaceX merger is now routine podcast fodder, alongside ordinary product updates, shows how normalized the idea of blending Musk's ventures into one entity has become in industry conversation.</div>
+          <small>EV & Technology</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="BYD">
+      <a href="https://electrek.co/2026/07/31/byd-reveals-images-new-qin-max-ev-launch/" target="_blank" rel="noopener">
+        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/BYD-Qin-Max-EV-front.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="BYD Reveals Images of the New Qin Max EV Ahead of Its Launch Next Month">
+        <div class="card-content">
+          <span class="badge">Electrek</span>
+          <h3>BYD Reveals Images of the New Qin Max EV Ahead of Its Launch Next Month</h3>
+          <p>BYD released official images of the Qin Max, described as a fully redesigned B-segment fast-charging sedan, ahead of an official reveal next month.</p>
+          <div class="card-tension"><b>The Tension:</b> BYD keeps cycling entirely new B-segment sedans onto the market at a pace legacy automakers structurally can't match, and that release cadence is itself becoming the story as much as any single model.</div>
           <small>EV & Technology</small>
         </div>
       </a>
     </div>
     <div class="card reveal" data-mfr="">
-      <a href="https://electrek.co/2026/07/30/pjm-grid-largest-battery-is-now-under-construction-in-ohio/" target="_blank" rel="noopener">
-        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Flint-Battery-storage-screenshot.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="The PJM Grid's Largest Battery Is Now Under Construction in Ohio">
-        <div class="card-content">
-          <span class="badge">Electrek</span>
-          <h3>The PJM Grid's Largest Battery Is Now Under Construction in Ohio</h3>
-          <p>A 1 GWh battery is being built outside Columbus as data-center and industrial demand rapidly push up electricity use on the PJM grid, the same grid many automakers' EV charging networks depend on.</p>
-          <div class="card-tension"><b>The Tension:</b> EV adoption and AI-driven data center growth are now competing for the same regional grid capacity, and this project is a bet that storage can keep both from squeezing charging reliability.</div>
-          <small>EV & Technology</small>
-        </div>
-      </a>
-    </div>
-    <div class="card reveal" data-mfr="Zoox">
-      <a href="https://cleantechnica.com/2026/07/30/zoox-gets-first-us-paid-robotaxi-with-no-human-controls-approval/" target="_blank" rel="noopener">
-        <img src="https://cleantechnica.com/wp-content/uploads/2026/06/New-Zoox-Robotaxi-0.jpeg" alt="Zoox Gets First US Approval for Paid Robotaxis With No Human Controls">
-        <div class="card-content">
-          <span class="badge">CleanTechnica</span>
-          <h3>Zoox Gets First US Approval for Paid Robotaxis With No Human Controls</h3>
-          <p>Unlike Waymo's modified consumer cars, Zoox has secured a blanket US approval for vehicles built from the ground up with no steering wheel or pedals, a regulatory first for paid robotaxi service.</p>
-          <div class="card-tension"><b>The Tension:</b> A purpose-built vehicle with no human controls is a bigger regulatory and manufacturing leap than retrofitting existing cars, and this approval effectively lets Zoox skip the intermediate step everyone else is still working through.</div>
-          <small>EV & Technology</small>
-        </div>
-      </a>
-    </div>
-    <div class="card reveal" data-mfr="Kia">
-      <a href="https://electrek.co/2026/07/30/kia-ev3-production-mexico-us/" target="_blank" rel="noopener">
-        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Kia-EV3-Mexico-US-1.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Kia EV3 Goes on Sale Soon, With Production Starting in Mexico">
-        <div class="card-content">
-          <span class="badge">Electrek</span>
-          <h3>Kia EV3 Goes on Sale Soon, With Production Starting in Mexico</h3>
-          <p>Kia has opened pre-orders for the EV3 in Mexico, where the compact electric SUV will be built before shipping north to US dealers later this year.</p>
-          <div class="card-tension"><b>The Tension:</b> Routing US-bound EV production through Mexico keeps Kia's cost structure competitive, but ties the model's on-sale timeline and pricing to cross-border trade policy that can shift with little notice.</div>
-          <small>EV & Technology</small>
-        </div>
-      </a>
-    </div>
-    <div class="card reveal" data-mfr="">
-      <a href="https://www.caranddriver.com/news/g29994375/future-electric-cars-trucks/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/3ebf6962-a995-4fe5-b0b9-39862a456e19.jpeg?crop=1.00xw:0.897xh;0,0.0455xh&resize=1200:*" alt="Future Electric Vehicles: The EVs You'll Soon Be Able to Buy">
+      <a href="https://www.caranddriver.com/news/a73319680/sscc-sc01-electric-sports-car/" target="_blank" rel="noopener">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/8671ea98-f08b-4ecd-9436-7c3f0d43c0a2.png?crop=0.837xw:0.741xh;0.126xw,0.130xh&resize=1200:*" alt="This Chinese Electric Sports Car Has Nearly 430 HP and Costs About $34K">
         <div class="card-content">
           <span class="badge">Car and Driver</span>
-          <h3>Future Electric Vehicles: The EVs You'll Soon Be Able to Buy</h3>
-          <p>A running roundup of upcoming EVs across the industry, ranging from vehicles already confirmed for production to concepts that may never reach a dealer lot.</p>
-          <div class="card-tension"><b>The Tension:</b> The gap between an automaker's published EV roadmap and what actually reaches production has widened industry-wide, making roundups like this as much a gauge of follow-through as of ambition.</div>
+          <h3>This Chinese Electric Sports Car Has Nearly 430 HP and Costs About $34K</h3>
+          <p>A new Chinese-built electric sports car, the SC01, is entering the UK market with a mid-engined-style silhouette, claimed light weight for an EV, full independent suspension, and pricing around $34,000.</p>
+          <div class="card-tension"><b>The Tension:</b> A sub-$34,000 sports car with nearly 430 hp undercuts the premise that lightweight, driver-focused sports cars have to be expensive niche products — if the claimed weight and dynamics hold up once reviewers actually drive it.</div>
           <small>EV & Technology</small>
         </div>
       </a>
@@ -660,17 +689,29 @@ footer p{
 <div class="sec-group" id="motorsports">
   <div class="sec">
     <h2>Motorsports</h2>
-    <small>1 story</small>
+    <small>2 stories</small>
   </div>
   <div class="grid">
     <div class="card reveal" data-mfr="">
-      <a href="https://www.roadandtrack.com/news/a73309340/f1-ceo-domenicali-says-george-lucas-told-him-most-new-fans-just-want-to-see-action/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/90ff93a9-3602-4f41-a6e7-9ad32aacfd16.jpeg?crop=1xw:0.5xh;0xw,0.079xh&resize=1200:*" alt="F1 CEO Domenicali Says George Lucas Told Him Most New Fans Just Want to See Action">
+      <a href="https://www.roadandtrack.com/news/a73324582/wtr-cadillacs-breakthrough-win-in-road-americas-return-to-endurance-racing/" target="_blank" rel="noopener">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/e46726c8-9f47-461c-9c34-f20bba70b6e3.jpeg?crop=0.888888888889xw:1xh;center,top&resize=1200:*" alt="WTR Cadillac's Breakthrough Win in Road America's Return to Endurance Racing">
         <div class="card-content">
           <span class="badge">Road & Track</span>
-          <h3>F1 CEO Domenicali Says George Lucas Told Him Most New Fans Just Want to See Action</h3>
-          <p>F1's CEO says newer viewers care less about granular battery-management and strategy data on screen and more about straightforward on-track action, reshaping how the series packages its broadcasts.</p>
-          <div class="card-tension"><b>The Tension:</b> Chasing a broader, action-first audience risks alienating the technically engaged fans who built F1's following in the first place — a tradeoff every growing motorsport series eventually confronts.</div>
+          <h3>WTR Cadillac's Breakthrough Win in Road America's Return to Endurance Racing</h3>
+          <p>Wayne Taylor Racing's Cadillac V-Series.R took its first win in over two years at Road America, in a penalty-filled finish that included a late-race crash between the championship-leading Cadillac and a Porsche.</p>
+          <div class="card-tension"><b>The Tension:</b> A championship contender crashing out just as a struggling sibling team finally wins shows how thin the line is between a manufacturer's best and worst weekend in the same GTP program.</div>
+          <small>Motorsports</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="">
+      <a href="https://www.roadandtrack.com/news/a73324318/alex-rossi-indycar-ir28-chassis-validation-test-ims/" target="_blank" rel="noopener">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/23f0ea46-3568-4fb3-bac0-e9b491aadbae.jpg?crop=1xw:0.75xh;center,top&resize=1200:*" alt="Alexander Rossi Reacts to First IndyCar IR28 Chassis Validation Test at IMS">
+        <div class="card-content">
+          <span class="badge">Road & Track</span>
+          <h3>Alexander Rossi Reacts to First IndyCar IR28 Chassis Validation Test at IMS</h3>
+          <p>Rossi became the first driver to test IndyCar's new IR28 chassis, the series' first new car since 2012, calling the early running promising despite a rain-shortened session.</p>
+          <div class="card-tension"><b>The Tension:</b> IndyCar is betting an entire chassis generation's competitive balance on early validation runs like this one, with two full seasons still to go before the IR28 actually replaces the current car.</div>
           <small>Motorsports</small>
         </div>
       </a>
@@ -681,53 +722,17 @@ footer p{
 <div class="sec-group" id="performance-builds">
   <div class="sec">
     <h2>Performance Builds</h2>
-    <small>4 stories</small>
+    <small>1 story</small>
   </div>
   <div class="grid">
-    <div class="card reveal" data-mfr="Ram">
-      <a href="https://www.hagerty.com/media/news/2027-ram-1500-rumble-bee-pricing-specs-pictures/" target="_blank" rel="noopener">
-        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/05/2027-Ram-1500-Rumble-Bee-SRT-RM027_076FN-scaled.jpg" alt="2027 Ram 1500 Rumble Bee Priced in Muscle Car Territory">
-        <div class="card-content">
-          <span class="badge">Hagerty</span>
-          <h3>2027 Ram 1500 Rumble Bee Priced in Muscle Car Territory</h3>
-          <p>Ram's revived street-oriented sport truck, offered across four V-8 variants built for on-road performance rather than off-road capability, is priced closer to a muscle car than a work truck.</p>
-          <div class="card-tension"><b>The Tension:</b> Positioning a pickup with muscle-car pricing tests how much of the truck market's loyalty is really about capability versus image — and whether buyers will pay Mustang-adjacent money for a Ram badge.</div>
-          <small>Performance Builds</small>
-        </div>
-      </a>
-    </div>
-    <div class="card reveal" data-mfr="Ford">
-      <a href="https://www.caranddriver.com/news/a73309686/2026-shelby-f-150-super-snake-sport-details/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/67277d9c-606c-46e1-afe7-a8d8f944919a.png?crop=1.00xw:0.837xh;0,0.0508xh&resize=1200:*" alt="Shelby's F-150 Super Snake Sport Packs 810 HP With a Two-Door Cab">
-        <div class="card-content">
-          <span class="badge">Car and Driver</span>
-          <h3>Shelby's F-150 Super Snake Sport Packs 810 HP With a Two-Door Cab</h3>
-          <p>Shelby American is reviving the two-door Super Snake Sport on the F-150 platform, a lowered street truck built for a level of power well beyond what the factory truck offers.</p>
-          <div class="card-tension"><b>The Tension:</b> Aftermarket tuners are finding real demand for extreme, low-volume factory-based builds precisely as OEMs chase efficiency and fleet targets with their mainstream truck lineups.</div>
-          <small>Performance Builds</small>
-        </div>
-      </a>
-    </div>
-    <div class="card reveal" data-mfr="Toyota">
-      <a href="https://www.caranddriver.com/news/a73297543/toyota-grmn-corolla-pricing/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/bed2aa1c-5511-432b-9387-14aadd56444a.jpg?crop=1.00xw:0.751xh;0,0.140xh&resize=1200:*" alt="Toyota's Limited-Run GRMN Corolla Costs Nearly as Much as a BMW M2">
-        <div class="card-content">
-          <span class="badge">Car and Driver</span>
-          <h3>Toyota's Limited-Run GRMN Corolla Costs Nearly as Much as a BMW M2</h3>
-          <p>The most extreme, racing-derived version yet of the GR Corolla brings track-focused capability, but at a price that puts it in direct range of a premium German sport coupe.</p>
-          <div class="card-tension"><b>The Tension:</b> Toyota is testing whether its performance-halo pricing can now stretch into territory long owned by German brands, a bet on brand equity built almost entirely through motorsport credibility.</div>
-          <small>Performance Builds</small>
-        </div>
-      </a>
-    </div>
     <div class="card reveal" data-mfr="Genesis">
-      <a href="https://www.roadandtrack.com/news/a73307800/2027-genesis-gv60-magma-price/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/6964e941-0693-461a-b5bd-80d195eee47c.jpg?crop=0.677xw:0.507xh;0.178xw,0.331xh&resize=1200:*" alt="2027 Genesis GV60 Magma Launches New Performance Sub-Brand at $71,495">
+      <a href="https://www.kbb.com/car-news/genesis-prices-the-2027-gv60-magma/" target="_blank" rel="noopener">
+        <img src="https://dam.coxautoinc.com/asset/9ec45583-a550-4753-9d38-1e44aff2636b/OG/2027-Genesis-GV60-Magma-Driving.jpg" alt="Genesis Prices the 2027 GV60 Magma">
         <div class="card-content">
-          <span class="badge">Road & Track</span>
-          <h3>2027 Genesis GV60 Magma Launches New Performance Sub-Brand at $71,495</h3>
-          <p>Genesis's new Magma performance sub-brand debuts on the GV60 at roughly $10,000 more than the related Hyundai Ioniq 5 N, staking out clear separation between the two Hyundai Motor Group brands.</p>
-          <div class="card-tension"><b>The Tension:</b> Pricing Magma a full $10,000 above its Hyundai sibling on shared underpinnings is a direct test of how much buyers will pay for badge and cabin polish alone.</div>
+          <span class="badge">Kelley Blue Book</span>
+          <h3>Genesis Prices the 2027 GV60 Magma</h3>
+          <p>Genesis's high-performance GV60 Magma will reach select-state dealers within weeks, giving the brand's new performance sub-brand its first real showroom test.</p>
+          <div class="card-tension"><b>The Tension:</b> A limited initial state rollout lets Genesis manage early Magma demand and service readiness, but it also means most of the country will judge the sub-brand purely on secondhand reviews before ever seeing one in person.</div>
           <small>Performance Builds</small>
         </div>
       </a>
@@ -738,53 +743,41 @@ footer p{
 <div class="sec-group" id="suppliers">
   <div class="sec">
     <h2>Suppliers</h2>
-    <small>4 stories</small>
+    <small>3 stories</small>
   </div>
   <div class="grid">
-    <div class="card reveal" data-mfr="Ford|GM">
-      <a href="https://www.wardsauto.com/news/us-army-awards-prototype-contracts-to-ford-gm-bc-customs/826541/" target="_blank" rel="noopener">
-        <img src="https://imgproxy.divecdn.com/BUGkvOblfYtKkTH9mCAwl8Uk1coISt-fsCDUUi21ulA/g:nowe:0:184/c:1989:1123/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS85NTAxNDkwLWR2aWRzLUluZmFudHJ5X1NxdWFkX1ZlaGljbGVIZWF2eS1JU1YtSC5qcGc=.webp" alt="US Army Awards Prototype Contracts to Ford, GM, and BC Customs">
+    <div class="card reveal" data-mfr="GM">
+      <a href="https://www.wardsauto.com/news/general-motors-drives-toward-supply-chain-resiliency/826690/" target="_blank" rel="noopener">
+        <img src="https://imgproxy.divecdn.com/3UkKk8NW46SQaalwY7Bk3BDwrkYwgnss-Za5xadb9uo/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9NVEIwMi5qcGc=.webp" alt="General Motors Drives Toward Supply Chain Resiliency">
         <div class="card-content">
           <span class="badge">WardsAuto</span>
-          <h3>US Army Awards Prototype Contracts to Ford, GM, and BC Customs</h3>
-          <p>The automakers are competing to produce over 600 Heavy Infantry Squad Vehicles for the Army, a contract that aligns with both Ford's and GM's stated ambitions to grow their defense-sector businesses.</p>
-          <div class="card-tension"><b>The Tension:</b> Defense contracts offer automakers a steadier, less cyclical revenue stream than retail car sales, but winning them means competing on government procurement terms rather than consumer brand strength.</div>
+          <h3>General Motors Drives Toward Supply Chain Resiliency</h3>
+          <p>GM plans to spend up to $1.5 billion more on US manufacturing next year on top of the $9 billion it already expects to spend this year, part of an onshoring and battery-sourcing push to shield against commodity and logistics cost swings.</p>
+          <div class="card-tension"><b>The Tension:</b> GM is investing billions to onshore supply chains at the same time the industry overall (see the Hero story above) is already sitting on nearly 4 million idle units of capacity — resiliency spending that assumes today's demand picture holds.</div>
           <small>Suppliers</small>
         </div>
       </a>
     </div>
     <div class="card reveal" data-mfr="">
-      <a href="https://cleantechnica.com/2026/07/31/germany-hydrogen-gas-system-rescue/" target="_blank" rel="noopener">
-        <img src="https://cleantechnica.com/wp-content/uploads/2026/07/a1754b0e-999e-4797-8a01-f0c7ab22f66f_1600x840.webp" alt="Germany Is Rebuilding Its Failed Russian Gas Strategy With Hydrogen">
+      <a href="https://cleantechnica.com/2026/08/03/europe-paying-twice-700-bar-hydrogen-refuelling/" target="_blank" rel="noopener">
+        <img src="https://cleantechnica.com/wp-content/uploads/2026/08/ChatGPT-Image-Aug-2-2026-10_26_03-AM-800x420.png" alt="Europe's 700-Bar Hydrogen Network Is Closing and Reappearing">
         <div class="card-content">
           <span class="badge">CleanTechnica</span>
-          <h3>Germany Is Rebuilding Its Failed Russian Gas Strategy With Hydrogen</h3>
-          <p>Germany's hydrogen freight subsidy program drew 526 applications seeking far more funding than the program's pool actually holds, numbers that look like strong demand until the underlying subsidy math is examined closely.</p>
-          <div class="card-tension"><b>The Tension:</b> Heavy application volume for a subsidy program isn't the same as commercial viability, and automotive suppliers building hydrogen infrastructure bets need to know which number they're actually planning around.</div>
+          <h3>Europe's 700-Bar Hydrogen Network Is Closing and Reappearing</h3>
+          <p>Germany closed 36 first-generation hydrogen refueling stations in 2025, most built for passenger cars, even as new AFIR-backed dual-pressure sites carry 700-bar capability forward for the bus and truck segment.</p>
+          <div class="card-tension"><b>The Tension:</b> Europe is effectively paying to build hydrogen infrastructure twice — once for a passenger-car market that's now retreating, and again for a commercial-vehicle market betting hydrogen still has a future there.</div>
           <small>Suppliers</small>
         </div>
       </a>
     </div>
     <div class="card reveal" data-mfr="">
-      <a href="https://cleantechnica.com/2026/07/30/energy-storage-factory-made-carbon-blocks-us-startup-antora/" target="_blank" rel="noopener">
-        <img src="https://cleantechnica.com/wp-content/uploads/2026/07/thermal-energy-storage-antora.png" alt="“Hot Blocks” Thermal Storage Startup Nails Down $550 Million More">
+      <a href="https://cleantechnica.com/2026/08/02/fuel-cell-buses-trucks-green-hydrogen-innovation/" target="_blank" rel="noopener">
+        <img src="https://cleantechnica.com/wp-content/uploads/2026/08/bosch.jpg" alt="Fuel Cell Trucks and Buses Are Still Coming, and They Still Need More Green Hydrogen">
         <div class="card-content">
           <span class="badge">CleanTechnica</span>
-          <h3>“Hot Blocks” Thermal Storage Startup Nails Down $550 Million More</h3>
-          <p>Energy storage startup Antora Energy raised another $550 million to scale up factory-made carbon thermal-storage blocks, part of the industrial supply chain that increasingly overlaps with automotive manufacturing's own energy demands.</p>
-          <div class="card-tension"><b>The Tension:</b> As automakers electrify factories and supply chains alongside their vehicle lineups, the industrial energy-storage sector is becoming as material to automotive cost structures as the parts suppliers themselves.</div>
-          <small>Suppliers</small>
-        </div>
-      </a>
-    </div>
-    <div class="card reveal" data-mfr="">
-      <a href="https://cleantechnica.com/2026/07/30/europes-waste-creates-value-elsewhere/" target="_blank" rel="noopener">
-        <img src="https://cleantechnica.com/wp-content/uploads/2026/07/EU-waste-creates-value.png" alt="Europe's Waste Creates Value Elsewhere">
-        <div class="card-content">
-          <span class="badge">CleanTechnica</span>
-          <h3>Europe's Waste Creates Value Elsewhere</h3>
-          <p>The EU's Circular Economy Act aims to help Europe's recycling industry recover more critical minerals from end-of-life products like cars and batteries, but the sector currently exports much of that recoverable value instead of capturing it locally.</p>
-          <div class="card-tension"><b>The Tension:</b> Automakers courting battery-material security are watching a recycling industry that, by this account, still ships its most valuable recovered materials abroad rather than feeding them back into European supply chains.</div>
+          <h3>Fuel Cell Trucks and Buses Are Still Coming, and They Still Need More Green Hydrogen</h3>
+          <p>Even as battery technology keeps improving, fuel cell trucks and buses remain a live commercial-vehicle bet, one that only stays zero-emission in practice if the hydrogen supplying them is actually green.</p>
+          <div class="card-tension"><b>The Tension:</b> Fuel cell trucks marketed as zero-emission are only as clean as their hydrogen source, and green hydrogen production capacity is still the bottleneck that could undercut the whole pitch.</div>
           <small>Suppliers</small>
         </div>
       </a>
@@ -798,62 +791,62 @@ footer p{
     <small>5 stories</small>
   </div>
   <div class="grid">
-    <div class="card reveal" data-mfr="Jeep">
-      <a href="https://www.kbb.com/reviews/our-3-favorite-things-about-the-2026-jeep-wrangler/" target="_blank" rel="noopener">
-        <img src="https://dam.coxautoinc.com/asset/9ae87ece-6a80-49e7-8562-69d63ff767c2/OG/2026_Jeep_Wrangler_willys_profile_driver_side.jpg" alt="Our 3 Favorite Things About the 2026 Jeep Wrangler">
+    <div class="card reveal" data-mfr="">
+      <a href="https://www.wardsauto.com/news/asbury-automotives-big-dms-switch-hits-the-home-stretch/826664/" target="_blank" rel="noopener">
+        <img src="https://imgproxy.divecdn.com/h3CZGTE50LciumhUELKLfCgn6h-hpeUtC3rDTen6gO0/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Bc2J1cnlfVGVraW9uLnBuZw==.webp" alt="Asbury Automotive's Big DMS Switch Hits the Home Stretch">
         <div class="card-content">
-          <span class="badge">Kelley Blue Book</span>
-          <h3>Our 3 Favorite Things About the 2026 Jeep Wrangler</h3>
-          <p>KBB's editors break down what continues to make the Wrangler a perennial favorite, the kind of consumer-facing framing dealers can lean on directly in showroom conversations.</p>
-          <div class="card-tension"><b>The Tension:</b> Buyer's-guide content like this shapes cross-shopping decisions before a customer ever reaches the lot, making it as relevant to a dealership's sales floor as any factory incentive.</div>
+          <span class="badge">WardsAuto</span>
+          <h3>Asbury Automotive's Big DMS Switch Hits the Home Stretch</h3>
+          <p>The megadealer group has converted 70 percent of its stores to a new cloud-based dealer management system, aiming to unlock productivity and efficiency gains across its network.</p>
+          <div class="card-tension"><b>The Tension:</b> A DMS migration this large is a multi-year operational bet by one of the country's largest dealer groups, and the remaining 30 percent of stores are the ones likely to reveal whether the promised efficiency gains actually materialize at scale.</div>
           <small>Dealer News</small>
         </div>
       </a>
     </div>
-    <div class="card reveal" data-mfr="Mazda">
-      <a href="https://www.kbb.com/reviews/is-the-mazda-cx-30-a-good-value/" target="_blank" rel="noopener">
-        <img src="https://dam.coxautoinc.com/asset/e1d30a8e-84f1-418a-b2d8-7fbf012c1b34/OG/2026-Mazda-CX-30-exterior-front-3-qtr-passenger.jpg" alt="Is the 2026 Mazda CX-30 a Good Value?">
+    <div class="card reveal" data-mfr="Ford">
+      <a href="https://www.wardsauto.com/news/ford-recalls-nearly-566k-bronco-suvs-for-engine-fire-risk/826593/" target="_blank" rel="noopener">
+        <img src="https://imgproxy.divecdn.com/Q28KvZupDXpJroKIo-t6XkNdxGJCR3Dy1WwtrQLvOvM/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS8yMDI0X2Jyb25jb19yYXB0b3Iud2VicA==.webp" alt="Ford Recalls Nearly 566K Bronco SUVs for Engine Fire Risk">
         <div class="card-content">
-          <span class="badge">Kelley Blue Book</span>
-          <h3>Is the 2026 Mazda CX-30 a Good Value?</h3>
-          <p>The sporty, stylish CX-30 is affordable on paper, but KBB's review digs into whether that low sticker price actually holds up as good value against subcompact SUV rivals.</p>
-          <div class="card-tension"><b>The Tension:</b> "Affordable" and "good value" aren't the same claim, and reviews that separate the two directly affect which vehicles a shopper cross-shops before ever asking a salesperson a question.</div>
+          <span class="badge">WardsAuto</span>
+          <h3>Ford Recalls Nearly 566K Bronco SUVs for Engine Fire Risk</h3>
+          <p>Ford identified insufficient abrasion protection on an underhood engine wiring harness, which can chafe over time and short-circuit, prompting a recall covering nearly 566,000 Bronco SUVs.</p>
+          <div class="card-tension"><b>The Tension:</b> A recall of this size, tied to a wear-over-time defect rather than a one-time build error, means dealer service bays should expect a long tail of repair volume rather than a single quick campaign.</div>
           <small>Dealer News</small>
         </div>
       </a>
     </div>
-    <div class="card reveal" data-mfr="Nissan">
-      <a href="https://www.kbb.com/reviews/our-3-favorite-things-about-the-nissan-altima/" target="_blank" rel="noopener">
-        <img src="https://dam.coxautoinc.com/asset/d2a7744b-7ac2-4954-8a96-39ca28d00c43/OG/2025-nissan-altima-sr-front-left-3qtr-jpg.jpg" alt="Our 3 Favorite Things About the 2026 Nissan Altima">
+    <div class="card reveal" data-mfr="Jeep|Ford">
+      <a href="https://www.kbb.com/comparison/jeep-wrangler-vs-ford-bronco/" target="_blank" rel="noopener">
+        <img src="https://www.kbb.com/wp-content/uploads/2024/12/2025-jeep-wrangler-front-right.jpg?w=150&h=150&crop=1&quality=75&strip=all" alt="2026 Jeep Wrangler vs. 2026 Ford Bronco Comparison">
         <div class="card-content">
           <span class="badge">Kelley Blue Book</span>
-          <h3>Our 3 Favorite Things About the 2026 Nissan Altima</h3>
-          <p>A midsize-sedan favorites rundown arrives at the same time Nissan's own leadership is warning it must move faster on new product just to survive (see OEM Spotlight above).</p>
-          <div class="card-tension"><b>The Tension:</b> Positive consumer coverage of a current model is good news for today's showroom traffic, but it doesn't resolve the deeper product-cadence problem Nissan itself is flagging.</div>
-          <small>Dealer News</small>
-        </div>
-      </a>
-    </div>
-    <div class="card reveal" data-mfr="Volkswagen">
-      <a href="https://www.motor1.com/news/803327/volkswagen-atlas-recall-backup-camera/" target="_blank" rel="noopener">
-        <img src="https://cdn.motor1.com/images/mgl/7ZPR1o/s1/2024-volkswagen-atlas.jpg" alt="Volkswagen Recalls 57K Atlas SUVs After Backup Camera Fails">
-        <div class="card-content">
-          <span class="badge">Motor1</span>
-          <h3>Volkswagen Recalls 57K Atlas SUVs After Backup Camera Fails</h3>
-          <p>A rearview software flaw affecting 2024-2026 Atlas and Atlas Cross Sport models triggers a safety recall, with a free dealer software update fixing the darkened camera screen.</p>
-          <div class="card-tension"><b>The Tension:</b> A software-only fix keeps this recall cheap to execute, but it also means the underlying flaw shipped across three model years before anyone caught it.</div>
+          <h3>2026 Jeep Wrangler vs. 2026 Ford Bronco Comparison</h3>
+          <p>KBB's head-to-head puts the two dedicated off-roaders side by side on capability, comfort, and value, framing the segment's defining cross-shop decision for buyers right as Ford works through the Bronco recall above.</p>
+          <div class="card-tension"><b>The Tension:</b> A glowing head-to-head comparison lands the same week as a 566,000-vehicle Bronco recall, a reminder that consumer buying-guide content and safety news often run on completely separate editorial clocks.</div>
           <small>Dealer News</small>
         </div>
       </a>
     </div>
     <div class="card reveal" data-mfr="Mercedes-Benz">
-      <a href="https://www.caranddriver.com/news/a73309968/mercedes-benz-310k-vehicle-rollaway-risk-recall/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/2024-mercedes-benz-glb-103-64130fe3c2d7b.jpg?crop=1.00xw:0.752xh;0,0.0913xh&resize=1200:*" alt="Mercedes-Benz Recalls 310K Cars That Could Potentially Roll Away">
+      <a href="https://www.kbb.com/car-news/mercedes-benz-recalls-over-300000-vehicles-over-rollaway-possibility/" target="_blank" rel="noopener">
+        <img src="https://dam.coxautoinc.com/asset/b0da09a7-90ea-4f98-a5ce-ffc1da18c1b9/OG/2027-Mercedes-Maybach-GLS680-07.jpg" alt="Mercedes-Benz Recalls Over 300,000 Vehicles Over Rollaway Possibility">
         <div class="card-content">
-          <span class="badge">Car and Driver</span>
-          <h3>Mercedes-Benz Recalls 310K Cars That Could Potentially Roll Away</h3>
-          <p>The recall spans seven models and covers vehicles from the 2020 through 2026 model years, a wide net that will put meaningful volume through dealer service departments.</p>
-          <div class="card-tension"><b>The Tension:</b> A rollaway defect spanning six model years and seven nameplates points to a shared component or process issue running deeper than any single model line.</div>
+          <span class="badge">Kelley Blue Book</span>
+          <h3>Mercedes-Benz Recalls Over 300,000 Vehicles Over Rollaway Possibility</h3>
+          <p>The recall spans 29 models and 310,667 vehicles tied to a door lock microswitch issue that could allow a vehicle to roll away unexpectedly.</p>
+          <div class="card-tension"><b>The Tension:</b> A defect spanning 29 separate model lines points to a shared component sourced across nearly the entire lineup, the kind of single-supplier exposure that's costlier to trace than a single-model recall.</div>
+          <small>Dealer News</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="Toyota">
+      <a href="https://www.kbb.com/reviews/driving-the-2026-toyota-rav4-woodland/" target="_blank" rel="noopener">
+        <img src="https://dam.coxautoinc.com/asset/536599a4-978c-42f9-93a7-201656893715/OG/2026-toyota-rav4-woodland-front-quarter.jpg" alt="Driving the 2026 Toyota RAV4 Woodland">
+        <div class="card-content">
+          <span class="badge">Kelley Blue Book</span>
+          <h3>Driving the 2026 Toyota RAV4 Woodland</h3>
+          <p>A week behind the wheel of the off-road-themed Woodland trim finds it as comfortable and practical as ever, with more power on tap than previous versions offered.</p>
+          <div class="card-tension"><b>The Tension:</b> Toyota keeps proving that a rugged-styled trim package on its best-selling SUV can drive incremental sales without touching the vehicle's core mainstream appeal.</div>
           <small>Dealer News</small>
         </div>
       </a>
@@ -864,41 +857,53 @@ footer p{
 <div class="sec-group" id="car-culture">
   <div class="sec">
     <h2>Car Culture</h2>
-    <small>3 stories</small>
+    <small>4 stories</small>
   </div>
   <div class="grid">
-    <div class="card reveal" data-mfr="Dodge">
-      <a href="https://www.thedrive.com/news/the-new-dodge-charger-is-youtubes-favorite-car-to-build-or-destroy-right-now" target="_blank" rel="noopener">
-        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/Charger-YouTube-Hero-1.jpg?quality=85" alt="The New Dodge Charger Is YouTube's Favorite Car to Build (or Destroy) Right Now">
+    <div class="card reveal" data-mfr="GM">
+      <a href="https://www.thedrive.com/news/these-guys-resurrecting-a-gm-ev1-are-making-serious-progress" target="_blank" rel="noopener">
+        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/Screenshot-2026-07-31-at-10.57.42-AM.jpeg?quality=85" alt="These Guys Resurrecting a GM EV1 Are Making Serious Progress">
         <div class="card-content">
           <span class="badge">The Drive</span>
-          <h3>The New Dodge Charger Is YouTube's Favorite Car to Build (or Destroy) Right Now</h3>
-          <p>A cluster of YouTubers are simultaneously building and abusing new Dodge Chargers on camera right now, a pattern the story argues is no coincidence.</p>
-          <div class="card-tension"><b>The Tension:</b> Heavy creator attention, whether celebratory or destructive, is itself a form of free marketing reach that most new nameplates never get in their first year.</div>
+          <h3>These Guys Resurrecting a GM EV1 Are Making Serious Progress</h3>
+          <p>A restoration project is bringing one of GM's famously crushed 1990s EV1s back to life, with electricity now flowing through the car's original wiring again.</p>
+          <div class="card-tension"><b>The Tension:</b> Enthusiasts reviving a car GM deliberately destroyed decades ago is a pointed reminder of how differently the industry treats early EV experiments once the technology matures enough to actually sell.</div>
           <small>Car Culture</small>
         </div>
       </a>
     </div>
-    <div class="card reveal" data-mfr="Ferrari">
-      <a href="https://www.thedrive.com/news/the-ferrari-luce-has-done-its-job" target="_blank" rel="noopener">
-        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/ferrari-luce-jerry-perez-1.jpeg?quality=85" alt="The Ferrari Luce Has Done Its Job">
+    <div class="card reveal" data-mfr="">
+      <a href="https://www.thedrive.com/news/ever-wondered-what-a-v11-engine-sounds-like-well-here-you-go" target="_blank" rel="noopener">
+        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/Screenshot-2026-07-31-at-2.16.23-PM.jpeg?quality=85" alt="Ever Wondered What a V11 Engine Sounds Like? Well, Here You Go">
         <div class="card-content">
           <span class="badge">The Drive</span>
-          <h3>The Ferrari Luce Has Done Its Job</h3>
-          <p>Ferrari's Luce EV hit its full 2026 sales target in just two months, and the company raised its full-year revenue estimate on the strength of that demand.</p>
-          <div class="card-tension"><b>The Tension:</b> A halo brand hitting an annual EV sales target in eight weeks undercuts the industry-wide narrative that luxury buyers won't pay a premium for electric power.</div>
+          <h3>Ever Wondered What a V11 Engine Sounds Like? Well, Here You Go</h3>
+          <p>A real V11 would be a structural nightmare to balance, but a simulation lets enthusiasts hear what the odd-cylinder-count engine would sound like anyway.</p>
+          <div class="card-tension"><b>The Tension:</b> Car culture keeps finding audiences for engineering configurations no automaker would ever actually build, proof that enthusiasm for internal combustion detail hasn't cooled even as the industry electrifies.</div>
           <small>Car Culture</small>
         </div>
       </a>
     </div>
-    <div class="card reveal" data-mfr="Tesla">
-      <a href="https://www.roadandtrack.com/news/a73307100/youtube-whistlindiesel-tesla-cybertruck-111-mph-crash-ford-f-150/" target="_blank" rel="noopener">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/10a79dde-c9af-42e9-ab65-d6434af9fbb6.png?crop=0.512xw:0.917xh;0.235xw,0xh&resize=1200:*" alt="Watch YouTuber WhistlinDiesel Finish Off His Cybertruck With a 111-MPH Crash Into an F-150">
+    <div class="card reveal" data-mfr="BMW">
+      <a href="https://www.thedrive.com/news/someone-turned-a-bmw-m4-competition-xdrive-into-a-pickup" target="_blank" rel="noopener">
+        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/IMG_1533-scaled-24031.jpeg?quality=85" alt="Someone Turned a BMW M4 Competition xDrive Into a Pickup">
+        <div class="card-content">
+          <span class="badge">The Drive</span>
+          <h3>Someone Turned a BMW M4 Competition xDrive Into a Pickup</h3>
+          <p>A one-off build grafts a pickup bed onto an M4 Competition xDrive, turning a performance coupe into a genuinely usable hauler for trips to the hardware store.</p>
+          <div class="card-tension"><b>The Tension:</b> One-off builds like this are effectively free brand marketing for BMW, generating enthusiast attention no factory-sanctioned special edition could match at this cost.</div>
+          <small>Car Culture</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="Lexus">
+      <a href="https://www.roadandtrack.com/news/a73318328/lexus-helicopter-service-japan/" target="_blank" rel="noopener">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/f248a2d0-2f4f-4cd4-b090-8dc5a4b15cd9.jpg?crop=0.413xw:0.341xh;0.539xw,0.234xh&resize=1200:*" alt="Lexus Is Launching a Helicopter Service, But Only in Japan">
         <div class="card-content">
           <span class="badge">Road & Track</span>
-          <h3>Watch YouTuber WhistlinDiesel Finish Off His Cybertruck With a 111-MPH Crash Into an F-150</h3>
-          <p>Months of off-roading, abuse, and repeated dealership visits during a long-term durability trial ended with a high-speed collision between a Cybertruck and an F-150.</p>
-          <div class="card-tension"><b>The Tension:</b> A durability trial that ends in a deliberate crash rather than a component failure says less about the truck's engineering than about the incentives built into stunt-driven car content.</div>
+          <h3>Lexus Is Launching a Helicopter Service, But Only in Japan</h3>
+          <p>After decades on the road and a stint at sea with its yacht business, Lexus is taking to the skies with a domestic Japanese helicopter service.</p>
+          <div class="card-tension"><b>The Tension:</b> Extending the Lexus badge into a mobility service with essentially zero manufacturing overlap tests how far a luxury brand can stretch before the badge starts meaning less in any single category.</div>
           <small>Car Culture</small>
         </div>
       </a>
@@ -909,41 +914,77 @@ footer p{
 <div class="sec-group" id="classics-restoration">
   <div class="sec">
     <h2>Classics & Restoration</h2>
-    <small>3 stories</small>
+    <small>6 stories</small>
   </div>
   <div class="grid">
     <div class="card reveal" data-mfr="">
-      <a href="https://www.hagerty.com/media/hagerty-community/7-vehicles-wed-love-to-drag-out-of-the-woods-and-restore/" target="_blank" rel="noopener">
-        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/Woods-classic-car-abandoned-chad-nathan-IPrewM0P7_A-unsplash-e1785435592649.jpg" alt="7 Vehicles We'd Love to Drag Out of the Woods and Restore">
+      <a href="https://www.hagerty.com/media/market-trends/this-mangusta-is-gorgeous-and-rare-and-it-just-sold-for-433k/" target="_blank" rel="noopener">
+        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/1969-DeTomaso-Mangusta-19.jpg" alt="This Mangusta Is Gorgeous and Rare, and It Just Sold for $433K">
         <div class="card-content">
           <span class="badge">Hagerty</span>
-          <h3>7 Vehicles We'd Love to Drag Out of the Woods and Restore</h3>
-          <p>Hagerty rounds up abandoned classics sitting at the edge of being lost for good, cars and trucks with just enough life left in them to be worth the restoration effort.</p>
-          <div class="card-tension"><b>The Tension:</b> Every year that a forgotten classic sits exposed narrows the window in which restoring it is still realistic versus simply parting it out.</div>
+          <h3>This Mangusta Is Gorgeous and Rare, and It Just Sold for $433K</h3>
+          <p>A rare DeTomaso Mangusta, born from Alejandro DeTomaso's move from racing driver to race-car manufacturer in postwar Modena, sold for $433,000 at auction.</p>
+          <div class="card-tension"><b>The Tension:</b> Prices like this on a niche 1960s Italian-American hybrid show how thin the line has become between mainstream collector-car values and true boutique-brand rarity premiums.</div>
+          <small>Classics & Restoration</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="Pontiac">
+      <a href="https://www.hagerty.com/media/opinion/klockau-classics/1975-pontiac-grand-ville-brougham-convertible-last-call-for-going-topless/" target="_blank" rel="noopener">
+        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/Klockau-1975-Pontiac-Grand-Ville-Brougham-lede.jpg" alt="1975 Pontiac Grand Ville Brougham Convertible: Last Call for the Big Drop-Top">
+        <div class="card-content">
+          <span class="badge">Hagerty</span>
+          <h3>1975 Pontiac Grand Ville Brougham Convertible: Last Call for the Big Drop-Top</h3>
+          <p>The Grand Ville briefly outranked the Bonneville at Pontiac dealers in the early '70s, and this profile revisits one of the last full-size American convertibles before the body style nearly disappeared.</p>
+          <div class="card-tension"><b>The Tension:</b> Full-size convertibles like this effectively vanished from American showrooms within a few years of this car's debut, making it a snapshot of a body style the market simply stopped supporting.</div>
           <small>Classics & Restoration</small>
         </div>
       </a>
     </div>
     <div class="card reveal" data-mfr="">
-      <a href="https://www.hagerty.com/media/market-trends/hagerty-insider/hagerty-market-rating/monthly-market-report-june-2026/" target="_blank" rel="noopener">
-        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/VEAuction-16May-39.webp" alt="Monthly Hagerty Market Report: June 2026">
+      <a href="https://www.hagerty.com/media/car-profiles/off-the-rack-affordable-classics-designed-by-three-italian-icons/" target="_blank" rel="noopener">
+        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/3italians_three_car_opener-v2_v1_web_169.jpg" alt="Off the Rack: Affordable Classics Designed by Three Italian Icons">
         <div class="card-content">
           <span class="badge">Hagerty</span>
-          <h3>Monthly Hagerty Market Report: June 2026</h3>
-          <p>Hagerty's monthly roundup of collector-car auction activity, top sales, and market-rating trends gives dealers and collectors a data-backed read on where classic-car values are heading.</p>
-          <div class="card-tension"><b>The Tension:</b> Collector-car pricing increasingly moves on macro forces like interest rates and generational buyer turnover, not just nostalgia, and this report is where that shift shows up first.</div>
+          <h3>Off the Rack: Affordable Classics Designed by Three Italian Icons</h3>
+          <p>Just as fashion houses sell higher-volume ready-to-wear alongside haute couture, this profile rounds up mass-market classics penned by famous Italian design houses — designer pedigree without the flagship price tag.</p>
+          <div class="card-tension"><b>The Tension:</b> Buying into a famous designer's more accessible work is a proven strategy in fashion, and this piece argues it works just as well for collector cars looking to avoid flagship-model price inflation.</div>
           <small>Classics & Restoration</small>
         </div>
       </a>
     </div>
-    <div class="card reveal" data-mfr="Volvo">
-      <a href="https://www.hagerty.com/media/car-profiles/celebrating-the-unexceptional-with-a-volvo-144e/" target="_blank" rel="noopener">
-        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/IMG_1464-scaled.jpg" alt="Celebrating the Unexceptional With a Volvo 144E">
+    <div class="card reveal" data-mfr="BMW">
+      <a href="https://www.caranddriver.com/news/a73317780/1977-bmw-320i-bring-a-trailer-auction/" target="_blank" rel="noopener">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/16918d96-8f7e-4f23-948f-3142dbbc4042.jpg?crop=0.842xw:0.631xh;0.082xw,0.216xh&resize=1200:*" alt="1977 BMW 320i With Just 9,000 Miles for Sale on Bring a Trailer">
         <div class="card-content">
-          <span class="badge">Hagerty</span>
-          <h3>Celebrating the Unexceptional With a Volvo 144E</h3>
-          <p>Hagerty's Festival of the Unexceptional gives deliberately mundane cars their day in the spotlight, and this year's Volvo 144E profile captures exactly that spirit.</p>
-          <div class="card-tension"><b>The Tension:</b> Collector enthusiasm for the deliberately ordinary is a useful reminder that scarcity, not glamour, is what ultimately drives long-term collectibility.</div>
+          <span class="badge">Car and Driver</span>
+          <h3>1977 BMW 320i With Just 9,000 Miles for Sale on Bring a Trailer</h3>
+          <p>Most 320is of this era were driven hard, but this particular example somehow survived with barely 9,000 original miles on the odometer.</p>
+          <div class="card-tension"><b>The Tension:</b> Time-capsule survivors like this are becoming rarer precisely because they're worth more preserved than driven, which means fewer future examples will exist in original, unmolested condition at all.</div>
+          <small>Classics & Restoration</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="">
+      <a href="https://www.caranddriver.com/news/a73319227/mclaren-f1-most-expensive-auction/" target="_blank" rel="noopener">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/f31d0a9e-b9e4-4fdd-a9e0-ac8b24f3f530.jpg?crop=1.00xw:0.669xh;0,0.243xh&resize=1200:*" alt="This Could Be the Most Expensive McLaren F1 of All Time">
+        <div class="card-content">
+          <span class="badge">Car and Driver</span>
+          <h3>This Could Be the Most Expensive McLaren F1 of All Time</h3>
+          <p>One of the ultra-rare McLaren F1 GTRs is headed to auction in Monterey next month, with bids expected to exceed $35 million.</p>
+          <div class="card-tension"><b>The Tension:</b> A single race-derived homologation model potentially crossing $35 million recalibrates what the entire top tier of the collector market considers possible for a modern-era car.</div>
+          <small>Classics & Restoration</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="Mercedes-Benz">
+      <a href="https://www.caranddriver.com/news/a73316676/2008-mercedes-benz-slr-mclaren-roadster-bring-a-trailer-auction/" target="_blank" rel="noopener">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/57fc9d4d-9e80-4cfc-8ef2-4a478abb1b4e.jpg?crop=1.00xw:0.753xh;0,0.122xh&resize=1200:*" alt="2008 Mercedes-Benz SLR McLaren Roadster on Bring a Trailer">
+        <div class="card-content">
+          <span class="badge">Car and Driver</span>
+          <h3>2008 Mercedes-Benz SLR McLaren Roadster on Bring a Trailer</h3>
+          <p>The road-going collaboration between Mercedes-Benz and McLaren, born out of their Formula 1 partnership, hits the Bring a Trailer auction block in droptop form.</p>
+          <div class="card-tension"><b>The Tension:</b> The SLR McLaren remains a case study in a joint-venture halo car that never quite found its commercial footing new, yet steadily gains collector respect the further it gets from its original showroom reception.</div>
           <small>Classics & Restoration</small>
         </div>
       </a>
@@ -954,29 +995,53 @@ footer p{
 <div class="sec-group" id="aftermarket">
   <div class="sec">
     <h2>Aftermarket</h2>
-    <small>2 stories</small>
+    <small>4 stories</small>
   </div>
   <div class="grid">
-    <div class="card reveal" data-mfr="">
-      <a href="https://www.hagerty.com/media/maintenance-and-tech/4-levels-of-diy-maintenance-preparation/" target="_blank" rel="noopener">
-        <img src="https://media.hagerty.com/media/wp-content/uploads/2025/09/IMG_3418-1-scaled.jpg" alt="4 Levels of DIY Maintenance Preparation">
+    <div class="card reveal" data-mfr="Chevrolet">
+      <a href="https://www.hagerty.com/media/advice/piston-slap/piston-slap-justy-fied-service-for-the-sparks-cvt/" target="_blank" rel="noopener">
+        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/2021-chevrolet-spark.jpg" alt="Piston Slap: Justy-fied Service for the Spark's CVT?">
         <div class="card-content">
           <span class="badge">Hagerty</span>
-          <h3>4 Levels of DIY Maintenance Preparation</h3>
-          <p>Hagerty lays out a tiered framework for preparing to maintain an older vehicle yourself, from basic tool kits up to a fully equipped home shop.</p>
-          <div class="card-tension"><b>The Tension:</b> Every owner who moves up a DIY tier is a data point on dealer and independent-shop service business shifting toward the enthusiast segment that prefers to wrench at home.</div>
+          <h3>Piston Slap: Justy-fied Service for the Spark's CVT?</h3>
+          <p>A reader with a 2022 Chevrolet Spark CVT bought as a budget second car gets Hagerty's advice column treatment on service and maintenance strategy for the transmission.</p>
+          <div class="card-tension"><b>The Tension:</b> Reader questions like this reveal how much used-car buying strategy still comes down to word-of-mouth mechanical trust rather than anything a spec sheet or CPO warranty can fully capture.</div>
           <small>Aftermarket</small>
         </div>
       </a>
     </div>
     <div class="card reveal" data-mfr="">
-      <a href="https://electrek.co/2026/07/30/juiced-scrambler-testing-the-best-bang-for-your-buck-moto-style-e-bike/" target="_blank" rel="noopener">
-        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/juiced-scrambler-ebikes-header-bike-rack-1.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Juiced Scrambler: Testing the Best Bang-for-Your-Buck Moto-Style E-Bike">
+      <a href="https://www.hagerty.com/media/advice/gps-trackers-the-last-line-of-theft-defense/" target="_blank" rel="noopener">
+        <img src="https://media.hagerty.com/media/wp-content/uploads/2026/07/Police-Theft-Unit-GettyImages-1315807127.jpg" alt="GPS Trackers: The Last Line of Theft Defense">
+        <div class="card-content">
+          <span class="badge">Hagerty</span>
+          <h3>GPS Trackers: The Last Line of Theft Defense</h3>
+          <p>Nearly 660,000 vehicles were reported stolen nationwide last year, and Hagerty recorded 207 total-loss classic-car theft claims in 2025, prompting a look at aftermarket GPS trackers as a last line of defense.</p>
+          <div class="card-tension"><b>The Tension:</b> Organized theft rings increasingly target high-value vehicles specifically, which means aftermarket security spending is shifting from a nice-to-have to something collector-car owners are treating as essential.</div>
+          <small>Aftermarket</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="">
+      <a href="https://electrek.co/2026/08/02/here-are-the-best-electric-bikes-you-can-buy-at-every-price-level/" target="_blank" rel="noopener">
+        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/03/ride1up-vorsa-ft-header-fat-tire-bike.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Here Are the Best Electric Bikes You Can Buy at Every Price Level in August 2026">
         <div class="card-content">
           <span class="badge">Electrek</span>
-          <h3>Juiced Scrambler: Testing the Best Bang-for-Your-Buck Moto-Style E-Bike</h3>
-          <p>After collapsing in 2024, Juiced Bikes is back under new ownership, and its Scrambler moto-style e-bike is being tested as an aggressively priced entry in the legal, street-ready e-bike category.</p>
-          <div class="card-tension"><b>The Tension:</b> A once-defunct e-bike brand relaunching into an aggressively priced niche shows how much room is left in personal electric mobility even as the car side of the market consolidates.</div>
+          <h3>Here Are the Best Electric Bikes You Can Buy at Every Price Level in August 2026</h3>
+          <p>Electrek's hands-on buying guide rounds up the top-tested electric bikes across every budget tier, current as of this August.</p>
+          <div class="card-tension"><b>The Tension:</b> As e-bike buying guides get this granular by price tier, it's a sign the category has matured from novelty into a genuine, considered purchase decision competing directly for short-trip transportation dollars.</div>
+          <small>Aftermarket</small>
+        </div>
+      </a>
+    </div>
+    <div class="card reveal" data-mfr="">
+      <a href="https://electrek.co/2026/07/31/lectric-ebikes-hits-1-billion-in-sales-surpasses-750000-e-bikes/" target="_blank" rel="noopener">
+        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/05/lectric-xpress2-header.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="Lectric eBikes Hits $1 Billion in Sales, Surpasses 750,000 e-Bikes">
+        <div class="card-content">
+          <span class="badge">Electrek</span>
+          <h3>Lectric eBikes Hits $1 Billion in Sales, Surpasses 750,000 e-Bikes</h3>
+          <p>The largest US e-bike company crossed $1 billion in lifetime e-commerce sales and sold its 750,000th unit on the same day, a milestone for a company built almost entirely around affordable, direct-to-consumer electric bikes.</p>
+          <div class="card-tension"><b>The Tension:</b> A single e-bike brand hitting a billion dollars in direct sales shows how much personal-electric-mobility spending is happening entirely outside traditional dealer and big-box retail channels.</div>
           <small>Aftermarket</small>
         </div>
       </a>
@@ -987,41 +1052,29 @@ footer p{
 <div class="sec-group" id="industry-news">
   <div class="sec">
     <h2>Industry News</h2>
-    <small>3 stories</small>
+    <small>2 stories</small>
   </div>
   <div class="grid">
     <div class="card reveal" data-mfr="">
-      <a href="https://www.thedrive.com/news/flocks-ceo-admits-police-abuse-is-a-problem-then-defends-his-company" target="_blank" rel="noopener">
-        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/RTCC-copy.jpg?quality=85" alt="Flock's CEO Admits Police Abuse 'Is a Problem.' Then Defends His Company">
+      <a href="https://www.thedrive.com/news/cops-imitating-plants-catch-74-drivers-on-their-phones-in-six-hours" target="_blank" rel="noopener">
+        <img src="https://www.thedrive.com/wp-content/uploads/2026/07/759078843_1373805364897431_3494819671090111791_n.jpeg?quality=85" alt="Cops Imitating Plants Catch 74 Drivers on Their Phones in Six Hours">
         <div class="card-content">
           <span class="badge">The Drive</span>
-          <h3>Flock's CEO Admits Police Abuse 'Is a Problem.' Then Defends His Company</h3>
-          <p>Flock CEO Garrett Langley told The Drive that "any level of abuse is unacceptable" regarding how law enforcement uses the company's automated license-plate-reading network, but stopped short of outlining next steps.</p>
-          <div class="card-tension"><b>The Tension:</b> Acknowledging a problem without committing to a specific remedy is a familiar pattern for infrastructure vendors whose technology outlives the original policy debate around it.</div>
+          <h3>Cops Imitating Plants Catch 74 Drivers on Their Phones in Six Hours</h3>
+          <p>An officer in Dunellen, New Jersey disguised himself as roadside shrubbery to catch distracted drivers, netting 74 phone-use citations in a single six-hour shift.</p>
+          <div class="card-tension"><b>The Tension:</b> That an unconventional stakeout tactic outperforms routine patrols this dramatically says less about clever policing than about how normalized phone use behind the wheel has become when drivers assume no one is watching.</div>
           <small>Industry News</small>
         </div>
       </a>
     </div>
     <div class="card reveal" data-mfr="">
-      <a href="https://electrek.co/2026/07/30/a-new-zipcar-pilot-pairs-shared-evs-with-off-grid-solar-charging/" target="_blank" rel="noopener">
-        <img src="https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2026/07/Beam-Zipcar-Boston.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1" alt="A New Zipcar Pilot Pairs Shared EVs With Off-Grid Solar Charging">
-        <div class="card-content">
-          <span class="badge">Electrek</span>
-          <h3>A New Zipcar Pilot Pairs Shared EVs With Off-Grid Solar Charging</h3>
-          <p>Four Greater Boston communities now have off-grid solar EV chargers powering a Zipcar carsharing pilot aimed at bringing affordable shared mobility to areas that have historically lacked it.</p>
-          <div class="card-tension"><b>The Tension:</b> Pairing carsharing with off-grid solar sidesteps the grid-capacity constraints showing up elsewhere in this issue, a workaround worth watching as a template for underserved markets.</div>
-          <small>Industry News</small>
-        </div>
-      </a>
-    </div>
-    <div class="card reveal" data-mfr="Tesla">
-      <a href="https://cleantechnica.com/2026/07/30/people-want-us-to-not-cover-elon-musks-politics-but-hes-using-his-wealth-power-from-tesla-to-influence-elections/" target="_blank" rel="noopener">
-        <img src="https://cleantechnica.com/wp-content/uploads/2025/12/Tesla-Cybertruck-unveiling-event-truck-KYLE-Elon-Musk-CleanTechnica.jpg" alt="Tesla's Elon Musk Problem: When a CEO's Politics Become a Brand and Investor Risk">
+      <a href="https://cleantechnica.com/2026/08/02/climate-change-hushing-voter-motivation-democrats-2026-elections/" target="_blank" rel="noopener">
+        <img src="https://cleantechnica.com/wp-content/uploads/2026/08/climate-change-survey-USC-santa-barbara.png" alt="Climate Messaging Heats Up Ahead of the 2026 Midterms">
         <div class="card-content">
           <span class="badge">CleanTechnica</span>
-          <h3>Tesla's Elon Musk Problem: When a CEO's Politics Become a Brand and Investor Risk</h3>
-          <p>A CleanTechnica piece argues that Elon Musk's personal political spending, funded substantially by his Tesla-linked wealth, has become inseparable from coverage of the company itself and its investors' interests.</p>
-          <div class="card-tension"><b>The Tension:</b> Whatever one's view of the politics, a public automaker whose CEO's personal activity draws sustained scrutiny faces a real brand and investor-relations question that its board and shareholders can't simply wait out.</div>
+          <h3>Climate Messaging Heats Up Ahead of the 2026 Midterms</h3>
+          <p>A CleanTechnica opinion piece argues that campaigns focused solely on economic messaging risk missing an opportunity to motivate climate-focused voters, pointing to a summer of heat waves and wildfire smoke, including fires that have burned through more than 600 structures in Spokane County, as evidence the issue is newly salient.</p>
+          <div class="card-tension"><b>The Tension:</b> Whatever one's politics, treating climate outcomes as campaign messaging material rather than settled policy underscores how directly election cycles now shape the regulatory and incentive environment automakers have to plan around.</div>
           <small>Industry News</small>
         </div>
       </a>
@@ -1068,7 +1121,7 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
   counters.forEach(function(el){
     var target = parseInt(el.getAttribute('data-target'), 10) || 0;
     if (reduceMotion) { el.textContent = target; return; }
-    var duration = 900;
+    var duration = 1500;
     var start = null;
     function step(ts){
       if (start === null) start = ts;
@@ -1107,6 +1160,31 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
   reveals.forEach(function(el){ observer.observe(el); });
+})();
+
+(function(){
+  var bar = document.getElementById('scrollTopBar');
+  if (!bar) return;
+  var threshold = 220;
+  function onScroll(){
+    if (window.scrollY > threshold) {
+      bar.classList.add('is-visible');
+    } else {
+      bar.classList.remove('is-visible');
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  function goTop(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  bar.addEventListener('click', goTop);
+  bar.addEventListener('keydown', function(e){
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      goTop();
+    }
+  });
 })();
 </script>
 
