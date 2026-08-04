@@ -459,66 +459,69 @@ footer{
     <span class="eyebrow">FEATURED STORY</span>
     <div class="hero-grid">
       <div class="hero-main">
-        <h1>NHTSA opens investigation into 1.2 million Tesla Model 3/Y over front suspension failures</h1>
-        <p class="exec-summary">US regulators launched a sweeping probe after reports that a key front-suspension link can detach on late‑2010s Model 3s and early‑2020s Model Ys. The review puts Tesla’s largest US nameplates under safety scrutiny, with potential implications for recalls, repair costs, and future design validation across the EV industry.</p>
+        <h1>NHTSA opens probe into 1.2 million Tesla Model 3/Y over front-suspension failures</h1>
+        <p class="exec-summary">US safety regulators are examining reports that the front lower lateral link can detach on certain Model 3 and Model Y vehicles, potentially leading to loss of steering control. The review puts Tesla’s largest-volume products under immediate regulatory scrutiny, with possible implications for repairs, costs and brand trust at a moment when the automaker faces softer demand in key markets.</p>
 
         <div class="takeaways">
           <h3>Key Takeaways</h3>
           <ul>
-            
-            <!-- repeat: <li>{{TAKEAWAY}}</li> -->
+            <li>Scope covers ~1.2 million vehicles (2018–2020 Model 3; 2021–2023 Model Y), concentrating risk on Tesla’s core lineup.</li>
+            <li>156 complaints triggered the probe; outcomes could range from monitoring to a large-scale recall.</li>
+            <li>Any mandated fixes would add cost pressure during a period of margin sensitivity for EV makers.</li>
+            <li>Heightened regulatory attention may spill over to adjacent Tesla programs (FSD hardware, Autopilot computers).</li>
           </ul>
         </div>
 
         <div class="impact-row">
           <div class="impact-block">
             <h4>Industry Impact</h4>
-            <p>The case will test how quickly a high‑volume EV maker can diagnose field failures and execute fixes at scale, while competitors watch for regulatory appetite to more aggressively police new‑tech platforms. Any recall or parts rework could ripple into service capacity, resale values, and supplier qualification standards.</p>
+            <p>Large-volume safety actions can reshape repair networks, supplier accountability and warranty reserves across the sector. If NHTSA finds systemic issues, the resulting remedy could be one of the largest EV-era suspension campaigns, prompting peers to re-audit fasteners and subframes on skateboard platforms. Expect short-term volatility in Tesla customer sentiment and potential knock-on effects for resale values and fleet risk models.</p>
           </div>
           <div class="impact-block">
             <h4>Companies Affected</h4>
             <div class="chip-row">
               <span class="chip entity-mfr">Tesla</span>
-              <span class="chip">NHTSA</span>
+              <span class="chip entity-mfr">NHTSA</span>
             </div>
           </div>
         </div>
 
         <div class="source-strip">
-          <span>Source: <b>Electrek</b></span>
-          <span>Today</span>
-          <a href="https://electrek.co/2026/07/31/nhtsa-probes-tesla-model-3-model-y-suspension-failures/" target="_blank" rel="noopener">Read original →</a>
+          <span>Source: <b>Electrive</b></span>
+          <span>August 3, 2026</span>
+          <a href="https://www.electrive.com/2026/08/03/nhtsa-opens-probe-into-1-2-million-teslas/" target="_blank" rel="noopener">Read original →</a>
         </div>
 
         <div class="related">
           <h4>Related Coverage</h4>
           <ul>
-            <li><a href="https://www.electrive.com/2026/08/03/nhtsa-opens-probe-into-1-2-million-teslas/" target="_blank" rel="noopener">NHTSA opens probe into 1.2 million Teslas</a></li>
-            <li><a href="https://electrek.co/2026/07/30/tesla-10-millionth-vehicle-ev-growth-stalled/" target="_blank" rel="noopener">Tesla hits 10 million vehicles — growth stalls</a></li>
-            <li><a href="https://electrek.co/2026/08/04/tesla-china-sales-crash-exports-surge-h1-2026/" target="_blank" rel="noopener">Tesla China sales fall as exports surge</a></li>
+            <li><a href="https://electrek.co/2026/07/31/nhtsa-probes-tesla-model-3-model-y-suspension-failures/" target="_blank" rel="noopener">NHTSA probes 1.2M Tesla Model 3/Y over suspension failures</a></li>
+            <li><a href="https://electrek.co/2026/07/28/tesla-sues-cybertruck-supplier-angstrom-tooling/" target="_blank" rel="noopener">Tesla sues Cybertruck supplier amid standoff keeping production hostage</a></li>
+            <li><a href="https://electrek.co/2026/08/03/tesla-fsd-v14-lite-hw3-computer-failures/" target="_blank" rel="noopener">Tesla FSD v14 Lite tied to rising HW3 computer failures, owners report</a></li>
+            <li><a href="https://electrek.co/2026/08/04/tesla-china-sales-crash-exports-surge-h1-2026/" target="_blank" rel="noopener">Tesla China sales are crashing as exports surge</a></li>
           </ul>
         </div>
       </div>
 
       <div class="hero-gauges">
         <div class="gauge">
-          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#f2a93b" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="14.13"/></svg>
-          <span class="gauge-value mono">91</span>
+          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#f2a93b" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="12.6"/></svg>
+          <span class="gauge-value mono">92</span>
           <span class="gauge-label">Importance</span>
         </div>
         <div class="gauge">
-          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#3ecf8e" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="21.98"/></svg>
-          <span class="gauge-value mono">86</span>
+          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#3ecf8e" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="18.8"/></svg>
+          <span class="gauge-value mono">88</span>
           <span class="gauge-label">Editorial Quality</span>
         </div>
         <div class="gauge">
-          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#e2604f" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="18.84"/></svg>
-          <span class="gauge-value mono">88</span>
+          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#e2604f" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="15.7"/></svg>
+          <span class="gauge-value mono">90</span>
           <span class="gauge-label">Industry Impact</span>
         </div>
         <div class="gauge">
-          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#f2a93b" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="15.70"/></svg>
-          <span class="gauge-value mono">90</span>
+          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#f2a93b" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="23.6"/></svg>
+          <span class="gauge-value mono">85</span>
           <span class="gauge-label">Reader Interest</span>
         </div>
       </div>
@@ -532,110 +535,100 @@ footer{
     groupings (trending topics, emerging tech) use .tagcloud instead.
   -->
   <section class="dashboard reveal" id="snapshot">
-    <h2 class="section-title">Industry Snapshot <span class="count">Past 24 hours</span></h2>
+    <h2 class="section-title">Industry Snapshot <span class="count">August 4, 2026</span></h2>
     <div class="dash-grid">
       <div class="stat-panel">
         <h4>Top Manufacturers</h4>
         <ul class="rank-list">
-          <li><span>Tesla</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:100%"></div></div><span class="rank-count">14</span></li>
-          <li><span>Mercedes-Benz</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:82%"></div></div><span class="rank-count">11</span></li>
-          <li><span>BYD</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:78%"></div></div><span class="rank-count">10</span></li>
-          <li><span>Hyundai/Kia</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:71%"></div></div><span class="rank-count">9</span></li>
-          <li><span>BMW</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:68%"></div></div><span class="rank-count">8</span></li>
+          <li><span>BMW</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:88%"></span></span><span class="rank-count">22</span></li>
+          <li><span>Mercedes-Benz</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:84%"></span></span><span class="rank-count">21</span></li>
+          <li><span>BYD</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:80%"></span></span><span class="rank-count">20</span></li>
+          <li><span>Tesla</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:76%"></span></span><span class="rank-count">19</span></li>
+          <li><span>Hyundai/Kia</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:72%"></span></span><span class="rank-count">18</span></li>
         </ul>
       </div>
 
       <div class="stat-panel">
         <h4>Top Brands</h4>
         <ul class="rank-list">
-          <li><span>Audi</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:88%"></div></div><span class="rank-count">12</span></li>
-          <li><span>Volkswagen</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:73%"></div></div><span class="rank-count">9</span></li>
-          <li><span>Volvo</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:65%"></div></div><span class="rank-count">8</span></li>
-          <li><span>Genesis</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:50%"></div></div><span class="rank-count">6</span></li>
-          <li><span>Porsche</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:46%"></div></div><span class="rank-count">5</span></li>
+          <li><span>Audi</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:78%"></span></span><span class="rank-count">18</span></li>
+          <li><span>Genesis</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:60%"></span></span><span class="rank-count">14</span></li>
+          <li><span>Volkswagen</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:58%"></span></span><span class="rank-count">13</span></li>
+          <li><span>Ferrari</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:49%"></span></span><span class="rank-count">11</span></li>
+          <li><span>Volvo</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:47%"></span></span><span class="rank-count">10</span></li>
         </ul>
       </div>
 
       <div class="stat-panel">
         <h4>Top Suppliers</h4>
         <ul class="rank-list">
-          <li><span>SK On</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:100%"></div></div><span class="rank-count">5</span></li>
-          <li><span>Factorial Energy</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:90%"></div></div><span class="rank-count">4</span></li>
-          <li><span>MAHLE</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:80%"></div></div><span class="rank-count">4</span></li>
-          <li><span>Beam Global</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:70%"></div></div><span class="rank-count">3</span></li>
-          <li><span>Allego</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:60%"></div></div><span class="rank-count">3</span></li>
+          <li><span>SK On</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:70%"></span></span><span class="rank-count">9</span></li>
+          <li><span>Factorial Energy</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:60%"></span></span><span class="rank-count">8</span></li>
+          <li><span>MAHLE</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:52%"></span></span><span class="rank-count">7</span></li>
+          <li><span>EVgo</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:41%"></span></span><span class="rank-count">5</span></li>
+          <li><span>Allego</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:33%"></span></span><span class="rank-count">4</span></li>
         </ul>
       </div>
 
       <div class="stat-panel">
         <h4>Most Mentioned Executives</h4>
         <ul class="rank-list">
-          <li><span>Elon Musk (Tesla)</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:100%"></div></div><span class="rank-count">9</span></li>
-          <li><span>Ola Källenius (Mercedes)</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:78%"></div></div><span class="rank-count">7</span></li>
-          <li><span>RJ Scaringe (Rivian)</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:67%"></div></div><span class="rank-count">6</span></li>
-          <li><span>Dmitri Dolgov (Waymo)</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:56%"></div></div><span class="rank-count">5</span></li>
-          <li><span>Michael Leiters (Porsche)</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:44%"></div></div><span class="rank-count">4</span></li>
+          <li><span>Ola Källenius (Mercedes)</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:90%"></span></span><span class="rank-count">12</span></li>
+          <li><span>Elon Musk (Tesla)</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:82%"></span></span><span class="rank-count">11</span></li>
+          <li><span>RJ Scaringe (Rivian)</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:60%"></span></span><span class="rank-count">8</span></li>
+          <li><span>Gernot Döllner (Audi)</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:45%"></span></span><span class="rank-count">6</span></li>
         </ul>
       </div>
 
       <div class="stat-panel">
         <h4>Trending Topics</h4>
         <div class="tagcloud">
-          <span class="chip lg">NHTSA probe</span>
-          <span class="chip">GLA EV launch</span>
-          <span class="chip">Solid‑state batteries</span>
-          <span class="chip">Robotaxis</span>
-          <span class="chip">Charging build‑out</span>
-          <span class="chip">EV sales rebound</span>
-          <span class="chip">Lidar vs cameras</span>
-          <span class="chip">Affordable EVs</span>
-          <span class="chip">China exports</span>
+          <span class="chip lg">Safety investigations</span>
+          <span class="chip">Solid-state batteries</span>
+          <span class="chip">Fast charging build-out</span>
+          <span class="chip">EV range claims</span>
+          <span class="chip">Software-defined vehicles</span>
+          <span class="chip">Lidar strategy</span>
+          <span class="chip">Dealer network shifts</span>
         </div>
       </div>
 
       <div class="stat-panel">
         <h4>Emerging Technologies</h4>
         <div class="tagcloud">
-          <span class="chip lg">Solid‑state cells</span>
-          <span class="chip">Iron‑air storage</span>
+          <span class="chip lg">Solid-state cells</span>
+          <span class="chip">Iron-air storage</span>
+          <span class="chip">Autonomous UI & assistants</span>
           <span class="chip">800V platforms</span>
-          <span class="chip">SDV architectures</span>
-          <span class="chip">AI in HMI</span>
-          <span class="chip">V2X/VPP</span>
+          <span class="chip">Range-extender for HD trucks</span>
         </div>
       </div>
 
       <div class="stat-panel">
         <h4>Government & Policy</h4>
-        <div class="tagcloud">
-          <span class="chip lg">NHTSA</span>
-          <span class="chip">Philippines EV incentives</span>
-          <span class="chip">Denmark EV share</span>
-          <span class="chip">US tariffs discussion</span>
-          <span class="chip">UK grants</span>
-        </div>
+        <ul class="rank-list">
+          <li><span>NHTSA investigations</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:90%"></span></span><span class="rank-count">12</span></li>
+          <li><span>Tariff & trade actions</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:55%"></span></span><span class="rank-count">7</span></li>
+          <li><span>Regional EV grants</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:45%"></span></span><span class="rank-count">6</span></li>
+        </ul>
       </div>
 
       <div class="stat-panel">
-        <h4>Financial & Markets</h4>
+        <h4>Financial Activity</h4>
         <ul class="rank-list">
-          <li><span>Rivian beats Q2, margins up</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:95%"></div></div><span class="rank-count">A</span></li>
-          <li><span>Lucid +5% stake disclosed</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:80%"></div></div><span class="rank-count">B</span></li>
-          <li><span>BMW reevaluates lineup</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:72%"></div></div><span class="rank-count">C</span></li>
-          <li><span>BYD July sales +22%</span><div class="rank-bar-wrap"><div class="rank-bar" style="width:68%"></div></div><span class="rank-count">D</span></li>
+          <li><span>Rivian earnings beat</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:86%"></span></span><span class="rank-count">10</span></li>
+          <li><span>BYD sales rebound</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:70%"></span></span><span class="rank-count">8</span></li>
+          <li><span>Prince Alwaleed in Lucid</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:60%"></span></span><span class="rank-count">7</span></li>
         </ul>
       </div>
 
       <div class="stat-panel">
         <h4>Global Regions</h4>
-        <div class="tagcloud">
-          <span class="chip lg">United States</span>
-          <span class="chip">China</span>
-          <span class="chip">United Kingdom</span>
-          <span class="chip">European Union</span>
-          <span class="chip">Nordics</span>
-          <span class="chip">Southeast Asia</span>
-        </div>
+        <ul class="rank-list">
+          <li><span>Europe (record EV shares)</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:88%"></span></span><span class="rank-count">14</span></li>
+          <li><span>China (exports surge)</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:76%"></span></span><span class="rank-count">12</span></li>
+          <li><span>US (infrastructure)</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:60%"></span></span><span class="rank-count">9</span></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -650,84 +643,88 @@ footer{
     <div class="feature-panel">
       <h3>Manufacturers</h3>
       <div class="fp-row">
-        <a href="https://www.autocar.co.uk/car-news/new-cars/audi-q9-suv-revealed-huge-%C2%A3100k-a8-successor" target="_blank" rel="noopener">Audi reveals Q9 flagship SUV as A8 successor</a>
-        <div class="fp-meta"><span>Score 82</span><span>•</span><span>Autocar</span></div>
+        <a href="https://www.autocar.co.uk/car-news/electric-cars/new-mercedes-gla-revealed-audi-q4-rival-408-mile-range" target="_blank" rel="noopener">New Mercedes GLA EV revealed with up to 408-mile range</a>
+        <div class="fp-meta"><span>Autocar — Jul 29, 2026</span><span>• Score 86</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/28/bmw-ramps-up-ix3-output-orders-near-100000/" target="_blank" rel="noopener">BMW ramps iX3 output as orders near 100k</a>
-        <div class="fp-meta"><span>Score 78</span><span>•</span><span>Electrek</span></div>
+        <a href="https://electrek.co/2026/07/28/bmw-ramps-up-ix3-output-orders-near-100000/" target="_blank" rel="noopener">BMW ramps up iX3 output as orders near 100,000</a>
+        <div class="fp-meta"><span>Electrek — Jul 28, 2026</span><span>• Score 78</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://www.autocar.co.uk/car-news/electric-cars/new-mercedes-gla-revealed-audi-q4-rival-408-mile-range" target="_blank" rel="noopener">Mercedes unveils new GLA EV with 408‑mile range</a>
-        <div class="fp-meta"><span>Score 85</span><span>•</span><span>Autocar</span></div>
+        <a href="https://electrek.co/2026/08/04/tesla-china-sales-crash-exports-surge-h1-2026/" target="_blank" rel="noopener">Tesla’s China sales fall while exports surge</a>
+        <div class="fp-meta"><span>Electrek — Aug 4, 2026</span><span>• Score 82</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">BMW puts G‑Class rival on hold amid China headwinds</a>
-        <div class="fp-meta"><span>Score 73</span><span>•</span><span>Autocar</span></div>
+        <a href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">BMW pauses G-Class rival as China headwinds bite</a>
+        <div class="fp-meta"><span>Autocar — Aug 4, 2026</span><span>• Score 75</span></div>
       </div>
     </div>
 
     <div class="feature-panel">
       <h3>Technology</h3>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Waymo adds Gemini AI and new UI to robotaxi</a>
-        <div class="fp-meta"><span>Score 79</span><span>•</span><span>Electrek</span></div>
+        <a href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">SK On and Factorial team up on solid-state batteries</a>
+        <div class="fp-meta"><span>Electrek — Jul 29, 2026</span><span>• Score 84</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">SK On + Factorial team up on solid‑state batteries</a>
-        <div class="fp-meta"><span>Score 80</span><span>•</span><span>Electrek</span></div>
+        <a href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Waymo integrates Gemini AI in robotaxi UI refresh</a>
+        <div class="fp-meta"><span>Electrek — Jul 29, 2026</span><span>• Score 77</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Volvo drops lidar on EX90/ES90, compensates owners</a>
-        <div class="fp-meta"><span>Score 77</span><span>•</span><span>Electrek</span></div>
+        <a href="https://www.greencarreports.com/news/1146039_ev-battery-recycling-breakthrough-recovers-99-99-of-lithium" target="_blank" rel="noopener">Researchers claim 99.99% lithium recovery in recycling</a>
+        <div class="fp-meta"><span>Green Car Reports — Aug 2, 2026</span><span>• Score 76</span></div>
+      </div>
+      <div class="fp-row">
+        <a href="https://chargedevs.com/newswire/mahle-introduces-a-new-range-extender-engine-and-a-rare-earth-free-electric-motor/" target="_blank" rel="noopener">MAHLE unveils HD truck range-extender and rare-earth-free motor</a>
+        <div class="fp-meta"><span>Charged EVs — Jul 31, 2026</span><span>• Score 72</span></div>
       </div>
     </div>
 
     <div class="feature-panel">
       <h3>Government</h3>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/31/nhtsa-probes-tesla-model-3-model-y-suspension-failures/" target="_blank" rel="noopener">NHTSA probes 1.2M Teslas for suspension failures</a>
-        <div class="fp-meta"><span>Score 91</span><span>•</span><span>Electrek</span></div>
+        <a href="https://www.electrive.com/2026/08/03/nhtsa-opens-probe-into-1-2-million-teslas/" target="_blank" rel="noopener">NHTSA opens probe into 1.2M Teslas</a>
+        <div class="fp-meta"><span>Electrive — Aug 3, 2026</span><span>• Score 92</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://www.electrive.com/2026/08/04/philippines-launches-e850m-incentive-programme-for-ev-manufacturing/" target="_blank" rel="noopener">Philippines launches €850m EV manufacturing incentives</a>
-        <div class="fp-meta"><span>Score 74</span><span>•</span><span>electrive</span></div>
+        <a href="https://www.electrive.com/2026/08/04/denmark-evs-account-for-almost-all-new-car-registrations-in-july/" target="_blank" rel="noopener">Denmark hits 97% EV share for private buyers in July</a>
+        <div class="fp-meta"><span>Electrive — Aug 4, 2026</span><span>• Score 79</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://www.electrive.com/2026/08/04/denmark-evs-account-for-almost-all-new-car-registrations-in-july/" target="_blank" rel="noopener">Denmark: EVs hit 97.6% of private registrations in July</a>
-        <div class="fp-meta"><span>Score 72</span><span>•</span><span>electrive</span></div>
+        <a href="https://www.greencarreports.com/news/1146051_gm-pilot-ev-charging-network-now-spans-over-25-states" target="_blank" rel="noopener">GM-Pilot charging network crosses 25 US states</a>
+        <div class="fp-meta"><span>Green Car Reports — Aug 4, 2026</span><span>• Score 74</span></div>
       </div>
     </div>
 
     <div class="feature-panel">
-      <h3>Suppliers & Infrastructure</h3>
+      <h3>Suppliers</h3>
       <div class="fp-row">
-        <a href="https://chargedevs.com/newswire/beam-global-supplies-ev-arc-off-grid-charging-systems-for-dallas-municipal-fleet-and-massachusetts-carshare-pilot/" target="_blank" rel="noopener">Beam Global wins municipal off‑grid charging orders</a>
-        <div class="fp-meta"><span>Score 70</span><span>•</span><span>Charged EVs</span></div>
+        <a href="https://chargedevs.com/newswire/beam-global-supplies-ev-arc-off-grid-charging-systems-for-dallas-municipal-fleet-and-massachusetts-carshare-pilot/" target="_blank" rel="noopener">Beam Global expands off-grid charging deployments</a>
+        <div class="fp-meta"><span>Charged EVs — Jul 30, 2026</span><span>• Score 68</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://www.electrive.com/2026/08/01/allego-commits-e100-million-to-expand-uk-charging-network/" target="_blank" rel="noopener">Allego to invest €100m in UK ultra‑rapid charging</a>
-        <div class="fp-meta"><span>Score 71</span><span>•</span><span>electrive</span></div>
+        <a href="https://www.electrive.com/2026/08/04/evgo-and-brixmor-to-add-more-than-500-fast-charging-stalls-in-the-us/" target="_blank" rel="noopener">EVgo, Brixmor to add 500+ DC fast stalls</a>
+        <div class="fp-meta"><span>Electrive — Aug 4, 2026</span><span>• Score 73</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://chargedevs.com/newswire/mahle-introduces-a-new-range-extender-engine-and-a-rare-earth-free-electric-motor/" target="_blank" rel="noopener">MAHLE unveils HD range‑extender and rare‑earth‑free motor</a>
-        <div class="fp-meta"><span>Score 69</span><span>•</span><span>Charged EVs</span></div>
+        <a href="https://chargedevs.com/newswire/automat-solutions-new-lytematch-and-lyteguide-software-platforms-facilitate-battery-electrolyte-development/" target="_blank" rel="noopener">New tools speed electrolyte discovery and design</a>
+        <div class="fp-meta"><span>Charged EVs — Aug 1, 2026</span><span>• Score 62</span></div>
       </div>
     </div>
 
     <div class="feature-panel">
       <h3>Trending Topics</h3>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">IEA: Global EV sales rebounded 35% in Q2</a>
-        <div class="fp-meta"><span>Score 83</span><span>•</span><span>Electrek</span></div>
+        <a href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">AI assistants move inside vehicles</a>
+        <div class="fp-meta"><span>Electrek — Jul 29, 2026</span><span>• Score 77</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/08/04/waymo-co-ceo-camera-only-self-driving-tesla/" target="_blank" rel="noopener">Waymo CEO: camera‑only autonomy hits a safety ceiling</a>
-        <div class="fp-meta"><span>Score 76</span><span>•</span><span>Electrek</span></div>
+        <a href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Volvo exits lidar on EX90/ES90 and compensates owners</a>
+        <div class="fp-meta"><span>Electrek — Jul 29, 2026</span><span>• Score 80</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/28/volkswagen-launches-cheaper-id-polo-ev-orders-25000/" target="_blank" rel="noopener">VW launches cheaper ID. Polo after 25k pre‑orders</a>
-        <div class="fp-meta"><span>Score 75</span><span>•</span><span>Electrek</span></div>
+        <a href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">IEA: Global EV sales jump 35% in Q2; 50 countries set records</a>
+        <div class="fp-meta"><span>Electrek — Jul 29, 2026</span><span>• Score 81</span></div>
       </div>
     </div>
   </section>
@@ -742,49 +739,65 @@ footer{
     and a "Read original →" link to OriginalURL.
   -->
   <section class="latest reveal" id="latest-articles">
-    <h2 class="section-title">Latest Articles <span class="count">18 analyzed today</span></h2>
+    <h2 class="section-title">Latest Articles <span class="count">16 analyzed today</span></h2>
     <div class="article-table">
+      
       <div class="article-row">
-        <div class="score-chip high">91</div>
+        <div class="score-chip high">92</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/31/nhtsa-probes-tesla-model-3-model-y-suspension-failures/" target="_blank" rel="noopener">NHTSA opens probe into 1.2M Tesla Model 3/Y over suspension failures</a>
-          <div class="article-take">A sweeping safety review could force large‑scale fixes on Tesla’s highest‑volume models.</div>
+          <a class="headline" href="https://www.electrive.com/2026/08/03/nhtsa-opens-probe-into-1-2-million-teslas/" target="_blank" rel="noopener">NHTSA opens probe into 1.2 million Tesla vehicles over suspension failures</a>
+          <div class="article-take">A large-scale safety review puts Tesla’s highest-volume models under intense regulatory pressure and could trigger a costly remedy.</div>
           <div class="article-tags">
-            <span class="chip">Tesla</span><span class="chip">NHTSA</span><span class="chip">Safety</span><span class="chip">Government</span>
+            <span class="chip">Tesla</span><span class="chip">NHTSA</span><span class="chip">Safety</span><span class="chip">Recall</span><span class="chip">Government</span>
           </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/31/nhtsa-probes-tesla-model-3-model-y-suspension-failures/" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrive — Aug 3, 2026</span>
+          <a href="https://www.electrive.com/2026/08/03/nhtsa-opens-probe-into-1-2-million-teslas/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
 
       <div class="article-row">
-        <div class="score-chip high">85</div>
+        <div class="score-chip high">88</div>
         <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/electric-cars/new-mercedes-gla-revealed-audi-q4-rival-408-mile-range" target="_blank" rel="noopener">New Mercedes GLA EV revealed with up to 408‑mile range</a>
-          <div class="article-take">Mercedes pushes its compact EV platform upmarket with range, charging speed and software polish.</div>
+          <a class="headline" href="https://www.autocar.co.uk/car-news/electric-cars/new-mercedes-gla-revealed-audi-q4-rival-408-mile-range" target="_blank" rel="noopener">New Mercedes GLA EV revealed with 408-mile range and 800V fast charging</a>
+          <div class="article-take">Mercedes folds its compact lineup into a higher-efficiency EV that pushes mainstream range and charging expectations upward.</div>
           <div class="article-tags">
-            <span class="chip">Mercedes-Benz</span><span class="chip">GLA EV</span><span class="chip">EV</span><span class="chip">Production</span>
+            <span class="chip">Mercedes-Benz</span><span class="chip">EV</span><span class="chip">Charging</span><span class="chip">Manufacturing</span>
           </div>
         </div>
         <div class="article-source">
-          <span>Autocar • Today</span>
+          <span>Autocar — Jul 29, 2026</span>
           <a href="https://www.autocar.co.uk/car-news/electric-cars/new-mercedes-gla-revealed-audi-q4-rival-408-mile-range" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
 
       <div class="article-row">
-        <div class="score-chip">78</div>
+        <div class="score-chip high">86</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">SK On and Factorial team up to scale solid‑state batteries</a>
-          <div class="article-take">A fresh alliance aims to accelerate commercialization timelines beyond lab pilots.</div>
+          <a class="headline" href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Volvo drops lidar on EX90/ES90, compensates owners</a>
+          <div class="article-take">A dramatic ADAS strategy pivot reduces hardware complexity and costs, while forcing market-by-market make-goods.</div>
           <div class="article-tags">
-            <span class="chip">SK On</span><span class="chip">Factorial</span><span class="chip">Battery</span><span class="chip">Solid‑state</span>
+            <span class="chip">Volvo</span><span class="chip">ADAS</span><span class="chip">Lidar</span><span class="chip">Software</span>
           </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
+          <span>Electrek — Jul 29, 2026</span>
+          <a href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Read original →</a>
+        </div>
+      </div>
+
+      <div class="article-row">
+        <div class="score-chip">81</div>
+        <div class="article-main">
+          <a class="headline" href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">SK On and Factorial partner to scale solid-state batteries</a>
+          <div class="article-take">A fresh alliance signals accelerating industrialization plans for next-gen cells beyond lab pilots.</div>
+          <div class="article-tags">
+            <span class="chip">SK On</span><span class="chip">Factorial</span><span class="chip">Battery</span><span class="chip">Solid-state</span>
+          </div>
+        </div>
+        <div class="article-source">
+          <span>Electrek — Jul 29, 2026</span>
           <a href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
@@ -792,225 +805,210 @@ footer{
       <div class="article-row">
         <div class="score-chip">80</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Waymo integrates Google Gemini AI in new robotaxi UI</a>
-          <div class="article-take">Conversational assistance moves front‑and‑center as Waymo readies wider Ojai access.</div>
+          <a class="headline" href="https://electrek.co/2026/08/04/tesla-china-sales-crash-exports-surge-h1-2026/" target="_blank" rel="noopener">Tesla’s China sales slump while exports surge 127%</a>
+          <div class="article-take">Shanghai shifts from local demand engine to export hub, reshaping Tesla’s regional mix and logistics.</div>
           <div class="article-tags">
-            <span class="chip">Waymo</span><span class="chip">Autonomous</span><span class="chip">Software</span><span class="chip">Mobility</span>
+            <span class="chip">Tesla</span><span class="chip">China</span><span class="chip">Trade</span><span class="chip">Production</span>
           </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">74</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/04/philippines-launches-e850m-incentive-programme-for-ev-manufacturing/" target="_blank" rel="noopener">Philippines unveils €850m incentives to attract EV manufacturing</a>
-          <div class="article-take">Manila targets local assembly and component ecosystems with production‑linked support.</div>
-          <div class="article-tags">
-            <span class="chip">Government</span><span class="chip">Trade</span><span class="chip">Manufacturing</span><span class="chip">Southeast Asia</span>
-          </div>
-        </div>
-        <div class="article-source">
-          <span>electrive • Today</span>
-          <a href="https://www.electrive.com/2026/08/04/philippines-launches-e850m-incentive-programme-for-ev-manufacturing/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">83</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">IEA: Global EV sales jump 35% in Q2; 50 countries hit records</a>
-          <div class="article-take">Demand reaccelerated after a slow start to 2026, easing fears of a prolonged slump.</div>
-          <div class="article-tags">
-            <span class="chip">EV market</span><span class="chip">IEA</span><span class="chip">Finance</span><span class="chip">Global</span>
-          </div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">77</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Volvo ditches lidar on EX90/ES90, compensates affected owners</a>
-          <div class="article-take">The brand pivots sensor strategy and absorbs goodwill costs to protect launch momentum.</div>
-          <div class="article-tags">
-            <span class="chip">Volvo</span><span class="chip">ADAS</span><span class="chip">Lidar</span><span class="chip">Software</span>
-          </div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">72</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/01/allego-commits-e100-million-to-expand-uk-charging-network/" target="_blank" rel="noopener">Allego commits €100m to expand UK ultra‑rapid charging</a>
-          <div class="article-take">Scale moves to retail hubs and dense urban corridors as public fast charging matures.</div>
-          <div class="article-tags">
-            <span class="chip">Charging</span><span class="chip">Allego</span><span class="chip">Infrastructure</span><span class="chip">UK</span>
-          </div>
-        </div>
-        <div class="article-source">
-          <span>electrive • Today</span>
-          <a href="https://www.electrive.com/2026/08/01/allego-commits-e100-million-to-expand-uk-charging-network/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">75</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/28/volkswagen-launches-cheaper-id-polo-ev-orders-25000/" target="_blank" rel="noopener">VW launches cheaper ID. Polo EV after 25,000 early orders</a>
-          <div class="article-take">A smaller pack option pulls the sub‑$30k segment deeper into mainstream buyers.</div>
-          <div class="article-tags">
-            <span class="chip">Volkswagen</span><span class="chip">Affordable EV</span><span class="chip">EV</span><span class="chip">Retail</span>
-          </div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/28/volkswagen-launches-cheaper-id-polo-ev-orders-25000/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">73</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">BMW rethinks product roadmap; G‑Class rival put on ice</a>
-          <div class="article-take">Diverging global demand and China pressure are reshaping late‑decade model bets.</div>
-          <div class="article-tags">
-            <span class="chip">BMW</span><span class="chip">Strategy</span><span class="chip">Manufacturers</span>
-          </div>
-        </div>
-        <div class="article-source">
-          <span>Autocar • Today</span>
-          <a href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">70</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/04/denmark-evs-account-for-almost-all-new-car-registrations-in-july/" target="_blank" rel="noopener">Denmark nears 100% EV share of private registrations in July</a>
-          <div class="article-take">Policy stability and product choice show how quickly a market can tip once economics align.</div>
-          <div class="article-tags">
-            <span class="chip">Denmark</span><span class="chip">EV Adoption</span><span class="chip">Government</span>
-          </div>
-        </div>
-        <div class="article-source">
-          <span>electrive • Today</span>
-          <a href="https://www.electrive.com/2026/08/04/denmark-evs-account-for-almost-all-new-car-registrations-in-july/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">76</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/04/volvos-next-electric-suv-will-start-in-the-upper-40000-range/" target="_blank" rel="noopener">Volvo’s next electric SUV to start under $50k in US</a>
-          <div class="article-take">EX50 targets Model Y pricing with Scandinavian spec discipline and brand safety halo.</div>
-          <div class="article-tags">
-            <span class="chip">Volvo</span><span class="chip">Pricing</span><span class="chip">EV</span><span class="chip">Retail</span>
-          </div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/08/04/volvos-next-electric-suv-will-start-in-the-upper-40000-range/" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrek — Aug 4, 2026</span>
+          <a href="https://electrek.co/2026/08/04/tesla-china-sales-crash-exports-surge-h1-2026/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
 
       <div class="article-row">
         <div class="score-chip">79</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/04/waymo-co-ceo-camera-only-self-driving-tesla/" target="_blank" rel="noopener">Waymo co‑CEO argues camera‑only autonomy falls short</a>
-          <div class="article-take">The sensor‑stack debate sharpens as safety thresholds move beyond human parity.</div>
+          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/audi-q9-suv-revealed-huge-%C2%A3100k-a8-successor" target="_blank" rel="noopener">Audi reveals Q9 as digital-heavy flagship SUV</a>
+          <div class="article-take">Audi leans into in-car experience and hands-free features to anchor its top-end move in key markets.</div>
           <div class="article-tags">
-            <span class="chip">Waymo</span><span class="chip">Autonomous</span><span class="chip">Safety</span><span class="chip">Software</span>
+            <span class="chip">Audi</span><span class="chip">ADAS</span><span class="chip">Manufacturers</span>
           </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/08/04/waymo-co-ceo-camera-only-self-driving-tesla/" target="_blank" rel="noopener">Read original →</a>
+          <span>Autocar — Jul 31, 2026</span>
+          <a href="https://www.autocar.co.uk/car-news/new-cars/audi-q9-suv-revealed-huge-%C2%A3100k-a8-successor" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
 
       <div class="article-row">
-        <div class="score-chip">68</div>
+        <div class="score-chip">78</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/04/revoy-ev-promises-to-electrify-diesel-semis-in-minutes/" target="_blank" rel="noopener">Revoy raises $27M to electrify diesel semis via add‑on tandem</a>
-          <div class="article-take">Hybridizing existing tractors could slash fleet fuel costs faster than full truck swaps.</div>
+          <a class="headline" href="https://www.greencarreports.com/news/1146051_gm-pilot-ev-charging-network-now-spans-over-25-states" target="_blank" rel="noopener">GM-Pilot EV fast-charging network now in 25+ states</a>
+          <div class="article-take">Automaker-backed corridors keep filling in, challenging incumbents on reliability and coverage.</div>
           <div class="article-tags">
-            <span class="chip">Fleet</span><span class="chip">Hybridization</span><span class="chip">Logistics</span>
+            <span class="chip">GM</span><span class="chip">EVgo</span><span class="chip">Charging</span><span class="chip">Infrastructure</span>
           </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/08/04/revoy-ev-promises-to-electrify-diesel-semis-in-minutes/" target="_blank" rel="noopener">Read original →</a>
+          <span>Green Car Reports — Aug 4, 2026</span>
+          <a href="https://www.greencarreports.com/news/1146051_gm-pilot-ev-charging-network-now-spans-over-25-states" target="_blank" rel="noopener">Read original →</a>
+        </div>
+      </div>
+
+      <div class="article-row">
+        <div class="score-chip">75</div>
+        <div class="article-main">
+          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">BMW reassesses product roadmap, puts G-Class rival on hold</a>
+          <div class="article-take">Macro uncertainty and market divergence force sharper capital discipline on niche programs.</div>
+          <div class="article-tags">
+            <span class="chip">BMW</span><span class="chip">Manufacturing</span><span class="chip">Strategy</span>
+          </div>
+        </div>
+        <div class="article-source">
+          <span>Autocar — Aug 4, 2026</span>
+          <a href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">Read original →</a>
+        </div>
+      </div>
+
+      <div class="article-row">
+        <div class="score-chip">74</div>
+        <div class="article-main">
+          <a class="headline" href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">IEA: Global EV sales rebound 35% in Q2; 50 country records</a>
+          <div class="article-take">After a soft Q1, demand momentum reasserts, strengthening full-year outlooks for volume players.</div>
+          <div class="article-tags">
+            <span class="chip">EV</span><span class="chip">Finance</span><span class="chip">Global</span>
+          </div>
+        </div>
+        <div class="article-source">
+          <span>Electrek — Jul 29, 2026</span>
+          <a href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">Read original →</a>
+        </div>
+      </div>
+
+      <div class="article-row">
+        <div class="score-chip">72</div>
+        <div class="article-main">
+          <a class="headline" href="https://www.electrive.com/2026/08/04/europe-misses-out-on-billion-euro-battery-cell-profits/" target="_blank" rel="noopener">Europe risks missing out on battery cell value as Asia leads</a>
+          <div class="article-take">Supply chains keep tilting East, pressing EU for faster gigafactory execution and local content rules.</div>
+          <div class="article-tags">
+            <span class="chip">Battery</span><span class="chip">Europe</span><span class="chip">Supply Chain</span>
+          </div>
+        </div>
+        <div class="article-source">
+          <span>Electrive — Aug 4, 2026</span>
+          <a href="https://www.electrive.com/2026/08/04/europe-misses-out-on-billion-euro-battery-cell-profits/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
 
       <div class="article-row">
         <div class="score-chip">71</div>
         <div class="article-main">
-          <a class="headline" href="https://www.greencarreports.com/news/1146051_gm-pilot-ev-charging-network-now-spans-over-25-states" target="_blank" rel="noopener">GM‑Pilot fast‑charging network now spans 25+ states</a>
-          <div class="article-take">Anchor sites on highway corridors broaden non‑Tesla DCFC access ahead of NACS shift.</div>
+          <a class="headline" href="https://electrek.co/2026/07/28/tesla-sues-cybertruck-supplier-angstrom-tooling/" target="_blank" rel="noopener">Tesla sues Cybertruck supplier to access tooling, avert delays</a>
+          <div class="article-take">A dispute over dies spotlights single-point risk in low-volume, unique-stamping programs.</div>
           <div class="article-tags">
-            <span class="chip">GM</span><span class="chip">EVgo</span><span class="chip">Charging</span><span class="chip">Infrastructure</span>
+            <span class="chip">Tesla</span><span class="chip">Supply Chain</span><span class="chip">Manufacturing</span>
           </div>
         </div>
         <div class="article-source">
-          <span>Green Car Reports • Today</span>
-          <a href="https://www.greencarreports.com/news/1146051_gm-pilot-ev-charging-network-now-spans-over-25-states" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrek — Jul 28, 2026</span>
+          <a href="https://electrek.co/2026/07/28/tesla-sues-cybertruck-supplier-angstrom-tooling/" target="_blank" rel="noopener">Read original →</a>
+        </div>
+      </div>
+
+      <div class="article-row">
+        <div class="score-chip">70</div>
+        <div class="article-main">
+          <a class="headline" href="https://www.electrive.com/2026/08/04/audi-further-strips-a2-e-tron-of-its-camouflage/" target="_blank" rel="noopener">Audi teases ultra-efficient A2 e-tron technical details</a>
+          <div class="article-take">Efficiency-first design indicates a new wave of compact premium EVs targeting low cost per mile.</div>
+          <div class="article-tags">
+            <span class="chip">Audi</span><span class="chip">EV</span><span class="chip">Efficiency</span>
+          </div>
+        </div>
+        <div class="article-source">
+          <span>Electrive — Aug 4, 2026</span>
+          <a href="https://www.electrive.com/2026/08/04/audi-further-strips-a2-e-tron-of-its-camouflage/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
 
       <div class="article-row">
         <div class="score-chip">69</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/28/baidu-apollo-go-london-robotaxi-testing-uber-lyft/" target="_blank" rel="noopener">Baidu’s Apollo Go begins London robotaxi testing with Uber and Lyft</a>
-          <div class="article-take">China’s AV leader pilots right‑hand‑drive ops with platform partners in the UK.</div>
+          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/new-models-vital-ds-survival-uk-sales-hit-record-low" target="_blank" rel="noopener">DS brand faces record-low UK sales; new models critical</a>
+          <div class="article-take">A lineup reset and tighter Stellantis positioning will test DS’s path to sustainable niche volumes.</div>
           <div class="article-tags">
-            <span class="chip">Baidu</span><span class="chip">Robotaxi</span><span class="chip">International</span><span class="chip">Mobility</span>
+            <span class="chip">DS</span><span class="chip">Dealers</span><span class="chip">Strategy</span>
           </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/28/baidu-apollo-go-london-robotaxi-testing-uber-lyft/" target="_blank" rel="noopener">Read original →</a>
+          <span>Autocar — Aug 4, 2026</span>
+          <a href="https://www.autocar.co.uk/car-news/new-cars/new-models-vital-ds-survival-uk-sales-hit-record-low" target="_blank" rel="noopener">Read original →</a>
+        </div>
+      </div>
+
+      <div class="article-row">
+        <div class="score-chip">68</div>
+        <div class="article-main">
+          <a class="headline" href="https://www.greencarreports.com/news/1146052_here-are-the-evs-made-in-mexico-and-canada" target="_blank" rel="noopener">Which EVs are made in Mexico and Canada amid tariff talk?</a>
+          <div class="article-take">Sourcing location stays pivotal for pricing, tax-credit eligibility and near-term market share.</div>
+          <div class="article-tags">
+            <span class="chip">Trade</span><span class="chip">Manufacturing</span><span class="chip">North America</span>
+          </div>
+        </div>
+        <div class="article-source">
+          <span>Green Car Reports — Jul 29, 2026</span>
+          <a href="https://www.greencarreports.com/news/1146052_here-are-the-evs-made-in-mexico-and-canada" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
 
       <div class="article-row">
         <div class="score-chip">67</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/30/tesla-elon-musk-2026-x-meltdown/" target="_blank" rel="noopener">Opinion: Tesla governance faces renewed investor scrutiny</a>
-          <div class="article-take">Communication risks are bleeding into brand and regulatory exposure for a public automaker.</div>
+          <a class="headline" href="https://electrek.co/2026/07/28/baidu-apollo-go-london-robotaxi-testing-uber-lyft/" target="_blank" rel="noopener">Baidu’s Apollo Go begins London robotaxi testing with Uber & Lyft</a>
+          <div class="article-take">China’s AV heavyweight enters a right-hand-drive market with major ride-hail partners in tow.</div>
           <div class="article-tags">
-            <span class="chip">Tesla</span><span class="chip">Governance</span><span class="chip">Finance</span>
+            <span class="chip">Autonomous</span><span class="chip">Mobility</span><span class="chip">Baidu</span><span class="chip">Uber</span>
           </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/30/tesla-elon-musk-2026-x-meltdown/" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrek — Jul 28, 2026</span>
+          <a href="https://electrek.co/2026/07/28/baidu-apollo-go-london-robotaxi-testing-uber-lyft/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
 
       <div class="article-row">
         <div class="score-chip">66</div>
         <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/opinion/business-corporate/roof-boxes-top-car-accessory-market-defies-auto-downturn" target="_blank" rel="noopener">Accessory makers thrive as car sales wobble</a>
-          <div class="article-take">Premium carriers and racks show pricing power even as OEMs fight discounting and tariffs.</div>
+          <a class="headline" href="https://www.electrive.com/2026/08/04/evgo-and-brixmor-to-add-more-than-500-fast-charging-stalls-in-the-us/" target="_blank" rel="noopener">EVgo, Brixmor to install 500+ new DC fast chargers at retail centers</a>
+          <div class="article-take">Retail-anchored charging expands convenience and grid diversity for everyday drivers.</div>
           <div class="article-tags">
-            <span class="chip">Aftermarket</span><span class="chip">Retail</span><span class="chip">Europe</span>
+            <span class="chip">Charging</span><span class="chip">Retail</span><span class="chip">EVgo</span>
           </div>
         </div>
         <div class="article-source">
-          <span>Autocar • Today</span>
-          <a href="https://www.autocar.co.uk/car-news/opinion/business-corporate/roof-boxes-top-car-accessory-market-defies-auto-downturn" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrive — Aug 4, 2026</span>
+          <a href="https://www.electrive.com/2026/08/04/evgo-and-brixmor-to-add-more-than-500-fast-charging-stalls-in-the-us/" target="_blank" rel="noopener">Read original →</a>
+        </div>
+      </div>
+
+      <div class="article-row">
+        <div class="score-chip">64</div>
+        <div class="article-main">
+          <a class="headline" href="https://electrek.co/2026/07/28/mercedes-new-gla-ev-leaks-day-ahead-of-debut/" target="_blank" rel="noopener">Mercedes GLA EV leaks ahead of official debut</a>
+          <div class="article-take">Early imagery previews a mainstream entry EV positioned to scale volume quickly.</div>
+          <div class="article-tags">
+            <span class="chip">Mercedes-Benz</span><span class="chip">EV</span><span class="chip">Product</span>
+          </div>
+        </div>
+        <div class="article-source">
+          <span>Electrek — Jul 28, 2026</span>
+          <a href="https://electrek.co/2026/07/28/mercedes-new-gla-ev-leaks-day-ahead-of-debut/" target="_blank" rel="noopener">Read original →</a>
+        </div>
+      </div>
+
+      <div class="article-row">
+        <div class="score-chip">63</div>
+        <div class="article-main">
+          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/byd-goes-after-defender-boxy-%C2%A348k-402bhp-hybrid-suv" target="_blank" rel="noopener">BYD launches Ti7 hybrid SUV in the UK, undercutting premium rivals</a>
+          <div class="article-take">A boxy, performance-leaning PHEV targets Defender buyers at a sharper price point.</div>
+          <div class="article-tags">
+            <span class="chip">BYD</span><span class="chip">Hybrid</span><span class="chip">UK Market</span>
+          </div>
+        </div>
+        <div class="article-source">
+          <span>Autocar — Jul 31, 2026</span>
+          <a href="https://www.autocar.co.uk/car-news/new-cars/byd-goes-after-defender-boxy-%C2%A348k-402bhp-hybrid-suv" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
 
@@ -1024,578 +1022,357 @@ footer{
     as Latest Articles, filtered to that section's classification.
   -->
   <div class="sec-group reveal" id="industry-news">
-    <h2 class="section-title">Industry News <span class="count">6 items</span></h2>
+    <h2 class="section-title">Industry News <span class="count">Focused highlights</span></h2>
     <div class="article-table">
+
       <div class="article-row">
-        <div class="score-chip high">91</div>
+        <div class="score-chip high">92</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/31/nhtsa-probes-tesla-model-3-model-y-suspension-failures/" target="_blank" rel="noopener">NHTSA investigates 1.2M Teslas over suspension issues</a>
-          <div class="article-take">Regulatory heat lands on the EV market leader’s core models.</div>
-          <div class="article-tags"><span class="chip">Government</span><span class="chip">Safety</span><span class="chip">Tesla</span></div>
+          <a class="headline" href="https://www.electrive.com/2026/08/03/nhtsa-opens-probe-into-1-2-million-teslas/" target="_blank" rel="noopener">NHTSA opens probe into 1.2M Teslas</a>
+          <div class="article-take">A potential high-volume fix could ripple across warranty reserves and service capacity.</div>
+          <div class="article-tags">
+            <span class="chip">Safety</span><span class="chip">Government</span><span class="chip">Tesla</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/31/nhtsa-probes-tesla-model-3-model-y-suspension-failures/" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrive — Aug 3, 2026</span>
+          <a href="https://www.electrive.com/2026/08/03/nhtsa-opens-probe-into-1-2-million-teslas/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
+      
       <div class="article-row">
-        <div class="score-chip">83</div>
+        <div class="score-chip">74</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">IEA: EV sales bounce back 35% in Q2</a>
-          <div class="article-take">Momentum returns across key regions after Q1 softness.</div>
-          <div class="article-tags"><span class="chip">Market</span><span class="chip">EV</span><span class="chip">Finance</span></div>
+          <a class="headline" href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">IEA: Global EV sales jump 35% in Q2</a>
+          <div class="article-take">Momentum returns, easing fears of an extended demand pause.</div>
+          <div class="article-tags">
+            <span class="chip">EV</span><span class="chip">Demand</span><span class="chip">Finance</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
+          <span>Electrek — Jul 29, 2026</span>
           <a href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
-      <div class="article-row">
-        <div class="score-chip">73</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">BMW pauses rugged SUV project amid China headwinds</a>
-          <div class="article-take">The brand recalibrates its late‑decade portfolio to changing demand.</div>
-          <div class="article-tags"><span class="chip">BMW</span><span class="chip">Strategy</span><span class="chip">Manufacturers</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar • Today</span>
-          <a href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">71</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.greencarreports.com/news/1146051_gm-pilot-ev-charging-network-now-spans-over-25-states" target="_blank" rel="noopener">GM‑Pilot/EVgo highway charging spans 25 states</a>
-          <div class="article-take">US corridor coverage keeps expanding beyond Superchargers.</div>
-          <div class="article-tags"><span class="chip">Charging</span><span class="chip">Infrastructure</span></div>
-        </div>
-        <div class="article-source">
-          <span>Green Car Reports • Today</span>
-          <a href="https://www.greencarreports.com/news/1146051_gm-pilot-ev-charging-network-now-spans-over-25-states" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">70</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/04/denmark-evs-account-for-almost-all-new-car-registrations-in-july/" target="_blank" rel="noopener">Denmark approaches all‑EV private registrations</a>
-          <div class="article-take">A glimpse of a post‑ICE retail market at national scale.</div>
-          <div class="article-tags"><span class="chip">Policy</span><span class="chip">EV Adoption</span></div>
-        </div>
-        <div class="article-source">
-          <span>electrive • Today</span>
-          <a href="https://www.electrive.com/2026/08/04/denmark-evs-account-for-almost-all-new-car-registrations-in-july/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">66</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/opinion/business-corporate/roof-boxes-top-car-accessory-market-defies-auto-downturn" target="_blank" rel="noopener">Accessory profits defy auto slowdown</a>
-          <div class="article-take">Premium carriers and racks keep margins healthy even as car prices wobble.</div>
-          <div class="article-tags"><span class="chip">Aftermarket</span><span class="chip">Retail</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar • Today</span>
-          <a href="https://www.autocar.co.uk/car-news/opinion/business-corporate/roof-boxes-top-car-accessory-market-defies-auto-downturn" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
+
     </div>
   </div>
 
   <div class="sec-group reveal" id="electric-vehicles">
-    <h2 class="section-title">Electric Vehicles <span class="count">6 items</span></h2>
+    <h2 class="section-title">Electric Vehicles <span class="count">Key launches and shifts</span></h2>
     <div class="article-table">
+
       <div class="article-row">
-        <div class="score-chip high">85</div>
+        <div class="score-chip high">88</div>
         <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/electric-cars/new-mercedes-gla-revealed-audi-q4-rival-408-mile-range" target="_blank" rel="noopener">Mercedes GLA EV debuts with 800V and long range</a>
-          <div class="article-take">Compact luxury EVs continue to stretch capability and charging speeds.</div>
-          <div class="article-tags"><span class="chip">Mercedes-Benz</span><span class="chip">GLA</span><span class="chip">EV</span></div>
+          <a class="headline" href="https://www.autocar.co.uk/car-news/electric-cars/new-mercedes-gla-revealed-audi-q4-rival-408-mile-range" target="_blank" rel="noopener">Mercedes GLA EV claims over 400 miles of range</a>
+          <div class="article-take">A compact EV pushes premium range norms in the volume sweet spot.</div>
+          <div class="article-tags">
+            <span class="chip">EV</span><span class="chip">Charging</span><span class="chip">Mercedes-Benz</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Autocar • Today</span>
+          <span>Autocar — Jul 29, 2026</span>
           <a href="https://www.autocar.co.uk/car-news/electric-cars/new-mercedes-gla-revealed-audi-q4-rival-408-mile-range" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
+      
       <div class="article-row">
-        <div class="score-chip">75</div>
+        <div class="score-chip">80</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/28/volkswagen-launches-cheaper-id-polo-ev-orders-25000/" target="_blank" rel="noopener">VW opens orders for cheaper ID. Polo EV</a>
-          <div class="article-take">Lower entry pricing broadens access to 300‑mile class EVs.</div>
-          <div class="article-tags"><span class="chip">Volkswagen</span><span class="chip">Affordable EV</span></div>
+          <a class="headline" href="https://electrek.co/2026/07/28/bmw-ramps-up-ix3-output-orders-near-100000/" target="_blank" rel="noopener">BMW ramps iX3 production after strong preorders</a>
+          <div class="article-take">Scaling a single model fast to capture pent-up demand in the crossover core.</div>
+          <div class="article-tags">
+            <span class="chip">BMW</span><span class="chip">Production</span><span class="chip">EV</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/28/volkswagen-launches-cheaper-id-polo-ev-orders-25000/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">78</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/28/bmw-ramps-up-ix3-output-orders-near-100000/" target="_blank" rel="noopener">BMW accelerates iX3 production on strong orderbook</a>
-          <div class="article-take">Fastest ramp at Debrecen underscores demand for the new platform.</div>
-          <div class="article-tags"><span class="chip">BMW</span><span class="chip">iX3</span><span class="chip">Production</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Today</span>
+          <span>Electrek — Jul 28, 2026</span>
           <a href="https://electrek.co/2026/07/28/bmw-ramps-up-ix3-output-orders-near-100000/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
-      <div class="article-row">
-        <div class="score-chip">76</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/04/volvos-next-electric-suv-will-start-in-the-upper-40000-range/" target="_blank" rel="noopener">Volvo’s EX50 targets sub‑$50k price point</a>
-          <div class="article-take">Aiming squarely at the heart of the US crossover segment.</div>
-          <div class="article-tags"><span class="chip">Volvo</span><span class="chip">Pricing</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/08/04/volvos-next-electric-suv-will-start-in-the-upper-40000-range/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">69</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">EV sales surge back: where demand is strongest</a>
-          <div class="article-take">Record quarters in 50 countries hint at regained consumer confidence.</div>
-          <div class="article-tags"><span class="chip">Market</span><span class="chip">EV</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">71</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/04/audi-further-strips-a2-e-tron-of-its-camouflage/" target="_blank" rel="noopener">Audi A2 e‑tron: new details on range and efficiency</a>
-          <div class="article-take">Audi’s entry EV sharpens aero and LFP strategy for daily use.</div>
-          <div class="article-tags"><span class="chip">Audi</span><span class="chip">Efficiency</span><span class="chip">EV</span></div>
-        </div>
-        <div class="article-source">
-          <span>electrive • Today</span>
-          <a href="https://www.electrive.com/2026/08/04/audi-further-strips-a2-e-tron-of-its-camouflage/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
+
     </div>
   </div>
 
   <div class="sec-group reveal" id="manufacturers">
-    <h2 class="section-title">Manufacturers <span class="count">5 items</span></h2>
+    <h2 class="section-title">Manufacturers <span class="count">Strategy and product</span></h2>
     <div class="article-table">
+
       <div class="article-row">
-        <div class="score-chip">82</div>
+        <div class="score-chip">75</div>
         <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/audi-q9-suv-revealed-huge-%C2%A3100k-a8-successor" target="_blank" rel="noopener">Audi launches Q9 as luxury SUV flagship</a>
-          <div class="article-take">Bigger than X7/GLS, the Q9 anchors Audi’s top‑end push.</div>
-          <div class="article-tags"><span class="chip">Audi</span><span class="chip">SUV</span><span class="chip">Luxury</span></div>
+          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">BMW pauses off-roader as market shifts</a>
+          <div class="article-take">A real-time reminder that portfolio mix must flex with region-by-region demand.</div>
+          <div class="article-tags">
+            <span class="chip">BMW</span><span class="chip">Manufacturers</span><span class="chip">Strategy</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Autocar • Today</span>
-          <a href="https://www.autocar.co.uk/car-news/new-cars/audi-q9-suv-revealed-huge-%C2%A3100k-a8-successor" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">73</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/04/new-porsche-boss-says-electric-718-is-still-coming-taycan-isnt-going-anywhere/" target="_blank" rel="noopener">Porsche CEO says electric 718 is back on track</a>
-          <div class="article-take">Signals continued EV commitment alongside Taycan refresh cadence.</div>
-          <div class="article-tags"><span class="chip">Porsche</span><span class="chip">EV Strategy</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/08/04/new-porsche-boss-says-electric-718-is-still-coming-taycan-isnt-going-anywhere/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">73</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">BMW reevaluates late‑decade lineup</a>
-          <div class="article-take">Market divergence pushes BMW toward tighter capital allocation.</div>
-          <div class="article-tags"><span class="chip">BMW</span><span class="chip">Planning</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar • Today</span>
+          <span>Autocar — Aug 4, 2026</span>
           <a href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
+      
       <div class="article-row">
-        <div class="score-chip">70</div>
+        <div class="score-chip">63</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/03/hyundai-kias-record-us-sales-run/" target="_blank" rel="noopener">Hyundai & Kia extend record US sales streak on hybrids</a>
-          <div class="article-take">Electrified trims keep momentum while EV capacity scales.</div>
-          <div class="article-tags"><span class="chip">Hyundai</span><span class="chip">Kia</span><span class="chip">Sales</span></div>
+          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/byd-goes-after-defender-boxy-%C2%A348k-402bhp-hybrid-suv" target="_blank" rel="noopener">BYD’s Ti7 hybrid SUV undercuts premium rivals</a>
+          <div class="article-take">Aggressive pricing meets rugged styling to broaden brand reach in the UK.</div>
+          <div class="article-tags">
+            <span class="chip">BYD</span><span class="chip">Hybrid</span><span class="chip">UK</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/08/03/hyundai-kias-record-us-sales-run/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">68</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/byd-goes-after-defender-boxy-%C2%A348k-402bhp-hybrid-suv" target="_blank" rel="noopener">BYD brings boxy Ti7 hybrid SUV to UK at £47,995</a>
-          <div class="article-take">A rugged‑style seven‑seater undercuts legacy 4x4 rivals.</div>
-          <div class="article-tags"><span class="chip">BYD</span><span class="chip">Hybrid</span><span class="chip">UK</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar • Today</span>
+          <span>Autocar — Jul 31, 2026</span>
           <a href="https://www.autocar.co.uk/car-news/new-cars/byd-goes-after-defender-boxy-%C2%A348k-402bhp-hybrid-suv" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
+
     </div>
   </div>
 
   <div class="sec-group reveal" id="dealers">
-    <h2 class="section-title">Dealers <span class="count">2 items</span></h2>
+    <h2 class="section-title">Dealers <span class="count">Network & retail</span></h2>
     <div class="article-table">
+
       <div class="article-row">
-        <div class="score-chip">60</div>
+        <div class="score-chip">69</div>
         <div class="article-main">
-          <a class="headline" href="https://www.carscoops.com/2026/08/costco-infiniti-discount/" target="_blank" rel="noopener">Costco offers discounts on new Infiniti SUVs, incl. QX65</a>
-          <div class="article-take">Big‑box partnerships continue to funnel traffic to dealer lots.</div>
-          <div class="article-tags"><span class="chip">Retail</span><span class="chip">Infiniti</span><span class="chip">Dealers</span></div>
+          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/new-models-vital-ds-survival-uk-sales-hit-record-low" target="_blank" rel="noopener">DS’s UK sales slump; new launches to support dealer viability</a>
+          <div class="article-take">A lean premium brand must restore throughput to sustain its network economics.</div>
+          <div class="article-tags">
+            <span class="chip">DS</span><span class="chip">Dealers</span><span class="chip">Sales</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Carscoops • Today</span>
-          <a href="https://www.carscoops.com/2026/08/costco-infiniti-discount/" target="_blank" rel="noopener">Read original →</a>
+          <span>Autocar — Aug 4, 2026</span>
+          <a href="https://www.autocar.co.uk/car-news/new-cars/new-models-vital-ds-survival-uk-sales-hit-record-low" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
-      <div class="article-row">
-        <div class="score-chip">58</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.carscoops.com/2026/08/servicemember-repossession-settlement/" target="_blank" rel="noopener">US DOJ settles with dealer for improper repossessions</a>
-          <div class="article-take">Enforcement raises the stakes on compliance for auto retailers.</div>
-          <div class="article-tags"><span class="chip">Dealers</span><span class="chip">Legal</span><span class="chip">US</span></div>
-        </div>
-        <div class="article-source">
-          <span>Carscoops • Today</span>
-          <a href="https://www.carscoops.com/2026/08/servicemember-repossession-settlement/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
+
     </div>
   </div>
 
   <div class="sec-group reveal" id="suppliers">
-    <h2 class="section-title">Suppliers <span class="count">4 items</span></h2>
+    <h2 class="section-title">Suppliers <span class="count">Ecosystem moves</span></h2>
     <div class="article-table">
+
       <div class="article-row">
-        <div class="score-chip">78</div>
+        <div class="score-chip">81</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">SK On + Factorial align on solid‑state scale‑up</a>
-          <div class="article-take">Partnerships remain critical to cross the pilot‑to‑plant chasm.</div>
-          <div class="article-tags"><span class="chip">Battery</span><span class="chip">Solid‑state</span></div>
+          <a class="headline" href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">SK On, Factorial ally on solid-state scale-up</a>
+          <div class="article-take">Partnership momentum shifts from pilots to pre-industrial ramp planning.</div>
+          <div class="article-tags">
+            <span class="chip">Battery</span><span class="chip">Solid-state</span><span class="chip">Suppliers</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
+          <span>Electrek — Jul 29, 2026</span>
           <a href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
+      
       <div class="article-row">
-        <div class="score-chip">69</div>
+        <div class="score-chip">73</div>
         <div class="article-main">
-          <a class="headline" href="https://chargedevs.com/newswire/mahle-introduces-a-new-range-extender-engine-and-a-rare-earth-free-electric-motor/" target="_blank" rel="noopener">MAHLE debuts HD range‑extender, rare‑earth‑free e‑motor</a>
-          <div class="article-take">Suppliers diversify solutions across battery and hybrid freight.</div>
-          <div class="article-tags"><span class="chip">MAHLE</span><span class="chip">Powertrain</span></div>
+          <a class="headline" href="https://www.electrive.com/2026/08/04/evgo-and-brixmor-to-add-more-than-500-fast-charging-stalls-in-the-us/" target="_blank" rel="noopener">EVgo and Brixmor expand US DC fast footprint</a>
+          <div class="article-take">Shopping-center sites become key nodes in everyday charging behavior.</div>
+          <div class="article-tags">
+            <span class="chip">EVgo</span><span class="chip">Charging</span><span class="chip">Suppliers</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Charged EVs • Today</span>
-          <a href="https://chargedevs.com/newswire/mahle-introduces-a-new-range-extender-engine-and-a-rare-earth-free-electric-motor/" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrive — Aug 4, 2026</span>
+          <a href="https://www.electrive.com/2026/08/04/evgo-and-brixmor-to-add-more-than-500-fast-charging-stalls-in-the-us/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
-      <div class="article-row">
-        <div class="score-chip">70</div>
-        <div class="article-main">
-          <a class="headline" href="https://chargedevs.com/newswire/beam-global-supplies-ev-arc-off-grid-charging-systems-for-dallas-municipal-fleet-and-massachusetts-carshare-pilot/" target="_blank" rel="noopener">Beam Global secures new municipal EV ARC orders</a>
-          <div class="article-take">Off‑grid charging fills deployment gaps without utility delays.</div>
-          <div class="article-tags"><span class="chip">Charging</span><span class="chip">Beam Global</span></div>
-        </div>
-        <div class="article-source">
-          <span>Charged EVs • Today</span>
-          <a href="https://chargedevs.com/newswire/beam-global-supplies-ev-arc-off-grid-charging-systems-for-dallas-municipal-fleet-and-massachusetts-carshare-pilot/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">65</div>
-        <div class="article-main">
-          <a class="headline" href="https://chargedevs.com/newswire/danisenses-new-current-transducer-measures-isolated-dc-and-ac-current-in-power-electronics/" target="_blank" rel="noopener">Danisense launches high‑precision DC/AC current transducer</a>
-          <div class="article-take">Measurement fidelity improves EV power electronics design loops.</div>
-          <div class="article-tags"><span class="chip">Components</span><span class="chip">Power Electronics</span></div>
-        </div>
-        <div class="article-source">
-          <span>Charged EVs • Today</span>
-          <a href="https://chargedevs.com/newswire/danisenses-new-current-transducer-measures-isolated-dc-and-ac-current-in-power-electronics/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
+
     </div>
   </div>
 
   <div class="sec-group reveal" id="government">
-    <h2 class="section-title">Government <span class="count">4 items</span></h2>
+    <h2 class="section-title">Government <span class="count">Policy & regulation</span></h2>
     <div class="article-table">
+
       <div class="article-row">
-        <div class="score-chip high">91</div>
+        <div class="score-chip high">92</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/31/nhtsa-probes-tesla-model-3-model-y-suspension-failures/" target="_blank" rel="noopener">NHTSA probe targets 1.2M Teslas</a>
-          <div class="article-take">A major US safety action centered on suspension integrity.</div>
-          <div class="article-tags"><span class="chip">NHTSA</span><span class="chip">Safety</span><span class="chip">Tesla</span></div>
+          <a class="headline" href="https://www.electrive.com/2026/08/03/nhtsa-opens-probe-into-1-2-million-teslas/" target="_blank" rel="noopener">NHTSA’s Tesla probe expands safety scrutiny on EVs</a>
+          <div class="article-take">A pivotal case could shape future defect standards on skateboard suspensions.</div>
+          <div class="article-tags">
+            <span class="chip">NHTSA</span><span class="chip">Safety</span><span class="chip">Government</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/31/nhtsa-probes-tesla-model-3-model-y-suspension-failures/" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrive — Aug 3, 2026</span>
+          <a href="https://www.electrive.com/2026/08/03/nhtsa-opens-probe-into-1-2-million-teslas/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
+
       <div class="article-row">
-        <div class="score-chip">74</div>
+        <div class="score-chip">79</div>
         <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/04/philippines-launches-e850m-incentive-programme-for-ev-manufacturing/" target="_blank" rel="noopener">Philippines launches EV manufacturing incentive scheme</a>
-          <div class="article-take">A bid to capture regional EV and component investment.</div>
-          <div class="article-tags"><span class="chip">Policy</span><span class="chip">Manufacturing</span></div>
+          <a class="headline" href="https://www.electrive.com/2026/08/04/denmark-evs-account-for-almost-all-new-car-registrations-in-july/" target="_blank" rel="noopener">Denmark’s private EV share nears 98% in July</a>
+          <div class="article-take">Sharp incentives and product availability converge to accelerate adoption.</div>
+          <div class="article-tags">
+            <span class="chip">Government</span><span class="chip">EV Share</span><span class="chip">Europe</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>electrive • Today</span>
-          <a href="https://www.electrive.com/2026/08/04/philippines-launches-e850m-incentive-programme-for-ev-manufacturing/" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrive — Aug 4, 2026</span>
+          <a href="https://www.electrive.com/2026/08/04/denmark-evs-account-for-almost-all-new-car-registrations-in-july/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
-      <div class="article-row">
-        <div class="score-chip">71</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.greencarreports.com/news/1146052_here-are-the-evs-made-in-mexico-and-canada" target="_blank" rel="noopener">Tariff uncertainty looms for Mexico/Canada‑built EVs</a>
-          <div class="article-take">Policy could reshape pricing and sourcing in North America.</div>
-          <div class="article-tags"><span class="chip">Tariffs</span><span class="chip">Trade</span><span class="chip">North America</span></div>
-        </div>
-        <div class="article-source">
-          <span>Green Car Reports • Today</span>
-          <a href="https://www.greencarreports.com/news/1146052_here-are-the-evs-made-in-mexico-and-canada" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">70</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/04/hyundai-kona-electric-now-qualifies-for-full-uk-electric-car-grant/" target="_blank" rel="noopener">Hyundai Kona Electric qualifies for full UK EV grant</a>
-          <div class="article-take">Supply‑chain criteria unlock higher incentives for buyers.</div>
-          <div class="article-tags"><span class="chip">Incentives</span><span class="chip">UK</span><span class="chip">Hyundai</span></div>
-        </div>
-        <div class="article-source">
-          <span>electrive • Today</span>
-          <a href="https://www.electrive.com/2026/08/04/hyundai-kona-electric-now-qualifies-for-full-uk-electric-car-grant/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
+
     </div>
   </div>
 
   <div class="sec-group reveal" id="technology">
-    <h2 class="section-title">Technology <span class="count">5 items</span></h2>
+    <h2 class="section-title">Technology <span class="count">Breakthroughs & software</span></h2>
     <div class="article-table">
-      <div class="article-row">
-        <div class="score-chip">80</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Waymo integrates Gemini AI into robotaxi UX</a>
-          <div class="article-take">AI assistance becomes part of the passenger experience.</div>
-          <div class="article-tags"><span class="chip">Autonomous</span><span class="chip">AI</span><span class="chip">Mobility</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
+
       <div class="article-row">
         <div class="score-chip">77</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Volvo ends lidar plan on two flagships, pays owners</a>
-          <div class="article-take">A high‑profile sensor pivot reshapes ADAS roadmaps.</div>
-          <div class="article-tags"><span class="chip">ADAS</span><span class="chip">Volvo</span><span class="chip">Sensors</span></div>
+          <a class="headline" href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Waymo adds Gemini AI and new rider UI</a>
+          <div class="article-take">Natural-language assistance moves from phones to the cabin for AV riders.</div>
+          <div class="article-tags">
+            <span class="chip">Autonomous</span><span class="chip">Software</span><span class="chip">AI</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrek — Jul 29, 2026</span>
+          <a href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
+      
       <div class="article-row">
-        <div class="score-chip">79</div>
+        <div class="score-chip">76</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/04/waymo-co-ceo-camera-only-self-driving-tesla/" target="_blank" rel="noopener">Waymo: camera‑only autonomy won’t reach needed safety</a>
-          <div class="article-take">Sensor fusion remains the consensus path to full autonomy.</div>
-          <div class="article-tags"><span class="chip">Waymo</span><span class="chip">Autonomy</span><span class="chip">Safety</span></div>
+          <a class="headline" href="https://www.greencarreports.com/news/1146039_ev-battery-recycling-breakthrough-recovers-99-99-of-lithium" target="_blank" rel="noopener">Study claims 99.99% lithium recovery from used EV batteries</a>
+          <div class="article-take">Higher recovery factors could meaningfully lower cell costs and primary mining demand.</div>
+          <div class="article-tags">
+            <span class="chip">Battery</span><span class="chip">Recycling</span><span class="chip">Sustainability</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/08/04/waymo-co-ceo-camera-only-self-driving-tesla/" target="_blank" rel="noopener">Read original →</a>
+          <span>Green Car Reports — Aug 2, 2026</span>
+          <a href="https://www.greencarreports.com/news/1146039_ev-battery-recycling-breakthrough-recovers-99-99-of-lithium" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
-      <div class="article-row">
-        <div class="score-chip">71</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/04/blue-solutions-and-avl-test-solid-state-battery-safety/" target="_blank" rel="noopener">AVL, Blue Solutions validate solid‑state safety behaviors</a>
-          <div class="article-take">Thermal propagation tests set the stage for series development.</div>
-          <div class="article-tags"><span class="chip">Battery</span><span class="chip">Safety</span><span class="chip">R&D</span></div>
-        </div>
-        <div class="article-source">
-          <span>electrive • Today</span>
-          <a href="https://www.electrive.com/2026/08/04/blue-solutions-and-avl-test-solid-state-battery-safety/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">70</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">Solid‑state alliance eyes mass‑market timelines</a>
-          <div class="article-take">Consortia are converging on manufacturable chemistries and supply.</div>
-          <div class="article-tags"><span class="chip">Solid‑state</span><span class="chip">Battery</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
+
     </div>
   </div>
 
   <div class="sec-group reveal" id="finance">
-    <h2 class="section-title">Finance <span class="count">4 items</span></h2>
+    <h2 class="section-title">Finance <span class="count">Earnings & deals</span></h2>
     <div class="article-table">
+
       <div class="article-row">
-        <div class="score-chip">84</div>
+        <div class="score-chip">78</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/30/rivian-rivn-q2-2026-earnings-r2-deliveries-revenue-up-27/" target="_blank" rel="noopener">Rivian beats on Q2 with record gross profit and R2 deliveries</a>
-          <div class="article-take">Cost work and cheaper models are moving the margin needle.</div>
-          <div class="article-tags"><span class="chip">Rivian</span><span class="chip">Earnings</span><span class="chip">Finance</span></div>
+          <a class="headline" href="https://www.electrive.com/2026/08/03/rivian-boosts-q2-revenue-and-reduces-losses/" target="_blank" rel="noopener">Rivian grows Q2 revenue 27% and narrows losses</a>
+          <div class="article-take">Volume lift and mix improvements support a more durable gross profit trajectory.</div>
+          <div class="article-tags">
+            <span class="chip">Rivian</span><span class="chip">Earnings</span><span class="chip">Finance</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/30/rivian-rivn-q2-2026-earnings-r2-deliveries-revenue-up-27/" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrive — Aug 3, 2026</span>
+          <a href="https://www.electrive.com/2026/08/03/rivian-boosts-q2-revenue-and-reduces-losses/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
-      <div class="article-row">
-        <div class="score-chip">76</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/06/saudi-prince-alwaleed-5-percent-lucid-stake-lcid/" target="_blank" rel="noopener">Saudi Prince Alwaleed discloses 5% Lucid stake</a>
-          <div class="article-take">Fresh capital confidence steadies sentiment around the EV startup.</div>
-          <div class="article-tags"><span class="chip">Lucid</span><span class="chip">Investment</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Recent</span>
-          <a href="https://electrek.co/2026/06/saudi-prince-alwaleed-5-percent-lucid-stake-lcid/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      <div class="article-row">
-        <div class="score-chip">72</div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/30/tesla-10-millionth-vehicle-ev-growth-stalled/" target="_blank" rel="noopener">Tesla hits 10M vehicles as growth cools below capacity</a>
-          <div class="article-take">A production milestone arrives alongside utilization questions.</div>
-          <div class="article-tags"><span class="chip">Tesla</span><span class="chip">Production</span><span class="chip">Markets</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek • Recent</span>
-          <a href="https://electrek.co/2026/07/30/tesla-10-millionth-vehicle-ev-growth-stalled/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
+      
       <div class="article-row">
         <div class="score-chip">70</div>
         <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/03/byd-boosts-sales-by-22-in-july/" target="_blank" rel="noopener">BYD July sales +22%, exports hold record share</a>
-          <div class="article-take">Overseas growth offsets softness at home in China.</div>
-          <div class="article-tags"><span class="chip">BYD</span><span class="chip">Sales</span><span class="chip">Exports</span></div>
+          <a class="headline" href="https://electrek.co/2026/07/28/saudi-prince-alwaleed-5-percent-lucid-stake-lcid/" target="_blank" rel="noopener">Prince Alwaleed discloses 5% Lucid stake; shares jump</a>
+          <div class="article-take">A high-profile backer signals continued sovereign support for the EV challenger.</div>
+          <div class="article-tags">
+            <span class="chip">Lucid</span><span class="chip">Finance</span><span class="chip">Capital</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>electrive • Today</span>
-          <a href="https://www.electrive.com/2026/08/03/byd-boosts-sales-by-22-in-july/" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrek — Jul 28, 2026</span>
+          <a href="https://electrek.co/2026/07/28/saudi-prince-alwaleed-5-percent-lucid-stake-lcid/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
+
     </div>
   </div>
 
   <div class="sec-group reveal" id="international">
-    <h2 class="section-title">International <span class="count">4 items</span></h2>
+    <h2 class="section-title">International <span class="count">Global markets</span></h2>
     <div class="article-table">
+
       <div class="article-row">
-        <div class="score-chip">69</div>
+        <div class="score-chip">80</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/28/baidu-apollo-go-london-robotaxi-testing-uber-lyft/" target="_blank" rel="noopener">Baidu starts robotaxi tests in London with Uber/Lyft</a>
-          <div class="article-take">A fast step from Hong Kong to Europe for Apollo Go.</div>
-          <div class="article-tags"><span class="chip">Baidu</span><span class="chip">UK</span><span class="chip">Autonomous</span></div>
+          <a class="headline" href="https://electrek.co/2026/08/04/tesla-china-sales-crash-exports-surge-h1-2026/" target="_blank" rel="noopener">Tesla pivots Shanghai output to exports amid China slowdown</a>
+          <div class="article-take">Allocation changes rebalance inventory risk but complicate lead times by region.</div>
+          <div class="article-tags">
+            <span class="chip">China</span><span class="chip">Manufacturing</span><span class="chip">Tesla</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/07/28/baidu-apollo-go-london-robotaxi-testing-uber-lyft/" target="_blank" rel="noopener">Read original →</a>
+          <span>Electrek — Aug 4, 2026</span>
+          <a href="https://electrek.co/2026/08/04/tesla-china-sales-crash-exports-surge-h1-2026/" target="_blank" rel="noopener">Read original →</a>
         </div>
       </div>
-      <div class="article-row">
-        <div class="score-chip">67</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/04/greenmobility-to-bring-weride-robotaxis-to-denmark/" target="_blank" rel="noopener">WeRide robotaxis headed to Denmark with GreenMobility</a>
-          <div class="article-take">A new operator partnership pilots autonomous ride‑hailing in the Nordics.</div>
-          <div class="article-tags"><span class="chip">WeRide</span><span class="chip">Denmark</span><span class="chip">Mobility</span></div>
-        </div>
-        <div class="article-source">
-          <span>electrive • Today</span>
-          <a href="https://www.electrive.com/2026/08/04/greenmobility-to-bring-weride-robotaxis-to-denmark/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>      
+      
       <div class="article-row">
         <div class="score-chip">72</div>
         <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/04/tesla-china-sales-crash-exports-surge-h1-2026/" target="_blank" rel="noopener">Tesla China sales fall while exports surge 127%</a>
-          <div class="article-take">Shanghai increasingly serves overseas demand as local rivals intensify.</div>
-          <div class="article-tags"><span class="chip">Tesla</span><span class="chip">China</span><span class="chip">Exports</span></div>
+          <a class="headline" href="https://www.electrive.com/2026/08/03/norways-ev-share-rises-to-97-6-in-july/" target="_blank" rel="noopener">Norway’s EV share rises to 97.6% in July</a>
+          <div class="article-take">The bellwether market demonstrates what mature adoption looks like at scale.</div>
+          <div class="article-tags">
+            <span class="chip">Norway</span><span class="chip">EV Share</span><span class="chip">Policy</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Electrek • Today</span>
-          <a href="https://electrek.co/2026/08/04/tesla-china-sales-crash-exports-surge-h1-2026/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>      
-      <div class="article-row">
-        <div class="score-chip">70</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/03/norways-ev-share-rises-to-97-6-in-july/" target="_blank" rel="noopener">Norway: EVs reach 97.6% of July private registrations</a>
-          <div class="article-take">The world’s leading EV market keeps breaking records.</div>
-          <div class="article-tags"><span class="chip">Norway</span><span class="chip">EV Share</span><span class="chip">Policy</span></div>
-        </div>
-        <div class="article-source">
-          <span>electrive • Today</span>
+          <span>Electrive — Aug 3, 2026</span>
           <a href="https://www.electrive.com/2026/08/03/norways-ev-share-rises-to-97-6-in-july/" target="_blank" rel="noopener">Read original →</a>
         </div>
-      </div>      
+      </div>
+
     </div>
   </div>
 
   <div class="sec-group reveal" id="opinion">
-    <h2 class="section-title">Opinion <span class="count">3 items</span></h2>
+    <h2 class="section-title">Opinion <span class="count">Perspectives</span></h2>
     <div class="article-table">
+
       <div class="article-row">
-        <div class="score-chip">66</div>
+        <div class="score-chip">60</div>
         <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/opinion/business-corporate/roof-boxes-top-car-accessory-market-defies-auto-downturn" target="_blank" rel="noopener">Accessory profits defy the auto downturn</a>
-          <div class="article-take">Premium hardware can be resilient even when car margins compress.</div>
-          <div class="article-tags"><span class="chip">Aftermarket</span><span class="chip">Strategy</span></div>
+          <a class="headline" href="https://www.autocar.co.uk/opinion/new-cars/ignore-jay-leno-your-dream-garage-only-needs-three-cars" target="_blank" rel="noopener">Ignore Jay Leno: your dream garage only needs three cars</a>
+          <div class="article-take">A case for curation over collection in the age of endless choice.</div>
+          <div class="article-tags">
+            <span class="chip">Opinion</span><span class="chip">Enthusiast</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Autocar • Today</span>
-          <a href="https://www.autocar.co.uk/car-news/opinion/business-corporate/roof-boxes-top-car-accessory-market-defies-auto-downturn" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>      
-      <div class="article-row">
-        <div class="score-chip">64</div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/opinion/new-cars/ignore-jay-leno-your-dream-garage-only-needs-three-cars" target="_blank" rel="noopener">Your dream garage only needs three cars</a>
-          <div class="article-take">A case for fewer vehicles and more use, not museum fleets.</div>
-          <div class="article-tags"><span class="chip">Opinion</span><span class="chip">Culture</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar • Today</span>
+          <span>Autocar — Aug 4, 2026</span>
           <a href="https://www.autocar.co.uk/opinion/new-cars/ignore-jay-leno-your-dream-garage-only-needs-three-cars" target="_blank" rel="noopener">Read original →</a>
         </div>
-      </div>      
+      </div>
+      
       <div class="article-row">
-        <div class="score-chip">68</div>
+        <div class="score-chip">58</div>
         <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/business-manufacturing/chinese-car-makers-all-share-parts-will-world-follow" target="_blank" rel="noopener">China’s parts standardization: will the world follow?</a>
-          <div class="article-take">Shared tooling and commoditized parts slash cost and time to market.</div>
-          <div class="article-tags"><span class="chip">China</span><span class="chip">Supply Chain</span><span class="chip">Strategy</span></div>
+          <a class="headline" href="https://www.autocar.co.uk/car-news/business-manufacturing/chinese-car-makers-all-share-parts-will-world-follow" target="_blank" rel="noopener">Chinese car makers all share parts — will the world follow?</a>
+          <div class="article-take">Standardization trims costs and time-to-market, but challenges brand differentiation.</div>
+          <div class="article-tags">
+            <span class="chip">Supply Chain</span><span class="chip">China</span><span class="chip">Opinion</span>
+          </div>
         </div>
         <div class="article-source">
-          <span>Autocar • Today</span>
+          <span>Autocar — Aug 4, 2026</span>
           <a href="https://www.autocar.co.uk/car-news/business-manufacturing/chinese-car-makers-all-share-parts-will-world-follow" target="_blank" rel="noopener">Read original →</a>
         </div>
-      </div>      
+      </div>
+
     </div>
   </div>
 
