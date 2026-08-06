@@ -147,12 +147,6 @@ a{color:inherit;text-decoration:none}
   align-items:baseline;
   gap:10px;
 }
-.section-title .count{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:11px;
-  color:var(--ink-dim);
-  font-weight:400;
-}
 
 /* ---------------- Hero / Featured story ---------------- */
 .hero{margin-bottom:52px}
@@ -240,7 +234,7 @@ a{color:inherit;text-decoration:none}
 .chip.stock.up .chg{color:var(--teal)}
 .chip.stock.down .chg{color:var(--red)}
 
-/* Entity data grid (replaces narrative exec-summary / impact prose) */
+/* Entity data grid */
 .entity-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -580,27 +574,18 @@ footer{
 </head>
 <body>
 
-<!--
-  TICKER CONTRACT
-  One .ticker-item per trending entity/topic. {{TICKER_ICON}} is a
-  complete pre-classed 14x14 icon element (class="ticker-icon"; entity
-  logo or topic glyph) placed before the label — same convention as
-  {{PANEL_ICON}} above. Omit it entirely if no icon is available for
-  that item rather than leaving an empty box.
--->
 <div class="ticker" aria-label="Trending entities and topics">
   <div class="ticker-track" id="tickerTrack">
-    <span class="ticker-item"><b>Volvo</b> drops lidar on EX90/ES90 <span class="ticker-up">▲</span></span>
-    <span class="ticker-item"><b>Tesla</b> Q2 margins under pressure <span class="ticker-down">▼</span></span>
-    <span class="ticker-item"><b>BMW</b> iX3 orders surge to ~100k <span class="ticker-up">▲</span></span>
-    <span class="ticker-item"><b>Lucid</b> delays Cosmos to 2027 <span class="ticker-down">▼</span></span>
-    <span class="ticker-item"><b>UK EV Market</b> best July since 2019 <span class="ticker-up">▲</span></span>
-    <span class="ticker-item"><b>Solid‑state batteries</b> SK On + Factorial alliance <span class="ticker-up">▲</span></span>
-    <span class="ticker-item"><b>Robotaxi</b> Waymo UI refresh & Gemini <span class="ticker-up">▲</span></span>
-    <span class="ticker-item"><b>Charging</b> EVgo adds 500+ retail fast stalls <span class="ticker-up">▲</span></span>
-    <span class="ticker-item"><b>Recalls</b> Ram 1500 seat belt anchors <span class="ticker-down">▼</span></span>
-    <span class="ticker-item"><b>BYD</b> Denza D9 launches in UK <span class="ticker-up">▲</span></span>
-    <!-- repeat: <span class="ticker-item">{{TICKER_ICON}}<b>{{NAME}}</b> {{LABEL}} <span class="ticker-up|ticker-down|ticker-flat">▲|▼|■</span></span> -->
+    <span class="ticker-item"><b>Tesla</b> NACS ecosystem expands <span class="ticker-up">▲</span></span>
+    <span class="ticker-item"><b>EVgo</b> adds Tesla Superchargers <span class="ticker-up">▲</span></span>
+    <span class="ticker-item"><b>Lucid</b> delays midsize SUV <span class="ticker-down">▼</span></span>
+    <span class="ticker-item"><b>Volvo</b> drops lidar on EX90/ES90 <span class="ticker-flat">■</span></span>
+    <span class="ticker-item"><b>UK EV Market</b> record July share <span class="ticker-up">▲</span></span>
+    <span class="ticker-item"><b>GM–SAIC</b> JV extended to 2047 <span class="ticker-up">▲</span></span>
+    <span class="ticker-item"><b>Solid‑state batteries</b> SK On–Factorial tie‑up <span class="ticker-up">▲</span></span>
+    <span class="ticker-item"><b>Charging</b> retail co‑location surges <span class="ticker-up">▲</span></span>
+    <span class="ticker-item"><b>BYD Denza</b> D9 launches in UK <span class="ticker-up">▲</span></span>
+    <span class="ticker-item"><b>Hyundai</b> IONIQ 3 from ~$30k <span class="ticker-up">▲</span></span>
   </div>
 </div>
 
@@ -628,87 +613,73 @@ footer{
 
 <main class="wrap">
 
-  <!--
-    FEATURED STORY CONTRACT
-    Selection: highest ImportanceScore across today's analyzed articles.
-    This section is DATA-FIRST: no executive-summary or industry-impact
-    prose. The one-sentence {{FEATURED_DEK}} is a plain factual statement
-    only — everything else is structured entity/topic/timeline data
-    extracted from the article, not written analysis.
-  -->
   <section class="hero reveal" id="featured">
     <span class="eyebrow">FEATURED STORY</span>
-    <!-- {{FEATURED_IMAGE}}: 800x450 hero image URL. Omit the whole
-         .hero-media block (not just the img) if no image was generated
-         for this article, so hero-grid's own rounded corners apply. -->
     <div class="hero-media">
-      <img src="https://electrek.co/wp-content/uploads/sites/3/2026/07/Volvo-Lidar.webp?w=1600" alt="Volvo drops lidar for good on EX90 and ES90, pays owner compensation" width="800" height="450" loading="lazy">
+      <img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/evgo-tesla-partnership-1920x1080-1.jpg" alt="EVgo to deploy Tesla Superchargers across the US" width="800" height="450" loading="lazy">
     </div>
     <div class="hero-grid">
       <div class="hero-main">
-        <h1>Volvo drops lidar for good on EX90 and ES90, pays owner compensation</h1>
-        <p class="dek">Volvo confirmed it will remove lidar hardware from the EX90 and ES90 and compensate owners in markets like Norway after ending its supplier relationship with Luminar.</p>
+        <h1>EVgo to deploy Tesla Superchargers across the US</h1>
+        <p class="dek">EVgo will install Tesla V4 Supercharger hardware across its U.S. fast‑charging network with support for both NACS and CCS connectors.</p>
 
         <div class="source-strip">
-          <span>Source: <b>Electrek</b></span>
-          <span>Aug 5, 2026</span>
-          <a href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Read original →</a>
+          <span>Source: <b>electrive.com</b></span>
+          <span>Aug 6, 2026</span>
+          <a href="https://www.electrive.com/2026/08/06/evgo-to-deploy-tesla-superchargers-across-the-us/" target="_blank" rel="noopener">Read original →</a>
         </div>
 
         <div class="entity-grid">
           <div class="entity-field">
             <span class="ef-label">Manufacturers</span>
             <div class="chip-row">
-              <span class="chip entity-mfr">Volvo Cars</span>
+              <span class="chip entity-mfr">Tesla</span>
             </div>
           </div>
           <div class="entity-field">
             <span class="ef-label">Suppliers</span>
-            <!-- repeat: <span class="chip">{{ENTITY_ICON}}{{NAME}}</span> -->
-            <div class="chip-row"><span class="chip">Luminar Technologies</span></div>
+            <div class="chip-row"><span class="chip">EVgo</span></div>
           </div>
           <div class="entity-field">
             <span class="ef-label">Countries</span>
-            <!-- repeat: <span class="chip">{{ENTITY_ICON}}{{NAME}}</span> (flag glyph) -->
-            <div class="chip-row"><span class="chip">Norway</span><span class="chip">Sweden</span></div>
+            <div class="chip-row"><span class="chip">United States</span></div>
           </div>
           <div class="entity-field">
             <span class="ef-label">Government Agencies</span>
             <div class="chip-row">
-              
-              <!-- repeat: <span class="chip entity-gov">{{ENTITY_ICON}}{{NAME}}</span> -->
+              <span class="chip entity-gov">None cited</span>
             </div>
           </div>
           <div class="entity-field">
             <span class="ef-label">Public Companies</span>
             <div class="chip-row">
-              <span class="chip stock down"><span class="tk">VOLCAR-B.ST</span><span class="chg">■</span></span>
-              <span class="chip stock down"><span class="tk">LAZR</span><span class="chg">▼</span></span>
-              <!-- repeat: <span class="chip stock up|down">{{ENTITY_ICON}}<span class="tk">{{TICKER}}</span><span class="chg">{{CHANGE}}</span></span> -->
+              <span class="chip stock up"><span class="tk">TSLA</span><span class="chg">▲</span></span>
+              <span class="chip stock up"><span class="tk">EVGO</span><span class="chg">▲</span></span>
             </div>
           </div>
           <div class="entity-field">
             <span class="ef-label">Topics</span>
-            <!-- repeat: <span class="chip">{{TOPIC_ICON}}{{NAME}}</span> -->
-            <!-- {{TOPIC_ICON}}: complete pre-classed 16x16 icon element
-                 (class="chip-icon") for this topic — same convention and
-                 drop-entirely-if-missing rule as {{ENTITY_ICON}}. -->
-            <div class="chip-row"><span class="chip">ADAS</span><span class="chip">Lidar</span><span class="chip">Safety</span><span class="chip">Autonomous</span><span class="chip">Software</span></div>
+            <div class="chip-row">
+              <span class="chip">Charging</span>
+              <span class="chip">NACS</span>
+              <span class="chip">Infrastructure</span>
+              <span class="chip">Interoperability</span>
+            </div>
           </div>
           <div class="entity-field wide">
             <span class="ef-label">Related Stories</span>
             <ul class="data-list">
-              <li><a href="https://electrek.co/2026/08/04/waymo-co-ceo-camera-only-self-driving-tesla/" target="_blank" rel="noopener">Waymo CEO explains why camera‑only self‑driving falls short</a></li>
-              <li><a href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Waymo adds Gemini AI assistant and new UI to Ojai robotaxi</a></li>
-              <li><a href="https://electrek.co/2026/08/05/evgo-is-putting-500-fast-chargers-where-americans-shop/" target="_blank" rel="noopener">EVgo is putting 500+ fast chargers where Americans shop</a></li>
-              <li><a href="https://electrek.co/2026/08/05/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Volvo confirms lidar removal and compensation details</a></li>
+              <li><a href="https://electrek.co/2026/08/05/evgo-branded-tesla-superchargers-are-coming/" target="_blank" rel="noopener">EVgo‑branded Tesla Superchargers are coming</a></li>
+              <li><a href="https://www.greencarreports.com/news/1146051_gm-pilot-ev-charging-network-now-spans-over-25-states" target="_blank" rel="noopener">GM–Pilot EV fast‑charging network now in 25+ states</a></li>
+              <li><a href="https://electrek.co/2026/08/04/evgo-is-putting-500-fast-chargers-where-americans-shop/" target="_blank" rel="noopener">EVgo to add 500+ fast chargers at shopping centers</a></li>
             </ul>
           </div>
           <div class="entity-field wide">
             <span class="ef-label">Timeline</span>
             <ul class="timeline-list">
-              <li><span class="t-date mono">Aug 2026</span><span>Volvo confirms EX90/ES90 will not ship with lidar; owners in Norway receive NOK 18,000 compensation.</span></li>
-              <li><span class="t-date mono">Early 2026</span><span>Volvo ends lidar supplier relationship with Luminar.</span></li>
+              <li><span class="t-date mono">Aug 6, 2026</span><span>EVgo confirms nationwide deployment of Tesla V4 Supercharger hardware.</span></li>
+              <li><span class="t-date mono">Aug 5, 2026</span><span>EVgo and Brixmor announce 500+ new DC fast-charging stalls at retail centers.</span></li>
+              <li><span class="t-date mono">2025–2026</span><span>Automakers and networks accelerate NACS transition and multi‑standard support.</span></li>
             </ul>
           </div>
         </div>
@@ -738,12 +709,6 @@ footer{
       </div>
     </div>
 
-    <!--
-      SCORING METHODOLOGY
-      Site-wide constant (not per-article) — see SCORING_METHODOLOGY.md
-      for the full weighted breakdown and rationale behind each factor.
-      Update this block, not per-run, if weights change.
-    -->
     <details class="score-methodology">
       <summary>ⓘ How these scores are calculated</summary>
       <dl>
@@ -755,811 +720,151 @@ footer{
     </details>
   </section>
 
-  <!--
-    INDUSTRY SNAPSHOT CONTRACT
-    One .stat-panel per <IndustrySnapshot> child element. Ranked lists
-    use .rank-list (name + proportional bar + mention count); free-form
-    groupings (trending topics, emerging tech) use .tagcloud instead.
-    Each panel's <h4> leads with {{PANEL_ICON}}: a complete, pre-classed
-    32x32 icon element for that metric, e.g. <svg class="panel-icon"
-    viewBox="...">...</svg> or <img class="panel-icon" src="...">
-    (e.g. a factory glyph for "Manufacturer Mentions"). The generation
-    step outputs the whole tag, class included, not just a URL/path.
-    Drop it entirely for a panel with no matching icon rather than
-    leaving an empty box, e.g.: <h4>{{PANEL_ICON}}Manufacturer Mentions</h4>
-  -->
   <section class="dashboard reveal" id="snapshot">
     <h2 class="section-title">Industry Snapshot <span class="count">Week of Aug 5, 2026</span></h2>
     <div class="dash-grid">
+      
       <div class="stat-panel">
-        <h4>Top Manufacturers (by mention)</h4>
+        <h4><span class="panel-icon">📊</span>Top Manufacturers by Mentions</h4>
         <ul class="rank-list">
-          <li><span>Tesla</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:100%"></span></span><span class="rank-count">28</span></li>
-          <li><span>BYD</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:82%"></span></span><span class="rank-count">23</span></li>
-          <li><span>BMW</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:70%"></span></span><span class="rank-count">20</span></li>
-          <li><span>Hyundai/Kia</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:68%"></span></span><span class="rank-count">19</span></li>
-          <li><span>Volvo</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:61%"></span></span><span class="rank-count">17</span></li>
+          <li><span>Tesla</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:95%"></span></span><span class="rank-count">95</span></li>
+          <li><span>BYD</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:78%"></span></span><span class="rank-count">78</span></li>
+          <li><span>Hyundai</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:70%"></span></span><span class="rank-count">70</span></li>
+          <li><span>Volkswagen</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:66%"></span></span><span class="rank-count">66</span></li>
+          <li><span>Mercedes‑Benz</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:60%"></span></span><span class="rank-count">60</span></li>
         </ul>
       </div>
+
       <div class="stat-panel">
-        <h4>Top Suppliers & Tech Firms</h4>
+        <h4><span class="panel-icon">🔌</span>Charging & Infrastructure</h4>
         <ul class="rank-list">
-          <li><span>EVgo</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:100%"></span></span><span class="rank-count">12</span></li>
-          <li><span>Luminar</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:83%"></span></span><span class="rank-count">10</span></li>
-          <li><span>SK On</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:58%"></span></span><span class="rank-count">7</span></li>
-          <li><span>Factorial</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:50%"></span></span><span class="rank-count">6</span></li>
-          <li><span>Ørsted</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:42%"></span></span><span class="rank-count">5</span></li>
+          <li><span>EVgo expansion</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:92%"></span></span><span class="rank-count">92</span></li>
+          <li><span>NACS transition</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:84%"></span></span><span class="rank-count">84</span></li>
+          <li><span>Retail co‑location</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:72%"></span></span><span class="rank-count">72</span></li>
         </ul>
       </div>
+
       <div class="stat-panel">
-        <h4>Trending Topics</h4>
+        <h4><span class="panel-icon">🏷️</span>Top Brands in Headlines</h4>
+        <ul class="rank-list">
+          <li><span>Cadillac</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:58%"></span></span><span class="rank-count">58</span></li>
+          <li><span>Vauxhall</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:44%"></span></span><span class="rank-count">44</span></li>
+          <li><span>Ferrari</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:40%"></span></span><span class="rank-count">40</span></li>
+          <li><span>Volkswagen ID</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:38%"></span></span><span class="rank-count">38</span></li>
+        </ul>
+      </div>
+
+      <div class="stat-panel">
+        <h4><span class="panel-icon">🏦</span>Financial Moves</h4>
+        <ul class="rank-list">
+          <li><span>GM–SAIC JV renewal</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:88%"></span></span><span class="rank-count">88</span></li>
+          <li><span>Base Power raises $1B</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:75%"></span></span><span class="rank-count">75</span></li>
+          <li><span>Global Battery Materials M&amp;A</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:62%"></span></span><span class="rank-count">62</span></li>
+        </ul>
+      </div>
+
+      <div class="stat-panel">
+        <h4><span class="panel-icon">🧪</span>Emerging Tech Topics</h4>
         <div class="tagcloud">
-          <span class="chip lg">Lidar</span>
-          <span class="chip lg">Robotaxis</span>
-          <span class="chip">Solid‑state batteries</span>
-          <span class="chip">EV Charging</span>
-          <span class="chip">ZEV Mandate</span>
-          <span class="chip">Recalls</span>
-          <span class="chip">LFP Chemistry</span>
-          <span class="chip">Tariffs & Trade</span>
+          <span class="chip lg">Solid‑state</span>
+          <span class="chip">Battery health</span>
+          <span class="chip">Lidar strategy</span>
+          <span class="chip">Robotaxis</span>
+          <span class="chip">Software‑defined vehicles</span>
         </div>
       </div>
+
       <div class="stat-panel">
-        <h4>Government & Policy</h4>
+        <h4><span class="panel-icon">📈</span>EV Market Signals</h4>
         <ul class="rank-list">
-          <li><span>UK ZEV targets</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:100%"></span></span><span class="rank-count">8</span></li>
-          <li><span>FCC inverter rules</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:75%"></span></span><span class="rank-count">6</span></li>
-          <li><span>EU battery standards</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:50%"></span></span><span class="rank-count">4</span></li>
+          <li><span>UK EV share up</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:82%"></span></span><span class="rank-count">82</span></li>
+          <li><span>Used EV repairs</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:64%"></span></span><span class="rank-count">64</span></li>
+          <li><span>Retail pricing pressure</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:59%"></span></span><span class="rank-count">59</span></li>
         </ul>
       </div>
+
       <div class="stat-panel">
-        <h4>Financial Moves</h4>
+        <h4><span class="panel-icon">🏛️</span>Policy & Regulation</h4>
         <ul class="rank-list">
-          <li><span>Tesla profits/margins</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:100%"></span></span><span class="rank-count">9</span></li>
-          <li><span>Lucid delay/reset</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:78%"></span></span><span class="rank-count">7</span></li>
-          <li><span>BMW product review</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:67%"></span></span><span class="rank-count">6</span></li>
-          <li><span>GM–SAIC JV extension</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:56%"></span></span><span class="rank-count">5</span></li>
+          <li><span>FCC inverter action</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:74%"></span></span><span class="rank-count">74</span></li>
+          <li><span>UK grant updates</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:61%"></span></span><span class="rank-count">61</span></li>
+          <li><span>NYC e‑bike rules</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:56%"></span></span><span class="rank-count">56</span></li>
         </ul>
       </div>
+
       <div class="stat-panel">
-        <h4>Global Regions</h4>
-        <ul class="rank-list">
-          <li><span>Europe (UK, Nordics)</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:100%"></span></span><span class="rank-count">24</span></li>
-          <li><span>China</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:79%"></span></span><span class="rank-count">19</span></li>
-          <li><span>North America</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:75%"></span></span><span class="rank-count">18</span></li>
-          <li><span>UK & Ireland</span><span class="rank-bar-wrap"><span class="rank-bar" style="width:67%"></span></span><span class="rank-count">16</span></li>
-        </ul>
+        <h4><span class="panel-icon">🌍</span>Regional Focus</h4>
+        <div class="tagcloud">
+          <span class="chip">United States</span>
+          <span class="chip">United Kingdom</span>
+          <span class="chip">China</span>
+          <span class="chip">EU</span>
+          <span class="chip">Nordics</span>
+        </div>
       </div>
+
     </div>
   </section>
 
-  <!--
-    FEATURE PANELS CONTRACT
-    Five larger drill-down panels, one per named Homepage panel:
-    Manufacturers, Technology, Government, Supplier, TrendingTopics.
-    Each holds 3-5 .fp-row items (headline + one-line takeaway + score/date meta).
-    Each panel's <h3> leads with {{FEATURE_ICON}}: a complete pre-classed
-    40x40 icon element (class="fp-icon") for that panel's category — a
-    larger sibling of {{PANEL_ICON}}, kept as its own variable since
-    feature panels are a bigger, separately-themed icon than the compact
-    dashboard metrics above. Drop it entirely if no icon exists, e.g.:
-    <h3>{{FEATURE_ICON}}Manufacturers</h3>
-  -->
   <section class="feature-panels reveal">
+    
     <div class="feature-panel">
-      <h3>Manufacturers</h3>
+      <h3><span class="fp-icon">🏭</span>Manufacturers</h3>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Volvo abandons lidar on EX90/ES90</a>
-        <div class="fp-meta"><span>Impact: High</span><span>Aug 5, 2026</span></div>
+        <a href="https://www.electrive.com/2026/08/06/saic-and-gm-extend-chinese-joint-venture-to-2047/" target="_blank" rel="noopener">GM and SAIC extend JV to 2047 and prep EV exports</a>
+        <div class="fp-meta"><span>Score 83</span><span>Aug 6, 2026</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/08/05/uk-records-strongest-ev-july-to-date/" target="_blank" rel="noopener">UK EV share sets July record</a>
-        <div class="fp-meta"><span>Impact: Medium</span><span>Aug 5, 2026</span></div>
+        <a href="https://electrek.co/2026/07/29/new-mercedes-gla-ev-bigger-400-miles-range/" target="_blank" rel="noopener">New Mercedes GLA EV grows up with >400‑mile range</a>
+        <div class="fp-meta"><span>Score 76</span><span>Jul 29, 2026</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/30/bmw-puts-g-class-rival-hold-china-headwinds-hit-home/" target="_blank" rel="noopener">BMW puts G‑Class rival on hold amid China headwinds</a>
-        <div class="fp-meta"><span>Impact: Medium</span><span>Jul 30, 2026</span></div>
+        <a href="https://www.autocar.co.uk/car-news/new-cars/range-rover-skys-limit-price-bespoke-models" target="_blank" rel="noopener">Range Rover pushes bespoke commissions beyond £500k</a>
+        <div class="fp-meta"><span>Score 68</span><span>Aug 6, 2026</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/28/bmw-ramps-up-ix3-output-orders-near-100000/" target="_blank" rel="noopener">BMW ramps up iX3 output as orders near 100k</a>
-        <div class="fp-meta"><span>Impact: Medium</span><span>Jul 28, 2026</span></div>
-      </div>
-    </div>
-
-    <div class="feature-panel">
-      <h3>Technology</h3>
-      <div class="fp-row">
-        <a href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">SK On & Factorial ally on solid‑state batteries</a>
-        <div class="fp-meta"><span>Impact: High</span><span>Jul 29, 2026</span></div>
-      </div>
-      <div class="fp-row">
-        <a href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Waymo integrates Gemini AI, new rider UI</a>
-        <div class="fp-meta"><span>Impact: Medium</span><span>Jul 29, 2026</span></div>
-      </div>
-      <div class="fp-row">
-        <a href="https://electrek.co/2026/08/05/evgo-is-putting-500-fast-chargers-where-americans-shop/" target="_blank" rel="noopener">EVgo to add 500+ fast chargers at shopping centers</a>
-        <div class="fp-meta"><span>Impact: Medium</span><span>Aug 4, 2026</span></div>
+        <a href="https://electrek.co/2026/07/29/hyundai-reveals-ioniq-3-prices-start-30000-interest-surges/" target="_blank" rel="noopener">Hyundai IONIQ 3 pricing lands around $30k</a>
+        <div class="fp-meta"><span>Score 74</span><span>Jul 29, 2026</span></div>
       </div>
     </div>
 
     <div class="feature-panel">
-      <h3>Government & Policy</h3>
+      <h3><span class="fp-icon">🧠</span>Technology</h3>
       <div class="fp-row">
-        <a href="https://www.autocar.co.uk/car-news/electric-cars/evs-and-hybrids-drive-uk-car-market-best-july-covid" target="_blank" rel="noopener">UK EV/hybrid surge lifts best July since Covid</a>
-        <div class="fp-meta"><span>Impact: High</span><span>Aug 5, 2026</span></div>
+        <a href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">SK On and Factorial partner to scale solid‑state</a>
+        <div class="fp-meta"><span>Score 79</span><span>Jul 29, 2026</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/08/05/fcc-bans-foreign-made-connected-solar-inverters/" target="_blank" rel="noopener">FCC moves against foreign connected inverters</a>
-        <div class="fp-meta"><span>Impact: Medium</span><span>Aug 5, 2026</span></div>
+        <a href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Volvo drops lidar on EX90/ES90 and compensates buyers</a>
+        <div class="fp-meta"><span>Score 72</span><span>Jul 29, 2026</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/08/05/new-york-city-to-install-600-additional-curbside-charging-points/" target="_blank" rel="noopener">NYC to install 600 curbside charging points</a>
-        <div class="fp-meta"><span>Impact: Medium</span><span>Aug 5, 2026</span></div>
+        <a href="https://www.electrive.com/2026/08/05/study-air-exposure-accelerates-ageing-in-nickel-rich-batteries/" target="_blank" rel="noopener">Study flags air exposure ageing in nickel‑rich cathodes</a>
+        <div class="fp-meta"><span>Score 66</span><span>Aug 5, 2026</span></div>
       </div>
     </div>
 
     <div class="feature-panel">
-      <h3>Suppliers & Energy</h3>
+      <h3><span class="fp-icon">🏛️</span>Government</h3>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/08/05/tesla-megapack-power-orsted-big-new-texas-grid-battery/" target="_blank" rel="noopener">Tesla Megapacks power new 500 MWh Texas BESS</a>
-        <div class="fp-meta"><span>Impact: Medium</span><span>Aug 5, 2026</span></div>
+        <a href="https://electrek.co/2026/08/05/fcc-bans-foreign-made-connected-solar-inverters/" target="_blank" rel="noopener">FCC curbs foreign‑made connected inverters</a>
+        <div class="fp-meta"><span>Score 71</span><span>Aug 5, 2026</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/28/tesla-buys-texas-solar-farm-output-zelestra/" target="_blank" rel="noopener">Tesla signs PPA for entire 140 MW Texas solar farm</a>
-        <div class="fp-meta"><span>Impact: Medium</span><span>Jul 28, 2026</span></div>
+        <a href="https://www.electrive.com/2026/08/05/uk-records-strongest-ev-july-to-date/" target="_blank" rel="noopener">UK posts strongest EV July across cars & vans</a>
+        <div class="fp-meta"><span>Score 70</span><span>Aug 5, 2026</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://chargedevs.com/newswire/beam-global-supplies-ev-arc-off-grid-charging-systems-for-dallas-municipal-fleet-and-massachusetts-carshare-pilot/" target="_blank" rel="noopener">Beam Global deploys off‑grid chargers in Dallas & MA</a>
-        <div class="fp-meta"><span>Impact: Low</span><span>Aug 1, 2026</span></div>
+        <a href="https://www.electrive.com/2026/08/05/india-approves-chargers-awaits-deployment/" target="_blank" rel="noopener">India approves 6,562 public chargers; deployment pending</a>
+        <div class="fp-meta"><span>Score 63</span><span>Aug 5, 2026</span></div>
       </div>
     </div>
 
     <div class="feature-panel">
-      <h3>Trending Topics</h3>
+      <h3><span class="fp-icon">🏗️</span>Suppliers</h3>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Lidar strategy pivots</a>
-        <div class="fp-meta"><span>Heat: High</span><span>Aug 5, 2026</span></div>
-      </div>
-      <div class="fp-row">
-        <a href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Robotaxi UX & AI copilots</a>
-        <div class="fp-meta"><span>Heat: Medium</span><span>Jul 29, 2026</span></div>
+        <a href="https://www.autocar.co.uk/car-news/company-cars/used-ev-repair-scheme-looks-tackle-cliff-edge-residual-drops" target="_blank" rel="noopener">BCA launches battery repair hub for used EVs</a>
+        <div class="fp-meta"><span>Score 67</span><span>Aug 6, 2026</span></div>
       </div>
       <div class="fp-row">
-        <a href="https://electrek.co/2026/08/05/evgo-is-putting-500-fast-chargers-where-americans-shop/" target="_blank" rel="noopener">Retail‑anchored fast charging</a>
-        <div class="fp-meta"><span>Heat: Medium</span><span>Aug 4, 2026</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!--
-    LATEST ARTICLES CONTRACT
-    Every .article-row = one analyzed article. score-chip shows
-    ImportanceScore (0-100); add class "high" when score >= 85.
-    article-take is a ONE-LINE original takeaway, never a paraphrase
-    of source-article sentences. article-tags holds Entity + Topic
-    chips. article-source always carries Publisher, Published date,
-    and a "Read original →" link to OriginalURL.
-
-    Between score-chip and article-main sits an optional .article-thumb
-    (120x68 recommended source size, displayed at 96px wide):
-      <div class="article-thumb"><img src="{{ARTICLE_THUMBNAIL}}" alt="" loading="lazy"></div>
-    This same .article-row / .article-thumb markup is reused verbatim
-    in the News Sections groups below. .article-row's grid columns are
-    fixed in CSS, so for a row with no thumbnail just omit the whole
-    .article-thumb div — the column stays reserved as blank space and
-    the rest of the row still lines up with its neighbors.
-  -->
-  <section class="latest reveal" id="latest-articles">
-    <h2 class="section-title">Latest Articles <span class="count">16 analyzed today</span></h2>
-    <div class="article-table">
-      
-      <div class="article-row">
-        <div class="score-chip high">90</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/07/Volvo-Lidar.webp?w=1600" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Volvo drops lidar for good on EX90 and ES90, pays compensation</a>
-          <div class="article-take">A high‑profile OEM abandoning lidar signals a sharper focus on cost, software sensing, and market‑by‑market product consistency.</div>
-          <div class="article-tags"><span class="chip">Volvo</span><span class="chip">Luminar</span><span class="chip">ADAS</span><span class="chip">Lidar</span><span class="chip">Safety</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 5, 2026</span>
-          <a href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip high">88</div>
-        <div class="article-thumb"><img src="https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/wc-small-electric-triple-2025-me-70.jpg?itok=ejWOQ2GL" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/electric-cars/evs-and-hybrids-drive-uk-car-market-best-july-covid" target="_blank" rel="noopener">EVs and hybrids drive UK car market to best July since Covid</a>
-          <div class="article-take">Electrified models lifted UK registrations as OEMs discount to hit ZEV targets, reshaping the fuel mix faster than expected.</div>
-          <div class="article-tags"><span class="chip">UK</span><span class="chip">ZEV mandate</span><span class="chip">EV Sales</span><span class="chip">Hybrids</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar — Aug 5, 2026</span>
-          <a href="https://www.autocar.co.uk/car-news/electric-cars/evs-and-hybrids-drive-uk-car-market-best-july-covid" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">82</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/wynwood-village-station-press-release-2.jpg?quality=82&strip=all&w=1200" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/04/evgo-is-putting-500-fast-chargers-where-americans-shop/" target="_blank" rel="noopener">EVgo is putting 500+ fast chargers where Americans shop</a>
-          <div class="article-take">Retail‑anchored fast charging tightens the link between dwell time and spend while filling critical urban charging gaps.</div>
-          <div class="article-tags"><span class="chip">EVgo</span><span class="chip">Charging</span><span class="chip">Retail</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 4, 2026</span>
-          <a href="https://electrek.co/2026/08/04/evgo-is-putting-500-fast-chargers-where-americans-shop/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">80</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/OLD-300-COD.jpg?quality=82&strip=all&w=1440" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/05/tesla-megapack-power-orsted-big-new-texas-grid-battery/" target="_blank" rel="noopener">Tesla Megapacks power Ørsted’s big new Texas grid battery</a>
-          <div class="article-take">Another 250 MW/500 MWh of BESS in ERCOT highlights storage’s role in firming renewables and serving peak demand.</div>
-          <div class="article-tags"><span class="chip">Tesla Energy</span><span class="chip">Ørsted</span><span class="chip">Grid Storage</span><span class="chip">Texas</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 5, 2026</span>
-          <a href="https://electrek.co/2026/08/05/tesla-megapack-power-orsted-big-new-texas-grid-battery/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">79</div>
-        <div class="article-thumb"><img src="https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/denza-d9-002.jpg?itok=bz88ErQs" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/new-denza-d9-%C2%A375k-luxury-mpv-plug-hybrid-power" target="_blank" rel="noopener">New Denza D9 is a £75k luxury MPV with plug‑in hybrid power</a>
-          <div class="article-take">BYD’s premium arm brings a high‑spec seven‑seater to the UK, undercutting established luxo‑MPVs while touting 130‑mile EV range.</div>
-          <div class="article-tags"><span class="chip">BYD</span><span class="chip">Denza</span><span class="chip">PHEV</span><span class="chip">UK Launch</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar — Aug 5, 2026</span>
-          <a href="https://www.autocar.co.uk/car-news/new-cars/new-denza-d9-%C2%A375k-luxury-mpv-plug-hybrid-power" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">78</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/07/BMW-iX3-orders.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/28/bmw-ramps-up-ix3-output-orders-near-100000/" target="_blank" rel="noopener">BMW ramps up iX3 output as orders near 100,000</a>
-          <div class="article-take">Demand is pulling Debrecen’s EV ramp ahead of plan, signaling traction for BMW’s Neue Klasse rollout.</div>
-          <div class="article-tags"><span class="chip">BMW</span><span class="chip">iX3</span><span class="chip">Production</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Jul 28, 2026</span>
-          <a href="https://electrek.co/2026/07/28/bmw-ramps-up-ix3-output-orders-near-100000/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">77</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/evgo-tesla-partnership-1920x1080-1.jpg?quality=82&strip=all&w=1600" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/05/evgo-branded-tesla-superchargers-are-coming/" target="_blank" rel="noopener">EVgo‑branded Superchargers are coming</a>
-          <div class="article-take">Third‑party deployment of Tesla’s latest hardware accelerates NACS build‑out and vendor convergence.</div>
-          <div class="article-tags"><span class="chip">EVgo</span><span class="chip">Tesla</span><span class="chip">NACS</span><span class="chip">Charging</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 5, 2026</span>
-          <a href="https://electrek.co/2026/08/05/evgo-branded-tesla-superchargers-are-coming/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">76</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/03/Lucid-first-midsize-EV-Cosmos.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/04/lucids-smaller-cosmos-suv-slated-for-2026-has-been-pushed-back-to-2027/" target="_blank" rel="noopener">Lucid’s mid‑size Cosmos delayed to 2027</a>
-          <div class="article-take">The reset trades time for execution as Lucid seeks sustainable margins beyond halo models.</div>
-          <div class="article-tags"><span class="chip">Lucid</span><span class="chip">Product Delay</span><span class="chip">SUV</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 4, 2026</span>
-          <a href="https://electrek.co/2026/08/04/lucids-smaller-cosmos-suv-slated-for-2026-has-been-pushed-back-to-2027/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">74</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/EV-market-share.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">IEA: Global EV sales jump 35% in Q2; 50 countries set records</a>
-          <div class="article-take">Q2 snapped a slow Q1 as incentives, new models and price cuts reignited demand worldwide.</div>
-          <div class="article-tags"><span class="chip">IEA</span><span class="chip">EV Sales</span><span class="chip">Global</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Jul 29, 2026</span>
-          <a href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">72</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/07/Hyundai-IONIQ-3-prices-Europe-1.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/hyundai-reveals-ioniq-3-prices-start-30000-interest-surges/" target="_blank" rel="noopener">Hyundai reveals IONIQ 3 around $30k; interest surges</a>
-          <div class="article-take">A value‑priced hatch with >300 miles range could reset entry EV expectations in 2027.</div>
-          <div class="article-tags"><span class="chip">Hyundai</span><span class="chip">IONIQ 3</span><span class="chip">Pricing</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Jul 29, 2026</span>
-          <a href="https://electrek.co/2026/07/29/hyundai-reveals-ioniq-3-prices-start-30000-interest-surges/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">71</div>
-        <div class="article-thumb"><img src="https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/bmw-ix3-2026-mg-131.jpg?itok=3ft8M8or" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">BMW puts G‑Class rival on ice amid shifting demand</a>
-          <div class="article-take">Munich re‑prioritizes capital as China softens, tariffs rise and market needs diverge by region.</div>
-          <div class="article-tags"><span class="chip">BMW</span><span class="chip">Strategy</span><span class="chip">SUV</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar — Jul 30, 2026</span>
-          <a href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">69</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/GM-Buick-NEVs-China.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/05/gm-buick-evs-china-overseas-suv/" target="_blank" rel="noopener">GM will export China‑built electric Buicks overseas</a>
-          <div class="article-take">SAIC‑GM extends a 20‑year JV as it taps China capacity to seed Buick EVs in new markets.</div>
-          <div class="article-tags"><span class="chip">GM</span><span class="chip">Buick</span><span class="chip">China</span><span class="chip">Exports</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 5, 2026</span>
-          <a href="https://electrek.co/2026/08/05/gm-buick-evs-china-overseas-suv/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">67</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/wc-small-electric-triple-2025-me-70.jpg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/05/uk-records-strongest-ev-july-to-date/" target="_blank" rel="noopener">UK records strongest EV July to date</a>
-          <div class="article-take">Battery‑electric share hit fresh highs across cars and vans, but SMMT warns target slope remains steep.</div>
-          <div class="article-tags"><span class="chip">UK</span><span class="chip">EV Share</span><span class="chip">SMMT</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrive — Aug 5, 2026</span>
-          <a href="https://www.electrive.com/2026/08/05/uk-records-strongest-ev-july-to-date/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">66</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/Hyundai-vehicles-upgrade-Pleos.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/28/kias-vehicles-smart-upgrade-2027/" target="_blank" rel="noopener">Kia vehicles to gain new high‑tech infotainment from 2027</a>
-          <div class="article-take">Hyundai’s new software stack rolls across the brand family, standardizing UX and connected features.</div>
-          <div class="article-tags"><span class="chip">Kia</span><span class="chip">Infotainment</span><span class="chip">Software‑defined</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Jul 28, 2026</span>
-          <a href="https://electrek.co/2026/07/28/kias-vehicles-smart-upgrade-2027/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">64</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/IMG_4135_00-e1785447573347.jpeg?quality=82&strip=all&w=1600" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/03/2026-tesla-model-y-rwd-review/" target="_blank" rel="noopener">2026 Tesla Model Y RWD review: entry trim, flagship software</a>
-          <div class="article-take">Tesla’s base Model Y leans hard on UI, charging and ecosystem strengths over dynamic thrills.</div>
-          <div class="article-tags"><span class="chip">Tesla</span><span class="chip">Model Y</span><span class="chip">Review</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 3, 2026</span>
-          <a href="https://electrek.co/2026/08/03/2026-tesla-model-y-rwd-review/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!--
-    NEWS SECTIONS CONTRACT
-    One <div class="sec-group" id="{slug}"> per <Sections> child,
-    slug matching the nav anchors above. Same .article-row markup
-    as Latest Articles, filtered to that section's classification.
-  -->
-  <div class="sec-group reveal" id="industry-news">
-    <h2 class="section-title">Industry News <span class="count">Macro, policy and market moves</span></h2>
-    <div class="article-table">
-      
-      <div class="article-row">
-        <div class="score-chip high">88</div>
-        <div class="article-thumb"><img src="https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/wc-small-electric-triple-2025-me-70.jpg?itok=ejWOQ2GL" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/electric-cars/evs-and-hybrids-drive-uk-car-market-best-july-covid" target="_blank" rel="noopener">EVs and hybrids drive UK car market to best July since Covid</a>
-          <div class="article-take">Electrified share jumps as incentives and pricing push buyers toward plug‑in options.</div>
-          <div class="article-tags"><span class="chip">UK</span><span class="chip">EV Sales</span><span class="chip">Hybrids</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar — Aug 5, 2026</span>
-          <a href="https://www.autocar.co.uk/car-news/electric-cars/evs-and-hybrids-drive-uk-car-market-best-july-covid" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">74</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/04/BYD-EVs-5-min-charging.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">IEA: Global EV sales jump 35% in Q2; 50 countries set records</a>
-          <div class="article-take">Momentum returns as markets normalize and model availability broadens.</div>
-          <div class="article-tags"><span class="chip">IEA</span><span class="chip">Global EVs</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Jul 29, 2026</span>
-          <a href="https://electrek.co/2026/07/29/477795/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="sec-group reveal" id="electric-vehicles">
-    <h2 class="section-title">Electric Vehicles <span class="count">Product and demand</span></h2>
-    <div class="article-table">
-
-      <div class="article-row">
-        <div class="score-chip">78</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/07/BMW-iX3-orders.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/28/bmw-ramps-up-ix3-output-orders-near-100000/" target="_blank" rel="noopener">BMW ramps up iX3 output as orders near 100,000</a>
-          <div class="article-take">Scale builds confidence for Neue Klasse cadence across segments.</div>
-          <div class="article-tags"><span class="chip">BMW</span><span class="chip">iX3</span><span class="chip">Production</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Jul 28, 2026</span>
-          <a href="https://electrek.co/2026/07/28/bmw-ramps-up-ix3-output-orders-near-100000/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      
-      <div class="article-row">
-        <div class="score-chip">72</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/07/Hyundai-IONIQ-3-prices-Europe-1.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/hyundai-reveals-ioniq-3-prices-start-30000-interest-surges/" target="_blank" rel="noopener">Hyundai IONIQ 3 priced around $30k with long range</a>
-          <div class="article-take">Affordable specs target the heart of mass EV adoption.</div>
-          <div class="article-tags"><span class="chip">Hyundai</span><span class="chip">IONIQ 3</span><span class="chip">Value EVs</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Jul 29, 2026</span>
-          <a href="https://electrek.co/2026/07/29/hyundai-reveals-ioniq-3-prices-start-30000-interest-surges/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">76</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/03/Lucid-first-midsize-EV-Cosmos.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/04/lucids-smaller-cosmos-suv-slated-for-2026-has-been-pushed-back-to-2027/" target="_blank" rel="noopener">Lucid delays Cosmos mid‑size SUV to 2027</a>
-          <div class="article-take">Execution and cost focus take precedence over speed to market.</div>
-          <div class="article-tags"><span class="chip">Lucid</span><span class="chip">Mid‑size SUV</span><span class="chip">Delay</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 4, 2026</span>
-          <a href="https://electrek.co/2026/08/04/lucids-smaller-cosmos-suv-slated-for-2026-has-been-pushed-back-to-2027/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="sec-group reveal" id="manufacturers">
-    <h2 class="section-title">Manufacturers <span class="count">Strategy and launches</span></h2>
-    <div class="article-table">
-
-      <div class="article-row">
-        <div class="score-chip high">90</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/07/Volvo-Lidar.webp?w=1600" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Volvo axes lidar on EX90/ES90</a>
-          <div class="article-take">Hardware de‑contenting pairs with owner compensation to streamline trims.</div>
-          <div class="article-tags"><span class="chip">Volvo</span><span class="chip">ADAS</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 5, 2026</span>
-          <a href="https://electrek.co/2026/07/29/volvo-drops-lidar-ex90-es90-compensation/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      
-      <div class="article-row">
-        <div class="score-chip">71</div>
-        <div class="article-thumb"><img src="https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/bmw-ix3-2026-mg-131.jpg?itok=3ft8M8or" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">BMW pauses hardcore off‑roader plan</a>
-          <div class="article-take">Capital shifts toward programs with clearer regional fit and faster ROI.</div>
-          <div class="article-tags"><span class="chip">BMW</span><span class="chip">Portfolio</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar — Jul 30, 2026</span>
-          <a href="https://www.autocar.co.uk/car-news/new-cars/bmw-puts-g-class-rival-hold-china-headwinds-hit-home" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="sec-group reveal" id="dealers">
-    <h2 class="section-title">Dealers <span class="count">Retail operations</span></h2>
-    <div class="article-table">
-
-      <div class="article-row">
-        <div class="score-chip">60</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/28days_later.jpg?quality=82&strip=all&w=1600" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/05/a-month-after-congress-killed-the-solar-tax-credit-the-industry-is-anything-but-dead/" target="_blank" rel="noopener">After U.S. solar credit sunset, installs keep climbing</a>
-          <div class="article-take">Energy retail adapts quickly—an indicator for dealer‑adjacent home charging offers.</div>
-          <div class="article-tags"><span class="chip">Retail</span><span class="chip">Energy</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 5, 2026</span>
-          <a href="https://electrek.co/2026/08/05/a-month-after-congress-killed-the-solar-tax-credit-the-industry-is-anything-but-dead/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="sec-group reveal" id="suppliers">
-    <h2 class="section-title">Suppliers <span class="count">Tier‑1 to infrastructure</span></h2>
-    <div class="article-table">
-
-      <div class="article-row">
-        <div class="score-chip">82</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/wynwood-village-station-press-release-2.jpg?quality=82&strip=all&w=1200" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/04/evgo-is-putting-500-fast-chargers-where-americans-shop/" target="_blank" rel="noopener">EVgo adds 500+ DCFC stalls at shopping centers</a>
-          <div class="article-take">Portfolio shift toward convenient, high‑traffic locations.</div>
-          <div class="article-tags"><span class="chip">EVgo</span><span class="chip">Charging</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 4, 2026</span>
-          <a href="https://electrek.co/2026/08/04/evgo-is-putting-500-fast-chargers-where-americans-shop/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      
-      <div class="article-row">
-        <div class="score-chip">70</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/07/Flint-Battery-storage-screenshot.jpg?quality=82&strip=all&w=1200" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/30/pjm-grid-largest-battery-is-now-under-construction-in-ohio/" target="_blank" rel="noopener">1 GWh battery under construction in Ohio (PJM)</a>
-          <div class="article-take">Massive storage projects will buffer data‑center‑driven load growth.</div>
-          <div class="article-tags"><span class="chip">Energy Storage</span><span class="chip">PJM</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Jul 30, 2026</span>
-          <a href="https://electrek.co/2026/07/30/pjm-grid-largest-battery-is-now-under-construction-in-ohio/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="sec-group reveal" id="government">
-    <h2 class="section-title">Government <span class="count">Policy & regulation</span></h2>
-    <div class="article-table">
-
-      <div class="article-row">
-        <div class="score-chip">67</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/wc-small-electric-triple-2025-me-70.jpg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/05/uk-records-strongest-ev-july-to-date/" target="_blank" rel="noopener">UK BEV share hits record in July</a>
-          <div class="article-take">Progress toward ZEV mandates continues but needs acceleration.</div>
-          <div class="article-tags"><span class="chip">UK</span><span class="chip">Policy</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrive — Aug 5, 2026</span>
-          <a href="https://www.electrive.com/2026/08/05/uk-records-strongest-ev-july-to-date/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      
-      <div class="article-row">
-        <div class="score-chip">65</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2021/01/Tesla-Solar-Inverter-hero.jpg?quality=82&strip=all&w=1600" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/05/fcc-bans-foreign-made-connected-solar-inverters/" target="_blank" rel="noopener">FCC bans new foreign‑made connected inverters</a>
-          <div class="article-take">Telecom oversight reaches into power electronics, tightening certification paths.</div>
-          <div class="article-tags"><span class="chip">FCC</span><span class="chip">Inverters</span><span class="chip">Compliance</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 5, 2026</span>
-          <a href="https://electrek.co/2026/08/05/fcc-bans-foreign-made-connected-solar-inverters/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="sec-group reveal" id="technology">
-    <h2 class="section-title">Technology <span class="count">Batteries, software & autonomy</span></h2>
-    <div class="article-table">
-
-      <div class="article-row">
-        <div class="score-chip">84</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2025/09/Mercedes-solid-state-EV-batteries-1.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">SK On and Factorial team up on solid‑state EV batteries</a>
-          <div class="article-take">Partnerships multiply as OEMs seek credible scale paths for next‑gen cells.</div>
-          <div class="article-tags"><span class="chip">Solid‑state</span><span class="chip">Batteries</span><span class="chip">Partnerships</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Jul 29, 2026</span>
-          <a href="https://electrek.co/2026/07/29/solid-state-ev-battery-leaders-team-up/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      
-      <div class="article-row">
-        <div class="score-chip">79</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/07/Waymo-Gemini-integration-ojai.jpeg?quality=82&strip=all&w=1580" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Waymo adds Gemini AI and redesigned rider interface</a>
-          <div class="article-take">A more conversational AV UX aims to reduce friction for first‑time robotaxi riders.</div>
-          <div class="article-tags"><span class="chip">Waymo</span><span class="chip">Robotaxi</span><span class="chip">AI</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Jul 29, 2026</span>
-          <a href="https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="sec-group reveal" id="finance">
-    <h2 class="section-title">Finance <span class="count">Earnings & deals</span></h2>
-    <div class="article-table">
-      
-      <div class="article-row">
-        <div class="score-chip">73</div>
-        <div class="article-thumb"><img src="https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/robotaxi_87_0.jpg?itok=nITjPgOL" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/business-corporate/cheap-cars-hit-tesla-profits-tech-pivot-stalls" target="_blank" rel="noopener">Cheap cars hit Tesla profits as tech pivot stalls</a>
-          <div class="article-take">Price‑driven volume is squeezing margins while autonomy timelines slip.</div>
-          <div class="article-tags"><span class="chip">Tesla</span><span class="chip">Earnings</span><span class="chip">Pricing</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar — Aug 1, 2026</span>
-          <a href="https://www.autocar.co.uk/car-news/business-corporate/cheap-cars-hit-tesla-profits-tech-pivot-stalls" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-      <div class="article-row">
-        <div class="score-chip">69</div>
-        <div class="article-thumb"><img src="https://www.carscoops.com/wp-content/uploads/2026/08/GM-SAIC-1024x576.jpg" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://www.carscoops.com/2026/08/gm-saic-extension/" target="_blank" rel="noopener">GM extends 20‑year deal with SAIC</a>
-          <div class="article-take">The JV will launch dozens of models as GM leans into China capacity and exports.</div>
-          <div class="article-tags"><span class="chip">GM</span><span class="chip">SAIC</span><span class="chip">JV</span></div>
-        </div>
-        <div class="article-source">
-          <span>Carscoops — Aug 5, 2026</span>
-          <a href="https://www.carscoops.com/2026/08/gm-saic-extension/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="sec-group reveal" id="international">
-    <h2 class="section-title">International <span class="count">Cross‑border activity</span></h2>
-    <div class="article-table">
-      
-      <div class="article-row">
-        <div class="score-chip">69</div>
-        <div class="article-thumb"><img src="https://electrek.co/wp-content/uploads/sites/3/2026/08/GM-Buick-NEVs-China.jpeg?quality=82&strip=all&w=1400" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://electrek.co/2026/08/05/gm-buick-evs-china-overseas-suv/" target="_blank" rel="noopener">GM to ship China‑built Buick EVs overseas</a>
-          <div class="article-take">Capacity redeployment positions GM for faster global EV rollout.</div>
-          <div class="article-tags"><span class="chip">Exports</span><span class="chip">China</span><span class="chip">GM</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrek — Aug 5, 2026</span>
-          <a href="https://electrek.co/2026/08/05/gm-buick-evs-china-overseas-suv/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-      
-      <div class="article-row">
-        <div class="score-chip">67</div>
-        <div class="article-thumb"><img src="https://www.electrive.com/media/2026/08/weride-robotaxi-gxr-greenmobility-kopenhagen-daenemark-400x267.jpeg" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://www.electrive.com/2026/08/04/greenmobility-to-bring-weride-robotaxis-to-denmark/" target="_blank" rel="noopener">WeRide robotaxis to launch in Denmark with GreenMobility</a>
-          <div class="article-take">Chinese AV tech expands into EU via car‑sharing partnerships.</div>
-          <div class="article-tags"><span class="chip">WeRide</span><span class="chip">Denmark</span><span class="chip">Robotaxi</span></div>
-        </div>
-        <div class="article-source">
-          <span>Electrive — Aug 4, 2026</span>
-          <a href="https://www.electrive.com/2026/08/04/greenmobility-to-bring-weride-robotaxis-to-denmark/" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="sec-group reveal" id="opinion">
-    <h2 class="section-title">Opinion <span class="count">Analysis & commentary</span></h2>
-    <div class="article-table">
-      
-      <div class="article-row">
-        <div class="score-chip">58</div>
-        <div class="article-thumb"><img src="https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/50555-26c0044-020.jpg?itok=RbUt5jP3" alt="" loading="lazy"></div>
-        <div class="article-main">
-          <a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/mercedes-big-screens-stay-we-went-too-far-removing-buttons" target="_blank" rel="noopener">Mercedes: Big screens stay, but we went “too far” removing buttons</a>
-          <div class="article-take">UX rethink brings back key physical controls without ditching screen real estate.</div>
-          <div class="article-tags"><span class="chip">Mercedes</span><span class="chip">HMI</span><span class="chip">UX</span></div>
-        </div>
-        <div class="article-source">
-          <span>Autocar — Jul 31, 2026</span>
-          <a href="https://www.autocar.co.uk/car-news/new-cars/mercedes-big-screens-stay-we-went-too-far-removing-buttons" target="_blank" rel="noopener">Read original →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</main>
-
-<footer>
-  <p class="legal-note mono" style="font-family:'IBM Plex Sans',sans-serif;">
-    AutoIntel Intelligence analyzes and scores publicly reported automotive industry news.
-    Headlines, executive summaries, takeaways and scores on this page are original editorial
-    analysis produced by AutoIntel — we do not reproduce source-article text. Every item links
-    to its original publisher; please read the full story there for complete reporting and context.
-  </p>
-</footer>
-
-<script>
-document.getElementById('publishDate').textContent = new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).toUpperCase();
-
-(function(){
-  var toggle = document.getElementById('sectionNavToggle');
-  var nav = document.getElementById('sectionNav');
-  if (!toggle || !nav) return;
-  toggle.addEventListener('click', function(){
-    var open = nav.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  nav.addEventListener('click', function(e){
-    if (e.target.tagName === 'A') {
-      nav.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-    }
-  });
-})();
-
-(function(){
-  var track = document.getElementById('tickerTrack');
-  if (track) track.innerHTML += track.innerHTML; // seamless loop
-})();
-
-(function(){
-  var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
-  if (!reveals.length || !('IntersectionObserver' in window)) {
-    reveals.forEach(function(el){ el.classList.add('is-visible'); });
-    return;
-  }
-  var observer = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-  reveals.forEach(function(el){ observer.observe(el); });
-})();
-</script>
-
-</body>
-</html>
+        <a href="https://chargedevs.com/newswire/tdk-releases-125-v-axial-aluminum-electrolytic-capac
