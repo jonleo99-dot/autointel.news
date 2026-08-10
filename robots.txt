@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://autointel.news/sitemap.xml
