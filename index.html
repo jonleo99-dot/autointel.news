@@ -11,7 +11,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <title>AutoIntel Intelligence — Automotive Industry Signal, Daily</title>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFL6J09QZV"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFL6J09QZV"></script>open output/latest.html
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -1225,6 +1225,64 @@ div[id] {
   margin-top: -35px;
 }
 
+/* Compact AutoIntel tagline on mobile */
+@media (max-width: 700px) {
+  .masthead-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .masthead-tagline {
+    order: 3;
+    flex: 0 0 100%;
+    margin: 4px 0 2px;
+    padding: 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.2;
+    white-space: nowrap;
+    letter-spacing: 0;
+  }
+}
+
+
+/* Mobile: place AutoIntel tagline beside Sections control */
+@media (max-width: 900px) {
+  .section-nav-toggle {
+    width: calc(100% - 32px);
+    box-sizing: border-box;
+    margin: 0 16px 12px;
+    position: relative;
+  }
+
+  .section-nav-toggle::after {
+    content: "One industry. Hundreds of sources. One intelligent view.";
+    margin-left: auto;
+    padding-left: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-transform: none;
+    color: var(--ink-dim);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }
+}
+
+
+/* Hide standalone masthead tagline on mobile.
+   The compact version is displayed beside Sections instead. */
+@media (max-width: 900px) {
+  .masthead-tagline {
+    display: none !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1254,6 +1312,9 @@ div[id] {
       AutoIntel<span class="wordmark-sub">.NEWS <i>ō͡≡o˞̶</i></span>
       <span class="sponsor">XYZ Automotive</span>
     </div>
+   <div class="masthead-tagline">
+    One industry. Hundreds of sources. One intelligent view.
+  </div>
     <div class="masthead-date" id="publishDate"></div>
   </div>
   <nav class="section-nav" id="sectionNav">
