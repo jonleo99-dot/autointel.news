@@ -1,0 +1,1574 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="AutoIntel Intelligence turns hundreds of daily automotive stories into one scored, structured briefing: what matters, who's involved, and why.">
+<meta property="og:title" content="AutoIntel Intelligence">
+<meta property="og:description" content="Automotive industry intelligence, scored and structured. Not another rewrite — the signal, with sources.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://autointel.news">
+<meta name="twitter:card" content="summary_large_image">
+<title>AutoIntel Intelligence — Automotive Industry Signal, Daily</title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFL6J09QZV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GFL6J09QZV');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14171c;
+  --panel:#1c2128;
+  --panel-2:#20262e;
+  --ink:#e7e9ec;
+  --ink-dim:#a7adb6;
+  --line:#2a3038;
+  --amber:#f2a93b;
+  --teal:#3ecf8e;
+  --slate:#566072;
+  --red:#e2604f;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'IBM Plex Sans',Arial,sans-serif;
+  font-size:15px;
+  line-height:1.6;
+}
+h1,h2,h3,h4{
+  font-family:'Space Grotesk',sans-serif;
+  color:#fff;
+  margin:0;
+}
+a{color:inherit;text-decoration:none}
+.mono{font-family:'IBM Plex Mono',monospace}
+
+/* ---------------- Ticker ---------------- */
+.ticker{
+  background:#0f1114;
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+  white-space:nowrap;
+  padding:9px 0;
+}
+.ticker-track{
+  display:inline-flex;
+  gap:36px;
+  padding-left:36px;
+  animation:tickerScroll 42s linear infinite;
+}
+.ticker-item{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  letter-spacing:0.03em;
+  color:var(--ink-dim);
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+.ticker-item b{color:var(--ink);font-weight:500}
+.ticker-icon{width:14px;height:14px;flex:none;display:inline-block;vertical-align:middle}
+.ticker-up{color:var(--teal)}
+.ticker-down{color:var(--red)}
+.ticker-flat{color:var(--amber)}
+@keyframes tickerScroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+@media(prefers-reduced-motion:reduce){
+  .ticker-track{animation:none}
+  .ticker{overflow-x:auto}
+}
+
+
+
+/* Mobile fix: tighten Trending Topics to Industry News spacing */
+@media (max-width: 768px) {
+    .ticker {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .ticker + section,
+    .ticker + .section,
+    .ticker + div {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+}
+
+/* ---------------- Trending Topics: forced horizontal layout ---------------- */
+
+.ticker{
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.ticker-track{
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:nowrap !important;
+  align-items:center;
+  width:max-content;
+  min-width:100%;
+  gap:36px;
+  padding-left:36px;
+  animation:tickerScroll 42s linear infinite;
+}
+
+.ticker-item{
+  flex:0 0 auto !important;
+  display:inline-flex !important;
+  flex-direction:row !important;
+  flex-wrap:nowrap !important;
+  align-items:center;
+  white-space:nowrap !important;
+  width:max-content;
+  gap:6px;
+}
+
+/* Prevent individual topic labels from wrapping */
+.ticker-item b{
+  white-space:nowrap;
+}
+
+/* ---------------- End Trending Topics override ---------------- */
+
+/* ---------------- Masthead ---------------- */
+.masthead{
+  border-bottom:1px solid var(--line);
+  background:var(--bg);
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+.masthead-row{
+  max-width:1320px;
+  margin:0 auto;
+  padding:18px 24px 14px;
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.wordmark{
+  font-size:22px;
+  font-weight:700;
+  letter-spacing:-0.01em;
+}
+.sponsor{
+  display:inline-block;
+  margin-left:10px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:9px;
+  font-weight:500;
+  letter-spacing:0.08em;
+  color:var(--ink-dim);
+  vertical-align:middle;
+  text-transform:none;
+}
+
+.wordmark-sub{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:10px;
+  font-weight:500;
+  letter-spacing:0.18em;
+  color:var(--amber);
+  margin-left:8px;
+  vertical-align:middle;
+}
+.masthead-date{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.08em;
+  color:var(--ink-dim);
+  text-transform:uppercase;
+}
+.section-nav{
+  max-width:1320px;
+  margin:0 auto;
+  padding:0 24px 14px;
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  font-size:12.5px;
+}
+.section-nav a{
+  color:var(--ink-dim);
+  border-bottom:2px solid transparent;
+  padding-bottom:4px;
+  transition:color .15s ease,border-color .15s ease;
+}
+.section-nav a:hover{color:var(--ink);border-color:var(--amber)}
+.section-nav-toggle{
+  display:none;
+}
+
+
+.latest-jump-wrap{
+  display:block !important;
+  width:100% !important;
+  margin:0 !important;
+  padding:8px 0 12px !important;
+  clear:both !important;
+  text-align:left !important;
+  position:relative !important;
+  z-index:5 !important;
+}
+.latest-jump{
+  display:inline-block !important;
+  color:var(--amber) !important;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  text-decoration:none !important;
+  line-height:1.3;
+  padding:4px 0;
+  visibility:visible !important;
+  opacity:1 !important;
+  position:relative !important;
+  z-index:6 !important;
+}
+.latest-jump:hover{
+  color:var(--ink) !important;
+}
+
+
+.latest-nav-link{
+  color:var(--amber) !important;
+  font-weight:600;
+}
+.latest-nav-link:hover{
+  color:var(--ink) !important;
+  border-color:var(--amber) !important;
+}
+
+/* ---------------- Layout shell ---------------- */
+.wrap{max-width:1320px;margin:0 auto;padding:32px 24px 64px}
+.section-title{
+  font-size:20px;
+  margin-bottom:18px;
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+}
+.section-title .count{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  color:var(--ink-dim);
+  font-weight:400;
+}
+
+/* ---------------- Hero / Featured story ---------------- */
+.hero{margin-bottom:52px}
+.hero-media{
+  width:100%;
+  aspect-ratio:800/450;
+  border-radius:12px 12px 0 0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-bottom:none;
+  background:var(--panel-2);
+}
+.hero-media img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-grid{border-top-left-radius:0;border-top-right-radius:0}
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.12em;
+  color:var(--amber);
+  display:block;
+  margin-bottom:12px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.6fr 1fr;
+  gap:36px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:32px;
+}
+.hero-main h1{
+  font-size:30px;
+  line-height:1.25;
+  margin-bottom:12px;
+}
+.dek{
+  color:var(--ink-dim);
+  font-size:14.5px;
+  margin-bottom:20px;
+  max-width:60ch;
+}
+.source-strip{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  align-items:center;
+  font-size:12.5px;
+  color:var(--ink-dim);
+  padding-bottom:20px;
+  margin-bottom:20px;
+  border-bottom:1px solid var(--line);
+}
+.source-strip a{
+  color:var(--amber);
+  font-weight:500;
+}
+.source-strip a:hover{text-decoration:underline}
+.chip-row{display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  padding:5px 10px;
+  border-radius:999px;
+  background:var(--panel-2);
+  border:1px solid var(--line);
+  color:var(--ink-dim);
+  white-space:nowrap;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+.chip-icon{width:16px;height:16px;flex:none;border-radius:3px}
+.chip.entity-mfr{border-color:#3a4a3f;color:var(--teal)}
+.chip.entity-gov{border-color:#4a3a2a;color:var(--amber)}
+.chip.stock{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  color:var(--ink);
+  border-color:var(--line);
+}
+.chip.stock .tk{font-weight:600;color:#fff}
+.chip.stock .chg{font-weight:600}
+.chip.stock.up .chg{color:var(--teal)}
+.chip.stock.down .chg{color:var(--red)}
+
+/* Entity data grid (replaces narrative exec-summary / impact prose) */
+.entity-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px 28px;
+}
+.entity-field{padding-top:2px}
+.entity-field.wide{grid-column:1 / -1}
+.ef-label{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:10.5px;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--ink-dim);
+  display:block;
+  margin-bottom:9px;
+  font-weight:500;
+}
+.data-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.data-list a{color:var(--ink-dim);font-size:13px;display:block}
+.data-list a:hover{color:var(--teal)}
+.timeline-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.timeline-list li{
+  display:flex;
+  gap:12px;
+  font-size:13px;
+  color:var(--ink-dim);
+  padding-left:14px;
+  border-left:2px solid var(--line);
+}
+.timeline-list .t-date{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  color:var(--ink);
+  white-space:nowrap;
+  min-width:78px;
+}
+
+/* Gauge cluster */
+.hero-gauges{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,150px));
+  gap:14px;
+  align-content:start;
+  justify-content:start;
+}
+.gauge{
+  background:var(--panel-2);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:14px 12px 12px;
+  text-align:center;
+  max-width:150px;
+}
+.gauge svg{width:100%;max-width:100px;height:auto;display:block;margin:0 auto}
+.gauge-value{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:19px;
+  font-weight:600;
+  margin-top:-28px;
+  display:block;
+}
+.gauge-label{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:9.5px;
+  letter-spacing:0.06em;
+  color:var(--ink-dim);
+  text-transform:uppercase;
+  display:block;
+  margin-top:2px;
+}
+.score-methodology{
+  margin-top:18px;
+  padding-top:18px;
+  border-top:1px solid var(--line);
+}
+.score-methodology summary{
+  cursor:pointer;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11.5px;
+  color:var(--ink-dim);
+  letter-spacing:0.03em;
+  list-style:none;
+}
+.score-methodology summary::-webkit-details-marker{display:none}
+.score-methodology summary:hover{color:var(--amber)}
+.score-methodology dl{margin:14px 0 0;display:grid;grid-template-columns:1fr;gap:10px}
+.score-methodology dt{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:10.5px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--ink);
+  margin-bottom:2px;
+}
+.score-methodology dd{margin:0;color:var(--ink-dim);font-size:12.5px;line-height:1.6}
+
+/* ---------------- Dashboard / snapshot panels ---------------- */
+.dashboard{
+  margin-bottom:24px;
+}
+
+.dash-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;
+}
+
+.stat-panel{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:20px;
+  min-height:180px;
+  transition:
+    border-color .18s ease,
+    background .18s ease,
+    transform .18s ease;
+}
+
+.stat-panel:hover{
+  background:var(--panel-2);
+  border-color:rgba(255,255,255,.12);
+  transform:translateY(-1px);
+}
+
+.stat-panel h4{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--ink);
+  margin:0 0 16px;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  line-height:1.4;
+}
+
+/* Snapshot visual ranking */
+.snapshot-rank-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.snapshot-rank{
+  display:block;
+  margin:0;
+  padding:0;
+}
+
+.snapshot-rank-label{
+  font-size:13px;
+  line-height:1.35;
+  color:var(--ink);
+  margin-bottom:6px;
+  font-weight:500;
+}
+
+.snapshot-rank .rank-bar-wrap{
+  width:100%;
+  height:7px;
+  margin:0;
+  background:var(--panel-2);
+  border-radius:4px;
+  overflow:hidden;
+}
+
+.snapshot-rank .rank-bar{
+  display:block;
+  height:100%;
+  background:var(--teal);
+  border-radius:4px;
+  transition:width .3s ease;
+}
+
+.snapshot-tagcloud{
+  gap:8px;
+  align-items:center;
+}
+
+.snapshot-tagcloud .chip{
+  font-size:12px;
+  padding:5px 9px;
+}
+
+.panel-icon{
+  width:34px;
+  height:34px;
+  flex:none;
+  opacity:.92;
+}
+
+.stat-panel p{
+  margin:0 0 12px;
+  color:var(--ink-dim);
+  font-size:13px;
+  line-height:1.65;
+}
+
+.stat-panel p:last-child{
+  margin-bottom:0;
+}
+
+.stat-panel strong{
+  color:var(--ink);
+  font-weight:600;
+}
+
+.stat-panel h5{
+  margin:18px 0 7px;
+  font-size:11px;
+  font-family:'IBM Plex Mono',monospace;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  color:var(--amber);
+  font-weight:600;
+}
+
+/* Visual industry-signal bars */
+.rank-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:13px;
+}
+
+.rank-list li{
+  display:grid;
+  grid-template-columns:minmax(80px,1fr) 1.5fr;
+  align-items:center;
+  gap:12px;
+  font-size:12.5px;
+  color:var(--ink);
+}
+
+.rank-bar-wrap{
+  width:100%;
+  height:6px;
+  background:var(--panel-2);
+  border-radius:4px;
+  overflow:hidden;
+}
+
+.rank-bar{
+  height:100%;
+  background:var(--teal);
+  border-radius:4px;
+  transition:width .25s ease;
+}
+
+/* Counts remain available to the renderer but are visually
+   de-emphasized so the snapshot reads as an intelligence signal,
+   not a scoreboard. */
+.rank-count{
+  display:none;
+}
+
+/* Tag / topic panels */
+.tagcloud{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  align-items:flex-start;
+}
+
+.tagcloud .chip{
+  font-size:11.5px;
+  padding:5px 9px;
+}
+
+.tagcloud .chip.lg{
+  font-size:13px;
+  color:var(--ink);
+  border-color:var(--amber);
+  background:rgba(255,255,255,.025);
+}
+
+/* Snapshot signal label */
+.stat-panel .signal-label{
+  display:block;
+  margin-top:18px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:9px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--ink-dim);
+}
+
+/* ---------------- Feature panels ---------------- */
+.feature-panels{
+  display:flex !important;
+  flex-direction:column !important;
+  width:100% !important;
+  gap:18px !important;
+  margin:0 0 32px 0 !important;
+  align-items:stretch !important;
+}
+
+/* Manufacturers is the primary, full-width intelligence panel */
+/* Feature panels are stacked sections */
+.feature-panel:first-child{
+  grid-column:auto !important;
+}
+
+.feature-panel{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:20px !important;
+}
+
+.feature-panel:hover{
+  background:var(--panel-2);
+  border-color:rgba(255,255,255,.12);
+}
+
+.feature-panel-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:18px;
+}
+
+.feature-panel-header .panel-title{
+  font-size:15px;
+  font-weight:600;
+  line-height:1.35;
+  color:var(--ink);
+}
+
+.fp-icon{
+  width:40px;
+  height:40px;
+  flex:none;
+  border-radius:8px;
+}
+
+/* Manufacturers stories use a two-column layout */
+.feature-panel:first-child .feature-panel-rows{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:28px;
+  row-gap:0;
+}
+
+/* Secondary panels retain a vertical story layout */
+
+
+/* Secondary panels use the same horizontal intelligence layout */
+.feature-panel:not(:first-child) .feature-panel-rows{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:28px;
+  row-gap:0;
+}
+
+@media(max-width:620px){
+  .feature-panel:not(:first-child) .feature-panel-rows{
+    grid-template-columns:1fr;
+  }
+}
+
+
+
+
+.feature-row{
+  padding:16px 0;
+  border-top:1px solid var(--line);
+}
+
+.feature-row:first-child{
+  border-top:none;
+  padding-top:0;
+}
+
+.feature-row:last-child{
+  padding-bottom:0;
+}
+
+.feature-row-main{
+  display:block;
+}
+
+.feature-row-headline{
+  font-size:14px;
+  line-height:1.45;
+  font-weight:600;
+  color:var(--ink);
+  margin:0 0 8px;
+}
+
+.feature-row-takeaway{
+  font-size:13px;
+  line-height:1.7;
+  color:var(--ink-dim);
+  margin:0;
+}
+
+.feature-row-date{
+  margin-top:10px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:9.5px;
+  line-height:1.4;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--ink-dim);
+  opacity:.75;
+}
+
+.feature-row:hover .feature-row-headline{
+  color:var(--amber);
+}
+
+/* ---------------- Responsive feature panels ---------------- */
+@media (max-width:900px){
+  .feature-panels{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .feature-panel:first-child{
+  grid-column:auto !important;
+}
+
+  .feature-panel:first-child .feature-panel-rows{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:620px){
+  .feature-panels{
+    grid-template-columns:1fr;
+  }
+
+  .feature-panel:first-child{
+  grid-column:auto !important;
+}
+
+  .feature-panel:first-child .feature-panel-rows{
+    grid-template-columns:1fr;
+  }
+}
+
+/* ---------------- Article table / rows ---------------- */
+.sec-group{margin-bottom:48px}
+
+.section-rows{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  overflow:hidden;
+  padding:14px;
+  background:var(--panel-2);
+}
+
+.article-table{
+  display:flex;
+  flex-direction:column;
+  border:1px solid var(--line);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.article-row{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 200px;
+  gap:20px;
+  align-items:start;
+  padding:16px 18px;
+  background:var(--panel);
+  border-bottom:1px solid var(--line);
+  transition:background .15s ease;
+}
+
+.article-row:last-child{border-bottom:none}
+.article-row:hover{background:var(--panel-2)}
+
+.section-rows .article-row{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  min-width:0;
+  height:100%;
+  padding:16px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:var(--panel);
+}
+
+.section-rows .article-main{
+  flex:1;
+}
+
+.section-rows .article-source{
+  margin-top:auto;
+  padding-top:10px;
+  text-align:left;
+  align-items:flex-start;
+  border-top:1px solid var(--line);
+}
+
+.section-rows .article-tags{
+  margin-top:auto;
+}
+
+.score-chip{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:13px;
+  font-weight:600;
+  width:40px;
+  height:40px;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--panel-2);
+  border:1px solid var(--line);
+  color:var(--amber);
+}
+
+.score-chip.high{
+  color:var(--red);
+  border-color:#4a2e2a;
+}
+
+.article-main{
+  min-width:0;
+}
+
+.article-type{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  margin:0 0 6px;
+  padding:2px 7px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:.08em;
+  line-height:1.3;
+  color:var(--ink-dim);
+  background:var(--panel-2);
+}
+
+.article-row--analyzed .article-type{
+  color:var(--amber);
+  border-color:rgba(212,162,72,.35);
+}
+
+.article-row--source .article-type{
+  color:var(--ink-dim);
+}
+
+.article-row--analyzed{
+  border-left:2px solid rgba(212,162,72,.55);
+}
+
+.article-row--source{
+  border-left:2px solid transparent;
+}
+
+.article-main a.headline{
+  font-size:15px;
+  line-height:1.4;
+  font-weight:500;
+  color:var(--ink);
+  display:block;
+  margin-bottom:5px;
+  overflow-wrap:anywhere;
+}
+
+.article-main a.headline:hover{
+  color:var(--teal);
+}
+
+.article-take{
+  color:var(--ink-dim);
+  font-size:13px;
+  line-height:1.5;
+  margin:0 0 8px;
+}
+
+.article-tags{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+}
+
+.article-tags .chip{
+  font-size:10.5px;
+  padding:3px 8px;
+}
+
+.article-source{
+  min-width:0;
+  text-align:right;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  color:var(--ink-dim);
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  align-items:flex-end;
+  overflow-wrap:anywhere;
+}
+
+.article-source a{
+  color:var(--amber);
+}
+
+.article-source a:hover{
+  text-decoration:underline;
+}
+
+
+
+/* ---------------- Responsive ---------------- */
+@media(max-width:900px){
+  .wrap{padding:24px 16px 48px}
+  .masthead-row{padding:14px 16px 12px}
+  .section-nav-toggle{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin:0 16px 12px;
+    padding:8px 14px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:8px;
+    color:var(--ink-dim);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+  }
+  .section-nav-toggle .chev{transition:transform .2s ease}
+  .section-nav-toggle[aria-expanded="true"] .chev{transform:rotate(180deg)}
+  .section-nav{
+    padding:0 16px 12px;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    max-height:0;
+    opacity:0;
+    padding-top:0;
+    padding-bottom:0;
+    margin-bottom:0;
+    overflow:hidden;
+    transition:max-height .25s ease,opacity .2s ease;
+  }
+  .section-nav.is-open{
+    max-height:120px;
+    opacity:1;
+    padding-top:2px;
+    padding-bottom:12px;
+    overflow-x:auto;
+  }
+  .section-nav::-webkit-scrollbar{display:none}
+  .section-nav a{white-space:nowrap;padding-bottom:8px}
+  .hero-grid{grid-template-columns:1fr;padding:22px}
+  .hero-main h1{font-size:24px}
+  .hero-gauges{justify-content:center;gap:10px}
+  .gauge{padding:10px 8px 10px;max-width:130px}
+  .gauge svg{max-width:88px}
+  .gauge-value{font-size:16px;margin-top:-24px}
+  .gauge-label{font-size:8.5px}
+  .entity-grid{grid-template-columns:repeat(2,1fr);gap:16px 20px}
+  .dash-grid{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+  .feature-panels{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .section-title{font-size:18px}
+  .section-rows{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .section-rows .article-row{
+    grid-template-columns:none;
+  }
+
+  .article-thumb{width:72px}
+}
+@media(max-width:600px){
+  .section-rows{
+    grid-template-columns:1fr;
+    padding:10px;
+  }
+
+  .section-rows .article-row{
+    padding:14px;
+  }
+  .stat-panel{
+    min-height:0;
+  }
+
+  .article-type{
+    font-size:8.5px;
+    margin-bottom:5px;
+    padding:2px 6px;
+  }
+
+  .article-row--analyzed{
+    border-left-width:2px;
+  }
+
+  .ticker-item{font-size:11px}
+  .wordmark{font-size:19px}
+  .masthead-date{display:none}
+  .hero-main h1{font-size:21px}
+  .dek{font-size:13.5px}
+  .entity-grid{grid-template-columns:1fr}
+  .source-strip{gap:10px 14px;font-size:12px}
+  .dash-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat-panel{padding:14px}
+  .feature-panels{grid-template-columns:1fr}
+  .article-row{
+    grid-template-columns:40px minmax(0,1fr);
+    grid-template-areas:
+      "score main"
+      ". source";
+    padding:12px 14px;
+  }
+  .score-chip{grid-area:score;width:32px;height:32px;font-size:11px}
+  .article-thumb{display:none}
+  .article-main{grid-area:main}
+  .article-source{grid-area:source;align-items:flex-start;text-align:left;margin-top:6px}
+  .article-main a.headline{font-size:13.5px}
+  .hero-gauges{grid-template-columns:repeat(2, minmax(0,110px));gap:8px}
+  .gauge{max-width:110px;padding:8px 6px 8px}
+  .gauge svg{max-width:76px}
+  .gauge-value{font-size:14px;margin-top:-20px}
+}
+@media(max-width:380px){
+  .gauge{max-width:96px;padding:7px 5px 7px}
+  .gauge svg{max-width:66px}
+  .gauge-value{font-size:12.5px;margin-top:-18px}
+  .gauge-label{font-size:8px}
+  .dash-grid{grid-template-columns:1fr}
+}
+
+.reveal{opacity:1;transform:none;transition:none}
+.reveal.is-visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+.contact-strip{
+  border-top:1px solid var(--line);
+  margin-top:32px;
+  padding:18px 24px;
+}
+
+.contact-strip-inner{
+  max-width:1320px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:10px;
+  letter-spacing:0.04em;
+  color:var(--ink-dim);
+}
+
+.contact-strip a{
+  color:var(--ink);
+  text-decoration:none;
+  font-weight:600;
+}
+
+.contact-strip a:hover{
+  text-decoration:underline;
+}
+
+@media(max-width:600px){
+  .contact-strip{
+    padding:16px;
+  }
+
+  .contact-strip-inner{
+    text-align:center;
+  }
+}
+
+
+/* Feature panels: full width sections */
+.feature-panels {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 36px !important;
+}
+
+.feature-panel {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Feature panel responsive rows */
+.feature-panel-rows {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 28px !important;
+  row-gap: 0 !important;
+}
+
+@media(max-width:768px){
+  .feature-panel-rows {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+
+/* ---------------- Mobile spacing refinement ---------------- */
+@media(max-width:768px){
+
+  .wrap {
+    padding-left:12px !important;
+    padding-right:12px !important;
+  }
+
+  .feature-panels {
+    gap:20px !important;
+  }
+
+  .feature-panel {
+    margin-top:20px !important;
+    margin-bottom:16px !important;
+  }
+
+  .feature-panel-header {
+    margin-bottom:12px !important;
+  }
+
+  .hero {
+    margin-bottom:24px !important;
+  }
+
+}
+/* ---------------- End mobile spacing refinement ---------------- */
+
+
+/* ---------------- Mobile feature panel spacing fix ---------------- */
+@media(max-width:768px){
+
+  .feature-panels {
+    gap: 12px !important;
+  }
+
+  .feature-panel {
+    margin: 12px 0 !important;
+  }
+
+  .feature-panel + .feature-panel {
+    margin-top: 12px !important;
+  }
+
+}
+/* ---------------- End mobile feature panel spacing fix ---------------- */
+
+
+/* Anchor jump positioning */
+section[id],
+div[id] {
+  scroll-margin-top: 70px;
+}
+
+
+/* Section navigation anchor positioning */
+.sec-group,
+.latest,
+.dashboard,
+.feature-panel {
+  scroll-margin-top: 90px;
+}
+
+
+/* AutoIntel's Picks top-nav landing position */
+#latest-articles{
+  scroll-margin-top:125px;
+}
+
+/* Section nav landing adjustment */
+[id="industry-news"],
+[id="electric-vehicles"],
+[id="technology"],
+[id="motorsport"],
+[id="car-culture"] {
+  scroll-margin-top: 110px;
+}
+
+
+/* Section navigation landing fix */
+.news-section {
+  scroll-margin-top: 40px;
+}
+
+
+/* Section navigation anchor spacing */
+.news-section {
+  padding-top: 35px;
+  margin-top: -35px;
+}
+
+/* Compact AutoIntel tagline on mobile */
+@media (max-width: 700px) {
+  .masthead-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .masthead-tagline {
+    order: 3;
+    flex: 0 0 100%;
+    margin: 4px 0 2px;
+    padding: 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.2;
+    white-space: nowrap;
+    letter-spacing: 0;
+  }
+}
+
+
+/* Mobile: place AutoIntel tagline beside Sections control */
+@media (max-width: 900px) {
+  .section-nav-toggle {
+    width: calc(100% - 32px);
+    box-sizing: border-box;
+    margin: 0 16px 12px;
+    position: relative;
+  }
+
+  .section-nav-toggle::after {
+    content: "One industry. Hundreds of sources. One intelligent view.";
+    margin-left: auto;
+    padding-left: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-transform: none;
+    color: var(--ink-dim);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }
+}
+
+
+/* Hide standalone masthead tagline on mobile.
+   The compact version is displayed beside Sections instead. */
+@media (max-width: 900px) {
+  .masthead-tagline {
+    display: none !important;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="ticker" aria-label="Trending entities and topics">
+  <div class="ticker-track" id="tickerTrack">
+    <span class="ticker-item ticker-flat"><span>electric vehicles</span><span>15 stories</span><span>■</span></span>
+<span class="ticker-item ticker-flat"><span>motorsport</span><span>15 stories</span><span>■</span></span>
+<span class="ticker-item ticker-flat"><span>classic &amp; collector cars</span><span>10 stories</span><span>■</span></span>
+<span class="ticker-item ticker-flat"><span>Ford</span><span>8 stories</span><span>■</span></span>
+<span class="ticker-item ticker-flat"><span>Stellantis</span><span>7 stories</span><span>■</span></span>
+<span class="ticker-item ticker-flat"><span>Toyota</span><span>7 stories</span><span>■</span></span>
+<span class="ticker-item ticker-flat"><span>Ferrari</span><span>7 stories</span><span>■</span></span>
+<span class="ticker-item ticker-flat"><span>BMW</span><span>6 stories</span><span>■</span></span>
+<span class="ticker-item ticker-flat"><span>market &amp; sales</span><span>6 stories</span><span>■</span></span>
+<span class="ticker-item ticker-flat"><span>Volkswagen</span><span>5 stories</span><span>■</span></span>
+<span class="ticker-item ticker-flat"><span>EV batteries</span><span>5 stories</span><span>■</span></span>
+<span class="ticker-item ticker-flat"><span>General Motors</span><span>5 stories</span><span>■</span></span>
+    
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="masthead-row">
+    <a href="#" class="wordmark" aria-label="Back to top"
+       onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+      AutoIntel<span class="wordmark-sub">.NEWS <i>ō͡≡o˞̶</i></span>
+      <span class="sponsor">XYZ Automotive</span>
+    </a>
+   <div class="masthead-tagline">
+    One industry. Hundreds of sources. One intelligent view.
+  </div>
+    <div class="masthead-date" id="publishDate"></div>
+  </div>
+  <nav class="section-nav" id="sectionNav">
+    <a href="#latest-articles" class="latest-nav-link">AutoIntel's Picks</a>
+<a href="#industry-news">Industry News</a>
+<a href="#electric-vehicles">Electric Vehicles</a>
+<a href="#technology-headlines">Technology Headlines</a>
+<a href="#motorsport">Motorsport</a>
+<a href="#car-culture">Car Culture</a>
+  </nav>
+  <button class="section-nav-toggle" id="sectionNavToggle" aria-expanded="false" aria-controls="sectionNav">
+    Sections <span class="chev">▾</span>
+  </button>
+</header>
+
+<main class="wrap">
+
+  
+  <section class="hero reveal" id="featured">
+    <span class="eyebrow">FEATURED STORY</span>
+    
+    <div class="hero-media">
+      <img src="/assets/images/hero-b308fb9ddef1-a72263279d9244a71b6ce57f.png" alt="Mini weighs rear-drive switch as next Cooper takes cues from its 2001 original" width="800" height="450" loading="lazy">
+    </div>
+    <div class="hero-grid">
+      <div class="hero-main">
+        <h1>Mini weighs rear-drive switch as next Cooper takes cues from its 2001 original</h1>
+        <p class="dek">Mini has begun developing a next-generation Cooper that could move from front- to rear-wheel drive by adopting BMW&#x27;s Gen6 electric platform. The redesign comes as competition intensifies in the small EV market, while the current petrol Cooper is expected to continue into the 2030s.</p>
+
+        <div class="source-strip">
+          <span>Source: <b>Autocar</b></span>
+          <span>Mon, 17 Aug 2026 06:00:00 +0100</span>
+          <a href="https://www.autocar.co.uk/car-news/electric-cars/next-mini-cooper-be-inspired-2001-r50-%E2%80%93-and-could-go-rwd" target="_blank" rel="noopener">Read original →</a>
+        </div>
+
+        <div class="entity-grid">
+          <div class="entity-field">
+            <span class="ef-label">Manufacturers</span>
+            <div class="chip-row">
+              <span class="chip entity-mfr">Mini</span><span class="chip entity-mfr">BMW</span><span class="chip entity-mfr">Great Wall Motor</span><span class="chip entity-mfr">Fiat</span><span class="chip entity-mfr">Peugeot</span><span class="chip entity-mfr">Cupra</span><span class="chip entity-mfr">Renault</span><span class="chip entity-mfr">Volkswagen</span><span class="chip entity-mfr">Kia</span><span class="chip entity-mfr">BYD</span><span class="chip entity-mfr">Geely</span>
+              
+              
+            </div>
+          </div>
+          <div class="entity-field">
+            <span class="ef-label">Suppliers</span>
+            
+            <div class="chip-row"></div>
+          </div>
+          <div class="entity-field">
+            <span class="ef-label">Countries</span>
+            
+            <div class="chip-row"><span class="chip">China</span></div>
+          </div>
+          <div class="entity-field">
+            <span class="ef-label">Government Agencies</span>
+            <div class="chip-row">
+              
+              
+            </div>
+          </div>
+          <div class="entity-field">
+            <span class="ef-label">Public Companies</span>
+            <div class="chip-row">
+              
+              
+            </div>
+          </div>
+          <div class="entity-field">
+            <span class="ef-label">Topics</span>
+            
+            
+            <div class="chip-row"><span class="chip">Electric vehicles</span><span class="chip">Rear-wheel drive</span><span class="chip">Automotive platforms</span><span class="chip">Small EV segment</span></div>
+          </div>
+          <div class="entity-field wide">
+            <span class="ef-label">Related Stories</span>
+            <ul class="data-list">
+              
+              
+            </ul>
+          </div>
+          <div class="entity-field wide">
+            <span class="ef-label">Timeline</span>
+            <ul class="timeline-list">
+              <li><span class="t-date mono">2001</span><span>The R50 Mini was introduced and is being used as inspiration for the next Cooper.</span></li><li><span class="t-date mono">2024</span><span>The current Mini hatchback launched with petrol and electric power options.</span></li><li><span class="t-date mono">Next couple of years</span><span>A facelift for the current Cooper is due while Mini develops its next-generation portfolio.</span></li><li><span class="t-date mono">Coming years</span><span>The next-generation Cooper is expected to undergo a major redesign and could shift to rear-wheel drive.</span></li><li><span class="t-date mono">2030s</span><span>The petrol Cooper is expected to remain in production, potentially with hybrid power.</span></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-gauges">
+        <div class="gauge">
+          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#f2a93b" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="34.5"/></svg>
+          <span class="gauge-value mono">78</span>
+          <span class="gauge-label">Importance</span>
+        </div>
+        <div class="gauge">
+          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#3ecf8e" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="25.1"/></svg>
+          <span class="gauge-value mono">84</span>
+          <span class="gauge-label">Editorial Quality</span>
+        </div>
+        <div class="gauge">
+          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#e2604f" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="37.7"/></svg>
+          <span class="gauge-value mono">76</span>
+          <span class="gauge-label">Industry Impact</span>
+        </div>
+        <div class="gauge">
+          <svg viewBox="0 0 120 70"><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#2a3038" stroke-width="8"/><path d="M10,65 A50,50 0 0 1 110,65" fill="none" stroke="#f2a93b" stroke-width="8" stroke-dasharray="157" stroke-dashoffset="28.3"/></svg>
+          <span class="gauge-value mono">82</span>
+          <span class="gauge-label">Reader Interest</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <details class="score-methodology">
+      <summary>ⓘ How these scores are calculated</summary>
+      <dl>
+        <dt>Importance</dt><dd>Category priority (25%) + entity reach (40%) + financial/market magnitude (20%) + cross-source corroboration (15%).</dd>
+        <dt>Editorial Quality</dt><dd>Fact specificity (40%) + publisher tier (30%) + attribution clarity (15%) + absence of press-release language (15%).</dd>
+        <dt>Industry Impact</dt><dd>Business impact (40%) + dealer implications (30%) + market contradiction (20%) + regulatory/legal exposure (10%).</dd>
+        <dt>Reader Interest</dt><dd>Named-brand prominence (35%) + topic heat (30%) + conflict/surprise angle (20%) + recency (15%). Proxy score — not yet based on real engagement data.</dd>
+      </dl>
+    </details>
+  </section>
+
+  
+  <section class="dashboard reveal" id="snapshot">
+    <h2 class="section-title">Industry Snapshot <span class="count">August 17, 2026</span></h2>
+    <div class="dash-grid">
+      <div class="stat-panel"><span class="panel-title">Manufacturer Mentions</span><ul class="rank-list snapshot-rank-list"><li class="snapshot-rank"><div class="snapshot-rank-label">Ford</div><div class="rank-bar-wrap"><span class="rank-bar" style="width:100%"></span></div></li><li class="snapshot-rank"><div class="snapshot-rank-label">Stellantis</div><div class="rank-bar-wrap"><span class="rank-bar" style="width:88%"></span></div></li><li class="snapshot-rank"><div class="snapshot-rank-label">Toyota</div><div class="rank-bar-wrap"><span class="rank-bar" style="width:88%"></span></div></li><li class="snapshot-rank"><div class="snapshot-rank-label">Ferrari</div><div class="rank-bar-wrap"><span class="rank-bar" style="width:88%"></span></div></li><li class="snapshot-rank"><div class="snapshot-rank-label">BMW</div><div class="rank-bar-wrap"><span class="rank-bar" style="width:75%"></span></div></li><li class="snapshot-rank"><div class="snapshot-rank-label">Volkswagen</div><div class="rank-bar-wrap"><span class="rank-bar" style="width:62%"></span></div></li><li class="snapshot-rank"><div class="snapshot-rank-label">General Motors</div><div class="rank-bar-wrap"><span class="rank-bar" style="width:62%"></span></div></li><li class="snapshot-rank"><div class="snapshot-rank-label">McLaren</div><div class="rank-bar-wrap"><span class="rank-bar" style="width:62%"></span></div></li></ul></div><div class="stat-panel"><span class="panel-title">Supplier Mentions</span><ul class="rank-list snapshot-rank-list"><li class="snapshot-rank"><div class="snapshot-rank-label">Bosch</div><div class="rank-bar-wrap"><span class="rank-bar" style="width:100%"></span></div></li></ul></div><div class="stat-panel"><span class="panel-title">Government Agency Activity</span><ul class="rank-list snapshot-rank-list"><li class="snapshot-rank"><div class="snapshot-rank-label">California Air Resources Board</div><div class="rank-bar-wrap"><span class="rank-bar" style="width:100%"></span></div></li></ul></div><div class="stat-panel"><span class="panel-title">Industry Topics</span><div class="tagcloud snapshot-tagcloud"><span class="chip">electric vehicles</span><span class="chip">motorsport</span><span class="chip">classic &amp; collector cars</span><span class="chip">market &amp; sales</span><span class="chip">EV batteries</span><span class="chip">emissions &amp; regulation</span><span class="chip">autonomous driving</span><span class="chip">semiconductors</span></div></div>
+      
+    </div>
+  </section>
+
+  
+  <section class="feature-panels reveal" id="featured-story">
+    <section class="feature-panel"><div class="feature-panel-header"><span class="panel-title">Technology Headlines</span></div><div class="feature-panel-rows"><article class="feature-row"><div class="feature-row-main"><div class="feature-row-headline">Para Light launches ThermaFlat SiC MOSFETs designed for low on-resistance drift</div><div class="feature-row-takeaway"></div><div class="feature-row-meta">Mon, 17 Aug 2026 12:33:00 +0000</div></div></article><article class="feature-row"><div class="feature-row-main"><div class="feature-row-headline">Munich Electrification’s new ME SSR replaces mechanical contactors and pyrotechnic fuses in e-trucks</div><div class="feature-row-takeaway"></div><div class="feature-row-meta">Mon, 17 Aug 2026 11:00:00 +0000</div></div></article><article class="feature-row"><div class="feature-row-main"><div class="feature-row-headline">Ford to use its Universal EV Production System to produce the new Fathom electric pickup</div><div class="feature-row-takeaway"></div><div class="feature-row-meta">Sun, 16 Aug 2026 17:25:00 +0000</div></div></article><article class="feature-row"><div class="feature-row-main"><div class="feature-row-headline">JTA and WATT partner to establish a new EV manufacturing plant in Qatar</div><div class="feature-row-takeaway"></div><div class="feature-row-meta">Sun, 16 Aug 2026 15:17:17 +0000</div></div></article></div></section><section class="feature-panel"><div class="feature-panel-header"><span class="panel-title">Trending Stories</span></div><div class="feature-panel-rows"><article class="feature-row"><div class="feature-row-main"><div class="feature-row-headline">Winners and losers from Formula E&#x27;s contentious title decider</div><div class="feature-row-takeaway"></div><div class="feature-row-meta">Mon, 17 Aug 2026 12:33:16 GMT</div></div></article><article class="feature-row"><div class="feature-row-main"><div class="feature-row-headline">Para Light launches ThermaFlat SiC MOSFETs designed for low on-resistance drift</div><div class="feature-row-takeaway"></div><div class="feature-row-meta">Mon, 17 Aug 2026 12:33:00 +0000</div></div></article><article class="feature-row"><div class="feature-row-main"><div class="feature-row-headline">At $4,450, Could This 2010 Volkswagen CC R-Line Be Quite The Coup?</div><div class="feature-row-takeaway">A 2010 Volkswagen CC R-Line has some rear damage but is described as otherwise being in good condition. Its low $4,450 asking price makes it worth considering.</div><div class="feature-row-meta">IMPORTANCE 28 · Mon, 17 Aug 2026 12:25:00 +0000</div></div></article><article class="feature-row"><div class="feature-row-main"><div class="feature-row-headline">DRIVN to deploy 100 electric trucks with AVG Logistics in India</div><div class="feature-row-takeaway"></div><div class="feature-row-meta">Mon, 17 Aug 2026 12:15:00 +0000</div></div></article><article class="feature-row"><div class="feature-row-main"><div class="feature-row-headline">Ericsson triumph a result of Andretti momentum and team chemistry</div><div class="feature-row-takeaway"></div><div class="feature-row-meta">Mon, 17 Aug 2026 12:15:00 GMT</div></div></article></div></section>
+  </section>
+
+  
+  <section class="latest reveal" id="latest-articles">
+    <h2 class="section-title">AutoIntel's Picks <span class="count">25 analyzed today</span></h2>
+    <div class="article-table">
+      <div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.autocar.co.uk/car-news/electric-cars/next-mini-cooper-be-inspired-2001-r50-%E2%80%93-and-could-go-rwd" target="_blank" rel="noopener noreferrer">Next Mini Cooper to be inspired by 2001 &#x27;R50&#x27; – and could go RWD</a><p class="article-take">Mini has begun developing a next-generation Cooper that could move from front- to rear-wheel drive by adopting BMW&#x27;s Gen6 electric platform. The redesign comes as competition intensifies in the small EV market, while the current petrol Cooper is expected to continue into the…</p><div class="article-tags"><span class="chip entity-mfr">Mini</span><span class="chip entity-mfr">BMW</span><span class="chip entity-mfr">Great Wall Motor</span><span class="chip entity-mfr">Fiat</span><span class="chip entity-mfr">Peugeot</span><span class="chip entity-mfr">Cupra</span></div></div><div class="article-source"><span>Autocar</span><span>Mon, 17 Aug 2026 06:00:00 +0100</span><a href="https://www.autocar.co.uk/car-news/electric-cars/next-mini-cooper-be-inspired-2001-r50-%E2%80%93-and-could-go-rwd" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.autocar.co.uk/car-news/used-cars/suv-you-can-buy-heart-and-head-get-mazda-cx-5-%C2%A36k" target="_blank" rel="noopener noreferrer">An SUV you can buy with heart and head: get a Mazda CX-5 for £6k</a><p class="article-take">The second-generation Mazda CX-5 is presented as a comfortable, practical and engaging used SUV with prices starting around £6,000. Diesel versions are favored for family use because they offer stronger performance and better fuel economy than the naturally aspirated petrol…</p><div class="article-tags"><span class="chip entity-mfr">Mazda</span><span class="chip entity-mfr">Ford</span><span class="chip entity-mfr">Volkswagen</span><span class="chip entity-mfr">BMW</span><span class="chip">United Kingdom</span><span class="chip">SUVs</span></div></div><div class="article-source"><span>Autocar</span><span>Mon, 17 Aug 2026 10:00:00 +0100</span><a href="https://www.autocar.co.uk/car-news/used-cars/suv-you-can-buy-heart-and-head-get-mazda-cx-5-%C2%A36k" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.autocar.co.uk/car-news/electric-cars/hyundai-ioniq-3-renault-5-rival-offer-208-mile-range-%C2%A322k" target="_blank" rel="noopener noreferrer">Hyundai Ioniq 3: Renault 5 rival to offer 208-mile range for £22k</a><p class="article-take">Hyundai will bring the Ioniq 3 to the UK from £22,245, offering up to 309 miles of range and 441 litres of cargo capacity. The compact EV is positioned between the Renault 5 and Volkswagen ID 3, with a new aerodynamic design and Hyundai’s Pleos infotainment system.</p><div class="article-tags"><span class="chip entity-mfr">Hyundai</span><span class="chip entity-mfr">Renault</span><span class="chip entity-mfr">Volkswagen</span><span class="chip entity-mfr">Ford</span><span class="chip entity-mfr">Peugeot</span><span class="chip">United Kingdom</span></div></div><div class="article-source"><span>Autocar</span><span>Mon, 17 Aug 2026 08:05:34 +0100</span><a href="https://www.autocar.co.uk/car-news/electric-cars/hyundai-ioniq-3-renault-5-rival-offer-208-mile-range-%C2%A322k" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.motor1.com/news/805153/jaguar-land-rover-us-production/" target="_blank" rel="noopener noreferrer">JLR Hands US Defender Production To Stellantis</a><p class="article-take">Jaguar Land Rover plans to have Defender-branded vehicles produced at Stellantis plants in the United States. The arrangement could reduce tariff exposure and gradually influence JLR’s strategy for its American vehicle lineup.</p><div class="article-tags"><span class="chip entity-mfr">Jaguar Land Rover</span><span class="chip entity-mfr">Stellantis</span><span class="chip entity-mfr">Defender</span><span class="chip">United States</span><span class="chip">Manufacturing</span><span class="chip">Tariffs</span></div></div><div class="article-source"><span>Motor1</span><span>Mon, 17 Aug 2026 10:16:00 +0000</span><a href="https://www.motor1.com/news/805153/jaguar-land-rover-us-production/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.theautopian.com/which-nearly-new-old-car-might-actually-be-worth-it-1985-chevy-cavalier-vs-1990-dodge-daytona/" target="_blank" rel="noopener noreferrer">Which Nearly-New Old Car Might Actually Be Worth It? 1985 Chevy Cavalier vs 1990 Dodge Daytona</a><p class="article-take">The article compares a nearly unused 1985 Chevy Cavalier with a similarly low-mileage 1990 Dodge Daytona, asking whether their condition justifies their prices. Both are presented as American fastbacks and potential questionable automotive purchases.</p><div class="article-tags"><span class="chip entity-mfr">Chevy</span><span class="chip entity-mfr">Dodge</span><span class="chip">Used cars</span><span class="chip">Fastbacks</span></div></div><div class="article-source"><span>The Autopian</span><span>Mon, 17 Aug 2026 12:12:45 +0000</span><a href="https://www.theautopian.com/which-nearly-new-old-car-might-actually-be-worth-it-1985-chevy-cavalier-vs-1990-dodge-daytona/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://dirtfish.com/rally/wrc/neuvilles-priority-is-to-stay-with-hyundai-in-2027/" target="_blank" rel="noopener noreferrer">Neuville’s priority is to stay with Hyundai in 2027</a><p class="article-take">Thierry Neuville has identified remaining with Hyundai Motorsport as his main objective for the 2027 World Rally Championship season. The article also references Toyota among the current top-class competitors.</p><div class="article-tags"><span class="chip entity-mfr">Hyundai Motorsport</span><span class="chip entity-mfr">Toyota</span><span class="chip">World Rally Championship</span><span class="chip">Motorsport</span></div></div><div class="article-source"><span>DirtFish WRC</span><span>Mon, 17 Aug 2026 07:59:52 +0000</span><a href="https://dirtfish.com/rally/wrc/neuvilles-priority-is-to-stay-with-hyundai-in-2027/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://electrek.co/2026/08/17/not-sold-on-tesla-powerwall-there-are-some-great-home-battery-alternatives-out-there/" target="_blank" rel="noopener noreferrer">Not sold on Tesla Powerwall? There are some great home battery alternatives out there</a><p class="article-take">Growing concerns about severe weather, rising electricity use, and data-center demand are encouraging more homeowners to consider solar-plus-battery systems. The article presents Tesla Powerwall as a leading option while noting that competing home battery solutions are…</p><div class="article-tags"><span class="chip entity-mfr">Tesla</span><span class="chip">Home energy storage</span><span class="chip">Solar-plus-battery systems</span></div></div><div class="article-source"><span>Electrek</span><span>Mon, 17 Aug 2026 12:10:00 +0000</span><a href="https://electrek.co/2026/08/17/not-sold-on-tesla-powerwall-there-are-some-great-home-battery-alternatives-out-there/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.electrive.com/2026/08/17/usa-tesla-launches-v2l-adapter-for-the-model-y-premium/" target="_blank" rel="noopener noreferrer">USA: Tesla launches V2L adapter for the Model Y Premium</a><p class="article-take">Tesla has begun selling a Vehicle-to-Load adapter in the United States for approximately $80. The accessory is currently limited to Model Y Premium variants, excluding the basic versions.</p><div class="article-tags"><span class="chip entity-mfr">Tesla</span><span class="chip">United States</span><span class="chip">Vehicle-to-Load (V2L)</span><span class="chip">Model Y Premium</span></div></div><div class="article-source"><span>Electrive</span><span>Mon, 17 Aug 2026 11:45:00 +0000</span><a href="https://www.electrive.com/2026/08/17/usa-tesla-launches-v2l-adapter-for-the-model-y-premium/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://electrek.co/2026/08/17/gm-offers-free-charging-to-more-of-its-latin-american-chevy-customers/" target="_blank" rel="noopener noreferrer">GM offers free charging to more of its Latin American Chevy customers</a><p class="article-take">General Motors is extending Chevrolet’s free charging offer to electric-vehicle buyers at dealership networks across Peru. The initiative comes as sales of plug-in vehicles increase in the country.</p><div class="article-tags"><span class="chip entity-mfr">GM</span><span class="chip entity-mfr">Chevrolet</span><span class="chip">Peru</span><span class="chip">Electric vehicles</span><span class="chip">EV charging</span></div></div><div class="article-source"><span>Electrek</span><span>Mon, 17 Aug 2026 12:06:05 +0000</span><a href="https://electrek.co/2026/08/17/gm-offers-free-charging-to-more-of-its-latin-american-chevy-customers/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.jalopnik.com/2237239/2010-volkswagen-cc-r-line-for-sale-4450/" target="_blank" rel="noopener noreferrer">At $4,450, Could This 2010 Volkswagen CC R-Line Be Quite The Coup?</a><p class="article-take">A 2010 Volkswagen CC R-Line has some rear damage but is described as otherwise being in good condition. Its low $4,450 asking price makes it worth considering.</p><div class="article-tags"><span class="chip entity-mfr">Volkswagen</span><span class="chip">Used vehicles</span></div></div><div class="article-source"><span>Jalopnik</span><span>Mon, 17 Aug 2026 12:25:00 +0000</span><a href="https://www.jalopnik.com/2237239/2010-volkswagen-cc-r-line-for-sale-4450/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.carscoops.com/2026/08/shelby-cobra-daytona-auction-record/" target="_blank" rel="noopener noreferrer">The Most Expensive American Car Ever Sold Was Built To Beat Ferrari</a><p class="article-take">The first Shelby Daytona Coupe built has become the most expensive American car ever sold. Its buyer remains anonymous, and the car was originally created to challenge Ferrari.</p><div class="article-tags"><span class="chip entity-mfr">Shelby Daytona Coupe</span><span class="chip entity-mfr">Ferrari</span><span class="chip">United States</span><span class="chip">Collector-car auction market</span></div></div><div class="article-source"><span>Carscoops</span><span>Mon, 17 Aug 2026 12:13:00 +0000</span><a href="https://www.carscoops.com/2026/08/shelby-cobra-daytona-auction-record/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.motor1.com/news/805168/herbie-wertheim-40-million-ferrari/" target="_blank" rel="noopener noreferrer">This Is The Billionaire Who Dropped $40 Million On Ferrari’s First EV</a><p class="article-take">Herbie Wertheim placed a record $40 million bid for Ferrari Luce Chassis 0, giving the automaker’s first electric halo car immediate historical significance. The bid positions the vehicle as a notable chapter in Ferrari’s Maranello history.</p><div class="article-tags"><span class="chip entity-mfr">Ferrari</span><span class="chip">Ferrari Luce Chassis 0</span><span class="chip">electric vehicles</span></div></div><div class="article-source"><span>Motor1</span><span>Mon, 17 Aug 2026 11:57:00 +0000</span><a href="https://www.motor1.com/news/805168/herbie-wertheim-40-million-ferrari/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.electrive.com/2026/08/17/bmw-preps-leipzig-plant-for-neue-klasse-production/" target="_blank" rel="noopener noreferrer">BMW preps Leipzig plant for Neue Klasse production</a><p class="article-take">BMW used a five-and-a-half-week production pause at its Leipzig facility to replace 240 lift tables and install 160 robots. The automaker has not yet disclosed which Neue Klasse models will be built there.</p><div class="article-tags"><span class="chip entity-mfr">BMW</span><span class="chip">Manufacturing</span><span class="chip">Neue Klasse</span></div></div><div class="article-source"><span>Electrive</span><span>Mon, 17 Aug 2026 09:15:00 +0000</span><a href="https://www.electrive.com/2026/08/17/bmw-preps-leipzig-plant-for-neue-klasse-production/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://racer.com/2026/08/16/o-ward-grateful-to-arrow-mclaren-crew-for-salvaging-his-weekend" target="_blank" rel="noopener noreferrer">O&#x27;Ward grateful to Arrow McLaren crew for salvaging his weekend</a><p class="article-take">O’Ward was surprised to finish among the top five in Markham after Arrow McLaren-Chevrolet struggled for pace through much of the weekend. He praised the team’s efforts to recover from a difficult starting position.</p><div class="article-tags"><span class="chip entity-mfr">Chevrolet</span><span class="chip">Motorsport</span></div></div><div class="article-source"><span>Racer F1</span><span>Sun, 16 Aug 2026 23:09:26 GMT</span><a href="https://racer.com/2026/08/16/o-ward-grateful-to-arrow-mclaren-crew-for-salvaging-his-weekend" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://racer.com/2026/08/17/momentum-from-developments-can-bring-mclaren-into-title-contention---stella" target="_blank" rel="noopener noreferrer">Momentum from developments can bring McLaren into title contention - Stella</a><p class="article-take">McLaren team principal Andrea Stella believes the team’s newly accelerated development program could return it to championship contention. His view links the team’s prospects to continued momentum from upcoming technical developments.</p><div class="article-tags"><span class="chip entity-mfr">McLaren</span><span class="chip">Formula 1</span><span class="chip">Motorsport development</span></div></div><div class="article-source"><span>Racer F1</span><span>Mon, 17 Aug 2026 11:34:31 GMT</span><a href="https://racer.com/2026/08/17/momentum-from-developments-can-bring-mclaren-into-title-contention---stella" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://racer.com/2026/08/17/early-focus-has-left-mercedes-out-of-step-in-development-race---allison" target="_blank" rel="noopener noreferrer">Early-season focus has left Mercedes out of step in F1 development race - Allison</a><p class="article-take">Mercedes technical director James Allison says the team is out of sync with its Formula 1 rivals after pushing its launch car harder than ever. The early-season development approach has affected Mercedes&#x27; position in the development race.</p><div class="article-tags"><span class="chip entity-mfr">Mercedes</span><span class="chip">Formula 1</span><span class="chip">F1 development</span></div></div><div class="article-source"><span>Racer F1</span><span>Mon, 17 Aug 2026 11:15:34 GMT</span><a href="https://racer.com/2026/08/17/early-focus-has-left-mercedes-out-of-step-in-development-race---allison" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.carscoops.com/2026/08/stellantis-brampton-closure/" target="_blank" rel="noopener noreferrer">Stellantis Might Sell The Plant That Built Dodge’s Last Hemi Muscle Cars</a><p class="article-take">Stellantis may sell the Brampton, Ontario, plant associated with Dodge’s final Hemi-powered muscle cars. The potential transaction comes as the automaker evaluates the facility’s future.</p><div class="article-tags"><span class="chip entity-mfr">Stellantis</span><span class="chip entity-mfr">Dodge</span><span class="chip">Manufacturing</span></div></div><div class="article-source"><span>Carscoops</span><span>Mon, 17 Aug 2026 11:23:00 +0000</span><a href="https://www.carscoops.com/2026/08/stellantis-brampton-closure/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.carscoops.com/2026/08/mercedes-amg-cle63-mythos-spied/" target="_blank" rel="noopener noreferrer">Mercedes-AMG’s Flat-Plane V8 Mythos Is Being Built To Ruin The BMW M4</a><p class="article-take">Mercedes-AMG has brought back its high-performance V8 coupe with revised aerodynamics, enhanced cooling and an exposed carbon roof. The model is positioned as a rival to BMW’s M4.</p><div class="article-tags"><span class="chip entity-mfr">Mercedes-AMG</span><span class="chip entity-mfr">BMW</span><span class="chip">V8 engines</span><span class="chip">Performance coupes</span><span class="chip">Automotive aerodynamics</span></div></div><div class="article-source"><span>Carscoops</span><span>Sun, 16 Aug 2026 23:04:00 +0000</span><a href="https://www.carscoops.com/2026/08/mercedes-amg-cle63-mythos-spied/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.autocar.co.uk/car-news/features/top-europa-league-ive-owned-14-examples-rare-lotus" target="_blank" rel="noopener noreferrer">Top of the Europa league: I&#x27;ve owned 14 examples of this rare Lotus</a><p class="article-take">John Rand has spent decades buying, repairing, racing and collecting Lotus Europas, retaining a 1969 S2 and a lightweight Type 47. His restored S2 combines a modified Renault engine with a 700kg chassis and is valued at approximately £20,000 to £25,000.</p><div class="article-tags"><span class="chip entity-mfr">Lotus</span><span class="chip entity-mfr">Renault</span><span class="chip">Classic sports cars</span><span class="chip">Fibreglass vehicle construction</span></div></div><div class="article-source"><span>Autocar</span><span>Sun, 16 Aug 2026 13:00:00 +0100</span><a href="https://www.autocar.co.uk/car-news/features/top-europa-league-ive-owned-14-examples-rare-lotus" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.carscoops.com/2026/08/dodge-charger-police-return/" target="_blank" rel="noopener noreferrer">Ford Gave Up On The Police Sedan, So Dodge Is Bringing It Back</a><p class="article-take">Dodge is bringing the Charger back to police fleets as a new all-wheel-drive police pursuit vehicle. Orders for the patrol-focused model are reportedly expected to open as soon as next summer.</p><div class="article-tags"><span class="chip entity-mfr">Dodge</span><span class="chip entity-mfr">Ford</span><span class="chip">Police fleets</span><span class="chip">All-wheel drive</span></div></div><div class="article-source"><span>Carscoops</span><span>Sun, 16 Aug 2026 21:21:00 +0000</span><a href="https://www.carscoops.com/2026/08/dodge-charger-police-return/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.motor1.com/news/805141/mclaren-f1-gtr-pop-art/" target="_blank" rel="noopener noreferrer">This McLaren F1 GTR Just Sold For A Record-Breaking $34.6 Million</a><p class="article-take">McLaren F1 GTR chassis 10R sold for $34,655,000 at an RM Sotheby’s auction. The result makes it the most expensive McLaren and British-built car ever sold publicly, according to the article.</p><div class="article-tags"><span class="chip entity-mfr">McLaren</span><span class="chip">United Kingdom</span><span class="chip">Collector-car auctions</span></div></div><div class="article-source"><span>Motor1</span><span>Mon, 17 Aug 2026 09:15:00 +0000</span><a href="https://www.motor1.com/news/805141/mclaren-f1-gtr-pop-art/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://speedcafe.com/supercars-news-2026-ipswich-super440-nascar-anton-de-pasquale-team-18-general-motors/" target="_blank" rel="noopener noreferrer">De Pasquale undergoes GM driver evaluation in United States</a><p class="article-take">Anton De Pasquale completed a short trip to the United States with General Motors between rounds of the Supercars Championship. The report provides no further details about the evaluation or its outcome.</p><div class="article-tags"><span class="chip entity-mfr">General Motors</span><span class="chip">United States</span><span class="chip">Supercars Championship</span></div></div><div class="article-source"><span>Speedcafe</span><span>Mon, 17 Aug 2026 06:36:21 +0000</span><a href="https://speedcafe.com/supercars-news-2026-ipswich-super440-nascar-anton-de-pasquale-team-18-general-motors/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.motor1.com/news/805129/polestar-lawsuit-adds-a-twist/" target="_blank" rel="noopener noreferrer">Dealer Says Polestar Engineered US Sales Ban In $25-Million Lawsuit</a><p class="article-take">Prestige Imports has filed a $25 million lawsuit alleging that Polestar invoked the Connected Vehicle Rule to sidestep obligations to its dealer franchise. The dispute comes as a federal ban alters Polestar’s sales presence in the United States.</p><div class="article-tags"><span class="chip entity-mfr">Polestar</span><span class="chip">United States</span><span class="chip">Connected Vehicle Rule</span><span class="chip">Automotive franchise obligations</span></div></div><div class="article-source"><span>Motor1</span><span>Mon, 17 Aug 2026 08:09:42 +0000</span><a href="https://www.motor1.com/news/805129/polestar-lawsuit-adds-a-twist/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.carscoops.com/2026/08/ferrari-luce-auction-buyer/" target="_blank" rel="noopener noreferrer">An Eye Doctor Paid $40,000,000 For The $640K Ferrari EV Everyone Says Is An Eyesore</a><p class="article-take">An 87-year-old inventor and eye doctor reportedly paid $40 million for Ferrari’s Luce electric vehicle. The buyer, who holds more than 100 patents, made a similar purchase the previous year.</p><div class="article-tags"><span class="chip entity-mfr">Ferrari</span><span class="chip">Luce</span><span class="chip">EVs</span></div></div><div class="article-source"><span>Carscoops</span><span>Mon, 17 Aug 2026 08:33:00 +0000</span><a href="https://www.carscoops.com/2026/08/ferrari-luce-auction-buyer/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.motor1.com/news/805122/ferrari-luce-ev-charity-car/" target="_blank" rel="noopener noreferrer">Ferrari Luce Charity Car Sells For An Insane $40 Million</a><p class="article-take">Ferrari Luce Chassis 0 sold for $40 million as a one-off charity vehicle. All proceeds are directed to The Ferrari Foundation, so the sale is not an indicator of typical electric-vehicle pricing.</p><div class="article-tags"><span class="chip entity-mfr">Ferrari</span><span class="chip">The Ferrari Foundation</span><span class="chip">Electric vehicles</span></div></div><div class="article-source"><span>Motor1</span><span>Mon, 17 Aug 2026 07:30:00 +0000</span><a href="https://www.motor1.com/news/805122/ferrari-luce-ev-charity-car/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div>
+    </div>
+  </section>
+
+  
+  <section class="news-section" id="industry-news"><div class="section-header"><h2>Industry News</h2><span class="section-count">27 stories</span></div><div class="section-rows"><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.carscoops.com/2026/08/mahindra-scorpio-lifestyler-global/" target="_blank" rel="noopener noreferrer">Mahindra Is Going Hilux Hunting Worldwide With A Pickup That Costs $13,000 Less</a><div class="article-tags"></div></div><div class="article-source"><span>Carscoops</span><span>Mon, 17 Aug 2026 09:58:00 +0000</span><a href="https://www.carscoops.com/2026/08/mahindra-scorpio-lifestyler-global/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.motor1.com/news/805109/brabus-bodo-cabriolet-packs-1/" target="_blank" rel="noopener noreferrer">Brabus Bodo Cabriolet: 1,000 HP Open-Top Beast, Only 77 Made</a><div class="article-tags"></div></div><div class="article-source"><span>Motor1</span><span>Mon, 17 Aug 2026 06:47:46 +0000</span><a href="https://www.motor1.com/news/805109/brabus-bodo-cabriolet-packs-1/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.autocar.co.uk/opinion/electric-cars/55-electric-cars-tested-exclusive-real-world-data-reveals-most-efficient-evs" target="_blank" rel="noopener noreferrer">55 electric cars tested: Exclusive real-world data reveals most efficient EVs</a><div class="article-tags"></div></div><div class="article-source"><span>Autocar</span><span>Mon, 17 Aug 2026 07:00:00 +0100</span><a href="https://www.autocar.co.uk/opinion/electric-cars/55-electric-cars-tested-exclusive-real-world-data-reveals-most-efficient-evs" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.motor1.com/news/805100/2027-land-rover-defender-dakar/" target="_blank" rel="noopener noreferrer">Land Rover Defender Dakar: 626 HP Rally Beast You Can Drive</a><div class="article-tags"></div></div><div class="article-source"><span>Motor1</span><span>Mon, 17 Aug 2026 05:47:00 +0000</span><a href="https://www.motor1.com/news/805100/2027-land-rover-defender-dakar/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.carscoops.com/2026/08/signaltrace-maryland-surveillance/" target="_blank" rel="noopener noreferrer">Your Dog’s Collar And Your Phone Could Now Tie You To Your License Plate In Maryland</a><div class="article-tags"></div></div><div class="article-source"><span>Carscoops</span><span>Mon, 17 Aug 2026 00:49:00 +0000</span><a href="https://www.carscoops.com/2026/08/signaltrace-maryland-surveillance/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.caranddriver.com/news/a73424121/pebble-beach-2026-monterey-car-week-live-blog/" target="_blank" rel="noopener noreferrer">2026 Pebble Beach and Monterey Car Week Live Blog</a><div class="article-tags"></div></div><div class="article-source"><span>Car and Driver</span><span>Sun, 16 Aug 2026 22:09:00 +0000</span><a href="https://www.caranddriver.com/news/a73424121/pebble-beach-2026-monterey-car-week-live-blog/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.carscoops.com/2026/08/hyundai-elantra-n-wagon-render/" target="_blank" rel="noopener noreferrer">Hyundai Won’t Build This Elantra N Wagon, But It’d Be The Poor Man’s RS6 Avant</a><div class="article-tags"></div></div><div class="article-source"><span>Carscoops</span><span>Sun, 16 Aug 2026 19:38:00 +0000</span><a href="https://www.carscoops.com/2026/08/hyundai-elantra-n-wagon-render/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.carscoops.com/2026/08/jlr-defender-stellantis-us-production/" target="_blank" rel="noopener noreferrer">A Cheaper US Defender Could Ride On Jeep Bones</a><div class="article-tags"></div></div><div class="article-source"><span>Carscoops</span><span>Sun, 16 Aug 2026 17:55:00 +0000</span><a href="https://www.carscoops.com/2026/08/jlr-defender-stellantis-us-production/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.carscoops.com/2026/08/toyota-gr-prius-report/" target="_blank" rel="noopener noreferrer">Toyota Could Give The Prius A GR Sport Send-Off In 2027</a><div class="article-tags"></div></div><div class="article-source"><span>Carscoops</span><span>Sun, 16 Aug 2026 16:12:00 +0000</span><a href="https://www.carscoops.com/2026/08/toyota-gr-prius-report/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.carscoops.com/2026/08/jaecoo-j5-ev-review/" target="_blank" rel="noopener noreferrer">Jaecoo’s $26,000 ‘Temu Range Rover’ Is A Bargain Until You Actually Live With It</a><div class="article-tags"></div></div><div class="article-source"><span>Carscoops</span><span>Sun, 16 Aug 2026 14:29:00 +0000</span><a href="https://www.carscoops.com/2026/08/jaecoo-j5-ev-review/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.carscoops.com/2026/08/backup-camera-recalls/" target="_blank" rel="noopener noreferrer">Backup Cameras Have Triggered 21 Million Recalls, And It Isn’t The Camera’s Fault</a><div class="article-tags"></div></div><div class="article-source"><span>Carscoops</span><span>Sun, 16 Aug 2026 12:46:00 +0000</span><a href="https://www.carscoops.com/2026/08/backup-camera-recalls/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.carscoops.com/2026/08/sealander-amphibious-camper-ttailer/" target="_blank" rel="noopener noreferrer">Finally, A Camper Trailer You Can Cruise Across A Lake For The Price of A Toyota</a><div class="article-tags"></div></div><div class="article-source"><span>Carscoops</span><span>Sun, 16 Aug 2026 11:03:00 +0000</span><a href="https://www.carscoops.com/2026/08/sealander-amphibious-camper-ttailer/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.carscoops.com/2026/08/detroit-usmca-content-tariffs/" target="_blank" rel="noopener noreferrer">Washington Wants More American-Made Cars. Detroit Warns That’ll Cost You More</a><div class="article-tags"></div></div><div class="article-source"><span>Carscoops</span><span>Sun, 16 Aug 2026 09:22:00 +0000</span><a href="https://www.carscoops.com/2026/08/detroit-usmca-content-tariffs/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.autocar.co.uk/car-news/technology/horse-reveals-methanol-powered-range-extender-electric-cars" target="_blank" rel="noopener noreferrer">Horse reveals methanol-powered range-extender for electric cars</a><div class="article-tags"></div></div><div class="article-source"><span>Autocar</span><span>Sun, 16 Aug 2026 07:00:00 +0100</span><a href="https://www.autocar.co.uk/car-news/technology/horse-reveals-methanol-powered-range-extender-electric-cars" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.autocar.co.uk/car-news/features/what-alpina-did-next-how-bovensiepen-will-keep-building-ultimate-bmws" target="_blank" rel="noopener noreferrer">What Alpina did next: How Bovensiepen will keep building ultimate BMWs</a><div class="article-tags"></div></div><div class="article-source"><span>Autocar</span><span>Sun, 16 Aug 2026 06:00:00 +0100</span><a href="https://www.autocar.co.uk/car-news/features/what-alpina-did-next-how-bovensiepen-will-keep-building-ultimate-bmws" target="_blank" rel="noopener noreferrer">Read original →</a></div></div></div></section><section class="news-section" id="electric-vehicles"><div class="section-header"><h2>Electric Vehicles</h2><span class="section-count">10 stories</span></div><div class="section-rows"><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.electrive.com/2026/08/17/drivn-to-deploy-100-electric-trucks-with-avg-logistics-in-india/" target="_blank" rel="noopener noreferrer">DRIVN to deploy 100 electric trucks with AVG Logistics in India</a><div class="article-tags"></div></div><div class="article-source"><span>Electrive</span><span>Mon, 17 Aug 2026 12:15:00 +0000</span><a href="https://www.electrive.com/2026/08/17/drivn-to-deploy-100-electric-trucks-with-avg-logistics-in-india/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.electrive.com/2026/08/17/obb-postbus-tests-autonomous-e-bus-from-otokar/" target="_blank" rel="noopener noreferrer">ÖBB Postbus tests autonomous e-bus from Otokar</a><div class="article-tags"></div></div><div class="article-source"><span>Electrive</span><span>Mon, 17 Aug 2026 10:30:00 +0000</span><a href="https://www.electrive.com/2026/08/17/obb-postbus-tests-autonomous-e-bus-from-otokar/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.electrive.com/2026/08/17/uk-launches-consultation-on-ev-sales-mandate/" target="_blank" rel="noopener noreferrer">UK launches consultation on EV sales mandate</a><div class="article-tags"></div></div><div class="article-source"><span>Electrive</span><span>Mon, 17 Aug 2026 10:00:00 +0000</span><a href="https://www.electrive.com/2026/08/17/uk-launches-consultation-on-ev-sales-mandate/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://electrek.co/2026/08/16/jlrs-new-freelander-8-takes-off-with-10000-orders-in-first-48-hours/" target="_blank" rel="noopener noreferrer">JLR’s new Freelander 8 takes off with 10,000 orders in first 48 hours</a><div class="article-tags"></div></div><div class="article-source"><span>Electrek</span><span>Sun, 16 Aug 2026 17:43:56 +0000</span><a href="https://electrek.co/2026/08/16/jlrs-new-freelander-8-takes-off-with-10000-orders-in-first-48-hours/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://electrek.co/2026/08/16/e-quipment-highlight-liugong-924fe-electric-excavator-is-coming-to-america/" target="_blank" rel="noopener noreferrer">E-quipment highlight: LiuGong 924FE electric excavator is coming to America</a><div class="article-tags"></div></div><div class="article-source"><span>Electrek</span><span>Sun, 16 Aug 2026 16:11:08 +0000</span><a href="https://electrek.co/2026/08/16/e-quipment-highlight-liugong-924fe-electric-excavator-is-coming-to-america/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://electrek.co/2026/08/16/350-ton-longking-zl230e-is-the-biggest-baddest-battery-mining-rig-you-can-buy/" target="_blank" rel="noopener noreferrer">350-ton Longking ZL230E is the biggest, baddest battery mining rig you can buy</a><div class="article-tags"></div></div><div class="article-source"><span>Electrek</span><span>Sun, 16 Aug 2026 11:15:00 +0000</span><a href="https://electrek.co/2026/08/16/350-ton-longking-zl230e-is-the-biggest-baddest-battery-mining-rig-you-can-buy/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div></div></section><section class="news-section" id="technology-headlines"><div class="section-header"><h2>Technology Headlines</h2><span class="section-count">4 stories</span></div><div class="section-rows"><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://chargedevs.com/newswire/para-light-launches-thermaflat-sic-mosfets-designed-for-low-on-resistance-drift/" target="_blank" rel="noopener noreferrer">Para Light launches ThermaFlat SiC MOSFETs designed for low on-resistance drift</a><div class="article-tags"></div></div><div class="article-source"><span>Charged EVs</span><span>Mon, 17 Aug 2026 12:33:00 +0000</span><a href="https://chargedevs.com/newswire/para-light-launches-thermaflat-sic-mosfets-designed-for-low-on-resistance-drift/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://chargedevs.com/newswire/munich-electrifications-new-me-ssr-replaces-mechanical-contactors-and-pyrotechnic-fuses-in-e-trucks/" target="_blank" rel="noopener noreferrer">Munich Electrification’s new ME SSR replaces mechanical contactors and pyrotechnic fuses in e-trucks</a><div class="article-tags"></div></div><div class="article-source"><span>Charged EVs</span><span>Mon, 17 Aug 2026 11:00:00 +0000</span><a href="https://chargedevs.com/newswire/munich-electrifications-new-me-ssr-replaces-mechanical-contactors-and-pyrotechnic-fuses-in-e-trucks/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://chargedevs.com/newswire/ford-to-use-its-universal-ev-production-system-to-produce-the-new-fathom-electric-pickup/" target="_blank" rel="noopener noreferrer">Ford to use its Universal EV Production System to produce the new Fathom electric pickup</a><div class="article-tags"></div></div><div class="article-source"><span>Charged EVs</span><span>Sun, 16 Aug 2026 17:25:00 +0000</span><a href="https://chargedevs.com/newswire/ford-to-use-its-universal-ev-production-system-to-produce-the-new-fathom-electric-pickup/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://chargedevs.com/newswire/jta-and-watt-partner-to-establish-a-new-ev-manufacturing-plant-in-qatar/" target="_blank" rel="noopener noreferrer">JTA and WATT partner to establish a new EV manufacturing plant in Qatar</a><div class="article-tags"></div></div><div class="article-source"><span>Charged EVs</span><span>Sun, 16 Aug 2026 15:17:17 +0000</span><a href="https://chargedevs.com/newswire/jta-and-watt-partner-to-establish-a-new-ev-manufacturing-plant-in-qatar/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div></div></section><section class="news-section" id="motorsport"><div class="section-header"><h2>Motorsport</h2><span class="section-count">42 stories</span></div><div class="section-rows"><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.the-race.com/formula-e/winners-losers-formula-e-contentious-season-finale-excel-london/" target="_blank" rel="noopener noreferrer">Winners and losers from Formula E&#x27;s contentious title decider</a><div class="article-tags"></div></div><div class="article-source"><span>The Race</span><span>Mon, 17 Aug 2026 12:33:16 GMT</span><a href="https://www.the-race.com/formula-e/winners-losers-formula-e-contentious-season-finale-excel-london/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://racer.com/2026/08/16/ericsson-triumph-a-result-of-andretti-momentum-and-team-chemistry" target="_blank" rel="noopener noreferrer">Ericsson triumph a result of Andretti momentum and team chemistry</a><div class="article-tags"></div></div><div class="article-source"><span>Racer F1</span><span>Mon, 17 Aug 2026 12:15:00 GMT</span><a href="https://racer.com/2026/08/16/ericsson-triumph-a-result-of-andretti-momentum-and-team-chemistry" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://racer.com/2026/08/16/barnard-becomes-formula-e-s-youngest-winner-with-london-victory" target="_blank" rel="noopener noreferrer">Barnard becomes Formula E&#x27;s youngest winner with London victory</a><div class="article-tags"></div></div><div class="article-source"><span>Racer F1</span><span>Mon, 17 Aug 2026 12:00:35 GMT</span><a href="https://racer.com/2026/08/16/barnard-becomes-formula-e-s-youngest-winner-with-london-victory" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.the-race.com/formula-1/is-this-f1-2026-team-mate-fight-too-skewed-to-trust/" target="_blank" rel="noopener noreferrer">One-sided 2026 F1 driver battle hasn&#x27;t always been a &#x27;fair fight&#x27;</a><div class="article-tags"></div></div><div class="article-source"><span>The Race</span><span>Mon, 17 Aug 2026 08:14:19 GMT</span><a href="https://www.the-race.com/formula-1/is-this-f1-2026-team-mate-fight-too-skewed-to-trust/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://speedcafe.com/motorsport-news-hi-tec-oils-super-series-brand-name-returns-benalla-auto-club-motorsport-australia-aasa-saga/" target="_blank" rel="noopener noreferrer">Hi-Tec Oils Super Series set for shock rebirth</a><div class="article-tags"></div></div><div class="article-source"><span>Speedcafe</span><span>Mon, 17 Aug 2026 07:43:27 +0000</span><a href="https://speedcafe.com/motorsport-news-hi-tec-oils-super-series-brand-name-returns-benalla-auto-club-motorsport-australia-aasa-saga/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://speedcafe.com/supercars-news-2026-ipswich-super440-will-brown-triple-eight-air-restrictor-engine-victory-drought/" target="_blank" rel="noopener noreferrer">POLL: Will rejuvenated Brown break 12-month win drought at QR?</a><div class="article-tags"></div></div><div class="article-source"><span>Speedcafe</span><span>Mon, 17 Aug 2026 07:34:26 +0000</span><a href="https://speedcafe.com/supercars-news-2026-ipswich-super440-will-brown-triple-eight-air-restrictor-engine-victory-drought/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://speedcafe.com/motorsport-news-2026-motogp-adelaide-street-circuit-map-plan-changes-leak-supercars-implication/" target="_blank" rel="noopener noreferrer">Leaked track map claims to show Adelaide MotoGP changes</a><div class="article-tags"></div></div><div class="article-source"><span>Speedcafe</span><span>Mon, 17 Aug 2026 05:06:47 +0000</span><a href="https://speedcafe.com/motorsport-news-2026-motogp-adelaide-street-circuit-map-plan-changes-leak-supercars-implication/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://speedcafe.com/motorsport-news-2026-historic-leyburn-sprints-photos-images/" target="_blank" rel="noopener noreferrer">PHOTOS: Historic Leyburn Sprints</a><div class="article-tags"></div></div><div class="article-source"><span>Speedcafe</span><span>Mon, 17 Aug 2026 04:21:52 +0000</span><a href="https://speedcafe.com/motorsport-news-2026-historic-leyburn-sprints-photos-images/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://speedcafe.com/motogp-news-2026-carlos-ezpeleta-adelaide-update-august-comments-safety-trees-layout-details-interview/" target="_blank" rel="noopener noreferrer">MotoGP boss responds to concerns over Adelaide circuit</a><div class="article-tags"></div></div><div class="article-source"><span>Speedcafe</span><span>Mon, 17 Aug 2026 03:05:59 +0000</span><a href="https://speedcafe.com/motogp-news-2026-carlos-ezpeleta-adelaide-update-august-comments-safety-trees-layout-details-interview/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://speedcafe.com/f1-news-2026-valtteri-bottas-cadillac-future-update-speculation-guenther-steiner-opinion-thought-podcast-interview/" target="_blank" rel="noopener noreferrer">Bottas’ Cadillac future questioned amid lean run</a><div class="article-tags"></div></div><div class="article-source"><span>Speedcafe</span><span>Mon, 17 Aug 2026 02:45:05 +0000</span><a href="https://speedcafe.com/f1-news-2026-valtteri-bottas-cadillac-future-update-speculation-guenther-steiner-opinion-thought-podcast-interview/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://speedcafe.com/supercars-news-2026-kai-allen-appeal-hearing-case-grove-racing-perth-super440/" target="_blank" rel="noopener noreferrer">What’s on the line in Supercars’ Kai Allen appeal case</a><div class="article-tags"></div></div><div class="article-source"><span>Speedcafe</span><span>Mon, 17 Aug 2026 02:37:41 +0000</span><a href="https://speedcafe.com/supercars-news-2026-kai-allen-appeal-hearing-case-grove-racing-perth-super440/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://speedcafe.com/f1-news-2026-andrea-stella-oscar-piastr-title-loss-reaction-praise-comments-interview-update-mclaren-second-half-championship-hopes/" target="_blank" rel="noopener noreferrer">Piastri, Norris relationship ‘even stronger’ after F1 title battle</a><div class="article-tags"></div></div><div class="article-source"><span>Speedcafe</span><span>Mon, 17 Aug 2026 00:54:31 +0000</span><a href="https://speedcafe.com/f1-news-2026-andrea-stella-oscar-piastr-title-loss-reaction-praise-comments-interview-update-mclaren-second-half-championship-hopes/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://speedcafe.com/motorsport-news-2026-australian-rally-championship-tasmania-lewis-bates-anthony-mcloughlin-win-comments-results-report/" target="_blank" rel="noopener noreferrer">Lewis Bates wins Rally Tasmania thriller as brother crashes out</a><div class="article-tags"></div></div><div class="article-source"><span>Speedcafe</span><span>Mon, 17 Aug 2026 00:46:31 +0000</span><a href="https://speedcafe.com/motorsport-news-2026-australian-rally-championship-tasmania-lewis-bates-anthony-mcloughlin-win-comments-results-report/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://racer.com/2026/08/16/ericsson-sees-markham-win-as-proof-of-season-s-upward-trajectory" target="_blank" rel="noopener noreferrer">Ericsson sees Markham win as proof of season’s upward trajectory</a><div class="article-tags"></div></div><div class="article-source"><span>Racer F1</span><span>Sun, 16 Aug 2026 21:49:22 GMT</span><a href="https://racer.com/2026/08/16/ericsson-sees-markham-win-as-proof-of-season-s-upward-trajectory" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://racer.com/2026/08/16/formula-e-champ-wehrlein-and-defeated-rival-dennis-hit-sour-notes-after-season-finale" target="_blank" rel="noopener noreferrer">Formula E champ Wehrlein and defeated rival Dennis hit sour notes after season finale</a><div class="article-tags"></div></div><div class="article-source"><span>Racer F1</span><span>Sun, 16 Aug 2026 21:38:00 GMT</span><a href="https://racer.com/2026/08/16/formula-e-champ-wehrlein-and-defeated-rival-dennis-hit-sour-notes-after-season-finale" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://racer.com/2026/08/16/evans-blames-qualifying-performance-for-formula-e-title-defeat" target="_blank" rel="noopener noreferrer">Evans blames qualifying performance for Formula E title defeat</a><div class="article-tags"></div></div><div class="article-source"><span>Racer F1</span><span>Sun, 16 Aug 2026 21:33:04 GMT</span><a href="https://racer.com/2026/08/16/evans-blames-qualifying-performance-for-formula-e-title-defeat" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://racer.com/2026/08/16/power-lauds-good-crazy-markham-track-after-impossible-run-from-last-to-third" target="_blank" rel="noopener noreferrer">Power lauds ‘good-crazy’ Markham track after ‘impossible’ run from last to third</a><div class="article-tags"></div></div><div class="article-source"><span>Racer F1</span><span>Sun, 16 Aug 2026 20:52:17 GMT</span><a href="https://racer.com/2026/08/16/power-lauds-good-crazy-markham-track-after-impossible-run-from-last-to-third" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://racer.com/2026/08/16/podiums-are-not-that-hard-when-everything-goes-well---grosjean" target="_blank" rel="noopener noreferrer">Podiums are ‘not that hard when everything goes well’ - Grosjean</a><div class="article-tags"></div></div><div class="article-source"><span>Racer F1</span><span>Sun, 16 Aug 2026 20:02:29 GMT</span><a href="https://racer.com/2026/08/16/podiums-are-not-that-hard-when-everything-goes-well---grosjean" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://dragillustrated.com/free-ice-ferris-wheels-and-a-federal-lawsuit/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=free-ice-ferris-wheels-and-a-federal-lawsuit" target="_blank" rel="noopener noreferrer">Free Ice, Ferris Wheels, and a Federal Lawsuit</a><div class="article-tags"></div></div><div class="article-source"><span>Drag Illustrated</span><span>Sun, 16 Aug 2026 19:29:22 +0000</span><a href="https://dragillustrated.com/free-ice-ferris-wheels-and-a-federal-lawsuit/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=free-ice-ferris-wheels-and-a-federal-lawsuit" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://dirtfish.com/rally/wrc/suninen-misses-out-on-zlin-win-but-erc-title-edges-closer/" target="_blank" rel="noopener noreferrer">Suninen misses out on Zlín win but ERC title edges closer</a><div class="article-tags"></div></div><div class="article-source"><span>DirtFish WRC</span><span>Sun, 16 Aug 2026 15:57:11 +0000</span><a href="https://dirtfish.com/rally/wrc/suninen-misses-out-on-zlin-win-but-erc-title-edges-closer/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div></div></section><section class="news-section" id="car-culture"><div class="section-header"><h2>Car Culture</h2><span class="section-count">39 stories</span></div><div class="section-rows"><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.jalopnik.com/2236467/quickest-cars-you-could-buy-1970s/" target="_blank" rel="noopener noreferrer">The 5 Quickest Cars You Could Buy In The &#x27;70s</a><div class="article-tags"></div></div><div class="article-source"><span>Jalopnik</span><span>Mon, 17 Aug 2026 11:25:00 +0000</span><a href="https://www.jalopnik.com/2236467/quickest-cars-you-could-buy-1970s/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.motor1.com/news/805165/shelby-cobra-daytona-coupe-sets/" target="_blank" rel="noopener noreferrer">Shelby Daytona Cobra Just Broke US Auction Record At $42.9 Million</a><div class="article-tags"></div></div><div class="article-source"><span>Motor1</span><span>Mon, 17 Aug 2026 11:00:00 +0000</span><a href="https://www.motor1.com/news/805165/shelby-cobra-daytona-coupe-sets/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.jalopnik.com/2236264/what-most-people-dont-know-about-air-force-one/" target="_blank" rel="noopener noreferrer">5 Facts About Air Force One That We Swear We Didn&#x27;t Make Up</a><div class="article-tags"></div></div><div class="article-source"><span>Jalopnik</span><span>Mon, 17 Aug 2026 09:25:00 +0000</span><a href="https://www.jalopnik.com/2236264/what-most-people-dont-know-about-air-force-one/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.hagerty.com/media/news/1935-duesenberg-ssj-special-speedster-wins-2026-pebble-beach-concours-delegance-best-of-show/" target="_blank" rel="noopener noreferrer">1935 Duesenberg SSJ Special Speedster Wins 2026 Pebble Beach Concours d’Elegance Best of Show</a><div class="article-tags"></div></div><div class="article-source"><span>Hagerty</span><span>Mon, 17 Aug 2026 04:26:33 GMT</span><a href="https://www.hagerty.com/media/news/1935-duesenberg-ssj-special-speedster-wins-2026-pebble-beach-concours-delegance-best-of-show/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.jalopnik.com/2236339/how-to-turn-camper-rv-mobile-office/" target="_blank" rel="noopener noreferrer">How To Turn Your Camper Or RV Into A Slick Mobile Office</a><div class="article-tags"></div></div><div class="article-source"><span>Jalopnik</span><span>Mon, 17 Aug 2026 03:25:00 +0000</span><a href="https://www.jalopnik.com/2236339/how-to-turn-camper-rv-mobile-office/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.jalopnik.com/2236305/conservative-liberal-states-restrict-flock-cameras/" target="_blank" rel="noopener noreferrer">Conservative And Liberal States Seem United In Their Dislike Of Flock Cameras</a><div class="article-tags"></div></div><div class="article-source"><span>Jalopnik</span><span>Mon, 17 Aug 2026 01:25:00 +0000</span><a href="https://www.jalopnik.com/2236305/conservative-liberal-states-restrict-flock-cameras/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.caranddriver.com/news/a73446879/best-of-show-2026-pebble-beach-concours-delegance/" target="_blank" rel="noopener noreferrer">1935 Duesenberg SSJ Special Speedster Wins 2026 Pebble Beach Best of Show</a><div class="article-tags"></div></div><div class="article-source"><span>Car and Driver</span><span>Mon, 17 Aug 2026 01:18:09 +0000</span><a href="https://www.caranddriver.com/news/a73446879/best-of-show-2026-pebble-beach-concours-delegance/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.pistonheads.com/news/default.asp?storyId=51569" target="_blank" rel="noopener noreferrer">VW Lupo GTI | Spotted</a><div class="article-tags"></div></div><div class="article-source"><span>PistonHeads</span><span>Mon, 17 Aug 2026 00:00:00 GMT</span><a href="https://www.pistonheads.com/news/default.asp?storyId=51569" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.pistonheads.com/news/default.asp?storyId=51568" target="_blank" rel="noopener noreferrer">800hp C8 Preliator XXV Coupe signals Spyker return</a><div class="article-tags"></div></div><div class="article-source"><span>PistonHeads</span><span>Mon, 17 Aug 2026 00:00:00 GMT</span><a href="https://www.pistonheads.com/news/default.asp?storyId=51568" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.pistonheads.com/news/default.asp?storyId=51570" target="_blank" rel="noopener noreferrer">Ruf Ehra celebrates iconic Yellowbird record</a><div class="article-tags"></div></div><div class="article-source"><span>PistonHeads</span><span>Mon, 17 Aug 2026 00:00:00 GMT</span><a href="https://www.pistonheads.com/news/default.asp?storyId=51570" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.jalopnik.com/2234582/2021-ford-mustang-mach-1-5-year-depreciation/" target="_blank" rel="noopener noreferrer">Here&#x27;s How Much A 2021 Ford Mustang Mach 1 Has Depreciated In 5 Years</a><div class="article-tags"></div></div><div class="article-source"><span>Jalopnik</span><span>Sun, 16 Aug 2026 23:45:00 +0000</span><a href="https://www.jalopnik.com/2234582/2021-ford-mustang-mach-1-5-year-depreciation/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.jalopnik.com/2236545/preserved-germany-military-motorcycle-revealed-by-drying-danube/" target="_blank" rel="noopener noreferrer">This Well-Preserved German Military Motorcycle Was One Of Many Relics Buried In WWII Waste Pit Uncovered By A Drying Danube</a><div class="article-tags"></div></div><div class="article-source"><span>Jalopnik</span><span>Sun, 16 Aug 2026 22:25:00 +0000</span><a href="https://www.jalopnik.com/2236545/preserved-germany-military-motorcycle-revealed-by-drying-danube/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.hagerty.com/media/events/gallery-every-car-from-dawn-patrol-at-the-2026-pebble-beach-concours/" target="_blank" rel="noopener noreferrer">Gallery: Every Car from Dawn Patrol at the 2026 Pebble Beach Concours</a><div class="article-tags"></div></div><div class="article-source"><span>Hagerty</span><span>Sun, 16 Aug 2026 21:03:49 GMT</span><a href="https://www.hagerty.com/media/events/gallery-every-car-from-dawn-patrol-at-the-2026-pebble-beach-concours/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.hagerty.com/media/news/jaguar-shows-off-its-past-and-previews-its-future-in-pebble-beach/" target="_blank" rel="noopener noreferrer">Jaguar Shows Off Its Past and Previews Its Future in Pebble Beach</a><div class="article-tags"></div></div><div class="article-source"><span>Hagerty</span><span>Sun, 16 Aug 2026 20:49:29 GMT</span><a href="https://www.hagerty.com/media/news/jaguar-shows-off-its-past-and-previews-its-future-in-pebble-beach/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.jalopnik.com/2236361/shop-charges-4-grand-for-transmission-work-never-done/" target="_blank" rel="noopener noreferrer">Shop Charges Woman Almost $4,000 For Transmission Repairs, Then The Mechanic Tells Her The Work Was Never Done</a><div class="article-tags"></div></div><div class="article-source"><span>Jalopnik</span><span>Sun, 16 Aug 2026 19:25:00 +0000</span><a href="https://www.jalopnik.com/2236361/shop-charges-4-grand-for-transmission-work-never-done/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.roadandtrack.com/news/a73446170/marcus-ericsson-wins-inaugural-indycar-markham-race--late-charge-past-romain-grosjean/" target="_blank" rel="noopener noreferrer">Marcus Ericsson Wins Inaugural IndyCar Markham Race with Late Charge Past Romain Grosjean</a><div class="article-tags"></div></div><div class="article-source"><span>Road &amp; Track</span><span>Sun, 16 Aug 2026 19:17:00 +0000</span><a href="https://www.roadandtrack.com/news/a73446170/marcus-ericsson-wins-inaugural-indycar-markham-race--late-charge-past-romain-grosjean/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.jalopnik.com/2236351/how-to-clean-diesel-truck-dpf-filter/" target="_blank" rel="noopener noreferrer">What A DPF (Diesel Particulate Filter) Is And How To Clean It</a><div class="article-tags"></div></div><div class="article-source"><span>Jalopnik</span><span>Sun, 16 Aug 2026 19:05:00 +0000</span><a href="https://www.jalopnik.com/2236351/how-to-clean-diesel-truck-dpf-filter/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.jalopnik.com/2236283/facebook-marketplace-reverse-image-search-why/" target="_blank" rel="noopener noreferrer">How To Reverse Image Search Cars On Facebook Marketplace (And Why You Should)</a><div class="article-tags"></div></div><div class="article-source"><span>Jalopnik</span><span>Sun, 16 Aug 2026 16:25:00 +0000</span><a href="https://www.jalopnik.com/2236283/facebook-marketplace-reverse-image-search-why/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://www.thedrive.com/news/brembos-new-six-piston-brake-caliper-is-its-most-powerful-ever" target="_blank" rel="noopener noreferrer">Brembo’s New Six-Piston Brake Caliper Is Its Most Powerful Ever</a><div class="article-tags"></div></div><div class="article-source"><span>The Drive</span><span>Sun, 16 Aug 2026 12:00:00 -0400</span><a href="https://www.thedrive.com/news/brembos-new-six-piston-brake-caliper-is-its-most-powerful-ever" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--source"><div class="article-main"><div class="article-type">SOURCE REPORT</div><a class="headline" href="https://electrek.co/2026/08/16/ferrari-luce-chassis-0-sells-40-million-record/" target="_blank" rel="noopener noreferrer">First Ferrari Luce EV sells for $40 million, 36x its estimate</a><div class="article-tags"></div></div><div class="article-source"><span>Electrek</span><span>Sun, 16 Aug 2026 15:53:52 +0000</span><a href="https://electrek.co/2026/08/16/ferrari-luce-chassis-0-sells-40-million-record/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div></div></section>
+
+</main>
+
+<footer>
+  <p class="legal-note mono" style="font-family:'IBM Plex Sans',sans-serif;">AutoIntel Intelligence analyzes and scores publicly reported automotive industry news. Headlines, summaries, takeaways and scores on this page are original editorial analysis produced by AutoIntel — we do not reproduce source-article text. Every item links to its original publisher; please read the full story there for complete reporting and context.</p>
+
+<section class="contact-strip" aria-label="AutoIntel sponsorship">
+  <div class="contact-strip-inner">
+    <span>Interested in sponsoring AutoIntel?</span>
+    <a href="mailto:autointel.news@proton.me">Contact us →</a>
+  </div>
+</section>
+
+</footer>
+
+<script>
+document.getElementById('publishDate').textContent = new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).toUpperCase();
+
+(function(){
+  var toggle = document.getElementById('sectionNavToggle');
+  var nav = document.getElementById('sectionNav');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if (e.target.tagName === 'A') {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+
+(function(){
+  var track = document.getElementById('tickerTrack');
+  if (track) track.innerHTML += track.innerHTML; // seamless loop
+})();
+
+(function(){
+  var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  if (!reveals.length || !('IntersectionObserver' in window)) {
+    reveals.forEach(function(el){ el.classList.add('is-visible'); });
+    return;
+  }
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(function(el){ observer.observe(el); });
+})();
+</script>
+
+</body>
+</html>
