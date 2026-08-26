@@ -2718,6 +2718,560 @@ div[id] {
 }
 </style>
 
+
+<style id="signal-board-preview-style">
+.feature-panel.signal-board-preview{
+  width:100% !important;
+  overflow:hidden !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(32,38,46,.98),
+      rgba(28,33,40,.96)
+    ) !important;
+  border:1px solid var(--line) !important;
+  border-radius:14px !important;
+  box-shadow:0 14px 32px rgba(0,0,0,.12);
+}
+
+.signal-board-preview .feature-panel-header{
+  margin:0 !important;
+  padding:20px 24px 18px !important;
+  border-bottom:1px solid var(--line) !important;
+  background:rgba(255,255,255,.012);
+}
+
+.signal-board-preview .feature-panel-rows{
+  display:grid !important;
+  grid-template-columns:
+    repeat(2,minmax(0,1fr)) !important;
+  gap:0 !important;
+  width:100% !important;
+  counter-reset:signal-row;
+}
+
+.signal-board-preview .feature-row{
+  position:relative !important;
+  display:block !important;
+  min-width:0 !important;
+  min-height:126px !important;
+  margin:0 !important;
+  padding:22px 24px 20px 62px !important;
+  border:0 !important;
+  background:transparent !important;
+  counter-increment:signal-row;
+  transition:background .18s ease;
+}
+
+.signal-board-preview .feature-row:hover{
+  background:rgba(255,255,255,.025) !important;
+}
+
+.signal-board-preview .feature-row::before{
+  content:counter(signal-row,decimal-leading-zero);
+  position:absolute;
+  top:22px;
+  left:22px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.08em;
+  color:var(--ink-dim);
+  opacity:.7;
+}
+
+.signal-board-preview .feature-row:first-child{
+  grid-column:1 / -1 !important;
+  min-height:138px !important;
+  padding:24px 26px 22px 66px !important;
+  border-bottom:1px solid var(--line) !important;
+}
+
+.signal-board-preview
+.feature-row:nth-child(n+2){
+  border-top:1px solid var(--line) !important;
+}
+
+.signal-board-preview
+.feature-row:nth-child(2),
+.signal-board-preview
+.feature-row:nth-child(3){
+  border-top:0 !important;
+}
+
+.signal-board-preview
+.feature-row:nth-child(odd):not(:first-child){
+  border-left:1px solid var(--line) !important;
+}
+
+.signal-board-preview
+.feature-row:first-child
+.feature-row-main::before{
+  display:inline-flex;
+  margin-bottom:10px;
+  padding:3px 8px;
+  border:1px solid currentColor;
+  border-radius:999px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:8.5px;
+  font-weight:600;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.signal-board--trending
+.feature-row:first-child{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(242,169,59,.075),
+      transparent 66%
+    ) !important;
+  box-shadow:inset 3px 0 0 var(--amber);
+}
+
+.signal-board--trending
+.feature-row:first-child
+.feature-row-main::before{
+  content:"Trending now";
+  color:var(--amber);
+}
+
+.signal-board--trending .feature-row::before{
+  color:var(--amber);
+}
+
+.signal-board--dealerships
+.feature-row:first-child{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(62,207,142,.065),
+      transparent 66%
+    ) !important;
+  box-shadow:inset 3px 0 0 var(--teal);
+}
+
+.signal-board--dealerships
+.feature-row:first-child
+.feature-row-main::before{
+  content:"Dealer signal";
+  color:var(--teal);
+}
+
+.signal-board--dealerships .feature-row::before{
+  color:var(--teal);
+}
+
+.signal-board-preview
+.feature-row:first-child
+.feature-row-headline{
+  max-width:72ch;
+  font-size:17px !important;
+  line-height:1.35 !important;
+}
+
+.signal-board-preview .feature-row-headline{
+  font-size:14.5px !important;
+  line-height:1.42 !important;
+}
+
+.signal-board-preview .feature-row-meta{
+  margin-top:12px !important;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:10.5px !important;
+  line-height:1.4 !important;
+  color:var(--ink-dim) !important;
+}
+
+@media(max-width:760px){
+  .signal-board-preview .feature-panel-header{
+    padding:18px 18px 16px !important;
+  }
+
+  .signal-board-preview .feature-panel-rows{
+    grid-template-columns:1fr !important;
+  }
+
+  .signal-board-preview .feature-row,
+  .signal-board-preview .feature-row:first-child{
+    grid-column:1 !important;
+    min-height:0 !important;
+    padding:18px 18px 17px 52px !important;
+    border-top:1px solid var(--line) !important;
+    border-left:0 !important;
+    border-bottom:0 !important;
+  }
+
+  .signal-board-preview .feature-row:first-child{
+    border-top:0 !important;
+  }
+
+  .signal-board-preview .feature-row::before{
+    top:19px;
+    left:18px;
+  }
+}
+</style>
+
+
+<style id="balanced-signal-board-grid">
+/* Desktop auto-balancing panel grid */
+@media(min-width:1000px){
+  #featured-story{
+    display:grid !important;
+    grid-template-columns:
+      repeat(2,minmax(0,1fr)) !important;
+    align-items:stretch !important;
+    gap:20px !important;
+  }
+
+  #featured-story > .feature-panel{
+    grid-column:auto !important;
+    grid-row:auto !important;
+    width:auto !important;
+    height:100% !important;
+  }
+
+  /* One panel, or the final panel in an odd set, uses the full row. */
+  #featured-story
+  > .feature-panel:last-of-type:nth-of-type(odd){
+    grid-column:1 / -1 !important;
+  }
+
+  #featured-story > .feature-panel-status{
+    grid-column:1 / -1 !important;
+  }
+}
+</style>
+
+
+<style id="featured-intelligence-drawer-style">
+#featured .featured-intelligence-toggle{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin:0 0 10px;
+  padding:14px 18px;
+  border:1px solid var(--line);
+  border-left:3px solid var(--amber);
+  border-radius:12px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(242,169,59,.055),
+      rgba(28,33,40,.96) 38%
+    );
+  color:var(--ink);
+  text-align:left;
+  cursor:pointer;
+  transition:
+    border-color .18s ease,
+    background .18s ease;
+}
+
+#featured .featured-intelligence-toggle:hover{
+  border-color:rgba(242,169,59,.55);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(242,169,59,.09),
+      rgba(28,33,40,.98) 42%
+    );
+}
+
+#featured .featured-intelligence-toggle.is-expanded{
+  margin-bottom:0;
+  border-radius:12px 12px 0 0;
+  border-bottom-color:transparent;
+}
+
+.featured-intelligence-toggle__copy{
+  min-width:0;
+  display:flex;
+  align-items:baseline;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.featured-intelligence-toggle__title{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  line-height:1.3;
+  font-weight:600;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:var(--amber);
+}
+
+.featured-intelligence-toggle__summary{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:12px;
+  line-height:1.4;
+  color:var(--ink-dim);
+}
+
+.featured-intelligence-toggle__action{
+  flex:none;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:9px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--ink-dim);
+}
+
+.featured-intelligence-toggle__chevron{
+  width:8px;
+  height:8px;
+  border-right:2px solid currentColor;
+  border-bottom:2px solid currentColor;
+  transform:rotate(45deg);
+  transition:transform .18s ease;
+}
+
+.featured-intelligence-toggle.is-expanded
+.featured-intelligence-toggle__chevron{
+  transform:rotate(225deg);
+}
+
+#featured .featured-intelligence-toggle.is-expanded
++ .hero-grid--details{
+  margin-top:0;
+  border-top:0;
+  border-radius:0 0 12px 12px;
+}
+
+#featured .hero-grid--details[hidden]{
+  display:none !important;
+}
+
+@media(max-width:760px){
+  #featured .featured-intelligence-toggle{
+    padding:13px 15px;
+    gap:12px;
+  }
+
+  .featured-intelligence-toggle__copy{
+    display:block;
+  }
+
+  .featured-intelligence-toggle__summary{
+    display:block;
+    margin-top:3px;
+    font-size:11px;
+  }
+
+  .featured-intelligence-toggle__action-text{
+    display:none;
+  }
+}
+/* Collapsed drawer keeps the score gauges visible. */
+#featured .featured-intelligence-toggle{
+  padding:16px 20px;
+  border-left-width:4px;
+  box-shadow:0 6px 18px rgba(0,0,0,.14);
+}
+
+#featured .featured-intelligence-toggle__title{
+  font-size:12.5px;
+}
+
+#featured .featured-intelligence-toggle__action{
+  padding:6px 11px;
+  border:1px solid rgba(242,169,59,.48);
+  border-radius:999px;
+  background:rgba(242,169,59,.07);
+  color:var(--amber);
+  font-weight:600;
+}
+
+#featured .featured-intelligence-toggle:hover
+.featured-intelligence-toggle__action{
+  border-color:var(--amber);
+  background:rgba(242,169,59,.12);
+}
+
+#featured .hero-grid--details.is-collapsed{
+  display:block !important;
+  padding:18px 20px !important;
+  border-radius:12px !important;
+}
+
+#featured .hero-grid--details.is-collapsed .entity-grid{
+  display:none !important;
+}
+
+#featured .hero-grid--details.is-collapsed .hero-gauges{
+  display:grid !important;
+  grid-template-columns:
+    repeat(4,minmax(0,1fr)) !important;
+  width:100% !important;
+  max-width:none !important;
+  gap:12px !important;
+}
+
+@media(max-width:760px){
+  #featured .featured-intelligence-toggle{
+    padding:14px 15px;
+  }
+
+  .featured-intelligence-toggle__action-text{
+    display:inline !important;
+  }
+
+  #featured .hero-grid--details.is-collapsed{
+    padding:16px !important;
+  }
+
+  #featured .hero-grid--details.is-collapsed .hero-gauges{
+    grid-template-columns:
+      repeat(2,minmax(0,1fr)) !important;
+    gap:10px !important;
+  }
+}
+</style>
+
+
+<style id="premium-featured-gauges-style">
+#featured .gauge{
+  --gauge-color:var(--amber);
+  --gauge-glow:rgba(242,169,59,.16);
+  --gauge-border:rgba(242,169,59,.34);
+  position:relative;
+  overflow:hidden;
+  padding:15px 10px 13px !important;
+  background:
+    radial-gradient(
+      circle at 50% 20%,
+      var(--gauge-glow),
+      transparent 58%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(32,38,46,.98),
+      rgba(25,30,36,.98)
+    ) !important;
+  border-color:var(--gauge-border) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.03),
+    0 8px 20px rgba(0,0,0,.14);
+  transition:
+    transform .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease;
+}
+
+#featured .gauge:nth-child(2){
+  --gauge-color:var(--teal);
+  --gauge-glow:rgba(62,207,142,.16);
+  --gauge-border:rgba(62,207,142,.34);
+}
+
+#featured .gauge:nth-child(3){
+  --gauge-color:var(--red);
+  --gauge-glow:rgba(226,96,79,.17);
+  --gauge-border:rgba(226,96,79,.36);
+}
+
+#featured .gauge::before{
+  content:"";
+  position:absolute;
+  inset:0 18% auto;
+  height:1px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    var(--gauge-color),
+    transparent
+  );
+  opacity:.7;
+}
+
+#featured .gauge svg{
+  position:relative;
+  z-index:1;
+  filter:drop-shadow(0 0 5px var(--gauge-glow));
+}
+
+#featured .gauge path[stroke-dasharray]{
+  stroke:var(--gauge-color) !important;
+}
+
+#featured .gauge-value{
+  position:relative;
+  z-index:2;
+  margin-top:-27px !important;
+  font-size:21px !important;
+  color:var(--ink) !important;
+  text-shadow:0 2px 9px rgba(0,0,0,.55);
+}
+
+#featured .gauge-value::after{
+  content:" /100";
+  margin-left:2px;
+  font-size:7px;
+  font-weight:500;
+  color:var(--ink-dim);
+}
+
+#featured .gauge-label{
+  display:block;
+  margin-top:7px;
+  font-size:8.5px !important;
+  letter-spacing:.09em !important;
+}
+
+#featured .gauge-status{
+  display:inline-flex;
+  margin-top:7px;
+  padding:3px 6px;
+  border:1px solid var(--gauge-border);
+  border-radius:999px;
+  background:var(--gauge-glow);
+  font-family:'IBM Plex Mono',monospace;
+  font-size:7px;
+  line-height:1;
+  font-weight:600;
+  letter-spacing:.07em;
+  color:var(--gauge-color);
+  white-space:nowrap;
+}
+
+@media(hover:hover){
+  #featured .gauge:hover{
+    transform:translateY(-2px);
+    border-color:var(--gauge-color) !important;
+    box-shadow:0 12px 26px rgba(0,0,0,.22);
+  }
+}
+
+@media(max-width:600px){
+  #featured .gauge{
+    padding:13px 8px 12px !important;
+  }
+
+  #featured .gauge-value{
+    font-size:19px !important;
+  }
+
+  #featured .gauge-status{
+    font-size:6.5px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  #featured .gauge,
+  #featured .gauge path{
+    transition:none !important;
+  }
+}
+</style>
+
 </head>
 <body>
 
@@ -2935,7 +3489,7 @@ div[id] {
 
   
   <section class="latest reveal" id="latest-articles">
-    <h2 class="section-title">AutoIntel.News Picks <span class="count">25 analyzed today</span></h2>
+    <h2 class="section-title">AutoIntel.News' Picks <span class="count">25 analyzed today</span></h2>
     <div class="article-table">
       <div class="article-row article-row--analyzed section-lead-card"><div class="section-lead-media" aria-hidden="true"><img src="/assets/images/sections/section-autointel-picks.webp" alt="" width="640" height="360" loading="lazy" decoding="async"></div><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.cbtnews.com/canada-hits-back/" target="_blank" rel="noopener noreferrer">Canada hits back with $20 billion in tariffs, U.S. automakers brace for rising costs</a><p class="article-take">Canada will impose matching tariffs on approximately $20 billion of U.S. goods beginning September 8, including higher duties on steel and aluminum used throughout the automotive supply chain. Vehicles are exempt from the new measures for now, although existing auto tariffs…</p><div class="article-tags"><span class="chip">Canada</span><span class="chip">United States</span><span class="chip entity-gov">Department of Finance Canada</span><span class="chip entity-gov">Business Development Bank of Canada</span><span class="chip">Automotive tariffs</span><span class="chip">Steel and aluminum</span></div></div><div class="article-source"><span>CBT News</span><span>August 26, 2026</span><a href="https://www.cbtnews.com/canada-hits-back/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.cbtnews.com/cox-finds-august-new-vehicle-sales-resilient/" target="_blank" rel="noopener noreferrer">Cox finds August new-vehicle sales remains resilient as economic pressures mount</a><p class="article-take">Cox Automotive forecasts August new-vehicle sales at a 16.3 million seasonally adjusted annual rate and 1.35 million units, with the annual volume decline largely reflecting calendar effects. Affluent buyers with strong credit or cash reserves are helping sustain demand despite…</p><div class="article-tags"><span class="chip">New-vehicle sales</span><span class="chip">Electric-vehicle tax credit</span><span class="chip">Automotive retail</span></div></div><div class="article-source"><span>CBT News</span><span>August 26, 2026</span><a href="https://www.cbtnews.com/cox-finds-august-new-vehicle-sales-resilient/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.cbtnews.com/honda-targets-u-s-for-next-plant-as-hybrids-surge/" target="_blank" rel="noopener noreferrer">Honda targets U.S. for next plant as hybrids surge</a><p class="article-take">Honda is evaluating a new U.S. manufacturing plant to expand hybrid capacity, with a location decision expected within one or two years and operations targeted for around 2030. The investment could depend on the future of the USMCA and potential tariffs affecting vehicles and…</p><div class="article-tags"><span class="chip entity-mfr">Honda Motor Co.</span><span class="chip">United States</span><span class="chip">Canada</span><span class="chip">Mexico</span><span class="chip entity-gov">Trump administration</span><span class="chip">Hybrid vehicles</span></div></div><div class="article-source"><span>CBT News</span><span>August 26, 2026</span><a href="https://www.cbtnews.com/honda-targets-u-s-for-next-plant-as-hybrids-surge/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.cbtnews.com/how-dealers-can-optimize-payment-processing/" target="_blank" rel="noopener noreferrer">How dealers can optimize payment processing to boost profit, lower compliance risk</a><p class="article-take">An industry discussion featuring Priority Payments Local and Disruptive Growth Solutions examines how dealerships can reduce payment-related compliance exposure, automate reconciliation, and support digital and mobile payment options. The article also highlights fee management…</p><div class="article-tags"><span class="chip">Priority Payments Local</span><span class="chip">Disruptive Growth Solutions</span><span class="chip entity-gov">Federal Trade Commission</span><span class="chip">Automotive retail payment processing</span><span class="chip">Data privacy and payment compliance</span><span class="chip">Digital wallets and contactless payments</span></div></div><div class="article-source"><span>CBT News</span><span>August 26, 2026</span><a href="https://www.cbtnews.com/how-dealers-can-optimize-payment-processing/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/new-vehicles-and-reviews/articles/911-challenge-cheapest-gt3-based-060000825.html" target="_blank" rel="noopener noreferrer">The New 911 Challenge Is the Cheapest New GT3-Based Race Car You Can Buy</a><p class="article-take">Porsche has introduced the $275,000 911 Challenge, a production-based competition car positioned below the 911 GT4 R and 911 GT3 Cup in price. It combines a 508-horsepower 4.0-liter flat-six and production-derived controls with racing equipment such as slick tires, a roll cage…</p><div class="article-tags"><span class="chip entity-mfr">Porsche</span><span class="chip">Germany</span><span class="chip">Motorsport</span><span class="chip">One-make racing series</span><span class="chip">Track driving</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 26, 2026</span><a href="https://autos.yahoo.com/new-vehicles-and-reviews/articles/911-challenge-cheapest-gt3-based-060000825.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/new-vehicles-and-reviews/articles/porsche-275-000-911-challenge-060000408.html" target="_blank" rel="noopener noreferrer">Porsche’s $275,000 911 Challenge Uses the 911 GT3’s Heart, Blurs Line Between Road and Track Cars</a><p class="article-take">Porsche’s non-road-legal 911 Challenge uses a 508-horsepower 4.0-liter GT3-based engine, Cup-derived chassis components and track-focused safety equipment. The car will enter North American Porsche racing series for 2027 competitors before becoming more broadly available.</p><div class="article-tags"><span class="chip entity-mfr">Porsche</span><span class="chip">United States</span><span class="chip">Motorsport</span><span class="chip">Track racing</span><span class="chip">Performance cars</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 26, 2026</span><a href="https://autos.yahoo.com/new-vehicles-and-reviews/articles/porsche-275-000-911-challenge-060000408.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/new-vehicles-and-reviews/articles/temu-range-rovers-taking-over-050000914.html" target="_blank" rel="noopener noreferrer">‘Temu Range Rovers’ are taking over Britain</a><p class="article-take">Chinese automakers are rapidly gaining British sales with lower-priced SUVs whose styling closely resembles Jaguar Land Rover models. Jaecoo, BYD and Geely’s brands are expanding the challenge as JLR considers whether to defend its designs legally while maintaining ties with…</p><div class="article-tags"><span class="chip entity-mfr">Jaguar Land Rover</span><span class="chip entity-mfr">Range Rover</span><span class="chip entity-mfr">Land Rover</span><span class="chip entity-mfr">Chery</span><span class="chip entity-mfr">Jaecoo</span><span class="chip entity-mfr">BYD</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 26, 2026</span><a href="https://autos.yahoo.com/new-vehicles-and-reviews/articles/temu-range-rovers-taking-over-050000914.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.autocar.co.uk/opinion/business-manufacturing/zev-mandate-review-could-give-hybrid-lifeline-uk-car-factories" target="_blank" rel="noopener noreferrer">ZEV mandate review could give a hybrid lifeline to UK car factories</a><p class="article-take">The UK’s aggressive zero-emission vehicle targets are creating costly conversion decisions for Toyota, BMW, Nissan and other manufacturers operating domestic plants. Industry representatives want more flexibility to keep building hybrids and combustion-engine vehicles while…</p><div class="article-tags"><span class="chip entity-mfr">Toyota</span><span class="chip entity-mfr">BMW</span><span class="chip entity-mfr">Mini</span><span class="chip entity-mfr">Nissan</span><span class="chip entity-mfr">JLR</span><span class="chip entity-mfr">Chery</span></div></div><div class="article-source"><span>Autocar</span><span>Wed, 26 Aug 2026 06:00:00 +0100</span><a href="https://www.autocar.co.uk/opinion/business-manufacturing/zev-mandate-review-could-give-hybrid-lifeline-uk-car-factories" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/classic-and-collector/articles/heres-chance-own-ayrton-sennas-033000592.html" target="_blank" rel="noopener noreferrer">Here&#x27;s Your Chance to Own Ayrton Senna&#x27;s Personal Honda NSX</a><p class="article-take">The Honda NSX Senna kept for personal use in Portugal during his 1991 championship season will be offered at RM Sotheby’s London Auction 2026. Chassis T000233 retains extensive documentation and is estimated at £500,000–£800,000, before any applicable UK taxes or import duties.</p><div class="article-tags"><span class="chip entity-mfr">Honda</span><span class="chip">Portugal</span><span class="chip">United Kingdom</span><span class="chip">Japan</span><span class="chip">Italy</span><span class="chip">Honda NSX</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 26, 2026</span><a href="https://autos.yahoo.com/classic-and-collector/articles/heres-chance-own-ayrton-sennas-033000592.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/safety-and-recalls/articles/chrysler-recalls-nearly-75k-suvs-012442358.html" target="_blank" rel="noopener noreferrer">Chrysler recalls nearly 75K SUVs over parts that could detach while driving</a><p class="article-take">Chrysler is recalling 74,578 Dodge Durango SUVs from the 2021–2023 model years because improperly aligned rear spoilers can strike the roof, weaken, and detach while driving. No crashes or injuries have been reported, while a permanent repair remains under development.</p><div class="article-tags"><span class="chip entity-mfr">Chrysler</span><span class="chip entity-mfr">Dodge</span><span class="chip entity-gov">National Highway Traffic Safety Administration</span><span class="chip">Vehicle recalls</span><span class="chip">Vehicle safety</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 26, 2026</span><a href="https://autos.yahoo.com/safety-and-recalls/articles/chrysler-recalls-nearly-75k-suvs-012442358.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/classic-and-collector/articles/inside-427-cobra-gumball-rally-000800103.html" target="_blank" rel="noopener noreferrer">Inside the 427 Cobra From The Gumball Rally Now Crossing the Block</a><p class="article-take">Shelby Cobra CSX3243, known for its appearance in The Gumball Rally, is being auctioned on Bring a Trailer with bidding scheduled to end on August 26. The car retains its original engine separately while using a replacement Maeco-built 427 side-oiler and has been prepared for…</p><div class="article-tags"><span class="chip entity-mfr">AC</span><span class="chip entity-mfr">Shelby American</span><span class="chip entity-mfr">Ford</span><span class="chip entity-mfr">Ferrari</span><span class="chip">McCluskey Ltd.</span><span class="chip">Maeco Motorsports</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 26, 2026</span><a href="https://autos.yahoo.com/classic-and-collector/articles/inside-427-cobra-gumball-rally-000800103.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/policy-and-environment/articles/opinion-pickup-segment-overregulated-years-000500657.html" target="_blank" rel="noopener noreferrer">Opinion: The Pickup Segment Has Been Overregulated For Years</a><p class="article-take">The opinion argues that taxes, tariffs, and emissions rules helped steer U.S. pickups toward larger, more expensive, and more complex designs while limiting market variety. It also suggests that high prices, market saturation, and rumored smaller trucks could create pressure for…</p><div class="article-tags"><span class="chip">United States</span><span class="chip entity-mfr">Ford</span><span class="chip">Pickup trucks</span><span class="chip">Tariffs</span><span class="chip">Emissions regulation</span><span class="chip">Powertrains</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 26, 2026</span><a href="https://autos.yahoo.com/policy-and-environment/articles/opinion-pickup-segment-overregulated-years-000500657.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/classic-and-collector/articles/1990s-toyota-put-butterfly-doors-000000828.html" target="_blank" rel="noopener noreferrer">This 1990s Toyota Put Butterfly Doors On The Map</a><p class="article-take">Toyota’s 1990 Sera hatchback helped bring butterfly doors from automotive experimentation into public view, despite costing roughly $11,000 and not being the first vehicle to use them. Its compact opening clearance, futuristic glass-heavy design, and innovative production…</p><div class="article-tags"><span class="chip entity-mfr">Toyota</span><span class="chip">Butterfly doors</span><span class="chip">Automotive manufacturing techniques</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 26, 2026</span><a href="https://autos.yahoo.com/classic-and-collector/articles/1990s-toyota-put-butterfly-doors-000000828.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/ev-and-future-tech/articles/california-pays-sell-power-back-233800234.html" target="_blank" rel="noopener noreferrer">California Pays You To Sell Power Back From Your EV</a><p class="article-take">Pacific Gas &amp; Electric is adding Nissan, Volvo, Polestar, Kia and more General Motors vehicles to its bidirectional charging program, allowing eligible owners to export stored energy and receive incentives. The program offers installation support and potential energy savings…</p><div class="article-tags"><span class="chip">Pacific Gas &amp; Electric</span><span class="chip entity-mfr">Nissan</span><span class="chip entity-mfr">Volvo</span><span class="chip entity-mfr">Polestar</span><span class="chip entity-mfr">Kia</span><span class="chip entity-mfr">General Motors</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 25, 2026</span><a href="https://autos.yahoo.com/ev-and-future-tech/articles/california-pays-sell-power-back-233800234.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/safety-and-recalls/articles/vehicles-named-gm-hondas-massive-231500528.html" target="_blank" rel="noopener noreferrer">All The Vehicles Named In GM And Honda&#x27;s Massive Brake Failure Investigation</a><p class="article-take">NHTSA has expanded an investigation into alleged eBoost electronic brake-module failures across more than 1.16 million GM, Honda, and Acura vehicles from the 2023–2026 model years. The agency cites 745 reported incidents, including crashes, fires, and injuries, while examining…</p><div class="article-tags"><span class="chip entity-mfr">GM</span><span class="chip entity-mfr">Honda</span><span class="chip entity-mfr">Acura</span><span class="chip entity-mfr">Cadillac</span><span class="chip entity-mfr">Chevrolet</span><span class="chip entity-mfr">Buick</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 25, 2026</span><a href="https://autos.yahoo.com/safety-and-recalls/articles/vehicles-named-gm-hondas-massive-231500528.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/deals-and-buying-guides/articles/why-3-5-old-used-230700950.html" target="_blank" rel="noopener noreferrer">Why 3-5 Year Old Used EVs Are Britain&#x27;s Fastest-Selling Cars</a><p class="article-take">Auto Trader data shows three-to-five-year-old electric cars selling in an average of 20 days in Britain, faster than the wider used-car market. The gains are concentrated in cheaper, older EVs, while newer premium models are suffering steep price declines amid discounting and…</p><div class="article-tags"><span class="chip entity-mfr">MG</span><span class="chip entity-mfr">Polestar</span><span class="chip entity-mfr">BMW</span><span class="chip entity-mfr">Ford</span><span class="chip entity-mfr">Audi</span><span class="chip entity-mfr">Renault</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 25, 2026</span><a href="https://autos.yahoo.com/deals-and-buying-guides/articles/why-3-5-old-used-230700950.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.autocar.co.uk/car-news/new-cars/giulia-quadrifoglio-luna-rossa-driven-ultra-rare-special-v6-ace" target="_blank" rel="noopener noreferrer">Giulia Quadrifoglio Luna Rossa driven: Ultra-rare special is a V6 ace</a><p class="article-take">Alfa Romeo’s new Bottega Fuoriserie division has produced a sailing-inspired Giulia Quadrifoglio with revised aerodynamic bodywork, distinctive cabin materials and the same 513bhp V6 powertrain as the standard car. Only 10 customer cars are planned, all have reportedly been…</p><div class="article-tags"><span class="chip entity-mfr">Alfa Romeo</span><span class="chip entity-mfr">Maserati</span><span class="chip entity-mfr">Audi RS5</span><span class="chip">Bottega Fuoriserie</span><span class="chip">Limited-edition performance cars</span><span class="chip">Vehicle aerodynamics</span></div></div><div class="article-source"><span>Autocar</span><span>Wed, 26 Aug 2026 00:01:49 +0100</span><a href="https://www.autocar.co.uk/car-news/new-cars/giulia-quadrifoglio-luna-rossa-driven-ultra-rare-special-v6-ace" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.cbtnews.com/jeremy-robb-breaks-down-the-economic-outlook/" target="_blank" rel="noopener noreferrer">Jeremy Robb breaks down the economic outlook for dealers</a><p class="article-take">Cox Automotive Chief Economist Jeremy Robb says potential 50% tariffs on Canadian-built vehicles and parts could increase costs for popular models such as the Toyota RAV4, Honda CR-V and Honda Civic. Despite elevated prices, interest rates and fuel costs, he reports resilient…</p><div class="article-tags"><span class="chip">Cox Automotive</span><span class="chip entity-mfr">Toyota</span><span class="chip entity-mfr">Honda</span><span class="chip">Canada</span><span class="chip entity-gov">President Trump</span><span class="chip entity-gov">Federal Reserve</span></div></div><div class="article-source"><span>CBT News</span><span>August 25, 2026</span><a href="https://www.cbtnews.com/jeremy-robb-breaks-down-the-economic-outlook/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/safety-and-recalls/articles/gms-fix-self-destructing-v-211500230.html" target="_blank" rel="noopener noreferrer">GM&#x27;s Fix for Its Self-Destructing V-8 Was Basically an Oil Change. Nearly 7,000 Owners Say That Didn&#x27;t Work.</a><p class="article-take">A recall repair for GM’s 6.2-liter L87 V-8 involved inspections, thicker oil, a new fill cap and filter, yet GM warranty data lists 6,953 post-repair failure complaints. NHTSA is examining whether engine failures extend beyond the 2021–2024 production window covered by the…</p><div class="article-tags"><span class="chip entity-mfr">General Motors</span><span class="chip entity-mfr">Cadillac</span><span class="chip entity-mfr">Chevrolet</span><span class="chip entity-mfr">GMC</span><span class="chip entity-gov">National Highway Traffic Safety Administration</span><span class="chip entity-gov">Office of Defects Investigation</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 25, 2026</span><a href="https://autos.yahoo.com/safety-and-recalls/articles/gms-fix-self-destructing-v-211500230.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.cbtnews.com/rohrman-automotives-push-to-sell-cars-on-amazon/" target="_blank" rel="noopener noreferrer">Rohrman Automotive’s push to sell cars on Amazon and improve customer data</a><p class="article-take">Rohrman Automotive Group is using Amazon Autos to sell vehicles online while consolidating customer data and deploying AI agents for dealership marketing. CEO Ryan Rohrman also cited a March oil-change promotion that helped increase customer-pay repair orders by 17% across the…</p><div class="article-tags"><span class="chip entity-mfr">Hyundai</span><span class="chip">Amazon Autos</span><span class="chip">Artificial intelligence</span><span class="chip">Customer data platforms</span><span class="chip">Online vehicle sales</span><span class="chip">Dealer management systems</span></div></div><div class="article-source"><span>CBT News</span><span>August 25, 2026</span><a href="https://www.cbtnews.com/rohrman-automotives-push-to-sell-cars-on-amazon/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://autos.yahoo.com/new-vehicles-and-reviews/articles/performance-becoming-secondary-supercars-enter-202100980.html" target="_blank" rel="noopener noreferrer">&quot;Performance Is Becoming Secondary&quot; As Supercars Enter A New Era</a><p class="article-take">Bugatti Rimac CEO Mate Rimac expects everyday transportation to become dominated by electric, software-driven vehicles while ultra-luxury sports cars preserve internal-combustion performance and emotional appeal. Bugatti’s Tourbillon embodies that strategy with an 8.3-liter V16…</p><div class="article-tags"><span class="chip entity-mfr">Bugatti</span><span class="chip entity-mfr">Rimac</span><span class="chip entity-mfr">Porsche</span><span class="chip">Cosworth</span><span class="chip">Croatia</span><span class="chip">China</span></div></div><div class="article-source"><span>Yahoo Autos</span><span>August 25, 2026</span><a href="https://autos.yahoo.com/new-vehicles-and-reviews/articles/performance-becoming-secondary-supercars-enter-202100980.html" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.cbtnews.com/new-vehicle-sales-drop/" target="_blank" rel="noopener noreferrer">New vehicle sales holds at 16.4 million SAAR as hybrid demand drives August growth</a><p class="article-take">New-vehicle sales are projected to run at a 16.4 million seasonally adjusted annual rate in August, although retail volume is forecast to decline 6.9% year over year amid difficult comparisons and timing effects. Hybrid share is rising as EV share falls after the federal tax…</p><div class="article-tags"><span class="chip">JD Power</span><span class="chip">GlobalData</span><span class="chip">Electric vehicles</span><span class="chip">Hybrid vehicles</span><span class="chip">Federal EV tax credit</span><span class="chip">New-vehicle sales</span></div></div><div class="article-source"><span>CBT News</span><span>August 25, 2026</span><a href="https://www.cbtnews.com/new-vehicle-sales-drop/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.cbtnews.com/autotrust-unites-over-300-franchise-dealer/" target="_blank" rel="noopener noreferrer">AutoTrust unites over 300 franchise dealer to compete with America’s largest public groups</a><p class="article-take">AutoTrust Dealer Alliance says it has grown to more than 300 active franchise dealerships within a year of launching. The dealer-owned platform aims to match the purchasing leverage of large public dealer groups while returning platform savings to independent members.</p><div class="article-tags"><span class="chip">AutoTrust Dealer Alliance</span><span class="chip">United States</span><span class="chip">Franchise dealerships</span><span class="chip">Dealer consolidation</span></div></div><div class="article-source"><span>CBT News</span><span>August 25, 2026</span><a href="https://www.cbtnews.com/autotrust-unites-over-300-franchise-dealer/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.cbtnews.com/cbt-automotive-newscast-august-25-2026/" target="_blank" rel="noopener noreferrer">NHTSA expands GM brake probe, Hyundai &amp; union reach tentative deal, Porsche signs $1.46B AI deal</a><p class="article-take">The article highlights NHTSA’s expansion of a brake investigation involving GM and two Honda vehicles, alongside a tentative Hyundai-union agreement following a strike. It also reports Porsche’s $1.46 billion AI agreement with Tata Consultancy Services and Polestar’s claim that…</p><div class="article-tags"><span class="chip entity-gov">NHTSA</span><span class="chip entity-mfr">General Motors</span><span class="chip entity-mfr">Honda</span><span class="chip entity-mfr">Hyundai</span><span class="chip entity-mfr">Porsche</span><span class="chip entity-mfr">Polestar</span></div></div><div class="article-source"><span>CBT News</span><span>August 25, 2026</span><a href="https://www.cbtnews.com/cbt-automotive-newscast-august-25-2026/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div><div class="article-row article-row--analyzed"><div class="article-main"><div class="article-type">AUTOINTEL ANALYSIS</div><a class="headline" href="https://www.cbtnews.com/nhtsa-expands-gm-brake-probe-to-10-models/" target="_blank" rel="noopener noreferrer">NHTSA expands GM brake probe to 12 models, two Honda vehicles</a><p class="article-take">NHTSA has advanced its investigation into reported eBoost brake-assist losses, expanding the review to 12 GM models plus the Honda Prologue and Acura ZDX, covering about 1.16 million vehicles. The agency has recorded 745 failure reports, including crashes, fires and injuries…</p><div class="article-tags"><span class="chip entity-mfr">GM</span><span class="chip entity-mfr">Honda</span><span class="chip entity-mfr">Acura</span><span class="chip entity-mfr">Cadillac</span><span class="chip entity-mfr">Buick</span><span class="chip entity-mfr">Chevrolet</span></div></div><div class="article-source"><span>CBT News</span><span>August 25, 2026</span><a href="https://www.cbtnews.com/nhtsa-expands-gm-brake-probe-to-10-models/" target="_blank" rel="noopener noreferrer">Read original →</a></div></div>
     </div>
@@ -3433,6 +3987,268 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
     );
   } else {
     formatSectionDates();
+  }
+})();
+</script>
+
+
+<script id="signal-board-preview-script">
+(function () {
+  function initializeSignalBoards() {
+    const panels = document.querySelectorAll(
+      '#featured-story > .feature-panel'
+    );
+
+    panels.forEach(function (panel) {
+      const title = panel.querySelector('.panel-title');
+
+      if (!title) {
+        return;
+      }
+
+      const label = title.textContent
+        .trim()
+        .toLowerCase();
+
+      if (label.includes('trending')) {
+        panel.classList.add(
+          'signal-board-preview',
+          'signal-board--trending'
+        );
+      } else if (label.includes('dealership')) {
+        panel.classList.add(
+          'signal-board-preview',
+          'signal-board--dealerships'
+        );
+      } else {
+        return;
+      }
+
+      panel.querySelectorAll(
+        '.feature-row-meta'
+      ).forEach(function (dateElement) {
+        const value = dateElement.textContent.trim();
+        const parsed = new Date(value);
+
+        if (Number.isNaN(parsed.getTime())) {
+          return;
+        }
+
+        dateElement.textContent =
+          new Intl.DateTimeFormat('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric',
+            timeZone: 'UTC'
+          }).format(parsed);
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener(
+      'DOMContentLoaded',
+      initializeSignalBoards
+    );
+  } else {
+    initializeSignalBoards();
+  }
+})();
+</script>
+
+
+<script id="featured-intelligence-drawer-script">
+(function () {
+  const featured = document.getElementById('featured');
+  const details = featured
+    ? featured.querySelector('.hero-grid--details')
+    : null;
+
+  if (!featured || !details) {
+    return;
+  }
+
+  details.id = 'featured-story-intelligence';
+
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'featured-intelligence-toggle';
+  toggle.setAttribute(
+    'aria-controls',
+    details.id
+  );
+
+  toggle.innerHTML =
+    '<span class="featured-intelligence-toggle__copy">' +
+      '<span class="featured-intelligence-toggle__title">' +
+        'Story Intelligence' +
+      '</span>' +
+      '<span class="featured-intelligence-toggle__summary">' +
+        'Entities, topics, timeline and scoring' +
+      '</span>' +
+    '</span>' +
+    '<span class="featured-intelligence-toggle__action">' +
+      '<span class="featured-intelligence-toggle__action-text"></span>' +
+      '<span class="featured-intelligence-toggle__chevron" ' +
+        'aria-hidden="true"></span>' +
+    '</span>';
+
+  details.parentElement.insertBefore(toggle, details);
+
+  const actionText = toggle.querySelector(
+    '.featured-intelligence-toggle__action-text'
+  );
+
+  function setExpanded(expanded) {
+    toggle.setAttribute(
+      'aria-expanded',
+      String(expanded)
+    );
+
+    toggle.classList.toggle(
+      'is-expanded',
+      expanded
+    );
+
+    details.hidden = false;
+    details.classList.toggle(
+      'is-collapsed',
+      !expanded
+    );
+
+    const entityGrid = details.querySelector(
+      '.entity-grid'
+    );
+
+    if (entityGrid) {
+      entityGrid.hidden = !expanded;
+    }
+
+    actionText.textContent = expanded
+      ? 'Hide'
+      : 'Show';
+  }
+
+  const mobile = window.matchMedia(
+    '(max-width:760px)'
+  );
+
+  setExpanded(!mobile.matches);
+
+  toggle.addEventListener('click', function () {
+    const expanded =
+      toggle.getAttribute('aria-expanded') === 'true';
+
+    setExpanded(!expanded);
+  });
+})();
+</script>
+
+
+<script id="premium-featured-gauges-script">
+(function () {
+  const gauges = Array.from(
+    document.querySelectorAll('#featured .gauge')
+  );
+
+  function statusFor(label, score) {
+    label = label.toLowerCase();
+
+    if (label.includes('importance')) {
+      return score >= 80
+        ? 'HIGH PRIORITY'
+        : score >= 65 ? 'NOTABLE' : 'WATCH';
+    }
+
+    if (label.includes('editorial')) {
+      return score >= 80
+        ? 'STRONG QUALITY'
+        : score >= 65 ? 'SOLID QUALITY' : 'MIXED';
+    }
+
+    if (label.includes('impact')) {
+      return score >= 80
+        ? 'HIGH IMPACT'
+        : score >= 65 ? 'MEANINGFUL' : 'LIMITED';
+    }
+
+    return score >= 80
+      ? 'HIGH INTEREST'
+      : score >= 65 ? 'STRONG INTEREST' : 'NICHE';
+  }
+
+  gauges.forEach(function (gauge) {
+    const value = gauge.querySelector('.gauge-value');
+    const label = gauge.querySelector('.gauge-label');
+
+    if (!value || !label) return;
+
+    const score = Number.parseFloat(
+      value.textContent.trim()
+    );
+
+    if (Number.isNaN(score)) return;
+
+    if (!gauge.querySelector('.gauge-status')) {
+      const status = document.createElement('span');
+      status.className = 'gauge-status';
+      status.textContent = statusFor(
+        label.textContent,
+        score
+      );
+      gauge.appendChild(status);
+    }
+  });
+
+  if (window.matchMedia(
+    '(prefers-reduced-motion:reduce)'
+  ).matches) return;
+
+  function animate() {
+    gauges.forEach(function (gauge) {
+      const arc = gauge.querySelector(
+        'path[stroke-dasharray]'
+      );
+
+      if (!arc) return;
+
+      const target = arc.getAttribute(
+        'stroke-dashoffset'
+      );
+
+      if (target === null) return;
+
+      arc.style.transition = 'none';
+      arc.style.strokeDashoffset = '157';
+
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          arc.style.transition =
+            'stroke-dashoffset 700ms ease-out';
+          arc.style.strokeDashoffset = target;
+        });
+      });
+    });
+  }
+
+  const cluster = document.querySelector(
+    '#featured .hero-gauges'
+  );
+
+  if (cluster && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(
+      function (entries) {
+        if (entries[0].isIntersecting) {
+          animate();
+          observer.disconnect();
+        }
+      },
+      {threshold:.2}
+    );
+
+    observer.observe(cluster);
+  } else {
+    animate();
   }
 })();
 </script>
