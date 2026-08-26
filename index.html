@@ -2648,6 +2648,76 @@ div[id] {
 }
 </style>
 
+<style id="lifetime-card-corner-fix">
+
+.dashboard--strip .stat-panel:has(.snapshot-lifetime){
+  margin:8px !important;
+  min-width:0 !important;
+  border-radius:12px !important;
+  overflow:hidden !important;
+}
+</style>
+
+<style id="mobile-lifetime-card-layout">
+@media(max-width:600px){
+  .dashboard--strip .stat-panel:has(.snapshot-lifetime){
+    display:grid !important;
+    grid-template-columns:auto minmax(0,1fr) auto !important;
+    grid-template-rows:auto !important;
+    grid-template-areas:"icon title metric" !important;
+    align-items:center !important;
+    column-gap:18px !important;
+    row-gap:0 !important;
+    min-height:0 !important;
+    padding:18px 22px !important;
+  }
+
+  .dashboard--strip
+  .stat-panel:has(.snapshot-lifetime)
+  > .panel-icon{
+    grid-area:icon !important;
+    align-self:center !important;
+    margin:0 !important;
+  }
+
+  .dashboard--strip
+  .stat-panel:has(.snapshot-lifetime)
+  > .panel-title-group{
+    grid-area:title !important;
+    min-width:0 !important;
+    align-self:center !important;
+    margin:0 !important;
+  }
+
+  .dashboard--strip .snapshot-lifetime{
+    grid-area:metric !important;
+    min-width:130px !important;
+    justify-self:end !important;
+    align-items:flex-end !important;
+    text-align:right !important;
+    padding:0 !important;
+  }
+}
+
+@media(max-width:420px){
+  .dashboard--strip .stat-panel:has(.snapshot-lifetime){
+    grid-template-columns:auto minmax(0,1fr) !important;
+    grid-template-rows:auto auto !important;
+    grid-template-areas:
+      "icon title"
+      "metric metric" !important;
+    row-gap:14px !important;
+  }
+
+  .dashboard--strip .snapshot-lifetime{
+    min-width:0 !important;
+    justify-self:start !important;
+    align-items:flex-start !important;
+    text-align:left !important;
+  }
+}
+</style>
+
 </head>
 <body>
 
