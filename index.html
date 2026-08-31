@@ -2716,6 +2716,33 @@ div[id] {
   color:var(--amber);
 }
 
+.signal-board--technology{
+  --technology-accent:#68a7ff;
+}
+
+.signal-board--technology
+.feature-row:first-child{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(104,167,255,.075),
+      transparent 66%
+    ) !important;
+  box-shadow:
+    inset 3px 0 0 var(--technology-accent);
+}
+
+.signal-board--technology
+.feature-row:first-child
+.feature-row-main::before{
+  content:"Tech signal";
+  color:var(--technology-accent);
+}
+
+.signal-board--technology .feature-row::before{
+  color:var(--technology-accent);
+}
+
 .signal-board--dealerships
 .feature-row:first-child{
   background:
@@ -4042,6 +4069,14 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
         panel.classList.add(
           'signal-board-preview',
           'signal-board--trending'
+        );
+      } else if (
+        label.includes('technology') ||
+        label.includes('autonomous')
+      ) {
+        panel.classList.add(
+          'signal-board-preview',
+          'signal-board--technology'
         );
       } else if (label.includes('dealership')) {
         panel.classList.add(
