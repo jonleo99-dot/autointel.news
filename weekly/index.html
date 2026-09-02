@@ -1,0 +1,1282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="AutoIntel Weekly turns hundreds of automotive reports into the developments, risks and opportunities industry professionals need to understand.">
+<title>AutoIntel Weekly — Automotive Industry Intelligence</title>
+<style>
+:root{--amber:#f2a93b;--amber-soft:rgba(242,169,59,.12);--bg:#101318;--panel:#191e25;--ink:#edf0f3;--soft:#c1c7ce;--dim:#9099a4;--line:#2b323c;--max:1060px;--read:740px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 78% -8%,rgba(242,169,59,.09),transparent 31rem),var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}.shell{width:min(calc(100% - 40px),var(--max));margin:0 auto}a{color:inherit}.topbar{border-bottom:1px solid rgba(255,255,255,.07);background:rgba(16,19,24,.94)}.topbar-inner{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none}.mark{display:grid;place-items:center;width:37px;height:37px;border:1px solid rgba(242,169,59,.5);border-radius:7px;color:var(--amber);font:800 13px/1 ui-monospace,SFMono-Regular,Menlo,monospace}.brand-copy{font-size:14px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}.brand-copy small{display:block;margin-top:2px;color:var(--dim);font:650 8px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em}.home-link{color:var(--dim);font-size:12px;text-decoration:none}.home-link:hover{color:var(--ink)}
+.hero{padding:76px 0 48px;border-bottom:1px solid var(--line)}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--amber);font:700 10px/1.3 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase}.eyebrow::before{content:"";width:24px;height:2px;background:var(--amber)}h1{max-width:840px;margin:24px 0 0;font-size:clamp(42px,7vw,74px);line-height:.98;letter-spacing:-.055em}h1 span{color:var(--dim)}.deck{max-width:700px;margin:24px 0 0;color:var(--soft);font-size:18px;line-height:1.65}.issue{margin-top:30px;color:var(--dim);font:700 10px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase}.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--line)}.metric{padding:25px;border-right:1px solid var(--line)}.metric:first-child{padding-left:0}.metric:last-child{border-right:0}.number{font:760 clamp(30px,5vw,46px)/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:-.06em}.label{margin-top:8px;color:var(--dim);font:700 9px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase}
+.content{padding:52px 0 84px}.section{padding:50px 0;border-bottom:1px solid var(--line)}.section:first-child{padding-top:0}.section:last-child{border:0}.kicker{color:var(--amber);font:700 9px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase}.section h2{margin:8px 0 0;font-size:clamp(28px,4.5vw,43px);line-height:1.07;letter-spacing:-.04em}.summary{max-width:var(--read);margin:25px 0 0;padding-left:23px;border-left:3px solid var(--amber);color:var(--soft);font-family:Georgia,"Times New Roman",serif;font-size:clamp(19px,2.5vw,23px);line-height:1.7}.lead{margin-top:26px;padding:29px;border:1px solid rgba(242,169,59,.27);border-radius:14px;background:linear-gradient(145deg,rgba(242,169,59,.09),rgba(255,255,255,.01))}.lead h3{margin:8px 0 0;font-size:clamp(23px,3.2vw,33px);line-height:1.17;letter-spacing:-.03em}.lead p{margin:17px 0 0;color:var(--soft);font-size:15px;line-height:1.7}.copy-label{display:block;margin-bottom:5px;color:var(--ink);font:700 9px/1.3 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.11em;text-transform:uppercase}
+.signals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:26px}.signal{padding:21px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.018)}.signal-number{color:var(--amber);font:700 9px/1.3 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase}.signal h3{margin:10px 0 0;font-size:18px;line-height:1.3}.signal p{margin:12px 0 0;color:var(--dim);font-size:13px;line-height:1.62}
+.audio{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;margin-top:25px;padding:25px;border:1px solid var(--line);border-radius:13px;background:var(--panel)}.audio h3{margin:7px 0 0;font-size:22px}.audio p{max-width:650px;margin:10px 0 0;color:var(--dim);font-size:13px}.audio-state{padding:8px 10px;border:1px solid var(--line);border-radius:999px;color:var(--dim);font:700 8px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}.audio-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.audio-links a{padding:8px 11px;border:1px solid var(--line);border-radius:7px;color:var(--soft);font-size:11px;text-decoration:none}.audio-frame{grid-column:1/-1;width:100%;min-height:152px;border:0;border-radius:9px;background:var(--bg)}
+.locked{position:relative;margin-top:27px;padding:30px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.009));overflow:hidden}.locked::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--amber)}.locked-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}.locked h3{margin:7px 0 0;font-size:26px;line-height:1.18}.locked p{margin:13px 0 0;color:var(--dim);font-size:13px}.locked ul{margin:0;padding:0;list-style:none}.locked li{position:relative;margin:0 0 11px;padding-left:19px;color:var(--soft);font-size:13px}.locked li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:2px;background:var(--amber)}
+.cta{margin-top:27px;padding:38px;border:1px solid rgba(242,169,59,.34);border-radius:16px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(242,169,59,.13),transparent 70%)}.cta h2{max-width:690px;margin:0 auto;font-size:clamp(30px,5vw,48px)}.cta p{max-width:620px;margin:15px auto 0;color:var(--soft)}.cta-button{display:inline-flex;align-items:center;justify-content:center;margin-top:23px;padding:14px 19px;border:1px solid var(--amber);border-radius:8px;background:var(--amber);color:#14171c;font-size:13px;font-weight:800;text-decoration:none}.cta-button[aria-disabled="true"]{cursor:default;opacity:.72}.founder-note{margin-top:11px;color:var(--dim);font:650 9px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.09em;text-transform:uppercase}.footer{padding:32px 0 45px;border-top:1px solid var(--line);color:var(--dim);font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:30px}.error{width:min(calc(100% - 40px),720px);margin:80px auto;padding:24px;border:1px solid #633;border-radius:12px;background:#171014;color:#f0b8b8;white-space:pre-wrap}#loading{min-height:70vh;display:grid;place-items:center;color:var(--dim);font:700 10px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:760px){.signals{grid-template-columns:1fr}.locked-grid,.audio{grid-template-columns:1fr}.audio-state{justify-self:start}}@media(max-width:560px){.shell{width:min(calc(100% - 28px),var(--max))}.hero{padding:50px 0 34px}h1{font-size:44px}.deck{font-size:16px}.metrics{grid-template-columns:1fr}.metric,.metric:first-child{padding:20px 0;border-right:0;border-bottom:1px solid var(--line)}.metric:last-child{border-bottom:0}.section{padding:40px 0}.lead,.locked,.cta{padding:23px 19px}.footer-inner{display:block}.footer-inner div+div{margin-top:12px}}
+
+/* RSS.com dynamic latest-episode player */
+.audio--embedded {
+  display: block;
+}
+
+.audio--embedded .podcast-cta,
+.audio--embedded .audio-state {
+  display: none;
+}
+
+.audio--embedded .audio-frame {
+  display: block;
+  width: 100%;
+  height: 202px;
+  min-height: 202px;
+  margin: 28px 0 0;
+  border: 0;
+  border-radius: 14px;
+  background: #0d1117;
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .audio--embedded .audio-frame {
+    height: 202px;
+    min-height: 202px;
+    margin-top: 22px;
+    border-radius: 12px;
+  }
+}
+
+
+/* Mask RSS.com iframe bottom-edge artifact */
+.audio--embedded {
+  overflow: hidden;
+}
+
+.audio--embedded .audio-frame {
+  clip-path: inset(0 0 8px 0);
+  margin-bottom: -8px;
+}
+
+@media (max-width: 700px) {
+  .audio--embedded .audio-frame {
+    clip-path: inset(0 0 8px 0);
+  }
+}
+
+</style>
+<style id="weekly-preview-teaser-style">
+:root{
+  --teal:#3ecf8e;
+  --red:#e2604f;
+}
+
+.signal{
+  --signal-color:var(--amber);
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  min-height:100%;
+  overflow:hidden;
+  padding:25px 23px 21px;
+  border-color:color-mix(
+    in srgb,
+    var(--signal-color) 25%,
+    var(--line)
+  );
+  background:
+    radial-gradient(
+      circle at 92% 4%,
+      color-mix(in srgb,var(--signal-color) 9%,transparent),
+      transparent 29%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.025),
+      rgba(255,255,255,.007)
+    );
+  transition:
+    transform .2s ease,
+    border-color .2s ease;
+}
+
+.signal:nth-child(2){
+  --signal-color:var(--teal);
+}
+
+.signal:nth-child(3){
+  --signal-color:var(--red);
+}
+
+.signal::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:3px;
+  background:linear-gradient(
+    90deg,
+    var(--signal-color),
+    color-mix(in srgb,var(--signal-color) 18%,transparent) 64%,
+    transparent
+  );
+}
+
+.signal::after{
+  content:attr(data-signal-number);
+  position:absolute;
+  top:15px;
+  right:18px;
+  color:var(--signal-color);
+  font:700 45px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:-.08em;
+  opacity:.07;
+  pointer-events:none;
+}
+
+.signal > *{
+  position:relative;
+  z-index:1;
+}
+
+.signal-topline{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding-right:50px;
+}
+
+.signal-number{
+  color:var(--signal-color);
+}
+
+.signal-confidence{
+  padding:3px 6px;
+  border:1px solid color-mix(
+    in srgb,
+    var(--signal-color) 46%,
+    transparent
+  );
+  border-radius:999px;
+  color:var(--signal-color);
+  font:700 7.5px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+
+.signal h3{
+  font-size:19px;
+  line-height:1.3;
+}
+
+.signal p{
+  margin-bottom:20px;
+}
+
+.signal-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:7px 12px;
+  margin-top:auto;
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.07);
+  color:var(--dim);
+  font:700 8px/1.35 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.signal-footer span:last-child{
+  color:var(--signal-color);
+}
+
+.audio{
+  position:relative;
+  overflow:hidden;
+  padding:30px;
+  border-color:rgba(242,169,59,.3);
+  background:
+    radial-gradient(
+      circle at 90% 0,
+      rgba(242,169,59,.12),
+      transparent 24rem
+    ),
+    var(--panel);
+}
+
+.audio::before{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width:3px;
+  background:var(--amber);
+}
+
+.audio h3{
+  font-size:clamp(23px,3vw,30px);
+}
+
+.audio p{
+  max-width:680px;
+  font-size:14px;
+  line-height:1.65;
+}
+
+.podcast-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:18px;
+  padding:12px 15px;
+  border:1px solid var(--amber);
+  border-radius:8px;
+  background:var(--amber);
+  color:#14171c;
+  font-size:12px;
+  font-weight:800;
+  text-decoration:none;
+}
+
+.podcast-cta[aria-disabled="true"]{
+  border-color:var(--line);
+  background:transparent;
+  color:var(--dim);
+  cursor:default;
+}
+
+.podcast-schedule{
+  margin-top:10px;
+  color:var(--amber);
+  font:700 8.5px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.audio-state{
+  border-color:rgba(242,169,59,.35);
+  color:var(--amber);
+}
+
+@media(hover:hover) and (min-width:761px){
+  .signal:hover{
+    transform:translateY(-3px);
+    border-color:color-mix(
+      in srgb,
+      var(--signal-color) 48%,
+      var(--line)
+    );
+  }
+}
+
+@media(max-width:560px){
+  .signal{
+    padding:22px 19px 19px;
+  }
+
+  .audio{
+    padding:24px 20px;
+  }
+}
+</style>
+<style id="weekly-preview-hybrid-metrics-style">
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-top:0;
+  border-radius:0 0 16px 16px;
+  background:
+    linear-gradient(
+      180deg,
+      #171c22,
+      #14191f
+    );
+}
+
+.metrics .metric,
+.metrics .metric:first-child{
+  display:grid;
+  grid-template-columns:minmax(105px,138px) minmax(0,1fr);
+  align-items:center;
+  gap:22px;
+  min-width:0;
+  min-height:158px;
+  padding:29px 27px;
+  border-right:1px solid var(--line);
+  border-bottom:0;
+}
+
+.metrics .metric:last-child{
+  border-right:0;
+}
+
+.metrics .number{
+  width:100%;
+  color:var(--ink);
+  font-size:clamp(42px,4.5vw,60px);
+  line-height:1;
+  text-align:center;
+}
+
+.metric-copy{
+  min-width:0;
+}
+
+.metrics .label{
+  margin:0;
+  color:var(--amber);
+  font-size:11.5px;
+  line-height:1.35;
+  letter-spacing:.1em;
+}
+
+.metric-description{
+  max-width:24ch;
+  margin-top:8px;
+  color:var(--dim);
+  font-size:12.5px;
+  line-height:1.48;
+}
+
+@media(max-width:900px){
+  .metrics .metric,
+  .metrics .metric:first-child{
+    grid-template-columns:1fr;
+    align-content:center;
+    gap:12px;
+    padding:25px 18px;
+    text-align:center;
+  }
+
+  .metric-description{
+    margin:7px auto 0;
+  }
+}
+
+@media(max-width:560px){
+  .metrics{
+    grid-template-columns:1fr;
+  }
+
+  .metrics .metric,
+  .metrics .metric:first-child{
+    grid-template-columns:94px minmax(0,1fr);
+    gap:15px;
+    min-height:0;
+    padding:21px 18px;
+    border-right:0;
+    border-bottom:1px solid var(--line);
+    text-align:left;
+  }
+
+  .metrics .metric:last-child{
+    border-bottom:0;
+  }
+
+  .metrics .number{
+    font-size:39px;
+  }
+
+  .metric-description{
+    max-width:none;
+    margin:6px 0 0;
+  }
+}
+</style>
+<style id="weekly-preview-conversion-style">
+h1,
+h2,
+h3{
+  text-wrap:balance;
+}
+
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:20;
+  backdrop-filter:blur(14px);
+}
+
+.topbar-nav{
+  display:flex;
+  align-items:center;
+  gap:22px;
+}
+
+.topbar-nav a{
+  color:var(--dim);
+  font-size:11px;
+  text-decoration:none;
+}
+
+.topbar-nav a:hover{
+  color:var(--ink);
+}
+
+.topbar-nav .early-link{
+  padding:9px 12px;
+  border:1px solid rgba(242,169,59,.48);
+  border-radius:7px;
+  color:var(--amber);
+  font-weight:800;
+}
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  padding:68px 0 44px;
+  background:
+    linear-gradient(90deg,rgba(16,19,24,.98) 0%,rgba(16,19,24,.9) 57%,rgba(16,19,24,.3) 100%),
+    radial-gradient(circle at 84% 30%,rgba(242,169,59,.16),transparent 24rem);
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  top:-110px;
+  right:-145px;
+  width:470px;
+  height:470px;
+  border:1px solid rgba(242,169,59,.14);
+  border-radius:50%;
+  box-shadow:
+    0 0 0 65px rgba(242,169,59,.025),
+    0 0 0 130px rgba(242,169,59,.018);
+  pointer-events:none;
+}
+
+.hero .shell{
+  position:relative;
+  z-index:1;
+}
+
+h1{
+  max-width:1040px;
+  margin-top:20px;
+  font-size:clamp(41px,5.5vw,58px);
+  line-height:1.02;
+}
+
+h1 span{
+  color:var(--amber);
+}
+
+.hero-line{
+  display:block;
+  white-space:nowrap;
+}
+
+.hero-line-primary{
+  color:var(--ink);
+}
+
+.hero-line-accent{
+  color:var(--amber);
+}
+
+.deck{
+  max-width:760px;
+  margin-top:20px;
+  font-size:18px;
+  line-height:1.58;
+  text-wrap:pretty;
+}
+
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px 18px;
+  margin-top:23px;
+}
+
+.hero-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:11px 15px;
+  border:1px solid var(--amber);
+  border-radius:8px;
+  background:var(--amber);
+  color:#14171c;
+  font-size:12px;
+  font-weight:850;
+  text-decoration:none;
+}
+
+.hero-text-link{
+  color:var(--soft);
+  font-size:12px;
+  font-weight:750;
+  text-decoration:none;
+}
+
+.hero-text-link:hover{
+  color:var(--amber);
+}
+
+.hero-meta{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:9px 18px;
+  margin-top:22px;
+}
+
+.issue{
+  margin:0;
+}
+
+.audience{
+  color:var(--dim);
+  font:650 9px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+
+.audience::before{
+  content:"";
+  display:inline-block;
+  width:18px;
+  height:1px;
+  margin:0 10px 3px 0;
+  background:var(--line);
+}
+
+.metrics{
+  position:relative;
+  z-index:2;
+  margin-top:-1px;
+}
+
+.method{
+  display:grid;
+  grid-template-columns:minmax(220px,1.25fr) repeat(3,minmax(0,1fr));
+  gap:0;
+  margin-top:34px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:rgba(255,255,255,.012);
+  overflow:hidden;
+}
+
+.method-intro,
+.method-step{
+  padding:19px 21px;
+}
+
+.method-intro{
+  color:var(--ink);
+  font-size:14px;
+  font-weight:800;
+  line-height:1.4;
+}
+
+.method-step{
+  border-left:1px solid var(--line);
+}
+
+.method-step strong{
+  display:block;
+  color:var(--amber);
+  font:750 8px/1.3 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.method-step span{
+  display:block;
+  margin-top:6px;
+  color:var(--dim);
+  font-size:11.5px;
+  line-height:1.45;
+}
+
+.section-heading-row{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:28px;
+}
+
+.section-note{
+  max-width:345px;
+  margin:0;
+  color:var(--dim);
+  font-size:12.5px;
+  line-height:1.55;
+  text-wrap:pretty;
+}
+
+.lead{
+  padding:31px;
+}
+
+.lead-meta{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+}
+
+.lead-pill{
+  padding:4px 7px;
+  border:1px solid rgba(242,169,59,.35);
+  border-radius:999px;
+  color:var(--amber);
+  font:700 7.5px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.lead-copy-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-top:21px;
+}
+
+.lead-copy-grid p{
+  margin:0;
+  padding:18px;
+  border:1px solid rgba(255,255,255,.065);
+  border-radius:9px;
+  background:rgba(0,0,0,.12);
+}
+
+.preview-bridge{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+  margin-top:17px;
+  padding:17px 19px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  color:var(--dim);
+  font-size:12.5px;
+}
+
+.preview-bridge strong{
+  color:var(--soft);
+}
+
+.preview-bridge a{
+  flex:0 0 auto;
+  color:var(--amber);
+  font-size:11px;
+  font-weight:800;
+  text-decoration:none;
+}
+
+.decision-preview{
+  position:relative;
+}
+
+.decision-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:27px;
+}
+
+.decision-card{
+  --decision-color:var(--red);
+  position:relative;
+  min-height:230px;
+  padding:27px 25px 25px;
+  border:1px solid color-mix(
+    in srgb,
+    var(--decision-color) 35%,
+    var(--line)
+  );
+  border-radius:14px;
+  background:
+    radial-gradient(
+      circle at 96% 3%,
+      color-mix(in srgb,var(--decision-color) 13%,transparent),
+      transparent 18rem
+    ),
+    rgba(255,255,255,.014);
+  overflow:hidden;
+}
+
+.decision-card:only-child{
+  grid-column:1/-1;
+}
+
+.decision-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto;
+  height:3px;
+  background:linear-gradient(
+    90deg,
+    var(--decision-color),
+    transparent 72%
+  );
+}
+
+.decision-upside{
+  --decision-color:var(--teal);
+}
+
+.decision-label{
+  color:var(--decision-color);
+  font:750 8.5px/1.3 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.decision-card h3{
+  margin:12px 0 0;
+  font-size:clamp(21px,2.6vw,28px);
+  line-height:1.22;
+  letter-spacing:-.025em;
+}
+
+.decision-card p{
+  margin:15px 0 0;
+  color:var(--dim);
+  font-size:13px;
+  line-height:1.65;
+}
+
+.decision-lock{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+  margin-top:14px;
+  padding:17px 19px;
+  border:1px dashed rgba(242,169,59,.3);
+  border-radius:9px;
+  background:rgba(242,169,59,.035);
+  color:var(--dim);
+  font-size:12px;
+}
+
+.decision-lock strong{
+  color:var(--soft);
+}
+
+.decision-lock a{
+  flex:0 0 auto;
+  color:var(--amber);
+  font-size:11px;
+  font-weight:800;
+  text-decoration:none;
+}
+
+.product-compare{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:14px;
+  margin-top:27px;
+}
+
+.full-briefing-heading{
+  max-width:none;
+}
+
+@media(min-width:761px){
+  .full-briefing-heading{
+    font-size:clamp(30px,3.7vw,41px);
+    white-space:nowrap;
+  }
+}
+
+.tier{
+  padding:27px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:rgba(255,255,255,.014);
+}
+
+.tier-full{
+  position:relative;
+  border-color:rgba(242,169,59,.35);
+  background:
+    radial-gradient(circle at 100% 0,rgba(242,169,59,.12),transparent 21rem),
+    linear-gradient(145deg,rgba(242,169,59,.055),rgba(255,255,255,.01));
+  overflow:hidden;
+}
+
+.tier-full::before{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width:3px;
+  background:var(--amber);
+}
+
+.tier h3{
+  margin:8px 0 0;
+  font-size:23px;
+  line-height:1.22;
+}
+
+.tier p{
+  margin:11px 0 0;
+  color:var(--dim);
+  font-size:12.5px;
+}
+
+.tier ul{
+  margin:20px 0 0;
+  padding:0;
+  list-style:none;
+}
+
+.tier li{
+  position:relative;
+  margin-top:10px;
+  padding-left:18px;
+  color:var(--soft);
+  font-size:12.5px;
+}
+
+.tier li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.68em;
+  width:7px;
+  height:2px;
+  background:var(--amber);
+}
+
+.tier-preview li::before{
+  background:var(--dim);
+}
+
+.cta{
+  position:relative;
+  overflow:hidden;
+  padding:44px 34px;
+}
+
+.cta .cta-heading{
+  max-width:1000px;
+  font-size:clamp(30px,4vw,44px);
+  line-height:1.06;
+}
+
+.cta-heading-line{
+  display:inline;
+  white-space:normal;
+}
+
+@media(min-width:901px){
+  .cta-heading-line{
+    display:block;
+    white-space:nowrap;
+  }
+}
+
+.cta::before{
+  content:"EARLY ACCESS";
+  position:absolute;
+  top:15px;
+  left:17px;
+  color:var(--amber);
+  font:750 7.5px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.14em;
+}
+
+.cta-benefits{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:7px;
+  margin-top:19px;
+}
+
+.cta-benefits span{
+  padding:6px 9px;
+  border:1px solid rgba(255,255,255,.085);
+  border-radius:999px;
+  color:var(--soft);
+  font:700 8px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.cta-button{
+  appearance:none;
+  -webkit-appearance:none;
+  cursor:pointer;
+  font-family:inherit;
+  min-width:220px;
+  min-height:48px;
+}
+
+.cta-button:hover:not([aria-disabled="true"]),
+.hero-button:hover{
+  filter:brightness(1.06);
+  transform:translateY(-1px);
+}
+
+.audio{
+  border-color:var(--line);
+  background:var(--panel);
+}
+
+.audio::before{
+  background:var(--line);
+}
+
+.podcast-cta{
+  border-color:var(--line);
+  background:transparent;
+  color:var(--soft);
+}
+
+.audio-state{
+  border-color:var(--line);
+  color:var(--dim);
+}
+
+@media(max-width:900px){
+  .method{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .method-step{
+    border-left:1px solid var(--line);
+  }
+
+  .method-step:nth-child(3){
+    border-left:0;
+    border-top:1px solid var(--line);
+  }
+
+  .method-step:nth-child(4){
+    border-top:1px solid var(--line);
+  }
+}
+
+@media(max-width:760px){
+  .topbar-nav a:not(.early-link){
+    display:none;
+  }
+
+  h1{
+    text-wrap:balance;
+  }
+
+  .hero-line{
+    display:inline;
+    white-space:normal;
+  }
+
+  .section-heading-row{
+    display:block;
+  }
+
+  .section-note{
+    margin-top:13px;
+  }
+
+  .lead-copy-grid,
+  .product-compare,
+  .decision-grid{
+    grid-template-columns:1fr;
+  }
+
+  .preview-bridge{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .decision-lock{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:10px;
+  }
+}
+
+@media(max-width:560px){
+  .brand-copy small{
+    display:none;
+  }
+
+  .topbar-inner{
+    min-height:61px;
+  }
+
+  .topbar-nav{
+    gap:0;
+  }
+
+  .topbar-nav .early-link{
+    padding:8px 9px;
+    font-size:9.5px;
+  }
+
+  .hero{
+    padding:44px 0 34px;
+  }
+
+  h1{
+    font-size:clamp(39px,12vw,49px);
+  }
+
+  .deck{
+    font-size:15.5px;
+  }
+
+  .hero-actions{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .hero-meta{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:7px;
+  }
+
+  .audience::before{
+    display:none;
+  }
+
+  .method{
+    grid-template-columns:1fr;
+  }
+
+  .method-step,
+  .method-step:nth-child(3),
+  .method-step:nth-child(4){
+    border-top:1px solid var(--line);
+    border-left:0;
+  }
+
+  .lead-copy-grid{
+    gap:10px;
+  }
+
+  .tier{
+    padding:23px 19px;
+  }
+
+  .cta{
+    padding:40px 19px 26px;
+  }
+}
+</style>
+
+<!-- MAILERLITE_WEEKLY_EARLY_ACCESS_VERSION: 1.0 -->
+<!-- MailerLite Universal -->
+<script id="mailerlite-universal">
+(function(w,d,e,u,f,l,n){
+  w[f]=w[f]||function(){
+    (w[f].q=w[f].q||[]).push(arguments);
+  };
+  l=d.createElement(e);
+  l.async=1;
+  l.src=u;
+  n=d.getElementsByTagName(e)[0];
+  n.parentNode.insertBefore(l,n);
+})(
+  window,
+  document,
+  'script',
+  'https://assets.mailerlite.com/js/universal.js',
+  'ml'
+);
+ml('account', '2605487');
+</script>
+<!-- End MailerLite Universal -->
+
+</head>
+<body>
+<header class="topbar"><div class="shell topbar-inner"><a class="brand" href="https://autointel.news"><span class="mark">AI</span><span class="brand-copy">AutoIntel.News<small>Automotive intelligence</small></span></a><nav class="topbar-nav" aria-label="Weekly preview navigation"><a href="#weekly-preview">This week</a><a href="#full-briefing">The Full Briefing</a><a href="https://autointel.news">Daily intelligence →</a><a class="early-link ml-onclick-form" href="#early-access" onclick="window.ml('show', 'EQNBDs', true); return false;" aria-haspopup="dialog">Join early access</a></nav></div></header>
+<div id="loading">Loading this week’s intelligence preview…</div><div id="app" hidden></div>
+<script>
+const CONFIG={dataUrls:["data/weekly_preview.json","./weekly_preview.json"],earlyAccessUrl:"",podcast:{landingUrl:"https://rss.com/podcasts/autointelnews/",embedUrl:"https://player.rss.com/autointelnews/latest?theme=dark&v=2",appleUrl:"https://podcasts.apple.com/us/podcast/autointel-news-weekly/id6807033776",spotifyUrl:""}};
+const esc=value=>String(value??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;").replace(/'/g,"&#039;");
+async function loadData(){let last;for(const url of CONFIG.dataUrls){try{const response=await fetch(url,{cache:"no-store"});if(!response.ok)throw new Error(`${url} returned ${response.status}`);return await response.json()}catch(error){last=error}}throw last||new Error("Preview data could not be loaded.")}
+function issueDate(raw){const dates=String(raw||"").match(/\d{4}-\d{2}-\d{2}/g);const ending=dates?.at(-1);if(!ending)return raw||"Current reporting week";const date=new Date(`${ending}T00:00:00Z`);return `Week ending ${new Intl.DateTimeFormat("en-US",{month:"long",day:"numeric",year:"numeric",timeZone:"UTC"}).format(date)}`}
+function audioHTML(){const p=CONFIG.podcast;const links=[["Apple Podcasts",p.appleUrl],["Spotify",p.spotifyUrl]].filter(([,url])=>url);return `<div class="audio${p.embedUrl?" audio--embedded":""}"><div><div class="kicker">AutoIntel.News Weekly · Public podcast</div><h3>Hear the week’s essential signals</h3><p>The public edition is a concise way to sample the editorial approach. The complete analysis and private audio briefing remain part of The Full Briefing.</p>${p.landingUrl?`<a class="podcast-cta" href="${esc(p.landingUrl)}" target="_blank" rel="noopener">Listen to AutoIntel.News Weekly</a>`:""}${links.length?`<div class="audio-links">${links.map(([label,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join("")}</div>`:""}</div><div class="audio-state">${(links.length||p.embedUrl||p.landingUrl)?"Listen now":"Distribution links coming soon"}</div>${p.embedUrl?`<iframe class="audio-frame" src="${esc(p.embedUrl)}" title="AutoIntel.News Weekly podcast player" loading="lazy" height="202" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="no"></iframe>`:""}</div>`}
+function render(data){const issue=issueDate(data.reporting_week);document.title=`AutoIntel Weekly — ${issue}`;const metrics=data.metrics||{};const signals=Array.isArray(data.signals)?data.signals:[];const lead=data.lead_development||{};const decision=data.decision_support_preview||{};const downside=decision.downside||{};const upside=decision.upside||{};const hasDecisionPreview=Boolean(downside.title||upside.title);const signupReady=Boolean(CONFIG.earlyAccessUrl);const signupHref=signupReady?CONFIG.earlyAccessUrl:"#early-access";const leadIsTrend=lead.type==="emerging_trend";const leadLabel=leadIsTrend?"Emerging trend":"Major development";const leadHeading=leadIsTrend?"A shift worth understanding now":"One development worth understanding now";const evidenceCount=Number(lead.evidence_count||0);const confidence=String(lead.confidence||"").trim();
+document.getElementById("app").innerHTML=`<main><section class="hero"><div class="shell"><div class="eyebrow">AutoIntel Weekly · Public Intelligence Preview</div><h1><span class="hero-line hero-line-primary">See the shifts shaping the auto industry</span> <span class="hero-line hero-line-accent">before they become&nbsp;obvious.</span></h1><p class="deck">A weekly briefing that turns hundreds of automotive reports into the developments, risks and opportunities most likely to matter to industry decision-makers.</p><div class="hero-meta"><div class="issue">${esc(issue)}</div><div class="audience">For dealers · OEM teams · suppliers · automotive professionals</div></div></div></section>
+<div class="shell metrics">
+<div class="metric"><div class="number">${esc(metrics.article_count??"—")}</div><div class="metric-copy"><div class="label">Articles analyzed</div><div class="metric-description">The reporting base behind this edition</div></div></div>
+<div class="metric"><div class="number">${esc(metrics.major_development_count??"—")}</div><div class="metric-copy"><div class="label">High-impact developments</div><div class="metric-description">The shifts carrying the most weight</div></div></div>
+<div class="metric"><div class="number">${esc(metrics.cross_source_count??"—")}</div><div class="metric-copy"><div class="label">Cross-source confirmations</div><div class="metric-description">Patterns supported across coverage</div></div></div>
+</div>
+<div class="shell"><div class="method" aria-label="AutoIntel weekly intelligence method"><div class="method-intro">From a week of reporting to one connected view.</div><div class="method-step"><strong>01 · Scan</strong><span>Monitor automotive reporting across the industry.</span></div><div class="method-step"><strong>02 · Connect</strong><span>Identify convergence, contradictions and momentum.</span></div><div class="method-step"><strong>03 · Interpret</strong><span>Surface the implications and what to watch next.</span></div></div></div>
+<div class="shell content" id="weekly-preview"><section class="section"><div class="kicker">The week in one view</div><h2>What changed—and how the pieces connect.</h2><div class="summary">${esc(data.executive_preview||"No executive preview is available for this edition.")}</div></section>
+<section class="section"><div class="section-heading-row"><div><div class="kicker">One analysis fully unlocked</div><h2>${esc(leadHeading)}</h2></div><p class="section-note">A complete example of how AutoIntel moves from an observed development to the reason it matters.</p></div><article class="lead"><div class="lead-meta"><div class="kicker">${esc(leadLabel)}</div>${confidence?`<span class="lead-pill">${esc(confidence)} confidence</span>`:""}${evidenceCount?`<span class="lead-pill">${evidenceCount} supporting report${evidenceCount===1?"":"s"}</span>`:""}</div><h3>${esc(lead.title||"This week’s lead development")}</h3><div class="lead-copy-grid">${lead.what_happened?`<p><span class="copy-label">What happened</span>${esc(lead.what_happened)}</p>`:""}${lead.why_it_matters?`<p><span class="copy-label">Why it matters</span>${esc(lead.why_it_matters)}</p>`:""}</div></article></section>
+<section class="section"><div class="section-heading-row"><div><div class="kicker">Three more signals to watch</div><h2>Where momentum is building.</h2></div><p class="section-note">Concise public signals drawn from this week’s highest-impact automotive developments.</p></div><div class="signals">${signals.map((signal,index)=>{
+const number=String(index+1).padStart(2,"0");
+const reports=Number(signal.evidence_count||0);
+const confidence=String(signal.confidence||"").trim();
+const type=String(signal.signal_type||"Industry signal").trim();
+return `<article class="signal weekly-preview-signal-meta" data-signal-number="${number}"><div class="signal-topline"><div class="signal-number">Signal ${number}</div>${confidence?`<span class="signal-confidence">${esc(confidence)} confidence</span>`:""}</div><h3>${esc(signal.title)}</h3><p>${esc(signal.teaser)}</p><div class="signal-footer">${reports?`<span>${reports} supporting report${reports===1?"":"s"}</span>`:"<span>Developing signal</span>"}<span>${esc(type)}</span></div></article>`;
+}).join("")}</div><div class="preview-bridge"><span><strong>This preview shows the signals.</strong> The Full Briefing connects them to commercial implications, risks and opportunities.</span><a href="#full-briefing">See what the full briefing adds →</a></div></section>
+${hasDecisionPreview?`<section class="section decision-preview"><div class="section-heading-row"><div><div class="kicker">Decision support · Sneak preview</div><h2>The downside and upside taking&nbsp;shape.</h2></div><p class="section-note">One risk and one opportunity surfaced from this week’s analysis. The deeper implications stay inside The Full Briefing.</p></div><div class="decision-grid">${downside.title?`<article class="decision-card decision-downside"><div class="decision-label">Risk signal</div><h3>${esc(downside.title)}</h3>${downside.teaser?`<p>${esc(downside.teaser)}</p>`:""}</article>`:""}${upside.title?`<article class="decision-card decision-upside"><div class="decision-label">Opportunity signal</div><h3>${esc(upside.title)}</h3>${upside.teaser?`<p>${esc(upside.teaser)}</p>`:""}</article>`:""}</div><div class="decision-lock"><span><strong>The decision layer continues in The Full Briefing</strong> with complete implications, supporting evidence and what-to-watch indicators.</span><a href="#full-briefing">Explore the full briefing →</a></div></section>`:""}
+<section class="section" id="full-briefing"><div class="kicker">The decision layer</div><h2 class="full-briefing-heading">Beyond the headlines: what the week means.</h2><div class="product-compare"><article class="tier tier-preview"><div class="kicker">Public preview</div><h3>A clear view of the week</h3><p>Enough intelligence to understand the direction of travel.</p><ul><li>The week’s governing signal</li><li>One fully unlocked analysis</li><li>Three concise signals to watch</li><li>The public weekly podcast</li></ul></article><article class="tier tier-full"><div class="kicker">The Full Briefing</div><h3>Decision-ready written and audio intelligence</h3><p>For professionals who need the cross-industry picture without spending hours assembling it.</p><ul>${(data.full_briefing_includes||[]).map(item=>`<li>${esc(item)}</li>`).join("")}</ul></article></div><div class="cta" id="early-access"><h2 class="cta-heading"><span class="cta-heading-line">Get the intelligence behind the week—</span> <span class="cta-heading-line">not another pile of headlines.</span></h2><p>Join early access to be first in line for the complete written briefing, private audio edition and founding-member rate when AutoIntel Weekly launches.</p><div class="cta-benefits"><span>Written intelligence</span><span>Private audio briefing</span><span>Founding-member access</span></div><button class="cta-button ml-onclick-form" type="button" onclick="window.ml('show', 'EQNBDs', true)" aria-label="Join the AutoIntel Weekly early-access list" aria-haspopup="dialog">Join the Early Access List</button><div class="founder-note">Early-access signup is now open</div></div></section>
+<section class="section"><div class="kicker">Listen first</div><h2>Sample the editorial approach.</h2>${audioHTML()}</section></div></main>
+<footer class="footer"><div class="shell footer-inner"><div>AutoIntel.news · Automotive intelligence</div><div>${esc(issue)}</div></div></footer>`;document.getElementById("loading").remove();document.getElementById("app").hidden=false}
+loadData().then(render).catch(error=>{document.getElementById("loading")?.remove();const box=document.createElement("div");box.className="error";box.textContent=`AUTOINTEL WEEKLY PREVIEW\n\nUnable to load the public preview.\n\n${error.message}`;document.body.appendChild(box)});
+</script>
+
+<script id="autointel-ga4-early-access-tracking">
+(function () {
+  'use strict';
+
+  const measurementId = 'G-GFL6J09QZV';
+  const mailerLiteFormId = 'EQNBDs';
+  const hostname = window.location.hostname.toLowerCase();
+
+  const isProduction =
+    hostname === 'autointel.news' ||
+    hostname === 'www.autointel.news';
+
+  const pageType =
+    window.location.pathname.indexOf('/weekly') === 0
+      ? 'weekly_preview'
+      : 'homepage';
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.gtag = window.gtag || function () {
+    window.dataLayer.push(arguments);
+  };
+
+  if (isProduction) {
+    const existingLoader = document.querySelector(
+      'script[src*="googletagmanager.com/gtag/js"]'
+    );
+
+    if (!existingLoader) {
+      const loader = document.createElement('script');
+      loader.async = true;
+      loader.src =
+        'https://www.googletagmanager.com/gtag/js?id='
+        + encodeURIComponent(measurementId);
+
+      const firstScript = document.querySelector('script');
+
+      if (firstScript && firstScript.parentNode) {
+        firstScript.parentNode.insertBefore(loader, firstScript);
+      } else {
+        document.head.appendChild(loader);
+      }
+    }
+
+    const alreadyConfigured = window.dataLayer.some(
+      function (entry) {
+        return (
+          entry &&
+          entry[0] === 'config' &&
+          entry[1] === measurementId
+        );
+      }
+    );
+
+    if (!alreadyConfigured) {
+      window.gtag('js', new Date());
+      window.gtag('config', measurementId);
+    }
+  }
+
+  function identifyLocation(trigger) {
+    if (trigger.classList.contains('early-link')) {
+      return 'weekly_navigation';
+    }
+
+    if (trigger.classList.contains('cta-button')) {
+      return 'weekly_full_briefing_cta';
+    }
+
+    if (
+      trigger.classList.contains(
+        'weekly-home__banner-button--primary'
+      )
+    ) {
+      return 'homepage_weekly_banner';
+    }
+
+    return pageType;
+  }
+
+  function sendEvent(eventName, parameters) {
+    if (isProduction) {
+      window.gtag('event', eventName, parameters);
+      return;
+    }
+
+    console.info(
+      '[AutoIntel GA4 preview]',
+      eventName,
+      parameters
+    );
+  }
+
+  document.addEventListener(
+    'click',
+    function (event) {
+      const origin =
+        event.target instanceof Element
+          ? event.target
+          : null;
+
+      const trigger = origin
+        ? origin.closest('.ml-onclick-form')
+        : null;
+
+      if (!trigger) {
+        return;
+      }
+
+      sendEvent('early_access_form_open', {
+        form_id: mailerLiteFormId,
+        form_name: 'autointel_weekly_early_access',
+        form_location: identifyLocation(trigger),
+        page_type: pageType
+      });
+    },
+    true
+  );
+
+  const currentUrl = new URL(window.location.href);
+
+  if (
+    currentUrl.searchParams.get('early_access') ===
+    'confirmed'
+  ) {
+    sendEvent('generate_lead', {
+      form_id: mailerLiteFormId,
+      form_name: 'autointel_weekly_early_access',
+      lead_source: 'mailerlite_double_opt_in',
+      page_type: pageType
+    });
+
+    currentUrl.searchParams.delete('early_access');
+
+    const remainingQuery =
+      currentUrl.searchParams.toString();
+
+    const cleanedUrl =
+      currentUrl.pathname
+      + (remainingQuery ? '?' + remainingQuery : '')
+      + currentUrl.hash;
+
+    window.history.replaceState(
+      {},
+      document.title,
+      cleanedUrl
+    );
+  }
+})();
+</script>
+</body>
+</html>
