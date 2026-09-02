@@ -4789,12 +4789,30 @@ h1.weekly-home__banner-title{
 }
 
 @media(max-width:390px){
+  .weekly-home.weekly-home--compact
+  h1.weekly-home__banner-title{
+    font-size:24px !important;
+    line-height:1.14 !important;
+    letter-spacing:-.025em !important;
+    white-space:normal !important;
+    overflow-wrap:break-word !important;
+    word-break:normal !important;
+  }
+
   .weekly-home__banner-title br{
-    display:none;
+    display:block;
+  }
+
+  .weekly-home__banner-title span{
+    display:block;
   }
 
   .weekly-home__banner-title span::before{
-    content:" ";
+    content:none;
+  }
+
+  .weekly-home__banner-copy{
+    overflow:visible;
   }
 
   .weekly-home__banner-metrics{
