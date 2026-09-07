@@ -1,53 +1,53 @@
 {
   "preview_version": "1.3",
-  "reporting_week": "2026-08-24 to 2026-08-30",
+  "reporting_week": "2026-08-31 to 2026-09-06",
   "metrics": {
-    "article_count": 500,
+    "article_count": 482,
     "ai_sample_count": 100,
-    "major_development_count": 3,
-    "cross_source_count": 5,
+    "major_development_count": 4,
+    "cross_source_count": 3,
     "emerging_trend_count": 3
   },
-  "executive_preview": "The clearest industry signal this week is a move from EV-only planning toward powertrain flexibility. Hyundai is expanding battery-electric vehicles while adding extended-range EVs, hybrids and combustion-powered products; Honda is considering making the Accord and CR-V hybrid-only; Volvo is increasing long-range PHEV emphasis; and UK policymakers are reviewing ZEV targets amid manufacturing-cost concerns. This is not a retreat from electrification, but a more pragmatic attempt to match product mix with consumer adoption, infrastructure and regional regulation.",
+  "executive_preview": "The clearest signal this week is a widening split in automotive electrification. Affordable EVs are moving closer to market in Europe and the United States, while premium brands are using electrification to increase performance and preserve brand identity. Nissan's reported Wave, Ford's Fathom and Slate target the affordability gap, but their commercial significance depends on whether manufacturers can deliver at scale and with acceptable equipment.",
   "lead_development": {
     "type": "emerging_trend",
-    "title": "Performance differentiation is shifting from horsepower toward character and weight",
-    "what_happened": "Mercedes-AMG is using simulated engine sound and advanced torque vectoring in the electric CLA 45; Lotus is developing V6 and V8 hybrids with a 1.5-tonne target; Ferrari is reportedly testing a lighter, potentially non-hybrid 296 derivative; and Toyota is pursuing hybrid sports cars under an expanded GR brand.",
-    "why_it_matters": "As electric power makes extreme acceleration more accessible, premium performance brands are looking for differentiation through sound, mechanical engagement, low mass, aerodynamics and exclusivity. Ferrari's program remains unconfirmed, so it should be treated as a watch item rather than a confirmed strategy.",
-    "confidence": "medium",
-    "evidence_count": 4
+    "title": "Battery-health data is becoming commercially relevant to used-EV valuation",
+    "what_happened": "AVILOO's reported 500,000-plus tests found generally moderate degradation across 20 EV models, but meaningful differences by model. At 150,000 km, median battery health was reported at 90.32% for the Tesla Model Y, 88.94% for the Model 3, 93.79% for the Hyundai Ioniq 5 and 92.53% for the Mustang Mach-E.",
+    "why_it_matters": "Independent battery state-of-health measurement could reduce uncertainty in used-EV pricing, trade-in appraisal, warranty decisions and financing. The results also challenge the assumption that all EV batteries have similar residual performance.",
+    "confidence": "high",
+    "evidence_count": 2
   },
   "signals": [
     {
-      "title": "Hyundai expands a multi-powertrain product offensive through 2030",
-      "teaser": "Hyundai and Genesis outlined a major launch program, including 41 new or refreshed models in Europe, 58 North American launches and more than 100 global launches or substantial updates by 2030.",
+      "title": "Tesla Begins Limited Public Cybercab Operations While Robotaxi Scale Remains Unproven",
+      "teaser": "Tesla opened public rides in its steering-wheel-free, pedal-free Cybercab in Austin.",
       "confidence": "high",
-      "evidence_count": 3,
+      "evidence_count": 5,
       "signal_type": "Industry signal"
     },
     {
-      "title": "Automakers are repositioning hybrids and EREVs as adoption bridges",
-      "teaser": "Volvo said it will expand long-range PHEVs because pure-EV adoption is slower than expected.",
-      "confidence": "high",
-      "evidence_count": 3,
+      "title": "Affordable EV Competition Is Moving Toward a Sub-$30,000 Price Band",
+      "teaser": "Ford reaffirmed a 2027 launch for the Fathom electric midsize truck at a reported $28,350 starting price, Slate reportedly offered selected preorder customers December delivery windows at $26,400 including destination, and Nissan's reported Wave is targeted below €20,000 in Europe.",
+      "confidence": "medium",
+      "evidence_count": 4,
       "signal_type": "Industry signal"
     },
     {
-      "title": "Battery manufacturing capacity is being redirected toward stationary storage",
-      "teaser": "Ford, GM and Tesla are expanding stationary battery-storage activities as EV demand and vehicle plans fall short of earlier expectations.",
+      "title": "Premium Automakers Are Using EVs to Increase Performance Rather Than Simply Replace Engines",
+      "teaser": "Bentley said its first EV, the Torcal, will be its most powerful and fastest-accelerating production model.",
       "confidence": "high",
-      "evidence_count": 2,
-      "signal_type": "Production strategy"
+      "evidence_count": 5,
+      "signal_type": "Industry signal"
     }
   ],
   "decision_support_preview": {
     "downside": {
-      "title": "Powertrain complexity may increase retail, service and residual-value uncertainty",
-      "teaser": "Automakers are expanding combinations of BEV, PHEV, EREV, hybrid and ICE products while software and battery systems become more sophisticated."
+      "title": "Autonomous-driving liability and transparency exposure is increasing for Tesla and the wider ADAS market.",
+      "teaser": "Electrek and Yahoo Autos reported multiple fatal crashes in which Tesla data indicated driver-assistance engagement, alongside a confidential settlement that avoided a jury trial."
     },
     "upside": {
-      "title": "Use EREVs and long-range PHEVs to expand electrified sales without requiring full BEV readiness",
-      "teaser": "Hyundai, Genesis and Volvo are positioning range-extended or long-range plug-in products as EV-like vehicles with reduced range anxiety."
+      "title": "Battery-health certification could improve used-EV appraisal and customer confidence.",
+      "teaser": "The AVILOO dataset demonstrates scalable battery state-of-health measurement across 500,000-plus tests."
     }
   },
   "full_briefing_includes": [
@@ -58,8 +58,8 @@
     "A forward watchlist and the private audio briefing"
   ],
   "generated_from": {
-    "generated_at": "2026-08-31T10:07:34.853215+00:00",
-    "article_count": 500,
+    "generated_at": "2026-09-07T10:03:24.689262+00:00",
+    "article_count": 482,
     "ai_sample_count": 100
   }
 }
