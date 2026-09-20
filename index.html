@@ -5119,6 +5119,13 @@ h1.weekly-home__banner-title{
   </div>
 </section>
 
+  <p class="legal-note"
+     data-autointel-privacy-link="homepage-footer"
+     style="margin-top:14px;font-family:'IBM Plex Sans',sans-serif;">
+    <a href="/privacy/"
+       style="color:#35d5eb;text-decoration:underline;">Privacy Policy</a>
+  </p>
+
 </footer>
 
 <script>
@@ -6210,6 +6217,14 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
       + '</a>'
       + signupMarkup
       + '</div>'
+      + '<p class="weekly-home__privacy-note" '
+      + 'data-autointel-privacy-link="homepage-signup" '
+      + 'style="margin:10px 0 0;color:#a7adb6;'
+      + 'font-size:12px;line-height:1.5;text-align:right">'
+      + 'By joining, you agree to receive AutoIntel emails. '
+      + '<a href="/privacy/" style="color:#35d5eb;'
+      + 'text-decoration:underline">Privacy Policy</a>.'
+      + '</p>'
       + '</div>'
       + '</article>';
 
@@ -6361,10 +6376,11 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
     currentUrl.searchParams.get('early_access') ===
     'confirmed'
   ) {
-    sendEvent('generate_lead', {
+    sendEvent('confirmation_page_view', {
       form_id: mailerLiteFormId,
       form_name: 'autointel_weekly_early_access',
-      lead_source: 'mailerlite_double_opt_in',
+      confirmation_source: 'mailerlite_double_opt_in',
+      confirmation_status: 'redirect_received',
       page_type: pageType
     });
 
