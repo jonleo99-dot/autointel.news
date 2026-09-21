@@ -1,53 +1,53 @@
 {
   "preview_version": "1.3",
-  "reporting_week": "2026-09-07 to 2026-09-13",
+  "reporting_week": "2026-09-14 to 2026-09-20",
   "metrics": {
-    "article_count": 441,
+    "article_count": 453,
     "ai_sample_count": 100,
     "major_development_count": 4,
     "cross_source_count": 3,
     "emerging_trend_count": 3
   },
-  "executive_preview": "The strongest signal this week is strategic tension between electrification ambitions and market, regulatory and supply-chain constraints. Automakers continue expanding EV capability, charging infrastructure, software and autonomous mobility, but adoption evidence remains uneven: Toyota's broader EV lineup lifted U.S. EV sales, while Volvo canceled the EX40 amid falling sales and a CLEPA survey found only 8% of respondents in five major European markets intend to buy an EV next.",
+  "executive_preview": "The strongest signal this week is not a single technology or product launch, but a widening strategic split in automotive. Automakers are simultaneously expanding electrification, charging and autonomous freight while reallocating near-term capital toward profitable internal-combustion pickup businesses and more flexible hybrid strategies. GM and Ford are emphasizing new V8 and diesel offerings as EV demand remains uneven, while Toyota and Volvo are positioning plug-in hybrids and hydrogen as alternatives for customers not ready for battery-electric vehicles.",
   "lead_development": {
     "type": "emerging_trend",
-    "title": "Capability and nostalgia are being used to defend differentiation in a converging vehicle market.",
-    "what_happened": "Honda is making TrailSport genuinely more capable, Toyota continues to sell hybrid off-road SUVs despite modest fuel economy, and Mercedes-AMG is reviving a highly exclusive V8 sports coupe. Collector and custom-car coverage also remains strong, including licensed Eleanor builds and Porsche safari conversions.",
-    "why_it_matters": "Automakers are using distinct experiences—off-road utility, mechanical performance and heritage—to justify premium positioning in markets where many vehicles increasingly share platforms and software. This may support margin, but specialized products have limited volume and should not be mistaken for broad-market demand.",
+    "title": "EV ownership friction is shifting from vehicle range toward infrastructure usability and total cost.",
+    "what_happened": "Red E Charge added Plug & Charge capability; renter discussions highlighted installation costs ranging from $2,000 to $10,000; fleet projects are investing in battery-buffered and megawatt charging.",
+    "why_it_matters": "Improving the charging experience may be as important to adoption as adding range. Dealers and automakers that can explain charging installation, payment simplicity and operating costs may reduce purchase hesitation.",
     "confidence": "medium",
     "evidence_count": 4
   },
   "signals": [
     {
-      "title": "U.S. Scrutiny of Chinese Automotive Partnerships Raises Strategic and Compliance Risk",
-      "teaser": "Transportation Secretary Sean Duffy criticized Ford's relationships with CATL, Geely and BYD, with particular attention to CATL technology licensed for Ford's Michigan battery plant and Ford's planned continued production of the Lincoln Nautilus in China.",
+      "title": "Detroit Recommits to Profitable Pickup Powertrains as EV Demand Remains Uneven",
+      "teaser": "GM introduced new 5.7-liter and 6.6-liter V8 engines for 2027 full-size pickups, alongside diesel and enhanced turbocharged options.",
       "confidence": "high",
-      "evidence_count": 3,
-      "signal_type": "Industry signal"
-    },
-    {
-      "title": "EV Adoption Is Becoming More Product- and Market-Specific",
-      "teaser": "Toyota's U.S.",
-      "confidence": "high",
-      "evidence_count": 3,
+      "evidence_count": 4,
       "signal_type": "Market signal"
     },
     {
-      "title": "Automakers Are Expanding Capability-Focused Products Rather Than Abandoning Utility Segments",
-      "teaser": "Honda substantially reworked the 2027 Passport TrailSport, increasing ground clearance to 9.65 inches and redesigning nearly 70% of major suspension components.",
+      "title": "Commercial EVs Move From Pilot Projects Toward Fleet and Infrastructure Scale",
+      "teaser": "The dataset includes BYD’s 600-kilometer electric tractor with 1.5-megawatt charging, new European truck-charging investment by Vinci, Shell charging Amazon’s electric heavy-duty trucks, Juna’s growing pay-per-use electric truck fleet, DPD’s planned 4,000-vehicle electric van fleet and a Western Australian bus-electrification program.",
       "confidence": "high",
-      "evidence_count": 3,
+      "evidence_count": 6,
+      "signal_type": "Industry signal"
+    },
+    {
+      "title": "Automakers Broaden the Middle Ground Between ICE and Battery EVs",
+      "teaser": "Toyota confirmed a hydrogen fuel-cell Hilux targeted for 2028, while Volvo announced 13 new models by 2030 and introduced plug-in hybrids with up to 78 miles of electric range.",
+      "confidence": "high",
+      "evidence_count": 5,
       "signal_type": "Industry signal"
     }
   ],
   "decision_support_preview": {
     "downside": {
-      "title": "Policy restrictions on Chinese technology could disrupt battery, software and vehicle sourcing plans.",
-      "teaser": "Ford's CATL and Geely relationships are already drawing public government criticism, while China retains dominant positions in battery processing and exports."
+      "title": "Powertrain complexity may increase dealer training, parts inventory and service-cost requirements.",
+      "teaser": "Toyota, Volvo and other manufacturers are expanding combinations of ICE, hybrid, PHEV, BEV and hydrogen vehicles."
     },
     "upside": {
-      "title": "Use independent EV battery diagnostics to improve used-EV pricing and customer confidence.",
-      "teaser": "AVILOO is expanding its battery warranty across Europe because manufacturer-reported battery health is not standardized or independently verified."
+      "title": "Dealers can differentiate through powertrain-specific ownership guidance.",
+      "teaser": "The market now includes long-range PHEVs, hydrogen development, BEVs, hybrids and upgraded combustion trucks."
     }
   },
   "full_briefing_includes": [
@@ -58,8 +58,8 @@
     "A forward watchlist and the private audio briefing"
   ],
   "generated_from": {
-    "generated_at": "2026-09-14T10:02:44.473948+00:00",
-    "article_count": 441,
+    "generated_at": "2026-09-21T10:02:32.874353+00:00",
+    "article_count": 453,
     "ai_sample_count": 100
   }
 }
