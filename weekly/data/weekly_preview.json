@@ -1,53 +1,53 @@
 {
   "preview_version": "1.3",
-  "reporting_week": "2026-09-14 to 2026-09-20",
+  "reporting_week": "2026-09-21 to 2026-09-27",
   "metrics": {
-    "article_count": 453,
+    "article_count": 514,
     "ai_sample_count": 100,
     "major_development_count": 4,
-    "cross_source_count": 3,
-    "emerging_trend_count": 3
+    "cross_source_count": 5,
+    "emerging_trend_count": 4
   },
-  "executive_preview": "The strongest signal this week is not a single technology or product launch, but a widening strategic split in automotive. Automakers are simultaneously expanding electrification, charging and autonomous freight while reallocating near-term capital toward profitable internal-combustion pickup businesses and more flexible hybrid strategies. GM and Ford are emphasizing new V8 and diesel offerings as EV demand remains uneven, while Toyota and Volvo are positioning plug-in hybrids and hydrogen as alternatives for customers not ready for battery-electric vehicles.",
+  "executive_preview": "The clearest shift this week is toward a more segmented automotive market. Automakers are simultaneously expanding electrification and retreating from EV programs that do not meet demand, pricing, or profitability targets. Volkswagen is discounting remaining ID.4 inventory and delaying the ID.",
   "lead_development": {
     "type": "emerging_trend",
-    "title": "EV ownership friction is shifting from vehicle range toward infrastructure usability and total cost.",
-    "what_happened": "Red E Charge added Plug & Charge capability; renter discussions highlighted installation costs ranging from $2,000 to $10,000; fleet projects are investing in battery-buffered and megawatt charging.",
-    "why_it_matters": "Improving the charging experience may be as important to adoption as adding range. Dealers and automakers that can explain charging installation, payment simplicity and operating costs may reduce purchase hesitation.",
+    "title": "EV ownership is creating a broader repair and service ecosystem.",
+    "what_happened": "ZF introduced repair kits for hybrid and EV motors, inverters, transmission mechatronics, and reducers. A documented F-150 Lightning battery replacement also emphasized the need for specialized lifting and high-voltage equipment.",
+    "why_it_matters": "The market is beginning to move beyond an all-or-nothing battery replacement model. Independent repairers and dealers that develop high-voltage capability may capture more post-warranty work, but equipment, training, safety procedures, and parts availability remain barriers.",
     "confidence": "medium",
-    "evidence_count": 4
+    "evidence_count": 2
   },
   "signals": [
     {
-      "title": "Detroit Recommits to Profitable Pickup Powertrains as EV Demand Remains Uneven",
-      "teaser": "GM introduced new 5.7-liter and 6.6-liter V8 engines for 2027 full-size pickups, alongside diesel and enhanced turbocharged options.",
+      "title": "Automakers Are Rebalancing Electrification Toward Hybrids and Affordable EVs",
+      "teaser": "Honda was reported to be considering a $1.9-$2.5 billion Ohio hybrid plant for large Honda and Acura crossovers, while U.S.",
       "confidence": "high",
       "evidence_count": 4,
-      "signal_type": "Market signal"
-    },
-    {
-      "title": "Commercial EVs Move From Pilot Projects Toward Fleet and Infrastructure Scale",
-      "teaser": "The dataset includes BYD’s 600-kilometer electric tractor with 1.5-megawatt charging, new European truck-charging investment by Vinci, Shell charging Amazon’s electric heavy-duty trucks, Juna’s growing pay-per-use electric truck fleet, DPD’s planned 4,000-vehicle electric van fleet and a Western Australian bus-electrification program.",
-      "confidence": "high",
-      "evidence_count": 6,
       "signal_type": "Industry signal"
     },
     {
-      "title": "Automakers Broaden the Middle Ground Between ICE and Battery EVs",
-      "teaser": "Toyota confirmed a hydrogen fuel-cell Hilux targeted for 2028, while Volvo announced 13 new models by 2030 and introduced plug-in hybrids with up to 78 miles of electric range.",
+      "title": "Volkswagen Is Prioritizing Near-Term Demand and Margin Over EV Continuity",
+      "teaser": "Volkswagen delayed the U.S.",
       "confidence": "high",
-      "evidence_count": 5,
+      "evidence_count": 3,
+      "signal_type": "Market signal"
+    },
+    {
+      "title": "Commercial EV Activity Is Reaching Fleet Scale",
+      "teaser": "Tesla was reportedly named the primary supplier for a 2,500-truck electric Class 8 order through the ZET SCALE alliance, while a separate launch preview showed trucks marked for major fleet customers.",
+      "confidence": "medium",
+      "evidence_count": 3,
       "signal_type": "Industry signal"
     }
   ],
   "decision_support_preview": {
     "downside": {
-      "title": "Powertrain complexity may increase dealer training, parts inventory and service-cost requirements.",
-      "teaser": "Toyota, Volvo and other manufacturers are expanding combinations of ICE, hybrid, PHEV, BEV and hydrogen vehicles."
+      "title": "EV discounting could accelerate residual-value deterioration.",
+      "teaser": "Volkswagen's large ID.4 incentives and discontinued production create a visible price gap between new and used vehicles."
     },
     "upside": {
-      "title": "Dealers can differentiate through powertrain-specific ownership guidance.",
-      "teaser": "The market now includes long-range PHEVs, hydrogen development, BEVs, hybrids and upgraded combustion trucks."
+      "title": "Build hybrid sales expertise as a bridge product.",
+      "teaser": "Hybrid share reached a reported record and Kia and Subaru are growing quickly from expanded lineups."
     }
   },
   "full_briefing_includes": [
@@ -58,8 +58,8 @@
     "A forward watchlist and the private audio briefing"
   ],
   "generated_from": {
-    "generated_at": "2026-09-21T10:02:32.874353+00:00",
-    "article_count": 453,
+    "generated_at": "2026-09-28T10:03:21.150421+00:00",
+    "article_count": 514,
     "ai_sample_count": 100
   }
 }
