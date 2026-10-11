@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>AutoIntel.News Weekly</title>
+  <meta name="description" content="Automotive news and industry intelligence, updated daily and connected weekly.">
+  <meta property="og:title" content="AutoIntel.News Weekly">
+  <meta property="og:description" content="See the shifts before they become obvious.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://autointel.news/weekly/">
+  <link rel="canonical" href="https://autointel.news/weekly/">
+</head>
+<body>
+  <p>Opening <a href="/weekly/">AutoIntel.News Weekly</a>…</p>
+  <script>
+  (() => {
+    "use strict";
+    const channels = {"de":{"medium":"email","source":"dealer_outreach"},"dr":{"medium":"referral","source":"dealerrefresh"},"ie":{"medium":"email","source":"industry_outreach"},"ig":{"medium":"organic_social","source":"instagram"},"li":{"medium":"organic_social","source":"linkedin"},"ml":{"medium":"email","source":"mailerlite"},"tt":{"medium":"organic_video","source":"tiktok"},"yt":{"medium":"organic_video","source":"youtube"}};
+    const contents = {"dc":"dealer_community_signal","ds":"dealer_signal","ea":"early_access_email","fb":"full_brief_footer","ms":"manufacturer_supplier_signal","pt":"preview_teaser_primary","s1":"signal_01","s2":"signal_02","s3":"signal_03","wr":"weekly_reel","ws":"weekly_short","wv":"weekly_video"};
+    const key = new URLSearchParams(window.location.search).get("k") || "";
+    const match = /^(\d{8})-([a-z]{2})-([a-z0-9]+)$/.exec(key);
+    if (!match || !channels[match[2]] || !contents[match[3]]) {
+      window.location.replace("/weekly/");
+      return;
+    }
+    const dateCode = match[1];
+    const campaign = `weekly_intelligence_${dateCode.slice(0, 4)}_${dateCode.slice(4, 6)}_${dateCode.slice(6, 8)}`;
+    const target = new URL("/weekly/", window.location.origin);
+    target.search = new URLSearchParams({
+      utm_source: channels[match[2]].source,
+      utm_medium: channels[match[2]].medium,
+      utm_campaign: campaign,
+      utm_id: campaign,
+      utm_content: contents[match[3]],
+    }).toString();
+    window.location.replace(target.toString());
+  })();
+  </script>
+  <noscript><meta http-equiv="refresh" content="0;url=/weekly/"></noscript>
+</body>
+</html>
