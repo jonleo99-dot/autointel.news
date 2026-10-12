@@ -1,53 +1,53 @@
 {
   "preview_version": "1.3",
-  "reporting_week": "2026-09-28 to 2026-10-04",
+  "reporting_week": "2026-10-05 to 2026-10-11",
   "metrics": {
-    "article_count": 538,
+    "article_count": 543,
     "ai_sample_count": 100,
-    "major_development_count": 3,
-    "cross_source_count": 3,
-    "emerging_trend_count": 3
+    "major_development_count": 4,
+    "cross_source_count": 4,
+    "emerging_trend_count": 4
   },
-  "executive_preview": "The clearest signal this week is not a broad retreat from electrification, but a more selective and flexible automotive strategy. Automakers are continuing to invest in batteries, charging, electric trucks and software while reducing near-term volume commitments where demand, affordability or execution remain uncertain. GM illustrates both sides of that shift: it is reportedly reducing revived Bolt production to approximately 35,000 units while committing $1 billion to lithium manganese-rich battery production for future vehicles.",
+  "executive_preview": "The strongest signal this week is a broadening of powertrain strategies rather than a retreat from electrification. GM is preparing U.S. hybrids and plug-in hybrids after largely pursuing an all-EV plan, while Honda is expanding hybrid content in the Civic and Nissan is using a China-developed plug-in-hybrid pickup for overseas markets.",
   "lead_development": {
     "type": "emerging_trend",
-    "title": "Charging speed is becoming a strategic infrastructure gap",
-    "what_happened": "A supplied report says Geely's 2.2-megawatt chargers are already operating in five Chinese cities, with 15,000 sites planned by the end of next year, while a U.S. 750-kW charger program has been delayed to next year.",
-    "why_it_matters": "The gap could influence vehicle competitiveness, fleet utilization and regional technology adoption. However, the evidence comes primarily from single-source reporting and compares different vehicle and charging applications, so it should be treated as an emerging signal rather than a settled market conclusion.",
+    "title": "China is increasingly an engineering and export base for established global brands",
+    "what_happened": "Nissan's Frontier Pro is developed and built in China for global export, while the dataset also cites China-built or China-linked vehicles from Chevrolet, Mazda, Toyota and Volkswagen strategies. Hyundai cancelled an Australian Ioniq 3 launch because it could not compete with lower-priced Chinese EVs.",
+    "why_it_matters": "The competitive issue is no longer limited to Chinese brands entering foreign markets. Global automakers are using Chinese production and partnerships to access cost, engineering and speed advantages, while also confronting Chinese price competition.",
     "confidence": "medium",
     "evidence_count": 2
   },
   "signals": [
     {
-      "title": "Automakers are recalibrating EV volume while preserving long-term battery investment",
-      "teaser": "GM's revived Chevrolet Bolt is reportedly tracking toward approximately 35,000 units before production ends in early 2027, sharply below a previously cited 150,000-unit plant potential.",
+      "title": "Automakers are expanding powertrain choices as EV demand becomes more uneven",
+      "teaser": "GM reconfirmed plans to add hybrids and plug-in hybrids to its U.S.",
       "confidence": "high",
-      "evidence_count": 6,
-      "signal_type": "Industry signal"
+      "evidence_count": 3,
+      "signal_type": "Market signal"
     },
     {
-      "title": "Hyundai positions the Tucson around hybrid efficiency, utility and software",
-      "teaser": "Hyundai unveiled the redesigned 2027 Tucson with gas and hybrid powertrains, a claimed hybrid rating of up to 42 mpg, expanded interior and cargo space, physical controls, Android Automotive-based Pleos infotainment and an AI assistant.",
-      "confidence": "high",
-      "evidence_count": 6,
-      "signal_type": "Industry signal"
-    },
-    {
-      "title": "Battery lifecycle and repair infrastructure are becoming commercial capabilities",
-      "teaser": "Qnovo is piloting software to assess battery condition and value for EU battery passports, while Autocraft's REVIVE workshops diagnose, repair and remanufacture failed EV battery packs.",
+      "title": "Volkswagen is repositioning its mainstream EV portfolio around familiar names and improved usability",
+      "teaser": "Volkswagen unveiled the ID.",
       "confidence": "high",
       "evidence_count": 3,
       "signal_type": "Industry signal"
+    },
+    {
+      "title": "Mexico production and export exposure is becoming a material supply-chain risk",
+      "teaser": "Mexico's September light-vehicle exports fell 12% year over year and production declined 15%, while domestic sales rose 8%.",
+      "confidence": "high",
+      "evidence_count": 1,
+      "signal_type": "Production strategy"
     }
   ],
   "decision_support_preview": {
     "downside": {
-      "title": "EV inventory aging and production misalignment could pressure dealer margins",
-      "teaser": "VW's unusually large ID.4 discounts and GM's reported Bolt production reduction indicate that model timing and volume assumptions may be out of line with retail demand."
+      "title": "Powertrain complexity may increase dealer training, inventory allocation and customer confusion.",
+      "teaser": "GM, Honda and Nissan are simultaneously expanding gas, hybrid, plug-in-hybrid and EV choices."
     },
     "upside": {
-      "title": "Use battery-health data and repair capability to improve used-EV transactions",
-      "teaser": "Qnovo is developing battery assessment for passports, and Autocraft is commercializing EV battery repair and remanufacturing."
+      "title": "Build retail strategies around hybrid and plug-in-hybrid education rather than treating EVs as the only electrification path.",
+      "teaser": "Multiple automakers are broadening hybrid offerings as reported hybrid penetration rises."
     }
   },
   "full_briefing_includes": [
@@ -58,8 +58,8 @@
     "A forward watchlist and the private audio briefing"
   ],
   "generated_from": {
-    "generated_at": "2026-10-05T10:03:33.050482+00:00",
-    "article_count": 538,
+    "generated_at": "2026-10-12T10:03:36.633019+00:00",
+    "article_count": 543,
     "ai_sample_count": 100
   }
 }
