@@ -1,53 +1,53 @@
 {
   "preview_version": "1.3",
-  "reporting_week": "2026-10-12 to 2026-10-18",
+  "reporting_week": "2026-10-19 to 2026-10-25",
   "metrics": {
-    "article_count": 540,
+    "article_count": 537,
     "ai_sample_count": 100,
-    "major_development_count": 3,
-    "cross_source_count": 4,
+    "major_development_count": 4,
+    "cross_source_count": 5,
     "emerging_trend_count": 3
   },
-  "executive_preview": "The week's strongest signal is a widening gap between automotive technology demonstrations and commercially deployable products. Tesla's Roadster reveal generated extensive coverage and demonstrated a prototype using SpaceX-derived cold-gas thrusters and underbody suction, but production timing, legality, pricing and repeatability remain unresolved. At the same time, Tesla's more commercially important autonomy strategy faces fresh regulatory scrutiny over school-zone behavior, while Volvo and Mercedes-Benz are expanding Nvidia partnerships to pursue more structured, safety-oriented automated driving systems.",
+  "executive_preview": "The clearest industry shift this week is not a single product launch but a more pragmatic approach to electrification. GM is reopening the hybrid path while closing or repurposing some EV- and hydrogen-focused facilities; Ford is making the Mach-E more affordable and versatile; and suppliers including Bosch and CATL are maintaining technology optionality across electric, hydrogen and multiple battery chemistries. At the same time, automakers are moving software-defined architectures beyond EVs, with GM targeting centralized computing across gas and electric vehicles.",
   "lead_development": {
     "type": "emerging_trend",
-    "title": "Chinese automakers are extending their competitive reach into Europe with increasingly broad product portfolios.",
-    "what_happened": "BYD presented large, fast-charging electric vehicles at the Paris Motor Show, Chery announced a 2027 U.K. launch for the iCaur V27, and AITO announced a European launch for four luxury SUVs in fall 2027.",
-    "why_it_matters": "European brands may face pressure not only in entry-level EVs but also in family SUVs and premium segments. Local tuning, distribution, regulatory compliance and brand trust will determine whether product capability converts into sustained market share.",
+    "title": "Battery and charging strategies are becoming more infrastructure-aware.",
+    "what_happened": "Electrify America opened its largest reported charging station in Orlando; LAZ Parking and EverCharge proposed load-sharing for apartment charging; Honda developed underlying technology for in-motion wireless charging; and Redwood expanded battery recycling with Rivian.",
+    "why_it_matters": "The constraint is increasingly system deployment rather than only vehicle range. Shared electrical capacity, high-throughput sites, recycling and future wireless systems address different parts of the ownership ecosystem.",
     "confidence": "medium",
-    "evidence_count": 4
+    "evidence_count": 5
   },
   "signals": [
     {
-      "title": "Tesla repositions the Roadster as a technology halo car, not a near-term volume product",
-      "teaser": "Tesla unveiled a redesigned next-generation Roadster at a SpaceX facility, showing a prototype driving on an inverted ramp, briefly lifting off, performing aerial maneuvers and recording a claimed 0-to-60-mph time of 0.81 seconds.",
+      "title": "GM Rebalances Its Portfolio Toward Hybrids and Flexible Propulsion",
+      "teaser": "GM said it plans to add hybrids across multiple segments without additional capital spending or engineering, while its earnings coverage reported the closure of the Brownstown Battery Assembly plant and repurposing of another facility intended for hydrogen fuel-cell development.",
+      "confidence": "high",
+      "evidence_count": 3,
+      "signal_type": "Industry signal"
+    },
+    {
+      "title": "Software-Defined Vehicle Architecture Is Moving Beyond EVs",
+      "teaser": "GM announced a centralized compute architecture for autonomous driving, in-car AI, powertrain management and connected services.",
       "confidence": "high",
       "evidence_count": 4,
       "signal_type": "Industry signal"
     },
     {
-      "title": "Automakers are moving advanced driving systems toward Nvidia-centered software and compute platforms",
-      "teaser": "Volvo expanded its Nvidia partnership to use Hyperion, Halos and Alpamayo technologies for future supervised, hands-free and eventually more advanced automated-driving functions.",
-      "confidence": "high",
-      "evidence_count": 3,
-      "signal_type": "Production strategy"
-    },
-    {
-      "title": "Affordable EV positioning is becoming more tangible in the U.S. and China",
-      "teaser": "Ford opened invitations for its Fathom electric pickup, priced from $28,350 before destination, while GM's 2027 Bolt was tested as the least expensive U.S.",
-      "confidence": "high",
-      "evidence_count": 4,
+      "title": "Autonomy Is Advancing Through Constrained Commercial Deployments",
+      "teaser": "Lucid and Bolt selected Nvidia's Alpamayo software for a planned fleet of at least 25,000 autonomous vehicles in Europe, Mercedes launched Level 2 urban driver assistance in Germany, and Tesla pushed unsupervised FSD to the second quarter of 2027 with an initial…",
+      "confidence": "medium",
+      "evidence_count": 5,
       "signal_type": "Industry signal"
     }
   ],
   "decision_support_preview": {
     "downside": {
-      "title": "Tesla's Roadster claims may create credibility and regulatory exposure if production specifications, legality or timing diverge from the demonstration.",
-      "teaser": "The vehicle has a history of delay, no final price was announced, thruster legality remains unclear and the company described the car as not necessarily safety optimized."
+      "title": "Software failures could turn convenience features into mobility, safety or customer-trust problems.",
+      "teaser": "Reported update behavior temporarily prevented a Hyundai Kona from starting, while a Tesla robotaxi could not disable a novelty audio feature during a customer ride."
     },
     "upside": {
-      "title": "Dealers can use transparent pricing, digital inspections and proactive outreach to defend service retention.",
-      "teaser": "Customers were reported to be using informal repair providers because they perceived dealership and repair-shop pricing as unclear or excessive."
+      "title": "Use CPO and carefully sourced lower-priced used vehicles to address affordability gaps.",
+      "teaser": "CPO sales rose 10% year over year, while sub-$15,000 used inventory remained tighter than the overall market."
     }
   },
   "full_briefing_includes": [
@@ -58,8 +58,8 @@
     "A forward watchlist and the private audio briefing"
   ],
   "generated_from": {
-    "generated_at": "2026-10-19T10:38:33.755427+00:00",
-    "article_count": 540,
+    "generated_at": "2026-10-26T10:02:58.762117+00:00",
+    "article_count": 537,
     "ai_sample_count": 100
   }
 }
