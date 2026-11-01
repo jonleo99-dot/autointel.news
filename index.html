@@ -4971,6 +4971,374 @@ body.cro-aligned-homepage{margin:0;background:radial-gradient(circle at 78% 2%,r
 @media(max-width:760px){.cro-shell{width:min(calc(100% - 28px),var(--cro-shell))}.cro-brand-mark{width:72px;height:34px;flex-basis:72px}.cro-brand-mark img{top:-22px;width:72px!important;height:72px!important}.cro-brand-copy{font-size:17px}.cro-hero{padding:54px 0 48px}.cro-hero h1{font-size:clamp(36px,10.5vw,48px)}.cro-hero-deck{font-size:17px}.cro-hero-actions .cro-button{width:100%}.cro-proof-bar{grid-template-columns:1fr}.cro-proof-intro,.cro-proof-stat{min-height:0}.cro-proof-stat{border-top:1px solid var(--cro-line);border-left:0}.cro-audience-row{align-items:flex-start;flex-direction:column;padding:20px 0}.cro-section{padding:66px 0}.cro-section-head{grid-template-columns:1fr;gap:14px}.cro-section-index{top:76px}.cro-daily-head{padding-top:65px}.cro-aligned-homepage .article-row{grid-template-columns:1fr!important}.cro-aligned-homepage .section-lead-card{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto!important;grid-template-areas:"lead-media" "main" "source"!important}.cro-aligned-homepage .section-lead-card .section-lead-media{grid-area:lead-media!important;display:block!important;width:100%!important;max-width:none!important;height:auto!important;min-height:0!important;aspect-ratio:16/9!important;align-self:stretch!important;margin:0!important}.cro-aligned-homepage .section-lead-card .article-main{grid-area:main!important;min-width:0!important}.cro-aligned-homepage .section-lead-card .article-source{grid-area:source!important;width:100%!important;margin:0!important;padding:10px 0 0!important;border-top:1px solid var(--cro-line)!important}.cro-feed-bridge{align-items:flex-start;flex-direction:column}.cro-feed-bridge .cro-button{width:100%}.cro-back-to-sections{display:inline-flex}.cro-method-grid{grid-template-columns:1fr}.cro-method-step{min-height:210px}.cro-conversion-card{align-items:flex-start;flex-direction:column;padding:30px 23px}.cro-conversion-card .cro-button{width:100%}.cro-footer-row{align-items:flex-start;flex-direction:column}.cro-footer-links{justify-content:flex-start}}
 @media(max-width:760px){.cro-newsletter{align-items:flex-start;flex-direction:column;padding:26px 22px}.cro-newsletter-action{width:100%;justify-items:stretch}.cro-newsletter-action .cro-button{width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cro-reveal{opacity:1;transform:none;transition:none}}
+
+
+/* AUTOINTEL OUR PICKS EDITORIAL ROWS V1 */
+@media(min-width:1081px){
+  .cro-intelligence-layout{
+    grid-template-columns:minmax(0,1fr) 300px;
+    gap:28px;
+  }
+}
+
+.cro-aligned-homepage #latest-articles .article-table{
+  gap:12px!important;
+}
+.cro-aligned-homepage #latest-articles .article-row{
+  grid-template-columns:minmax(0,1fr)!important;
+  gap:17px!important;
+  padding:24px 26px!important;
+  background:linear-gradient(145deg,rgba(53,213,235,.025),transparent 44%),var(--cro-panel)!important;
+}
+.cro-aligned-homepage #latest-articles .article-main{
+  min-width:0!important;
+}
+.cro-aligned-homepage #latest-articles .article-headline a{
+  font-size:21px!important;
+  line-height:1.18!important;
+}
+.cro-aligned-homepage #latest-articles .article-take{
+  max-width:76ch;
+  margin-top:12px!important;
+  font-size:15px!important;
+  line-height:1.58!important;
+}
+.cro-aligned-homepage #latest-articles .article-source{
+  display:flex!important;
+  width:100%!important;
+  flex-direction:row!important;
+  flex-wrap:wrap!important;
+  align-items:center!important;
+  gap:7px 16px!important;
+  margin:0!important;
+  padding:15px 0 0!important;
+  border-top:1px solid var(--cro-line-soft)!important;
+  color:var(--cro-dim)!important;
+  text-align:left!important;
+}
+.cro-aligned-homepage #latest-articles .article-source span:first-child{
+  color:var(--cro-ink-soft)!important;
+  font-weight:600!important;
+}
+.cro-aligned-homepage #latest-articles .article-source a{
+  margin-left:auto!important;
+  font-weight:600!important;
+}
+.cro-aligned-homepage #latest-articles .section-lead-card{
+  grid-template-columns:minmax(210px,.72fr) minmax(0,1.8fr)!important;
+  grid-template-rows:auto auto!important;
+  grid-template-areas:"lead-media main" "source source"!important;
+  align-items:start!important;
+  gap:19px 24px!important;
+  padding:26px!important;
+}
+.cro-aligned-homepage #latest-articles .section-lead-card .section-lead-media{
+  grid-area:lead-media!important;
+  align-self:start!important;
+  margin:0!important;
+}
+.cro-aligned-homepage #latest-articles .section-lead-card .article-main{
+  grid-area:main!important;
+}
+.cro-aligned-homepage #latest-articles .section-lead-card .article-source{
+  grid-area:source!important;
+}
+
+.cro-briefing-panel{
+  padding:24px!important;
+  border-color:rgba(53,213,235,.24)!important;
+  background:linear-gradient(155deg,rgba(53,213,235,.075),transparent 52%),var(--cro-panel)!important;
+  box-shadow:0 18px 48px rgba(0,0,0,.20)!important;
+}
+.cro-briefing-panel h3{
+  margin:14px 0 10px!important;
+  font-size:26px!important;
+  line-height:1.06!important;
+  text-wrap:balance;
+}
+.cro-briefing-panel>p{
+  margin:0!important;
+  font-size:14px!important;
+  line-height:1.55!important;
+}
+.cro-briefing-summary{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:20px 0 22px;
+}
+.cro-briefing-summary span{
+  padding:7px 9px;
+  border:1px solid rgba(53,213,235,.20);
+  border-radius:999px;
+  background:rgba(53,213,235,.055);
+  color:var(--cro-ink-soft);
+  font:500 9px/1.2 'IBM Plex Mono',monospace;
+  letter-spacing:.035em;
+  text-transform:uppercase;
+}
+.cro-briefing-panel .cro-button{
+  min-height:44px;
+  padding-inline:14px;
+  font-size:11px;
+}
+.cro-briefing-panel small{
+  margin-top:10px!important;
+  font-size:9px!important;
+}
+
+@media(max-width:760px){
+  .cro-aligned-homepage #latest-articles .article-row,
+  .cro-aligned-homepage #latest-articles .section-lead-card{
+    grid-template-columns:minmax(0,1fr)!important;
+    grid-template-rows:auto!important;
+    grid-template-areas:"lead-media" "main" "source"!important;
+    padding:21px!important;
+  }
+  .cro-aligned-homepage #latest-articles .article-source{
+    align-items:flex-start!important;
+    flex-direction:column!important;
+    gap:4px!important;
+  }
+  .cro-aligned-homepage #latest-articles .article-source a{
+    margin:4px 0 0!important;
+  }
+  .cro-aligned-homepage #latest-articles .article-headline a{
+    font-size:20px!important;
+  }
+}
+
+
+
+/* AUTOINTEL MOBILE TRAVELER AND STORY EXPANDERS V2 */
+.cro-aligned-homepage .news-section details{
+  margin-top:18px!important;
+}
+.cro-aligned-homepage .news-section details>summary{
+  display:flex;
+  width:min(100%,410px);
+  min-height:58px;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  padding:13px 14px 13px 21px;
+  overflow:hidden;
+  border:1px solid rgba(53,213,235,.28);
+  border-radius:14px;
+  background:linear-gradient(110deg,rgba(53,213,235,.13),rgba(53,213,235,.035) 68%),var(--cro-panel);
+  box-shadow:0 10px 28px rgba(0,0,0,.14);
+  color:var(--cro-ink);
+  list-style:none;
+  user-select:none;
+  transition:transform 160ms ease,border-color 160ms ease,background 160ms ease,box-shadow 160ms ease;
+}
+.cro-aligned-homepage .news-section details>summary::-webkit-details-marker{
+  display:none;
+}
+.cro-aligned-homepage .news-section details>summary::marker{
+  content:'';
+}
+.cro-aligned-homepage .news-section details>summary:hover{
+  transform:translateY(-2px);
+  border-color:rgba(53,213,235,.62);
+  background:linear-gradient(110deg,rgba(53,213,235,.19),rgba(53,213,235,.055) 72%),var(--cro-panel);
+  box-shadow:0 15px 34px rgba(0,0,0,.20),0 0 0 1px rgba(53,213,235,.08);
+}
+.cro-aligned-homepage .news-section details>summary:active{
+  transform:translateY(0);
+}
+.cro-aligned-homepage .news-section .cro-more-label{
+  color:var(--cro-ink);
+  font:650 12px/1.25 'IBM Plex Mono',monospace;
+  letter-spacing:.055em;
+  text-transform:uppercase;
+}
+.cro-aligned-homepage .news-section .cro-more-icon{
+  display:inline-flex;
+  width:32px;
+  height:32px;
+  flex:0 0 32px;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(53,213,235,.34);
+  border-radius:50%;
+  background:var(--cro-cyan);
+  color:#061014;
+  font:700 20px/1 'Space Grotesk',sans-serif;
+  transition:transform 180ms ease,background 180ms ease;
+}
+.cro-aligned-homepage .news-section details[open]>summary{
+  margin-bottom:14px;
+  border-color:rgba(242,169,59,.38);
+  background:linear-gradient(110deg,rgba(242,169,59,.11),rgba(53,213,235,.035) 72%),var(--cro-panel);
+}
+.cro-aligned-homepage .news-section details[open]>summary .cro-more-icon{
+  border-color:rgba(242,169,59,.45);
+  background:var(--cro-amber);
+}
+
+@media(max-width:760px){
+  .cro-aligned-homepage #croBriefingPanel{
+    display:none!important;
+  }
+  .cro-aligned-homepage .news-section details>summary{
+    width:100%;
+    min-height:60px;
+    padding-left:18px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .cro-aligned-homepage .news-section details>summary,
+  .cro-aligned-homepage .news-section .cro-more-icon{
+    transition:none;
+  }
+}
+
+
+
+/* AUTOINTEL BRANDED STORY CONTROLS V3 */
+.cro-aligned-homepage .news-section details>summary{
+  position:relative;
+  isolation:isolate;
+  width:min(100%,460px);
+  min-height:68px;
+  padding:12px 15px 12px 24px;
+  border-color:rgba(53,213,235,.30);
+  border-radius:8px 17px 8px 17px;
+  background:
+    linear-gradient(90deg,rgba(242,169,59,.075),transparent 34%),
+    linear-gradient(125deg,rgba(53,213,235,.12),rgba(53,213,235,.025) 68%),
+    var(--cro-panel);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.025),0 12px 30px rgba(0,0,0,.16);
+}
+.cro-aligned-homepage .news-section details>summary::before{
+  content:'';
+  position:absolute;
+  z-index:-1;
+  top:13px;
+  bottom:13px;
+  left:0;
+  width:3px;
+  border-radius:0 3px 3px 0;
+  background:var(--cro-amber);
+  box-shadow:0 0 16px rgba(242,169,59,.30);
+}
+.cro-aligned-homepage .news-section details>summary:hover{
+  border-color:rgba(53,213,235,.64);
+  background:
+    linear-gradient(90deg,rgba(242,169,59,.105),transparent 36%),
+    linear-gradient(125deg,rgba(53,213,235,.18),rgba(53,213,235,.04) 72%),
+    var(--cro-panel);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 17px 38px rgba(0,0,0,.22),0 0 0 1px rgba(53,213,235,.06);
+}
+.cro-aligned-homepage .news-section .cro-more-label{
+  display:block;
+  color:var(--cro-ink);
+  font:600 17px/1.15 'Space Grotesk',sans-serif;
+  letter-spacing:-.012em;
+  text-transform:none;
+}
+.cro-aligned-homepage .news-section .cro-more-label::before{
+  content:'Expand coverage';
+  display:block;
+  margin-bottom:7px;
+  color:var(--cro-amber);
+  font:600 9px/1 'IBM Plex Mono',monospace;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.cro-aligned-homepage .news-section .cro-more-icon{
+  width:40px;
+  height:40px;
+  flex-basis:40px;
+  border-color:rgba(53,213,235,.42);
+  border-radius:7px 13px 7px 13px;
+  background:rgba(53,213,235,.105);
+  color:var(--cro-cyan);
+  font-size:24px;
+  box-shadow:inset 0 0 0 1px rgba(53,213,235,.035);
+}
+.cro-aligned-homepage .news-section details:not([open])>summary:hover .cro-more-icon{
+  transform:rotate(90deg);
+  background:var(--cro-cyan);
+  color:#061014;
+}
+.cro-aligned-homepage .news-section details[open]>summary{
+  border-color:rgba(242,169,59,.42);
+  background:
+    linear-gradient(90deg,rgba(242,169,59,.13),transparent 38%),
+    linear-gradient(125deg,rgba(53,213,235,.08),rgba(53,213,235,.02) 72%),
+    var(--cro-panel);
+}
+.cro-aligned-homepage .news-section details[open]>summary .cro-more-label::before{
+  content:'Section expanded';
+}
+.cro-aligned-homepage .news-section details[open]>summary .cro-more-icon{
+  border-color:rgba(242,169,59,.50);
+  border-radius:13px 7px 13px 7px;
+  background:rgba(242,169,59,.14);
+  color:var(--cro-amber);
+}
+
+@media(max-width:760px){
+  .cro-aligned-homepage .news-section details>summary{
+    width:100%;
+    min-height:66px;
+    padding:11px 13px 11px 20px;
+  }
+  .cro-aligned-homepage .news-section .cro-more-label{
+    font-size:16px;
+  }
+  .cro-aligned-homepage .news-section .cro-more-icon{
+    width:38px;
+    height:38px;
+    flex-basis:38px;
+  }
+}
+
+
+
+/* AUTOINTEL SCROLL AWARE PRIMARY HEADER V4 */
+.cro-site-header{
+  will-change:transform;
+  transition:transform 210ms cubic-bezier(.2,.7,.2,1),box-shadow 210ms ease;
+}
+.cro-aligned-homepage.cro-header-hidden .cro-site-header{
+  transform:translateY(-101%);
+  box-shadow:none;
+}
+.cro-section-index{
+  transition:top 210ms cubic-bezier(.2,.7,.2,1);
+}
+.cro-aligned-homepage.cro-header-hidden .cro-section-index{
+  top:0;
+}
+@media(prefers-reduced-motion:reduce){
+  .cro-site-header,
+  .cro-section-index{
+    transition:none;
+  }
+}
+
+
+
+/* AUTOINTEL TRAVELER NAV SYNC V5 */
+@media(min-width:1081px){
+  .cro-aligned-homepage #croBriefingPanel{
+    top:148px!important;
+    transition:top 210ms cubic-bezier(.2,.7,.2,1);
+  }
+  .cro-aligned-homepage.cro-header-hidden #croBriefingPanel{
+    top:72px!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .cro-aligned-homepage #croBriefingPanel{
+    transition:none;
+  }
+}
+
 </style>
 
 
@@ -5296,7 +5664,7 @@ body.cro-aligned-homepage{margin:0;background:radial-gradient(circle at 78% 2%,r
       <span class="cro-brand-copy">AutoIntel.News<small>Automotive intelligence</small></span>
     </a>
     <nav class="cro-primary-nav" id="croPrimaryNav" aria-label="Primary navigation">
-      <a href="#croSignals">Weekly signals</a><a href="#croDaily">Daily intelligence</a><a href="/weekly/" data-track-event="weekly_preview_click" data-track-location="homepage_header">Weekly preview</a>
+      <a href="#croDaily">Daily intelligence</a><a href="/weekly/" data-track-event="weekly_preview_click" data-track-location="homepage_header">Weekly preview</a>
       <a href="/ai-readiness/" data-track-event="ai_readiness_click" data-track-location="homepage_header">AI Readiness</a><a href="#croMethod">Method</a>
       <a href="https://podcasts.apple.com/us/podcast/autointel-news-weekly/id6807033776" target="_blank" rel="noopener noreferrer" data-track-event="podcast_click" data-track-location="homepage_header">Podcast</a>
       <button type="button" class="cro-nav-cta ml-onclick-form" onclick="window.ml('show', 'EQNBDs', true)" aria-haspopup="dialog" data-track-location="homepage_header_newsletter">Free weekly email</button>
@@ -5320,14 +5688,12 @@ body.cro-aligned-homepage{margin:0;background:radial-gradient(circle at 78% 2%,r
   </div>
   <div class="cro-proof-bar cro-reveal"><div class="cro-proof-intro"><strong>One industry. One connected view.</strong><span>The research layer behind AutoIntel intelligence.</span></div><div class="cro-proof-stat"><b>14,173</b><span>Reports scanned since August 2026</span></div><div class="cro-proof-stat"><b>75+</b><span>Automotive sources monitored</span></div><div class="cro-proof-stat"><b>5×</b><span>Weekday intelligence updates</span></div></div></div>
 </section>
-<div class="cro-audience-band"><div class="cro-shell cro-audience-row"><span class="cro-audience-label">Built for</span><div class="cro-audience-list"><span>Dealer leaders</span><span>Automotive vendors</span><span>OEM teams</span><span>Suppliers</span><span>Consultants</span><span>Agency professionals</span><span>Industry operators</span></div></div></div>
 
 <main class="wrap cro-main" id="croMain">
-  <section class="cro-section" id="croSignals"><div class="cro-shell"><div class="cro-section-head cro-reveal"><div><div class="cro-section-kicker">The week in one view</div><h2>The shifts carrying the most&nbsp;weight.</h2></div><p>Signals are elevated when several sources point toward the same change—not because a single headline happens to be loud.</p></div><div class="cro-signal-grid"><article class="cro-signal-card cro-reveal"><div class="cro-signal-number"><span>Signal 01</span><span class="cro-confidence">high confidence</span></div><h3>GM Rebalances Its Portfolio Toward Hybrids and Flexible Propulsion</h3><p>GM said it plans to add hybrids across multiple segments without additional capital spending or engineering, while its earnings coverage reported the closure of the Brownstown Battery Assembly plant and repurposing of another facility intended for hydrogen fuel-cell development.</p><div class="cro-signal-footer"><span>3 supporting reports</span><strong>Industry signal</strong></div></article><article class="cro-signal-card cro-reveal"><div class="cro-signal-number"><span>Signal 02</span><span class="cro-confidence">high confidence</span></div><h3>Software-Defined Vehicle Architecture Is Moving Beyond EVs</h3><p>GM announced a centralized compute architecture for autonomous driving, in-car AI, powertrain management and connected services.</p><div class="cro-signal-footer"><span>4 supporting reports</span><strong>Industry signal</strong></div></article><article class="cro-signal-card cro-reveal"><div class="cro-signal-number"><span>Signal 03</span><span class="cro-confidence">medium confidence</span></div><h3>Autonomy Is Advancing Through Constrained Commercial Deployments</h3><p>Lucid and Bolt selected Nvidia&#x27;s Alpamayo software for a planned fleet of at least 25,000 autonomous vehicles in Europe, Mercedes launched Level 2 urban driver assistance in Germany, and Tesla pushed unsupervised FSD to the second quarter of 2027 with an initial…</p><div class="cro-signal-footer"><span>5 supporting reports</span><strong>Industry signal</strong></div></article></div><div class="cro-newsletter cro-reveal" id="croNewsletter"><div><div class="cro-section-kicker">Free weekly preview email</div><h3>Get the public edition in your inbox.</h3><p>The free weekly email brings the public preview to you. Full Briefing offers may appear occasionally; subscribing to email does not start a paid trial.</p></div><div class="cro-newsletter-action"><button type="button" class="cro-button cro-button-secondary ml-onclick-form" onclick="window.ml('show', 'EQNBDs', true)" aria-haspopup="dialog" data-track-location="homepage_newsletter">Sign up for the free weekly email →</button><small>No payment or card required · Unsubscribe anytime</small></div></div></div></section>
   <section class="cro-daily-head" id="croDaily"><div class="cro-shell"><div class="cro-section-head cro-reveal"><div><div class="cro-section-kicker">Daily reporting layer</div><h2>Today’s automotive intelligence.</h2></div><p>The complete scanning experience remains here for readers who want to move past the weekly signals and explore the underlying reporting.</p></div></div></section>
   <nav class="cro-section-index" id="croDailySections" aria-label="Daily intelligence sections"><div class="cro-shell cro-section-index-shell" id="croSectionIndexLinks"><span class="cro-section-index-label">Jump to</span><a href="#latest-articles">Our Picks</a></div></nav>
   <div class="cro-shell cro-daily-shell" id="croDailyMount"></div>
-  <aside class="cro-briefing-panel cro-reveal" id="croBriefingPanel"><div class="cro-section-kicker">The weekly layer</div><h3>See the shifts before they become obvious.</h3><p>The free public preview connects the week’s strongest signals across the automotive ecosystem.</p><ul class="cro-briefing-list"><li>Three cross-source signals</li><li>One analysis fully unlocked</li><li>Risk and opportunity preview</li><li>Public weekly podcast</li></ul><a class="cro-button cro-button-primary" href="/weekly/" data-track-event="weekly_preview_click" data-track-location="homepage_sidebar">Read the free weekly preview →</a><small>No account required</small></aside>
+  <aside class="cro-briefing-panel cro-reveal" id="croBriefingPanel"><div class="cro-section-kicker">Weekly connected view</div><h3>See the week as one connected view.</h3><p>Move beyond individual headlines to the signals, implications and decisions taking shape across the industry.</p><div class="cro-briefing-summary" aria-label="Included in the public weekly preview"><span>3 signals</span><span>1 deep dive</span><span>Risk + opportunity</span></div><a class="cro-button cro-button-primary" href="/weekly/" data-track-event="weekly_preview_click" data-track-location="homepage_sidebar">View the weekly preview →</a><small>Free public edition · No account required</small></aside>
   <div class="cro-feed-bridge cro-reveal" id="croFeedBridge"><div><h3>Finished with today’s picks?</h3><p>Step back from the stream and see what the week’s developments mean together.</p></div><a class="cro-button cro-button-primary" href="/weekly/" data-track-event="weekly_preview_click" data-track-location="homepage_feed_bridge">Read the weekly preview →</a></div>
 
 
@@ -5487,7 +5853,7 @@ body.cro-aligned-homepage{margin:0;background:radial-gradient(circle at 78% 2%,r
   </p>
 
 
-<div class="cro-shell cro-footer-row"><div class="cro-footer-copy"><strong>AutoIntel.News</strong><span>What happened. What matters. What is changing.</span></div><nav class="cro-footer-links" aria-label="Footer navigation"><a href="#croTop">Back to top</a><a href="/weekly/" data-track-event="weekly_preview_click" data-track-location="homepage_footer">Weekly preview</a><a href="#croNewsletter">Free newsletter</a><a href="/privacy/">Privacy</a><a href="mailto:autointel.news@proton.me">Contact</a></nav></div>
+<div class="cro-shell cro-footer-row"><div class="cro-footer-copy"><strong>AutoIntel.News</strong><span>What happened. What matters. What is changing.</span></div><nav class="cro-footer-links" aria-label="Footer navigation"><a href="#croTop">Back to top</a><a href="/weekly/" data-track-event="weekly_preview_click" data-track-location="homepage_footer">Weekly preview</a><a href="/privacy/">Privacy</a><a href="mailto:autointel.news@proton.me">Contact</a></nav></div>
 
 </footer>
 
@@ -6845,7 +7211,21 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
         if (children.length > 4) {
           const details = document.createElement('details');
           const summary = document.createElement('summary');
-          summary.textContent = 'Show ' + (children.length - 4) + ' more stories';
+          const hiddenStoryCount = children.length - 4;
+          const summaryLabel = document.createElement('span');
+          summaryLabel.className = 'cro-more-label';
+          const summaryIcon = document.createElement('span');
+          summaryIcon.className = 'cro-more-icon';
+          summaryIcon.setAttribute('aria-hidden', 'true');
+          const updateSummary = function () {
+            const noun = hiddenStoryCount === 1 ? 'story' : 'stories';
+            summaryLabel.textContent = (details.open ? 'Hide ' : 'Show ') + hiddenStoryCount + ' more ' + noun;
+            summaryIcon.textContent = details.open ? '−' : '+';
+          };
+          summary.appendChild(summaryLabel);
+          summary.appendChild(summaryIcon);
+          details.addEventListener('toggle', updateSummary);
+          updateSummary();
           const more = document.createElement('div');
           more.className = 'cro-more-rows';
           children.slice(4).forEach(function (row) { more.appendChild(row); });
@@ -6858,6 +7238,43 @@ document.getElementById('publishDate').textContent = new Date().toLocaleDateStri
       back.textContent = 'Back to sections ↑';
       section.appendChild(back);
     });
+  }
+
+  const scrollAwareHeader = document.getElementById('croSiteHeader');
+  if (scrollAwareHeader) {
+    let lastHeaderScrollY = Math.max(0, window.scrollY || window.pageYOffset || 0);
+    let headerScrollTicking = false;
+    const setHeaderForScroll = function () {
+      const currentScrollY = Math.max(0, window.scrollY || window.pageYOffset || 0);
+      const scrollDelta = currentScrollY - lastHeaderScrollY;
+      const navigationIsOpen = scrollAwareHeader.classList.contains('is-open');
+
+      if (currentScrollY <= 24 || navigationIsOpen) {
+        document.body.classList.remove('cro-header-hidden');
+      } else if (scrollDelta > 4 && currentScrollY > 120) {
+        document.body.classList.add('cro-header-hidden');
+      } else if (scrollDelta < -4) {
+        document.body.classList.remove('cro-header-hidden');
+      }
+
+      lastHeaderScrollY = currentScrollY;
+      headerScrollTicking = false;
+    };
+
+    window.addEventListener('scroll', function () {
+      if (!headerScrollTicking) {
+        window.requestAnimationFrame(setHeaderForScroll);
+        headerScrollTicking = true;
+      }
+    }, { passive: true });
+    window.addEventListener('resize', function () {
+      document.body.classList.remove('cro-header-hidden');
+      lastHeaderScrollY = Math.max(0, window.scrollY || window.pageYOffset || 0);
+    }, { passive: true });
+    scrollAwareHeader.addEventListener('focusin', function () {
+      document.body.classList.remove('cro-header-hidden');
+    });
+    window.requestAnimationFrame(setHeaderForScroll);
   }
 
   const revealItems = Array.from(document.querySelectorAll('.cro-reveal'));
