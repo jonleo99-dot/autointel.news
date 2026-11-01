@@ -445,6 +445,201 @@
       *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
       .reveal { opacity: 1; transform: none; }
     }
+  
+
+    /* AUTOINTEL WEEKLY CONNECTED VIEW LANDING — SUPERSEDED BY V2 */
+    .weekly-inline-signup {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      max-width: 760px;
+      margin-top: 30px;
+      padding: 18px;
+      border: 1px solid rgba(53,213,235,.34);
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(53,213,235,.10), rgba(255,255,255,.025));
+      box-shadow: 0 16px 42px rgba(0,0,0,.16);
+    }
+    .weekly-inline-signup-copy { min-width: 0; }
+    .weekly-inline-signup strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--ink);
+      font: 600 16px/1.35 "Space Grotesk", Arial, sans-serif;
+    }
+    .weekly-inline-signup span {
+      display: block;
+      color: var(--dim);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .weekly-inline-signup .button { flex: 0 0 auto; }
+    .hero-signal-title {
+      margin: 12px 0 8px;
+      color: var(--ink);
+      font: 600 clamp(21px,2.1vw,29px)/1.18 "Space Grotesk", Arial, sans-serif;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .hero-signal-summary {
+      margin: 0 0 18px;
+      color: var(--ink-soft);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    @media (max-width: 620px) {
+      .weekly-inline-signup { align-items: stretch; flex-direction: column; }
+      .weekly-inline-signup .button { width: 100%; }
+      .hero-signal-title { font-size: 22px; }
+    }
+
+  
+
+    /* AUTOINTEL WEEKLY CTA TRANSITION V2 */
+    .weekly-cta-transition { padding-top: 64px; padding-bottom: 64px; }
+    .weekly-cta-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 840px;
+      margin-inline: auto;
+      padding: clamp(30px,5vw,54px);
+      border: 1px solid rgba(53,213,235,.30);
+      border-radius: var(--radius);
+      background:
+        radial-gradient(circle at 50% 0, rgba(53,213,235,.13), transparent 23rem),
+        var(--panel);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .weekly-cta-panel .section-kicker { justify-content: center; }
+    .weekly-cta-panel h2 {
+      max-width: 680px;
+      margin: 16px auto 12px;
+      font: 600 clamp(29px,4vw,44px)/1.08 "Space Grotesk", Arial, sans-serif;
+      letter-spacing: -.03em;
+      text-wrap: balance;
+    }
+    .weekly-cta-panel p {
+      max-width: 620px;
+      margin: 0 auto 24px;
+      color: var(--ink-soft);
+      font-size: 16px;
+    }
+    .weekly-cta-panel small {
+      display: block;
+      margin-top: 13px;
+      color: var(--dim);
+      font: 500 9px/1.5 "IBM Plex Mono", monospace;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+  
+
+    /* AUTOINTEL WEEKLY SINGLE HERO CTA V3 */
+    .weekly-hero-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 960px;
+      margin-inline: auto;
+      padding: 26px 0 78px;
+      text-align: center;
+    }
+    .weekly-hero-center .eyebrow { justify-content: center; }
+    .weekly-hero-center h1 {
+      max-width: 900px;
+      margin-inline: auto;
+    }
+    .weekly-hero-center .hero-deck {
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .weekly-hero-center .hero-note { margin-top: 16px; }
+    .current-intel-section { padding-top: 72px; padding-bottom: 56px; }
+    .current-intel-shell { max-width: 980px; }
+    .current-intel-shell .hero-media { margin-inline: auto; }
+    .current-intel-shell .evidence-bar { margin-top: 24px; }
+    @media (max-width: 700px) {
+      .weekly-hero-center { padding-bottom: 52px; }
+      .current-intel-section { padding-top: 48px; }
+    }
+
+  
+
+    /* AUTOINTEL WEEKLY HERO TYPOGRAPHY V4 */
+    .weekly-hero-center h1 {
+      width: min(100%, 860px);
+      max-width: 860px;
+      margin: 28px auto 26px;
+      font-family: "Space Grotesk", Arial, sans-serif;
+      text-align: center;
+      text-wrap: balance;
+    }
+    .weekly-hero-center h1 .hero-context-line {
+      display: block;
+      color: var(--ink);
+      font-size: clamp(30px,4.2vw,48px);
+      font-weight: 500;
+      line-height: 1.08;
+      letter-spacing: -.028em;
+    }
+    .weekly-hero-center h1 .hero-promise-line {
+      display: block;
+      margin-top: 10px;
+      color: var(--cyan);
+      font-size: clamp(44px,6.2vw,72px);
+      font-weight: 600;
+      line-height: .98;
+      letter-spacing: -.045em;
+    }
+    @media (max-width: 620px) {
+      .weekly-hero-center h1 { margin: 24px auto 22px; }
+      .weekly-hero-center h1 .hero-context-line {
+        font-size: clamp(27px,8.4vw,36px);
+        line-height: 1.12;
+      }
+      .weekly-hero-center h1 .hero-promise-line {
+        margin-top: 9px;
+        font-size: clamp(40px,11.5vw,52px);
+        line-height: 1;
+      }
+    }
+
+  
+
+    /* AUTOINTEL WEEKLY HERO PROPORTION V5 */
+    .weekly-hero-center h1 .hero-context-line {
+      font-size: clamp(28px,4vw,46px);
+      letter-spacing: -.032em;
+    }
+    .weekly-hero-center h1 .hero-promise-line {
+      font-size: clamp(44px,6.25vw,72px);
+      letter-spacing: -.043em;
+    }
+    .weekly-hero-center .hero-deck {
+      width: min(100%, 830px);
+      max-width: 830px;
+      font-size: clamp(19px,1.7vw,21px);
+      line-height: 1.5;
+      text-wrap: balance;
+    }
+    @media (max-width: 620px) {
+      .weekly-hero-center h1 .hero-context-line {
+        font-size: clamp(26px,7.4vw,33px);
+      }
+      .weekly-hero-center h1 .hero-promise-line {
+        font-size: clamp(41px,11.6vw,52px);
+      }
+      .weekly-hero-center .hero-deck {
+        font-size: 18px;
+        line-height: 1.52;
+      }
+    }
+
   </style>
 
   <meta name="autointel-release" content="weekly-cro-v1">
@@ -469,7 +664,6 @@
         <a href="#decision">Decision layer</a>
         <a href="#access" data-track-event="trial_interest_click" data-track-location="weekly_header">Full Briefing</a>
         <a class="nav-return" href="/" data-track-event="daily_intelligence_click" data-track-location="weekly_header">Daily intelligence</a>
-        <button type="button" class="nav-cta ml-onclick-form" onclick="window.ml('show', 'EQNBDs', true)" aria-haspopup="dialog" data-track-location="weekly_header_newsletter">Free weekly email</button>
       </nav>
       <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">☰</button>
     </div>
@@ -485,7 +679,7 @@
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="#top">Back to top</a>
         <a href="/" data-track-event="daily_intelligence_click" data-track-location="weekly_footer">Daily intelligence</a>
-        <a href="#newsletter">Free newsletter</a>
+        
         <a href="/privacy/">Privacy</a>
         <a href="mailto:autointel.news@proton.me">Contact</a>
       </nav>
@@ -591,30 +785,31 @@
       document.getElementById('main').innerHTML = `
         <section class="hero anchor-section" id="top">
           <div class="shell">
-            <div class="hero-grid">
-              <div class="hero-copy reveal">
-                <div class="eyebrow">AutoIntel Weekly · ${esc(issue)}</div>
-                <h1>${esc(lead.title || 'The week’s automotive signals, connected.')}</h1>
-                <p class="hero-deck">${esc(lead.why_it_matters || data.executive_preview || 'One connected view of what changed and what may change next.')}</p>
-                <div class="hero-actions">
-                  <button type="button" class="button button-primary ml-onclick-form" onclick="window.ml('show', 'EQNBDs', true)" aria-haspopup="dialog" data-track-location="weekly_hero_newsletter">Sign up for the free weekly email →</button>
-                  <a class="button button-secondary" href="#signals">Read this week’s preview</a>
-                </div>
-                <p class="hero-note">Public preview by email · No payment or card required · Full Briefing trial is a separate choice</p>
-              </div>
-              <figure class="hero-media reveal" aria-labelledby="weekly-image-caption">
-                <img src="/assets/images/weekly-governing-signal.webp" width="960" height="640" alt="Automotive manufacturing equipment and vehicles in a modern production environment" fetchpriority="high" decoding="async">
-                <figcaption class="media-overlay" id="weekly-image-caption">
-                  <div class="card-label">Governing signal · evidence</div>
-                  <div class="signal-stat-grid" aria-label="Evidence supporting the governing signal">
-                    <div class="signal-stat"><b>${evidenceCount || '—'}</b><span>Supporting reports</span></div>
-                    <div class="signal-stat"><b>${esc(confidence || '—')}</b><span>Confidence</span></div>
-                    <div class="signal-stat"><b>${signals.slice(0, 3).length}</b><span>Signals surfaced</span></div>
-                  </div>
-                  <div class="theme-tags">${signalTypes}</div>
-                </figcaption>
-              </figure>
+            <div class="weekly-hero-center reveal" id="newsletter" data-track-location="weekly_newsletter">
+              <div class="eyebrow">Connected automotive intelligence · ${esc(issue)}</div>
+              <h1><span class="hero-context-line">Hundreds of automotive reports.</span><span class="hero-promise-line">One connected view.</span></h1>
+              <p class="hero-deck">AutoIntel connects reporting across manufacturers, dealers, technology, policy and markets—so you can see what changed, why it matters and what may change&nbsp;next.</p>
+              <button type="button" class="button button-primary ml-onclick-form" id="weekly-signup" onclick="window.ml('show', 'EQNBDs', true)" aria-haspopup="dialog" data-track-location="weekly_hero_newsletter">Join the free weekly email →</button>
+              <p class="hero-note">No payment or card required · Unsubscribe anytime</p>
             </div>
+          </div>
+        </section>
+        <section class="section current-intel-section anchor-section" id="current-signal">
+          <div class="shell current-intel-shell">
+            <figure class="hero-media reveal" aria-labelledby="weekly-image-caption">
+              <img src="/assets/images/weekly-governing-signal.webp" width="960" height="640" alt="A collage of automotive developments informing this week’s connected view" fetchpriority="high" decoding="async">
+              <figcaption class="media-overlay" id="weekly-image-caption">
+                <div class="card-label">Current signal · this week</div>
+                <h2 class="hero-signal-title">${esc(lead.title || 'The week’s automotive signals are beginning to converge.')}</h2>
+                <p class="hero-signal-summary">${esc(lead.why_it_matters || data.executive_preview || 'One connected view of what changed and what may change next.')}</p>
+                <div class="signal-stat-grid" aria-label="Evidence supporting the current signal">
+                  <div class="signal-stat"><b>${evidenceCount || '—'}</b><span>Supporting reports</span></div>
+                  <div class="signal-stat"><b>${esc(confidence || '—')}</b><span>Confidence</span></div>
+                  <div class="signal-stat"><b>${signals.slice(0, 3).length}</b><span>Signals surfaced</span></div>
+                </div>
+                <div class="theme-tags">${signalTypes}</div>
+              </figcaption>
+            </figure>
             <div class="evidence-bar reveal" aria-label="Evidence behind this weekly edition">
               <div class="evidence-intro"><strong>One connected view of the week.</strong><span>Evidence first. Implications second.</span></div>
               <div class="evidence-stat"><b>${esc(metrics.article_count == null ? '—' : metrics.article_count)}</b><span>Reports analyzed</span></div>
@@ -624,19 +819,16 @@
           </div>
         </section>
         <nav class="edition-nav" aria-label="Jump through this weekly edition">
-          <div class="shell"><span class="edition-nav-label">This edition</span><a href="#signals">Three signals</a><a href="#deep-dive">Deep dive</a><a href="#decision">Risk + opportunity</a><a href="#newsletter">Free newsletter</a><a href="#access">Full briefing</a><a href="#listen">Listen</a></div>
+          <div class="shell"><span class="edition-nav-label">This edition</span><a href="#signals">Three signals</a><a href="#deep-dive">Deep dive</a><a href="#decision">Risk + opportunity</a><a href="#access">Full briefing</a><a href="#listen">Listen</a></div>
         </nav>
         <section class="section anchor-section" id="signals">
-          <div class="shell"><div class="section-head reveal"><div><div class="section-kicker">What changed</div><h2>Three signals carrying the&nbsp;week.</h2></div><p>Each signal is supported across multiple reports. The point is not to repeat the headlines—it is to show where separate developments are beginning to converge.</p></div><div class="signal-grid">${renderSignals(signals)}</div></div>
+          <div class="shell"><div class="section-head reveal"><div><div class="section-kicker">Intelligence nuggets</div><h2>Three signals carrying the&nbsp;week.</h2></div><p>Each signal is supported across multiple reports. The point is not to repeat the headlines—it is to show where separate developments are beginning to converge.</p></div><div class="signal-grid">${renderSignals(signals)}</div></div>
         </section>
         <section class="section anchor-section" id="deep-dive">
           <div class="shell"><article class="deep-dive reveal"><div class="deep-intro"><div class="section-kicker">One analysis unlocked</div><h2>${esc(lead.title || 'One development worth understanding now')}</h2><p>${esc(data.executive_preview || '')}</p><span class="evidence-pill">${evidenceCount ? evidenceCount + ' supporting report' + (evidenceCount === 1 ? '' : 's') : 'Evidence developing'}${confidence ? ' · ' + esc(confidence) + ' confidence' : ''}</span></div><div class="deep-body">${lead.what_happened ? '<div class="analysis-block"><strong>What happened</strong><p>' + esc(lead.what_happened) + '</p></div>' : ''}${lead.why_it_matters ? '<div class="analysis-block"><strong>Why it matters</strong><p>' + esc(lead.why_it_matters) + '</p></div>' : ''}<div class="analysis-block operator"><strong>How to use this preview</strong><p>Compare this development with the three signals and decision layer below. The complete briefing adds the supporting evidence, implications and forward watchlist.</p></div></div></article></div>
         </section>
         <section class="section anchor-section" id="decision">
           <div class="shell"><div class="section-head reveal"><div><div class="section-kicker">Decision layer</div><h2>The downside and upside taking shape.</h2></div><p>The public preview surfaces one risk and one opportunity. The complete briefing carries the analysis through to evidence and forward indicators.</p></div><div class="decision-grid">${downside.title ? '<article class="decision-card risk reveal"><div class="decision-label">Risk signal</div><h3>' + esc(downside.title) + '</h3><p>' + esc(downside.teaser || '') + '</p></article>' : ''}${upside.title ? '<article class="decision-card opportunity reveal"><div class="decision-label">Opportunity signal</div><h3>' + esc(upside.title) + '</h3><p>' + esc(upside.teaser || '') + '</p></article>' : ''}</div></div>
-        </section>
-        <section class="section newsletter-section anchor-section" id="newsletter">
-          <div class="shell"><div class="newsletter-panel reveal"><div><div class="section-kicker">Free weekly preview email</div><h2>Get the public edition in your inbox.</h2><p>The free weekly email brings the public preview to you. Full Briefing offers may appear occasionally; subscribing to email does not start a paid trial.</p></div><div class="newsletter-action"><button type="button" class="button button-secondary ml-onclick-form" onclick="window.ml('show', 'EQNBDs', true)" aria-haspopup="dialog" data-track-location="weekly_newsletter">Sign up for the free weekly email →</button><small>No payment or card required · Unsubscribe anytime</small></div></div></div>
         </section>
         <section class="section anchor-section" id="access">
           <div class="shell"><div class="access-panel reveal"><div class="access-copy"><div class="section-kicker">The Full Briefing</div><h2>Move from awareness to decision-ready intelligence.</h2><p>The public preview establishes the week’s direction. The complete briefing adds the implications, evidence and forward watchlist needed to use it.</p><ul class="full-list">${fullItems.map(function (item) { return '<li>' + esc(item) + '</li>'; }).join('')}${hasAudioItem ? '' : '<li>The private audio briefing</li>'}</ul></div><div class="access-action"><div class="price">$9.99 <span>/ month</span></div><div class="trial-note">30 days free · No credit card required</div><a class="button button-primary" id="trialButton" href="${esc(checkoutHref)}" ${checkoutReady ? 'data-track-event="begin_checkout"' : 'aria-disabled="true"'} data-track-location="weekly_access_panel">Start your 30-day free trial →</a><p class="access-fine">No automatic charge · Continue afterward for $9.99/month · Cancel anytime</p><div class="checkout-message${checkoutReady ? '' : ' is-visible'}" id="checkoutMessage" role="status">${checkoutReady ? '' : 'Checkout link awaiting final production configuration.'}</div></div></div></div>
