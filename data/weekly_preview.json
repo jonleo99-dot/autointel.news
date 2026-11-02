@@ -1,53 +1,53 @@
 {
   "preview_version": "1.3",
-  "reporting_week": "2026-10-19 to 2026-10-25",
+  "reporting_week": "2026-10-26 to 2026-11-01",
   "metrics": {
-    "article_count": 537,
+    "article_count": 539,
     "ai_sample_count": 100,
     "major_development_count": 4,
-    "cross_source_count": 5,
+    "cross_source_count": 4,
     "emerging_trend_count": 3
   },
-  "executive_preview": "The clearest industry shift this week is not a single product launch but a more pragmatic approach to electrification. GM is reopening the hybrid path while closing or repurposing some EV- and hydrogen-focused facilities; Ford is making the Mach-E more affordable and versatile; and suppliers including Bosch and CATL are maintaining technology optionality across electric, hydrogen and multiple battery chemistries. At the same time, automakers are moving software-defined architectures beyond EVs, with GM targeting centralized computing across gas and electric vehicles.",
+  "executive_preview": "The clearest industry shift this week is toward more selective electrification rather than a uniform EV push. Ford is preparing a lower-cost electric pickup around manufacturing simplification, drivetrain efficiency and a smaller battery, while GM is reallocating plant capacity toward hybrids and Rivian is expanding electric commercial-van capability. Used-EV data also shows improving prices and faster turnover, but performance varies sharply by model.",
   "lead_development": {
     "type": "emerging_trend",
-    "title": "Battery and charging strategies are becoming more infrastructure-aware.",
-    "what_happened": "Electrify America opened its largest reported charging station in Orlando; LAZ Parking and EverCharge proposed load-sharing for apartment charging; Honda developed underlying technology for in-motion wireless charging; and Redwood expanded battery recycling with Rivian.",
-    "why_it_matters": "The constraint is increasingly system deployment rather than only vehicle range. Shared electrical capacity, high-throughput sites, recycling and future wireless systems address different parts of the ownership ecosystem.",
+    "title": "Vehicle software is becoming a service, repair and safety constraint.",
+    "what_happened": "A reported Tesla battery replacement required extensive firmware and controller work, automotive cybersecurity research identified 413 reported vulnerabilities and 827 vulnerable libraries, and Tesla is using Turo to expose more renters to supervised Full Self-Driving.",
+    "why_it_matters": "Software now affects repairability, cybersecurity, monetization and customer access. Independent repairers need diagnostic and authorization capabilities that go beyond conventional mechanical skills, while manufacturers face pressure to secure connected systems and support long-term serviceability.",
     "confidence": "medium",
-    "evidence_count": 5
+    "evidence_count": 3
   },
   "signals": [
     {
-      "title": "GM Rebalances Its Portfolio Toward Hybrids and Flexible Propulsion",
-      "teaser": "GM said it plans to add hybrids across multiple segments without additional capital spending or engineering, while its earnings coverage reported the closure of the Brownstown Battery Assembly plant and repurposing of another facility intended for hydrogen fuel-cell development.",
-      "confidence": "high",
-      "evidence_count": 3,
-      "signal_type": "Industry signal"
-    },
-    {
-      "title": "Software-Defined Vehicle Architecture Is Moving Beyond EVs",
-      "teaser": "GM announced a centralized compute architecture for autonomous driving, in-car AI, powertrain management and connected services.",
+      "title": "Ford's Fathom EV Strategy Centers on Cost, Manufacturing and Digital Upsell",
+      "teaser": "Ford has produced more than 5,000 large aluminum castings for its upcoming Fathom electric pickup and says approximately 90% of validation testing is complete.",
       "confidence": "high",
       "evidence_count": 4,
-      "signal_type": "Industry signal"
+      "signal_type": "Production strategy"
     },
     {
-      "title": "Autonomy Is Advancing Through Constrained Commercial Deployments",
-      "teaser": "Lucid and Bolt selected Nvidia's Alpamayo software for a planned fleet of at least 25,000 autonomous vehicles in Europe, Mercedes launched Level 2 urban driver assistance in Germany, and Tesla pushed unsupervised FSD to the second quarter of 2027 with an initial…",
+      "title": "GM Repositions Three-Row SUV Capacity Toward Hybrids",
+      "teaser": "GM is preparing Lansing Delta Township for potential hybrid versions of the Buick Enclave, Chevrolet Traverse and GMC Acadia as part of more than $2 billion in planned regional investment.",
       "confidence": "medium",
-      "evidence_count": 5,
+      "evidence_count": 1,
+      "signal_type": "Production strategy"
+    },
+    {
+      "title": "Rivian Expands Electric Commercial-Van Utility Beyond Urban Routes",
+      "teaser": "Rivian has begun delivering commercial vans with a larger 129-kWh LFP battery and a dual-motor all-wheel-drive option.",
+      "confidence": "high",
+      "evidence_count": 2,
       "signal_type": "Industry signal"
     }
   ],
   "decision_support_preview": {
     "downside": {
-      "title": "Software failures could turn convenience features into mobility, safety or customer-trust problems.",
-      "teaser": "Reported update behavior temporarily prevented a Hyundai Kona from starting, while a Tesla robotaxi could not disable a novelty audio feature during a customer ride."
+      "title": "Affordable EV launch execution may be constrained by supplier quality and production-rate problems.",
+      "teaser": "Ford identified supply-base readiness as the principal outstanding Fathom risk while still completing validation."
     },
     "upside": {
-      "title": "Use CPO and carefully sourced lower-priced used vehicles to address affordability gaps.",
-      "teaser": "CPO sales rose 10% year over year, while sub-$15,000 used inventory remained tighter than the overall market."
+      "title": "Use model-level used-EV data to expand profitable retail inventory selectively.",
+      "teaser": "Used EVs showed faster average turns and stronger price gains, but performance varied widely by model."
     }
   },
   "full_briefing_includes": [
@@ -58,8 +58,8 @@
     "A forward watchlist and the private audio briefing"
   ],
   "generated_from": {
-    "generated_at": "2026-10-26T10:02:58.762117+00:00",
-    "article_count": 537,
+    "generated_at": "2026-11-02T11:03:22.524664+00:00",
+    "article_count": 539,
     "ai_sample_count": 100
   }
 }
