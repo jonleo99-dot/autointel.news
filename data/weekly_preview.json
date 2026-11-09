@@ -1,53 +1,53 @@
 {
   "preview_version": "1.3",
-  "reporting_week": "2026-10-26 to 2026-11-01",
+  "reporting_week": "2026-11-02 to 2026-11-08",
   "metrics": {
-    "article_count": 539,
+    "article_count": 545,
     "ai_sample_count": 100,
-    "major_development_count": 4,
-    "cross_source_count": 4,
+    "major_development_count": 3,
+    "cross_source_count": 3,
     "emerging_trend_count": 3
   },
-  "executive_preview": "The clearest industry shift this week is toward more selective electrification rather than a uniform EV push. Ford is preparing a lower-cost electric pickup around manufacturing simplification, drivetrain efficiency and a smaller battery, while GM is reallocating plant capacity toward hybrids and Rivian is expanding electric commercial-van capability. Used-EV data also shows improving prices and faster turnover, but performance varies sharply by model.",
+  "executive_preview": "This week’s strongest signals point to a more selective automotive transition rather than a uniform shift toward battery-electric vehicles. Hybrid demand is accelerating in the United States as gasoline remains above $4 per gallon, while Germany’s battery-electric market reached a record 37% share, showing that powertrain adoption continues to diverge sharply by market. Automakers are responding with broader powertrain portfolios, charging incentives and more compact EVs rather than relying only on large, premium electric vehicles.",
   "lead_development": {
     "type": "emerging_trend",
-    "title": "Vehicle software is becoming a service, repair and safety constraint.",
-    "what_happened": "A reported Tesla battery replacement required extensive firmware and controller work, automotive cybersecurity research identified 413 reported vulnerabilities and 827 vulnerable libraries, and Tesla is using Turo to expose more renters to supervised Full Self-Driving.",
-    "why_it_matters": "Software now affects repairability, cybersecurity, monetization and customer access. Independent repairers need diagnostic and authorization capabilities that go beyond conventional mechanical skills, while manufacturers face pressure to secure connected systems and support long-term serviceability.",
-    "confidence": "medium",
+    "title": "Automakers are combining premium EV launches with cost restructuring.",
+    "what_happened": "BMW lowered its 2026 automotive margin forecast to between -0.5% and 0.5%, plans to eliminate approximately 8,000 German jobs and accelerate Neue Klasse production. Toyota raised its annual earnings forecast despite lower global sales, citing hybrid demand, currency effects and cost reductions.",
+    "why_it_matters": "Electrification is not automatically improving profitability. BMW’s actions show the cost of funding new platforms and software while demand in China weakens.",
+    "confidence": "high",
     "evidence_count": 3
   },
   "signals": [
     {
-      "title": "Ford's Fathom EV Strategy Centers on Cost, Manufacturing and Digital Upsell",
-      "teaser": "Ford has produced more than 5,000 large aluminum castings for its upcoming Fathom electric pickup and says approximately 90% of validation testing is complete.",
-      "confidence": "high",
-      "evidence_count": 4,
-      "signal_type": "Production strategy"
-    },
-    {
-      "title": "GM Repositions Three-Row SUV Capacity Toward Hybrids",
-      "teaser": "GM is preparing Lansing Delta Township for potential hybrid versions of the Buick Enclave, Chevrolet Traverse and GMC Acadia as part of more than $2 billion in planned regional investment.",
-      "confidence": "medium",
-      "evidence_count": 1,
-      "signal_type": "Production strategy"
-    },
-    {
-      "title": "Rivian Expands Electric Commercial-Van Utility Beyond Urban Routes",
-      "teaser": "Rivian has begun delivering commercial vans with a larger 129-kWh LFP battery and a dual-motor all-wheel-drive option.",
+      "title": "U.S. Buyers Are Moving Toward Hybrids Faster Than Full EVs",
+      "teaser": "Hybrids sold in approximately 44 days in September, compared with 75 days for gasoline-only vehicles.",
       "confidence": "high",
       "evidence_count": 2,
       "signal_type": "Industry signal"
+    },
+    {
+      "title": "Tesla Is Reallocating Cybertruck Capacity Toward Robotaxis",
+      "teaser": "Tesla said Cybertruck production in Texas will wind down next year to make room for more Cybercab production.",
+      "confidence": "high",
+      "evidence_count": 3,
+      "signal_type": "Production strategy"
+    },
+    {
+      "title": "EV Safety Exposure Is Increasingly Software-Defined",
+      "teaser": "GM recalled 67,380 Chevrolet and Cadillac EVs because a software defect may cause temporary loss of braking at low speeds.",
+      "confidence": "high",
+      "evidence_count": 5,
+      "signal_type": "Safety & regulation"
     }
   ],
   "decision_support_preview": {
     "downside": {
-      "title": "Affordable EV launch execution may be constrained by supplier quality and production-rate problems.",
-      "teaser": "Ford identified supply-base readiness as the principal outstanding Fathom risk while still completing validation."
+      "title": "Software and electronic defects could increase recall, dealer-service and customer-confidence costs as EV fleets grow.",
+      "teaser": "GM and Hyundai issued major EV recalls involving braking and airbag software systems."
     },
     "upside": {
-      "title": "Use model-level used-EV data to expand profitable retail inventory selectively.",
-      "teaser": "Used EVs showed faster average turns and stronger price gains, but performance varied widely by model."
+      "title": "Expand hybrid inventory, merchandising and customer education in U.S.",
+      "teaser": "Hybrids are selling materially faster than gasoline-only vehicles and are attracting more consideration than BEVs."
     }
   },
   "full_briefing_includes": [
@@ -58,8 +58,8 @@
     "A forward watchlist and the private audio briefing"
   ],
   "generated_from": {
-    "generated_at": "2026-11-02T11:03:22.524664+00:00",
-    "article_count": 539,
+    "generated_at": "2026-11-09T11:03:15.383329+00:00",
+    "article_count": 545,
     "ai_sample_count": 100
   }
 }
