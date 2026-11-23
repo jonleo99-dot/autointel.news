@@ -1,53 +1,53 @@
 {
   "preview_version": "1.3",
-  "reporting_week": "2026-11-09 to 2026-11-15",
+  "reporting_week": "2026-11-16 to 2026-11-22",
   "metrics": {
-    "article_count": 547,
+    "article_count": 545,
     "ai_sample_count": 100,
-    "major_development_count": 5,
+    "major_development_count": 3,
     "cross_source_count": 4,
     "emerging_trend_count": 3
   },
-  "executive_preview": "The strongest signal this week is a broad industry move toward pragmatic electrification rather than an all-EV transition. Honda's next CR-V and Toyota's RAV4 are moving to hybrid-only powertrains, while battery and charging developments continue to improve EV usability. At the same time, affordability is worsening: the average U.S.",
+  "executive_preview": "The clearest industry signal this week is a widening split between EV ambition and execution. Automakers are moving forward with domestic battery production, U.S. EV assembly, vehicle-to-grid programs and faster-charging products, but multiple programs remain constrained by software, infrastructure, regulatory limits, financial pressure and delayed launches.",
   "lead_development": {
     "type": "emerging_trend",
-    "title": "Retailers are competing through transparency, digital reach and ownership convenience.",
-    "what_happened": "GM's CarBravo connects certified used inventory across participating dealers and reports that about 38% of initially used-car shoppers ultimately buy new. The FTC reached an agreement with Stream Auto Outlet over advertised prices that excluded required fees.",
-    "why_it_matters": "Used-car shoppers are increasingly valuable acquisition opportunities for new-vehicle retailers, but misleading pricing creates regulatory and reputational exposure. Convenience and transparent payments may matter as much as inventory breadth.",
-    "confidence": "high",
-    "evidence_count": 4
+    "title": "Automotive retail is shifting toward distributed, digital and experience-led transactions",
+    "what_happened": "Hertz is closing its dedicated used-car stores while emphasizing HertzCarSales.com, Amazon Autos, eBay and TestDrive+ at more than 300 rental locations. Carvana is expanding same-day delivery in Massachusetts, while wholesale used-vehicle prices were described as steady in the CBT News weekly roundup.",
+    "why_it_matters": "The evidence points to fewer dedicated retail footprints and more use of existing vehicle networks, digital merchandising and extended test-drive formats. Traditional dealers may face greater competition from asset-light sellers, but the model also reinforces the value of physical access, vehicle condition transparency and convenient delivery.",
+    "confidence": "medium",
+    "evidence_count": 3
   },
   "signals": [
     {
-      "title": "Honda and Toyota Push Mainstream SUVs Toward Hybrid-Only Powertrains",
-      "teaser": "Honda announced that the redesigned 2028 CR-V will use a hybrid-only powertrain.",
+      "title": "Domestic battery and EV production are moving from investment announcements into validation",
+      "teaser": "Ford began producing LFP battery cells at its Marshall, Michigan, facility and is shipping them for Fathom prototypes.",
       "confidence": "high",
       "evidence_count": 3,
-      "signal_type": "Industry signal"
+      "signal_type": "Production strategy"
     },
     {
-      "title": "New-Vehicle Affordability Is Tightening Despite Continued Incentives",
-      "teaser": "Kelley Blue Book reported a record $51,109 average transaction price in October, up 1.3% from September and 2.1% year over year.",
+      "title": "EV product timing is becoming a strategic liability",
+      "teaser": "Scout Motors began validation builds but confirmed that Traveler and Terra customer deliveries will not begin until 2028, roughly two years later than earlier production expectations.",
       "confidence": "high",
       "evidence_count": 2,
       "signal_type": "Industry signal"
     },
     {
-      "title": "Automakers Are Rebuilding Around Regional Cost and Development Advantages",
-      "teaser": "Nissan plans to increase exports of China-developed vehicles from two models to five across 12 regional market clusters, citing lower costs, faster development and competitive technology.",
+      "title": "Used-vehicle depreciation is increasingly disconnected from new-car pricing",
+      "teaser": "Edmunds data showed the average three-year-old vehicle selling for $16,562 below its original sticker price in Q3, the widest gap in its records.",
       "confidence": "high",
-      "evidence_count": 2,
-      "signal_type": "Industry signal"
+      "evidence_count": 1,
+      "signal_type": "Market signal"
     }
   ],
   "decision_support_preview": {
     "downside": {
-      "title": "Affordability erosion could reduce retail conversion and increase payment-driven trade-down.",
-      "teaser": "Record transaction prices, a $776 average payment and rising lower-price sales indicate growing budget pressure."
+      "title": "Software defects may increase recall frequency, service complexity and consumer skepticism toward EVs and connected vehicles.",
+      "teaser": "Recalls involving Acura braking, Ford Transit body controls and BMW high-voltage software occurred alongside reported Tesla driver-assistance crashes."
     },
     "upside": {
-      "title": "Expand hybrid inventory, sales training and payment-based merchandising.",
-      "teaser": "Honda and Toyota are moving high-volume SUVs toward hybrid-only lineups while hybrid penetration has increased."
+      "title": "Build retail strategies around affordable hybrids and entry-level EVs rather than relying exclusively on premium electrification.",
+      "teaser": "Hyundai is maintaining an affordable Elantra strategy, Toyota is expanding hybrids into pickups, Subaru is applying hybrid power to an off-road model, and Volkswagen reports strong demand for lower-priced EVs."
     }
   },
   "full_briefing_includes": [
@@ -58,8 +58,8 @@
     "A forward watchlist and the private audio briefing"
   ],
   "generated_from": {
-    "generated_at": "2026-11-16T11:03:31.426519+00:00",
-    "article_count": 547,
+    "generated_at": "2026-11-23T11:03:13.914264+00:00",
+    "article_count": 545,
     "ai_sample_count": 100
   }
 }
